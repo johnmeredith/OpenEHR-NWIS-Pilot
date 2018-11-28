@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "c93d7ebd97aa66799f67f86bcb16b8dc",
+      "MD5-CAM-1.0.1" : "89ef509f93f87052927a8c0f2b7164e8",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -495,10 +495,10 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "OBSERVATION",
           "occurrences" : "0..*",
-          "nodeId" : "at0.41",
+          "nodeId" : "at0.43",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-jugular_venous_pressure-001.v0",
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-jugular_venous_pressure-002.v0",
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
@@ -4211,7 +4211,17 @@
                             "units" : "mm[Hg]",
                             "@type" : "DV_QUANTITY"
                           },
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -6264,6 +6274,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -16998,7 +17009,7 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "10ff5b21-ae65-413e-91d4-853800e91b2f",
+    "uid" : "db4ace1b-4b8d-42d1-91ac-9f42722163b7",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -17007,7 +17018,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "41391C56AE3002A6D89B20246B92CAD6"
+        "PARENT:MD5-CAM-1.0.1" : "BFA7FA8F09E42E369F08914450DEE78C"
       },
       "details" : { }
     },
@@ -17015,7 +17026,7 @@
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-OBSERVATION.ovl-jugular_venous_pressure-001.v0"
+      "value" : "openEHR-EHR-OBSERVATION.ovl-jugular_venous_pressure-002.v0"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -17117,6 +17128,30 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0006.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_STRING",
+                              "rmTypeName" : "STRING",
+                              "constraint" : [ "Normal", "Elevated" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0007.1",
                       "attributes" : [ {
@@ -17136,7 +17171,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.3" ],
+                              "constraint" : [ "ac0.2" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -17166,8 +17201,45 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.4" ],
+                              "constraint" : [ "ac0.3" ],
                               "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0028.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "SNOMED-CT"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "SNOMED-CT" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "22447003",
+                                "value" : "Raised jugular venous pressure"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "369001",
+                                "value" : "Normal jugular venous pressure"
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -17239,7 +17311,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.2" ],
+                              "constraint" : [ "ac0.1" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -17312,7 +17384,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.1" ],
+                      "constraint" : [ "ac0.6" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -17350,10 +17422,10 @@
             "code" : "ac0.3",
             "description" : "*"
           },
-          "ac0.4" : {
+          "ac0.6" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.4",
+            "code" : "ac0.6",
             "description" : "*"
           }
         }
@@ -17364,27 +17436,27 @@
         "ac0.1" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
-          "members" : [ "at0023", "at0024" ]
+          "members" : [ "at0015", "at0016", "at0017" ]
         },
         "ac0.2" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
-          "members" : [ "at0015", "at0016", "at0017" ]
+          "members" : [ "at0008", "at0009" ]
         },
         "ac0.3" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
-          "members" : [ "at0008", "at0009" ]
-        },
-        "ac0.4" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.4",
           "members" : [ "at0011", "at0012" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0023", "at0024" ]
         }
       }
     },
     "adlVersion" : "1.4",
-    "buildUid" : "400bbe01-7d64-4b77-8a6e-1bd3e29076f8",
+    "buildUid" : "3f1cb80f-367f-45e6-9cec-4667d1455fbb",
     "rmName" : "openehr",
     "rmRelease" : "1.0.3",
     "generated" : true,
