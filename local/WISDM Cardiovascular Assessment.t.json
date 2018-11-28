@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "69e3c5a543b4ab5c6748690df5e131de",
+      "MD5-CAM-1.0.1" : "575e7c32862d33ff4c7127359f175dbf",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -271,7 +271,7 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
           "text" : "Cardiovascular Assessment",
-          "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
+          "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s). Assessment incorporates both basic cardiovascular observations as recorded by health care assistants, and a more detailed assessment as recorded by clinicians. "
         }
       },
       "es-ar" : { },
