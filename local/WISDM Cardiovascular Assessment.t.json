@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4a8b9a41bdf19511e8a4d6ae3a608a79",
+      "MD5-CAM-1.0.1" : "6a787dc413a8c84dcfe24e8154d578f0",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -4197,6 +4197,71 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "units" : "mm[Hg]",
+                            "@type" : "DV_QUANTITY"
+                          },
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 1000.0,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at1006.1",
                       "attributes" : [ {
@@ -5417,7 +5482,8 @@
       "termBindings" : {
         "SNOMED-CT" : {
           "at0000.1" : "term:SNOMED-CT(2003)::163020007",
-          "at0013.1" : "term:SNOMED-CT(2003)::246153002"
+          "at0013.1" : "term:SNOMED-CT(2003)::246153002",
+          "at0004.1" : "term:SNOMED-CT(2003)::163030003"
         }
       },
       "terminologyExtracts" : { },
@@ -6185,6 +6251,41 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0008.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "assumedValue" : {
+                                "terminologyId" : {
+                                  "value" : "local"
+                                },
+                                "codeString" : "at1001"
+                              },
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.7" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at1052.1",
                       "attributes" : [ {
@@ -6584,6 +6685,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.4",
             "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.7",
+            "description" : "*"
           }
         },
         "ja" : {
@@ -6615,6 +6722,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
             "description" : "*"
           }
         },
@@ -6648,6 +6761,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
             "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
           }
         },
         "zh-cn" : {
@@ -6679,6 +6798,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
             "description" : "*"
           }
         },
@@ -6712,6 +6837,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
             "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
           }
         },
         "ru" : {
@@ -6744,6 +6875,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
             "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
           }
         },
         "fa" : {
@@ -6775,6 +6912,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
             "description" : "*"
           }
         },
@@ -6821,6 +6964,12 @@
             "text" : "حجم الكُفَّة",
             "description" : "حجم الكُفَّة المستخدمة في قياس ضغط الدم",
             "comment" : "Perloff D, Grim C, Flack J, Frohlich ED, Hill M, McDonald M, Morgenstern BZ. Human blood pressure determination by sphygmomanometry. Circulation 1993;88;2460-2470. "
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
           }
         },
         "es-ar" : {
@@ -6852,6 +7001,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
             "description" : "*"
           }
         },
@@ -6885,6 +7040,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
             "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
           }
         },
         "ko" : {
@@ -6916,6 +7077,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
             "description" : "*"
           }
         },
@@ -6949,6 +7116,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
             "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
           }
         },
         "nb" : {
@@ -6981,6 +7154,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
             "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
           }
         },
         "sv" : {
@@ -7012,6 +7191,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
             "description" : "*"
           }
         }
@@ -7048,6 +7233,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.5",
           "members" : [ "at1044" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at1000", "at1001", "at1002", "at1003", "at1014" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at1000", "at1001", "at1002", "at1003", "at1014" ]
         }
       }
     },
@@ -9761,6 +9956,30 @@
                       "nodeId" : "at1023.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "name",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.57" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
@@ -9790,29 +10009,6 @@
                                 "code" : "271637005",
                                 "value" : "Pulse irregularly irregular"
                               } ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "name",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "occurrences" : "1..1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "TERMINOLOGY_CODE",
-                              "occurrences" : "1..1",
-                              "terminologyId" : {
-                                "value" : "local"
-                              },
-                              "constraint" : [ "ac0.57" ],
-                              "selectedTerminologies" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -10991,6 +11187,22 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0027.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0006.1",
                       "attributes" : [ {
@@ -11100,22 +11312,6 @@
                               } ]
                             } ]
                           } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "nodeId" : "at0027.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
-                          "occurrences" : "1..1",
-                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -11784,6 +11980,30 @@
                       "nodeId" : "at1023.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "name",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.48" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
@@ -11809,29 +12029,6 @@
                                 "code" : "301163006",
                                 "value" : "Carotid pulse absent"
                               } ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "name",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "occurrences" : "1..1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "TERMINOLOGY_CODE",
-                              "occurrences" : "1..1",
-                              "terminologyId" : {
-                                "value" : "local"
-                              },
-                              "constraint" : [ "ac0.48" ],
-                              "selectedTerminologies" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -14335,7 +14532,132 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "42A758CADEF3767E390EB8187F98AFF5"
       },
-      "details" : { }
+      "details" : {
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para registrar una descripcion narrativa e interpretacion clinica de los hallazgos observados durante el examen fisico completo de una persona, y proveer un marco de referencia para anidar CLUSTER de arquetipos detallados, cada uno de los cuales posibilita registrar en detalle aspectos especificos del examen fisico",
+          "keywords" : [ "examen", "fisico", "examen", "hallazgos", "clinicos" ],
+          "use" : "Utilizar para registrar una descripcion narrativa de los hallazgos observados durante el examen fisico general de una persona.\r\n\r\nUtilizar para incorporar la descripcion narrativa de hallazgos clinicos dentro de sistemas clinicos actuales o legados a un formato de arquetipos, utilizando el elemento de data \"Descripcion Clinica\". \r\n\r\nUtilizar como un arquetipo contenedor - para proveer un arquetipo ENTRY consultable en el cual, puedan ser anidados arquetipos CLUSTER especificos de examenes, incluidos aquellos que detallan la inspeccion, palpacion, asucultacion, percusion y movimiento de los sistemas o estructuras anatomicas del cuerpo",
+          "misuse" : "No debe ser utilizado para registrar observaciones de la toma de historia -utilizar arquetipos especificos de OBSERVACION y CLUSTER. Por ejemplo OBSERVACION.historia y CLUSTER.sintoma.\r\n\r\nNo debe ser utilizado para registrar observaciones clinicas autonomas - utilizar arquetipos especificos OBSERVATION. Por ejemplo OBSERVATION.presion_arterial, OBSERVATION.peso_corporal, u OBSERVATION.altura. ",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registrering av funn ved fysisk undersøkelse av en helsetjenestemottaker.",
+          "keywords" : [ "klinisk undersøkelse", "fysisk undersøkelse", "undersøkelse", "funn", "klinisk", "legeundersøkelse", "observasjon", "kroppsundersøkelse" ],
+          "use" : "Benyttes ved registrering av detaljer om fysiske funn observert ved klinisk undersøkelse av et individ. Dette kan inkludere en tekstlig beskrivelse av funn og kliniske fortolkninger av funn. Tekstlige beskrivelser av kliniske funn innhentet fra eksisterende kliniske systemer kan fanges opp ved å benytte dataelementet \"Description\". \r\n\r\nArketypen kan også benyttes som et rammeverk for innsetting av detaljer ved hjelp av CLUSTER.exam-arketyper. Eksempler på detaljer som kan beskrives ved hjelp av innsatte CLUSTER-arketyper er inspeksjon, palpasjon, auskultasjon, perkusjon og bevegelser i kroppsystemer eller anatomiske strukturer (feks CLUSTER.exam_pupils).\r\n\r\nNoen ganger vil klinikere ønske å registrere et sammendrag, f.eks. \"kronisk otitis media\", som en fortolkning av funn ved klinisk undersøkelse. I denne konteksten - arketypen 'Funn ved klinisk undersøkelse' - bør dette forståes som 'funn forenlig med kronisk otitis media', og ikke en fastsatt diagnose. Skulle sammendraget synes å representere en diagnose, vil sikker og konsistent dataspørring kreve en diagnose som registreres i EVALUATION.problem_diagnosis-arketypen, selv om sammendraget/frasen og diagnosen er identiske.",
+          "misuse" : "Skal ikke anvendes for å registrere observasjoner gjort under anamneseopptak - bruk spesifikke OBSERVATION og CLUSTER-arketyper, for eksempel OBSERVATION.story eller CLUSTER.symptom.\r\n\r\nSkal ikke anvendes for å registrere frittstående observasjoner - bruk spesifikke OBSERVATION-arketyper, for eksempel OBSERVATION.body_weight eller OBSERVATION.height.\r\n\r\nSkal ikke anvendes til å registrere satte diagnoser, til dette brukes EVALUATION.problem_diagnosis.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registro de detalhes sobre os resultados no exame físico do sujeito do cuidado.",
+          "keywords" : [ "exame", "físico", "achados", "clínico" ],
+          "use" : "Use para registrar detalhes sobre achados no exame físico do sujeito do cuidado. Pode incluir uma descrição narrativa dos achados, uma estrutura em que aninhar detalhados arquétipos do exame do CLUSTER, e uma interpretação clínica dos achados.\r\n\r\nExemplos de arquétipos detalhados de exame CLUSTER incluem aqueles que descrevem inspeção, palpação, ausculta, percussão e movimento de sistemas corporais ou estruturas anatômicas, como CLUSTER.exam_pupils.\r\n\r\nAs descrições narrativas dos achados dos sistemas clínicos existentes podem ser capturadas utilizando o elemento de dados \"Descrição\".\r\n\r\nOs médicos às vezes podem querer gravar uma frase resumida, como \"otite média crônica\", como Interpretação do exame físico. No contexto do arquétipo do exame físico, isso só deve ser entendido como \"os sinais físicos são consistentes com a otite média crônica\". Embora a expressão resumida possa parecer representar um diagnóstico, a consulta segura e consistente requer que um diagnóstico seja registrado usando o arquétipo EVALUATION.problem_diagnosis, mesmo que as frases sejam idênticas.",
+          "misuse" : "Não deve ser utilizado para gravação de anamnese observações - usar arquétipos específicos OBSERVATION e CLUSTER. Por exemplo, OBSERVATION.story e CLUSTER .symptom.\r\n\r\nNão deve ser utilizado pra gravar observações clínicas isoladas - use arquétipos específicos OBSERVATION. Por exemplo: OBSERVATION.blood_pressure, OBSERVATION.body_weight, ou OBSERVATION.height.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za beleženje znakov izmerjenih v okviru fizikalnega pregleda",
+          "keywords" : [ "pregled", "fizikalni" ],
+          "use" : "\"Container\" za gnezdenje \"cluster\"-jev, ki podrobno opisujejo posamezne elemente fizikalnega pregleda vključujoč pregled, tipanje, avskultacijo (osluškovanje) in udarjanje (skupine vključno z njihovimi specializacijami).\r\n\r\ncluster - skupina, grozd",
+          "misuse" : "*Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.\r\n\r\nNot to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.(en)",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording details about findings on physical examination of the subject of care.",
+          "keywords" : [ "examination", "physical", "exam", "findings", "clinical" ],
+          "use" : "Use to record details about findings on physical examination of the subject of care. This may include a narrative description of the findings, a framework in which to nest detailed CLUSTER examination archetypes, and a clinical interpretation of the findings.\r\n\r\nExamples of detailed CLUSTER examination archetypes include those that describe inspection, palpation, auscultation, percussion and movement of body systems or anatomical structures, such as CLUSTER.exam_pupils.\r\n\r\nNarrative descriptions of clinical findings from existing clinical systems may be captured using the 'Description' data element.\r\n\r\nClinicians may sometimes want to record a summative phrase such as 'chronic otitis media' as an Interpretation of the physical examination. In the context of the physical examination archetype this should only be understood as 'physical signs are consistent with chronic otitis media'. While the summative phrase may appear to represent a diagnosis, safe and consistent querying requires a diagnosis to be recorded using the EVALUATION.problem_diagnosis archetype, even if the phrases are identical.",
+          "misuse" : "Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.\r\n\r\nNot to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الموجودات التي تم العثور عليها عند الفحص البدني",
+          "keywords" : [ "الفحص", "البدني" ],
+          "use" : "تم تصميم النموذج ليحتوي على عناقيد مفصلة متعلقة بالفحص بما في ذلك الاكتشاف, الجس, التسمع و القرع بما في هذه العناقيد من تخصيصات.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "用于记录关于对于特定主体对象体格检查发现的详情。",
+          "keywords" : [ "临床", "体格检查", "检查", "发现", "所见", "查体" ],
+          "use" : "用于记录关于对于特定主体对象体格检查发现的详情。其中，可包括关于这些发现的叙述型描述、一种用于嵌套若干详细的群簇（CLUSTER）型原始型的框架以及关于这些发现的临床解释。\r\n\r\n关于群簇（CLUSTER）型检查原始型的例子包括那些用于详细描述望诊、触诊、听诊、叩诊以及身体系统运动或者解剖结构的原始型，如瞳孔检查原始型CLUSTER.exam_pupils。\r\n\r\n对于现有临床系统之中临床发现的叙述型描述，可以采用名为“Description”（描述）的数据元进行采集。\r\n\r\n临床医生有时可能希望采用“慢性中耳炎”之类的概括性短语来记录对于体格检查的解释。在当前体格检查原始型的语境下，仅仅应当将其理解为“体征与慢性中耳炎相符或者说相一致”。尽管这种概括性短语可能看似用来表示某种诊断，但就安全一致的查询来说，依然需要采用问题诊断原始型EVALUATION.problem_diagnosis来记录诊断，即使是二者所采用的短语完全相同。",
+          "misuse" : "并非旨在用于记录病史采集类观察项目——此时请采用具体的观察（OBSERVATION）型和群簇（CLUSTER）型原始型。例如，纪事原始型OBSERVATION.story和症状原始型CLUSTER.symptom。\r\n\r\n并非旨在用于记录单独的临床观察项目——此时请采用具体的观察（OBSERVATION）型原始型。例如，血压原始型OBSERVATION.blood_pressure、体重原始型OBSERVATION.body_weight，或者身高原始型OBSERVATION.height。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Este arquetipo será utilizado para registrar detalles sobre los hallazgos en el examen físico del paciente",
+          "keywords" : [ "examinación", "palpación", "auscultación", "percusión", "hallazgos clínicos", "examen físico" ],
+          "use" : "Este arquetipo será utilizado para registrar detalles sobre los hallazgos en el examen físico del paciente.\r\n\r\nPuede utilizarse junto a otros arquetipos para incluir detalles de los hallazgos clínicos, para describir examinación por inspección, palpación, auscultación, percusión y movimiento de los sistemas o estructuras anatómicas. Por ejemplo se podrá utilizar el arquetipo CLUSTER.exam_pupils.\r\n\r\nLa información registrada mediante este arquetipo debe estar relacionada con la examinación física y sus hallazgos. Algunas interpretaciones de los hallazgos pueden registrarse usando este arquetipo aunque parezcan diagnósticos, pero solo si están directamente relacionadas con el hallazgo. Para registrar un diagnóstico utilizar el arquetipo EVALUATION.problem_diagnosis, aunque el texto de la interpretación del hallazgo sea igual al diagnóstico.",
+          "misuse" : "No se debe utilizar para registrar información histórica del paciente, para eso utilizar el arquetipo OBSERVATION.story\r\n\r\nNo se debe utilizar para registrar observaciones independientes y signos, para eso utilizar arquetipos específicos como OBSERVATION.blood_pressure, OBSERVATION.body_weight, OBSERVATION.height, etc.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.exam.v1",
     "differential" : true,
@@ -14652,7 +14974,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "A4554C1F4C0F21A8B931BE1DD07708D1"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en fritekstbeskrivelse og klinisk tolkning av observerte funn ved fysisk undersøkelse av et organsystem eller anatomisk struktur.",
+          "keywords" : [ ],
+          "use" : "Brukes til å registrere en fritekstbeskrivelse og klinisk tolkning av observerte funn ved fysisk undersøkelse av et spesifisert organsystem eller anatomisk struktur. Denne arketypen består kun av kjerneelementene av mønsteret for undersøkelser, og kan utvides ved hjelp av andre CLUSTER-arketyper eller brukes som grunnlag for undersøkelsesarketyper for spesifikke kroppssystemer eller anatomiske strukturer. \r\n\r\nEksempler på detaljer som kan beskrives ved hjelp av dette CLUSTER er inspeksjon, palpasjon, auskultasjon, perkusjon og bevegelser i kroppssystemer eller anatomiske strukturer. Undersøkelsen kan støttes av enkle hjelpemidler som stetoskop, otoskop eller reflekshammer. Også funn ved mer avanserte undersøkelser kan registreres her, som ved endoskopi. I de tilfellene vil informasjon om hvilket hjelpemiddel eller utstyr brukt bli registrert i OBSERVATION.exam, elementet \"Detaljer om medisinsk utstyr\", i ACTION.procedure \"Prosedyredetaljer\" eller tilsvarende i egnet ENTRY- eller ACTION-arketype.\r\n\r\nArketypen er laget spesifikt for å brukes i \"Undersøkelsesdetaljer\"-SLOTet i arketypen OBSERVATION.exam, men kan også brukes innen andre ENTRY- og CLUSTER-arketyper der det er klinisk passende.\r\n\r\nDenne arketypen kan benyttes for alle typer undersøkelser, alt fra enkle undersøkelser som undersøkelse av et hudområde, inspeksjon av ører og til artroskopi av et kne.\r\n\r\nKan for eksempel nøstes i SLOTet \"Undersøkelsesdetaljer\" i arketypen OBSERVATION.exam (Norsk Funn ved fysisk undersøkelse) for å registrere ytterligere strukturerte funn ved fysiske undersøkelser.\r\n\r\nArketypen CLUSTER.exclusion_exam kan nøstes i SLOTet \"Undersøkelse ikke utført\" der en har behov for å registrere informasjon om at en undersøkelse ikke ble utført.\r\n\r\nBrukes for å videreføre fritekstbeskrivelser av kliniske funn fra tidligere systemer inn i et arketypeformat, ved å bruke elementet \"Klinisk beskrivelse\".",
+          "misuse" : "Skal ikke brukes til å ta opp frittstående klinisk observasjoner eller testresultater - bruk spesifikke OBSERVATION arketyper, for eksempel OBSERVATION.head_circumference eller OBSERVATION.glasgow_coma_scale.\r\n\r\nSkal ikke brukes til å ta opp anamnese - bruk da spesifikke OBSERVATION og CLUSTER arketyper. For eksempel OBSERVATION.story og CLUSTER.symptom_sign.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording a narrative description and clinical interpretation of the findings observed during the physical examination of a body system or anatomical structure.",
+          "keywords" : [ ],
+          "use" : "Use to record a narrative description and clinical interpretation of the findings observed during the physical examination of a body system or anatomical structure, identified as part of this archetype. This archetype consists only of the core examination pattern data elements, and can be expanded using other CLUSTER archetypes or used as the basis for examination archetypes for specific body parts.\r\n\r\nExamples of findings which can be recorded in this CLUSTER are inspection, palpation, auscultation, percussion and movements of body structures or anatomical structures. Also findings in more advanced examinations, such as endoscopy, can be recorded. In those cases, information on which device used can be recorded in the element 'Device details' in the OBSERVATION.exam, in the element 'Procedure detail' in the ACTION.procedure, or in an equivalent element in an appropriate ENTRY or ACTION archetype.\r\n\r\nThis archetype has been specifically designed to be used in the 'Examination detail' SLOT within the OBSERVATION.exam or ACTION.procedure archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nThis archetype could be used for all examinations, ranging from simple examinations such as examination of an area of the skin, inspection of the ears, through to arthroscopy of a knee.\r\n\r\nUse to provide a framework in which CLUSTER archetypes can be nested in the 'Examination findings' SLOT to record additional structured physical examination findings.\r\n\r\nThe CLUSTER.exclusion_exam archetype can be nested within the 'Examination not done' SLOT to optionally record explicit details about the examination not being performed.\r\n\r\nUse to incorporate the narrative descriptions of clinical findings within existing or legacy clinical systems into an archetyped format, using the 'Clinical Description' data element.",
+          "misuse" : "Not to be used to record stand-alone clinical measurements or test results - use specific OBSERVATION archetypes. For example OBSERVATION.head_circumference or OBSERVATION.glasgow_coma_scale.\r\n\r\nNot to be used for recording the clinical history - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom_sign.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.exam.v1",
     "differential" : true,
@@ -14847,7 +15201,132 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "42A758CADEF3767E390EB8187F98AFF5"
       },
-      "details" : { }
+      "details" : {
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para registrar una descripcion narrativa e interpretacion clinica de los hallazgos observados durante el examen fisico completo de una persona, y proveer un marco de referencia para anidar CLUSTER de arquetipos detallados, cada uno de los cuales posibilita registrar en detalle aspectos especificos del examen fisico",
+          "keywords" : [ "examen", "fisico", "examen", "hallazgos", "clinicos" ],
+          "use" : "Utilizar para registrar una descripcion narrativa de los hallazgos observados durante el examen fisico general de una persona.\r\n\r\nUtilizar para incorporar la descripcion narrativa de hallazgos clinicos dentro de sistemas clinicos actuales o legados a un formato de arquetipos, utilizando el elemento de data \"Descripcion Clinica\". \r\n\r\nUtilizar como un arquetipo contenedor - para proveer un arquetipo ENTRY consultable en el cual, puedan ser anidados arquetipos CLUSTER especificos de examenes, incluidos aquellos que detallan la inspeccion, palpacion, asucultacion, percusion y movimiento de los sistemas o estructuras anatomicas del cuerpo",
+          "misuse" : "No debe ser utilizado para registrar observaciones de la toma de historia -utilizar arquetipos especificos de OBSERVACION y CLUSTER. Por ejemplo OBSERVACION.historia y CLUSTER.sintoma.\r\n\r\nNo debe ser utilizado para registrar observaciones clinicas autonomas - utilizar arquetipos especificos OBSERVATION. Por ejemplo OBSERVATION.presion_arterial, OBSERVATION.peso_corporal, u OBSERVATION.altura. ",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registrering av funn ved fysisk undersøkelse av en helsetjenestemottaker.",
+          "keywords" : [ "klinisk undersøkelse", "fysisk undersøkelse", "undersøkelse", "funn", "klinisk", "legeundersøkelse", "observasjon", "kroppsundersøkelse" ],
+          "use" : "Benyttes ved registrering av detaljer om fysiske funn observert ved klinisk undersøkelse av et individ. Dette kan inkludere en tekstlig beskrivelse av funn og kliniske fortolkninger av funn. Tekstlige beskrivelser av kliniske funn innhentet fra eksisterende kliniske systemer kan fanges opp ved å benytte dataelementet \"Description\". \r\n\r\nArketypen kan også benyttes som et rammeverk for innsetting av detaljer ved hjelp av CLUSTER.exam-arketyper. Eksempler på detaljer som kan beskrives ved hjelp av innsatte CLUSTER-arketyper er inspeksjon, palpasjon, auskultasjon, perkusjon og bevegelser i kroppsystemer eller anatomiske strukturer (feks CLUSTER.exam_pupils).\r\n\r\nNoen ganger vil klinikere ønske å registrere et sammendrag, f.eks. \"kronisk otitis media\", som en fortolkning av funn ved klinisk undersøkelse. I denne konteksten - arketypen 'Funn ved klinisk undersøkelse' - bør dette forståes som 'funn forenlig med kronisk otitis media', og ikke en fastsatt diagnose. Skulle sammendraget synes å representere en diagnose, vil sikker og konsistent dataspørring kreve en diagnose som registreres i EVALUATION.problem_diagnosis-arketypen, selv om sammendraget/frasen og diagnosen er identiske.",
+          "misuse" : "Skal ikke anvendes for å registrere observasjoner gjort under anamneseopptak - bruk spesifikke OBSERVATION og CLUSTER-arketyper, for eksempel OBSERVATION.story eller CLUSTER.symptom.\r\n\r\nSkal ikke anvendes for å registrere frittstående observasjoner - bruk spesifikke OBSERVATION-arketyper, for eksempel OBSERVATION.body_weight eller OBSERVATION.height.\r\n\r\nSkal ikke anvendes til å registrere satte diagnoser, til dette brukes EVALUATION.problem_diagnosis.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registro de detalhes sobre os resultados no exame físico do sujeito do cuidado.",
+          "keywords" : [ "exame", "físico", "achados", "clínico" ],
+          "use" : "Use para registrar detalhes sobre achados no exame físico do sujeito do cuidado. Pode incluir uma descrição narrativa dos achados, uma estrutura em que aninhar detalhados arquétipos do exame do CLUSTER, e uma interpretação clínica dos achados.\r\n\r\nExemplos de arquétipos detalhados de exame CLUSTER incluem aqueles que descrevem inspeção, palpação, ausculta, percussão e movimento de sistemas corporais ou estruturas anatômicas, como CLUSTER.exam_pupils.\r\n\r\nAs descrições narrativas dos achados dos sistemas clínicos existentes podem ser capturadas utilizando o elemento de dados \"Descrição\".\r\n\r\nOs médicos às vezes podem querer gravar uma frase resumida, como \"otite média crônica\", como Interpretação do exame físico. No contexto do arquétipo do exame físico, isso só deve ser entendido como \"os sinais físicos são consistentes com a otite média crônica\". Embora a expressão resumida possa parecer representar um diagnóstico, a consulta segura e consistente requer que um diagnóstico seja registrado usando o arquétipo EVALUATION.problem_diagnosis, mesmo que as frases sejam idênticas.",
+          "misuse" : "Não deve ser utilizado para gravação de anamnese observações - usar arquétipos específicos OBSERVATION e CLUSTER. Por exemplo, OBSERVATION.story e CLUSTER .symptom.\r\n\r\nNão deve ser utilizado pra gravar observações clínicas isoladas - use arquétipos específicos OBSERVATION. Por exemplo: OBSERVATION.blood_pressure, OBSERVATION.body_weight, ou OBSERVATION.height.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za beleženje znakov izmerjenih v okviru fizikalnega pregleda",
+          "keywords" : [ "pregled", "fizikalni" ],
+          "use" : "\"Container\" za gnezdenje \"cluster\"-jev, ki podrobno opisujejo posamezne elemente fizikalnega pregleda vključujoč pregled, tipanje, avskultacijo (osluškovanje) in udarjanje (skupine vključno z njihovimi specializacijami).\r\n\r\ncluster - skupina, grozd",
+          "misuse" : "*Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.\r\n\r\nNot to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.(en)",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording details about findings on physical examination of the subject of care.",
+          "keywords" : [ "examination", "physical", "exam", "findings", "clinical" ],
+          "use" : "Use to record details about findings on physical examination of the subject of care. This may include a narrative description of the findings, a framework in which to nest detailed CLUSTER examination archetypes, and a clinical interpretation of the findings.\r\n\r\nExamples of detailed CLUSTER examination archetypes include those that describe inspection, palpation, auscultation, percussion and movement of body systems or anatomical structures, such as CLUSTER.exam_pupils.\r\n\r\nNarrative descriptions of clinical findings from existing clinical systems may be captured using the 'Description' data element.\r\n\r\nClinicians may sometimes want to record a summative phrase such as 'chronic otitis media' as an Interpretation of the physical examination. In the context of the physical examination archetype this should only be understood as 'physical signs are consistent with chronic otitis media'. While the summative phrase may appear to represent a diagnosis, safe and consistent querying requires a diagnosis to be recorded using the EVALUATION.problem_diagnosis archetype, even if the phrases are identical.",
+          "misuse" : "Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.\r\n\r\nNot to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الموجودات التي تم العثور عليها عند الفحص البدني",
+          "keywords" : [ "الفحص", "البدني" ],
+          "use" : "تم تصميم النموذج ليحتوي على عناقيد مفصلة متعلقة بالفحص بما في ذلك الاكتشاف, الجس, التسمع و القرع بما في هذه العناقيد من تخصيصات.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "用于记录关于对于特定主体对象体格检查发现的详情。",
+          "keywords" : [ "临床", "体格检查", "检查", "发现", "所见", "查体" ],
+          "use" : "用于记录关于对于特定主体对象体格检查发现的详情。其中，可包括关于这些发现的叙述型描述、一种用于嵌套若干详细的群簇（CLUSTER）型原始型的框架以及关于这些发现的临床解释。\r\n\r\n关于群簇（CLUSTER）型检查原始型的例子包括那些用于详细描述望诊、触诊、听诊、叩诊以及身体系统运动或者解剖结构的原始型，如瞳孔检查原始型CLUSTER.exam_pupils。\r\n\r\n对于现有临床系统之中临床发现的叙述型描述，可以采用名为“Description”（描述）的数据元进行采集。\r\n\r\n临床医生有时可能希望采用“慢性中耳炎”之类的概括性短语来记录对于体格检查的解释。在当前体格检查原始型的语境下，仅仅应当将其理解为“体征与慢性中耳炎相符或者说相一致”。尽管这种概括性短语可能看似用来表示某种诊断，但就安全一致的查询来说，依然需要采用问题诊断原始型EVALUATION.problem_diagnosis来记录诊断，即使是二者所采用的短语完全相同。",
+          "misuse" : "并非旨在用于记录病史采集类观察项目——此时请采用具体的观察（OBSERVATION）型和群簇（CLUSTER）型原始型。例如，纪事原始型OBSERVATION.story和症状原始型CLUSTER.symptom。\r\n\r\n并非旨在用于记录单独的临床观察项目——此时请采用具体的观察（OBSERVATION）型原始型。例如，血压原始型OBSERVATION.blood_pressure、体重原始型OBSERVATION.body_weight，或者身高原始型OBSERVATION.height。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Este arquetipo será utilizado para registrar detalles sobre los hallazgos en el examen físico del paciente",
+          "keywords" : [ "examinación", "palpación", "auscultación", "percusión", "hallazgos clínicos", "examen físico" ],
+          "use" : "Este arquetipo será utilizado para registrar detalles sobre los hallazgos en el examen físico del paciente.\r\n\r\nPuede utilizarse junto a otros arquetipos para incluir detalles de los hallazgos clínicos, para describir examinación por inspección, palpación, auscultación, percusión y movimiento de los sistemas o estructuras anatómicas. Por ejemplo se podrá utilizar el arquetipo CLUSTER.exam_pupils.\r\n\r\nLa información registrada mediante este arquetipo debe estar relacionada con la examinación física y sus hallazgos. Algunas interpretaciones de los hallazgos pueden registrarse usando este arquetipo aunque parezcan diagnósticos, pero solo si están directamente relacionadas con el hallazgo. Para registrar un diagnóstico utilizar el arquetipo EVALUATION.problem_diagnosis, aunque el texto de la interpretación del hallazgo sea igual al diagnóstico.",
+          "misuse" : "No se debe utilizar para registrar información histórica del paciente, para eso utilizar el arquetipo OBSERVATION.story\r\n\r\nNo se debe utilizar para registrar observaciones independientes y signos, para eso utilizar arquetipos específicos como OBSERVATION.blood_pressure, OBSERVATION.body_weight, OBSERVATION.height, etc.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.exam.v1",
     "differential" : true,
@@ -15164,7 +15643,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "A4554C1F4C0F21A8B931BE1DD07708D1"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en fritekstbeskrivelse og klinisk tolkning av observerte funn ved fysisk undersøkelse av et organsystem eller anatomisk struktur.",
+          "keywords" : [ ],
+          "use" : "Brukes til å registrere en fritekstbeskrivelse og klinisk tolkning av observerte funn ved fysisk undersøkelse av et spesifisert organsystem eller anatomisk struktur. Denne arketypen består kun av kjerneelementene av mønsteret for undersøkelser, og kan utvides ved hjelp av andre CLUSTER-arketyper eller brukes som grunnlag for undersøkelsesarketyper for spesifikke kroppssystemer eller anatomiske strukturer. \r\n\r\nEksempler på detaljer som kan beskrives ved hjelp av dette CLUSTER er inspeksjon, palpasjon, auskultasjon, perkusjon og bevegelser i kroppssystemer eller anatomiske strukturer. Undersøkelsen kan støttes av enkle hjelpemidler som stetoskop, otoskop eller reflekshammer. Også funn ved mer avanserte undersøkelser kan registreres her, som ved endoskopi. I de tilfellene vil informasjon om hvilket hjelpemiddel eller utstyr brukt bli registrert i OBSERVATION.exam, elementet \"Detaljer om medisinsk utstyr\", i ACTION.procedure \"Prosedyredetaljer\" eller tilsvarende i egnet ENTRY- eller ACTION-arketype.\r\n\r\nArketypen er laget spesifikt for å brukes i \"Undersøkelsesdetaljer\"-SLOTet i arketypen OBSERVATION.exam, men kan også brukes innen andre ENTRY- og CLUSTER-arketyper der det er klinisk passende.\r\n\r\nDenne arketypen kan benyttes for alle typer undersøkelser, alt fra enkle undersøkelser som undersøkelse av et hudområde, inspeksjon av ører og til artroskopi av et kne.\r\n\r\nKan for eksempel nøstes i SLOTet \"Undersøkelsesdetaljer\" i arketypen OBSERVATION.exam (Norsk Funn ved fysisk undersøkelse) for å registrere ytterligere strukturerte funn ved fysiske undersøkelser.\r\n\r\nArketypen CLUSTER.exclusion_exam kan nøstes i SLOTet \"Undersøkelse ikke utført\" der en har behov for å registrere informasjon om at en undersøkelse ikke ble utført.\r\n\r\nBrukes for å videreføre fritekstbeskrivelser av kliniske funn fra tidligere systemer inn i et arketypeformat, ved å bruke elementet \"Klinisk beskrivelse\".",
+          "misuse" : "Skal ikke brukes til å ta opp frittstående klinisk observasjoner eller testresultater - bruk spesifikke OBSERVATION arketyper, for eksempel OBSERVATION.head_circumference eller OBSERVATION.glasgow_coma_scale.\r\n\r\nSkal ikke brukes til å ta opp anamnese - bruk da spesifikke OBSERVATION og CLUSTER arketyper. For eksempel OBSERVATION.story og CLUSTER.symptom_sign.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording a narrative description and clinical interpretation of the findings observed during the physical examination of a body system or anatomical structure.",
+          "keywords" : [ ],
+          "use" : "Use to record a narrative description and clinical interpretation of the findings observed during the physical examination of a body system or anatomical structure, identified as part of this archetype. This archetype consists only of the core examination pattern data elements, and can be expanded using other CLUSTER archetypes or used as the basis for examination archetypes for specific body parts.\r\n\r\nExamples of findings which can be recorded in this CLUSTER are inspection, palpation, auscultation, percussion and movements of body structures or anatomical structures. Also findings in more advanced examinations, such as endoscopy, can be recorded. In those cases, information on which device used can be recorded in the element 'Device details' in the OBSERVATION.exam, in the element 'Procedure detail' in the ACTION.procedure, or in an equivalent element in an appropriate ENTRY or ACTION archetype.\r\n\r\nThis archetype has been specifically designed to be used in the 'Examination detail' SLOT within the OBSERVATION.exam or ACTION.procedure archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nThis archetype could be used for all examinations, ranging from simple examinations such as examination of an area of the skin, inspection of the ears, through to arthroscopy of a knee.\r\n\r\nUse to provide a framework in which CLUSTER archetypes can be nested in the 'Examination findings' SLOT to record additional structured physical examination findings.\r\n\r\nThe CLUSTER.exclusion_exam archetype can be nested within the 'Examination not done' SLOT to optionally record explicit details about the examination not being performed.\r\n\r\nUse to incorporate the narrative descriptions of clinical findings within existing or legacy clinical systems into an archetyped format, using the 'Clinical Description' data element.",
+          "misuse" : "Not to be used to record stand-alone clinical measurements or test results - use specific OBSERVATION archetypes. For example OBSERVATION.head_circumference or OBSERVATION.glasgow_coma_scale.\r\n\r\nNot to be used for recording the clinical history - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom_sign.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.exam.v1",
     "differential" : true,
@@ -15368,7 +15879,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "A4554C1F4C0F21A8B931BE1DD07708D1"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en fritekstbeskrivelse og klinisk tolkning av observerte funn ved fysisk undersøkelse av et organsystem eller anatomisk struktur.",
+          "keywords" : [ ],
+          "use" : "Brukes til å registrere en fritekstbeskrivelse og klinisk tolkning av observerte funn ved fysisk undersøkelse av et spesifisert organsystem eller anatomisk struktur. Denne arketypen består kun av kjerneelementene av mønsteret for undersøkelser, og kan utvides ved hjelp av andre CLUSTER-arketyper eller brukes som grunnlag for undersøkelsesarketyper for spesifikke kroppssystemer eller anatomiske strukturer. \r\n\r\nEksempler på detaljer som kan beskrives ved hjelp av dette CLUSTER er inspeksjon, palpasjon, auskultasjon, perkusjon og bevegelser i kroppssystemer eller anatomiske strukturer. Undersøkelsen kan støttes av enkle hjelpemidler som stetoskop, otoskop eller reflekshammer. Også funn ved mer avanserte undersøkelser kan registreres her, som ved endoskopi. I de tilfellene vil informasjon om hvilket hjelpemiddel eller utstyr brukt bli registrert i OBSERVATION.exam, elementet \"Detaljer om medisinsk utstyr\", i ACTION.procedure \"Prosedyredetaljer\" eller tilsvarende i egnet ENTRY- eller ACTION-arketype.\r\n\r\nArketypen er laget spesifikt for å brukes i \"Undersøkelsesdetaljer\"-SLOTet i arketypen OBSERVATION.exam, men kan også brukes innen andre ENTRY- og CLUSTER-arketyper der det er klinisk passende.\r\n\r\nDenne arketypen kan benyttes for alle typer undersøkelser, alt fra enkle undersøkelser som undersøkelse av et hudområde, inspeksjon av ører og til artroskopi av et kne.\r\n\r\nKan for eksempel nøstes i SLOTet \"Undersøkelsesdetaljer\" i arketypen OBSERVATION.exam (Norsk Funn ved fysisk undersøkelse) for å registrere ytterligere strukturerte funn ved fysiske undersøkelser.\r\n\r\nArketypen CLUSTER.exclusion_exam kan nøstes i SLOTet \"Undersøkelse ikke utført\" der en har behov for å registrere informasjon om at en undersøkelse ikke ble utført.\r\n\r\nBrukes for å videreføre fritekstbeskrivelser av kliniske funn fra tidligere systemer inn i et arketypeformat, ved å bruke elementet \"Klinisk beskrivelse\".",
+          "misuse" : "Skal ikke brukes til å ta opp frittstående klinisk observasjoner eller testresultater - bruk spesifikke OBSERVATION arketyper, for eksempel OBSERVATION.head_circumference eller OBSERVATION.glasgow_coma_scale.\r\n\r\nSkal ikke brukes til å ta opp anamnese - bruk da spesifikke OBSERVATION og CLUSTER arketyper. For eksempel OBSERVATION.story og CLUSTER.symptom_sign.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording a narrative description and clinical interpretation of the findings observed during the physical examination of a body system or anatomical structure.",
+          "keywords" : [ ],
+          "use" : "Use to record a narrative description and clinical interpretation of the findings observed during the physical examination of a body system or anatomical structure, identified as part of this archetype. This archetype consists only of the core examination pattern data elements, and can be expanded using other CLUSTER archetypes or used as the basis for examination archetypes for specific body parts.\r\n\r\nExamples of findings which can be recorded in this CLUSTER are inspection, palpation, auscultation, percussion and movements of body structures or anatomical structures. Also findings in more advanced examinations, such as endoscopy, can be recorded. In those cases, information on which device used can be recorded in the element 'Device details' in the OBSERVATION.exam, in the element 'Procedure detail' in the ACTION.procedure, or in an equivalent element in an appropriate ENTRY or ACTION archetype.\r\n\r\nThis archetype has been specifically designed to be used in the 'Examination detail' SLOT within the OBSERVATION.exam or ACTION.procedure archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nThis archetype could be used for all examinations, ranging from simple examinations such as examination of an area of the skin, inspection of the ears, through to arthroscopy of a knee.\r\n\r\nUse to provide a framework in which CLUSTER archetypes can be nested in the 'Examination findings' SLOT to record additional structured physical examination findings.\r\n\r\nThe CLUSTER.exclusion_exam archetype can be nested within the 'Examination not done' SLOT to optionally record explicit details about the examination not being performed.\r\n\r\nUse to incorporate the narrative descriptions of clinical findings within existing or legacy clinical systems into an archetyped format, using the 'Clinical Description' data element.",
+          "misuse" : "Not to be used to record stand-alone clinical measurements or test results - use specific OBSERVATION archetypes. For example OBSERVATION.head_circumference or OBSERVATION.glasgow_coma_scale.\r\n\r\nNot to be used for recording the clinical history - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom_sign.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.exam.v1",
     "differential" : true,
@@ -15576,7 +16119,132 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "42A758CADEF3767E390EB8187F98AFF5"
       },
-      "details" : { }
+      "details" : {
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para registrar una descripcion narrativa e interpretacion clinica de los hallazgos observados durante el examen fisico completo de una persona, y proveer un marco de referencia para anidar CLUSTER de arquetipos detallados, cada uno de los cuales posibilita registrar en detalle aspectos especificos del examen fisico",
+          "keywords" : [ "examen", "fisico", "examen", "hallazgos", "clinicos" ],
+          "use" : "Utilizar para registrar una descripcion narrativa de los hallazgos observados durante el examen fisico general de una persona.\r\n\r\nUtilizar para incorporar la descripcion narrativa de hallazgos clinicos dentro de sistemas clinicos actuales o legados a un formato de arquetipos, utilizando el elemento de data \"Descripcion Clinica\". \r\n\r\nUtilizar como un arquetipo contenedor - para proveer un arquetipo ENTRY consultable en el cual, puedan ser anidados arquetipos CLUSTER especificos de examenes, incluidos aquellos que detallan la inspeccion, palpacion, asucultacion, percusion y movimiento de los sistemas o estructuras anatomicas del cuerpo",
+          "misuse" : "No debe ser utilizado para registrar observaciones de la toma de historia -utilizar arquetipos especificos de OBSERVACION y CLUSTER. Por ejemplo OBSERVACION.historia y CLUSTER.sintoma.\r\n\r\nNo debe ser utilizado para registrar observaciones clinicas autonomas - utilizar arquetipos especificos OBSERVATION. Por ejemplo OBSERVATION.presion_arterial, OBSERVATION.peso_corporal, u OBSERVATION.altura. ",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registrering av funn ved fysisk undersøkelse av en helsetjenestemottaker.",
+          "keywords" : [ "klinisk undersøkelse", "fysisk undersøkelse", "undersøkelse", "funn", "klinisk", "legeundersøkelse", "observasjon", "kroppsundersøkelse" ],
+          "use" : "Benyttes ved registrering av detaljer om fysiske funn observert ved klinisk undersøkelse av et individ. Dette kan inkludere en tekstlig beskrivelse av funn og kliniske fortolkninger av funn. Tekstlige beskrivelser av kliniske funn innhentet fra eksisterende kliniske systemer kan fanges opp ved å benytte dataelementet \"Description\". \r\n\r\nArketypen kan også benyttes som et rammeverk for innsetting av detaljer ved hjelp av CLUSTER.exam-arketyper. Eksempler på detaljer som kan beskrives ved hjelp av innsatte CLUSTER-arketyper er inspeksjon, palpasjon, auskultasjon, perkusjon og bevegelser i kroppsystemer eller anatomiske strukturer (feks CLUSTER.exam_pupils).\r\n\r\nNoen ganger vil klinikere ønske å registrere et sammendrag, f.eks. \"kronisk otitis media\", som en fortolkning av funn ved klinisk undersøkelse. I denne konteksten - arketypen 'Funn ved klinisk undersøkelse' - bør dette forståes som 'funn forenlig med kronisk otitis media', og ikke en fastsatt diagnose. Skulle sammendraget synes å representere en diagnose, vil sikker og konsistent dataspørring kreve en diagnose som registreres i EVALUATION.problem_diagnosis-arketypen, selv om sammendraget/frasen og diagnosen er identiske.",
+          "misuse" : "Skal ikke anvendes for å registrere observasjoner gjort under anamneseopptak - bruk spesifikke OBSERVATION og CLUSTER-arketyper, for eksempel OBSERVATION.story eller CLUSTER.symptom.\r\n\r\nSkal ikke anvendes for å registrere frittstående observasjoner - bruk spesifikke OBSERVATION-arketyper, for eksempel OBSERVATION.body_weight eller OBSERVATION.height.\r\n\r\nSkal ikke anvendes til å registrere satte diagnoser, til dette brukes EVALUATION.problem_diagnosis.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registro de detalhes sobre os resultados no exame físico do sujeito do cuidado.",
+          "keywords" : [ "exame", "físico", "achados", "clínico" ],
+          "use" : "Use para registrar detalhes sobre achados no exame físico do sujeito do cuidado. Pode incluir uma descrição narrativa dos achados, uma estrutura em que aninhar detalhados arquétipos do exame do CLUSTER, e uma interpretação clínica dos achados.\r\n\r\nExemplos de arquétipos detalhados de exame CLUSTER incluem aqueles que descrevem inspeção, palpação, ausculta, percussão e movimento de sistemas corporais ou estruturas anatômicas, como CLUSTER.exam_pupils.\r\n\r\nAs descrições narrativas dos achados dos sistemas clínicos existentes podem ser capturadas utilizando o elemento de dados \"Descrição\".\r\n\r\nOs médicos às vezes podem querer gravar uma frase resumida, como \"otite média crônica\", como Interpretação do exame físico. No contexto do arquétipo do exame físico, isso só deve ser entendido como \"os sinais físicos são consistentes com a otite média crônica\". Embora a expressão resumida possa parecer representar um diagnóstico, a consulta segura e consistente requer que um diagnóstico seja registrado usando o arquétipo EVALUATION.problem_diagnosis, mesmo que as frases sejam idênticas.",
+          "misuse" : "Não deve ser utilizado para gravação de anamnese observações - usar arquétipos específicos OBSERVATION e CLUSTER. Por exemplo, OBSERVATION.story e CLUSTER .symptom.\r\n\r\nNão deve ser utilizado pra gravar observações clínicas isoladas - use arquétipos específicos OBSERVATION. Por exemplo: OBSERVATION.blood_pressure, OBSERVATION.body_weight, ou OBSERVATION.height.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za beleženje znakov izmerjenih v okviru fizikalnega pregleda",
+          "keywords" : [ "pregled", "fizikalni" ],
+          "use" : "\"Container\" za gnezdenje \"cluster\"-jev, ki podrobno opisujejo posamezne elemente fizikalnega pregleda vključujoč pregled, tipanje, avskultacijo (osluškovanje) in udarjanje (skupine vključno z njihovimi specializacijami).\r\n\r\ncluster - skupina, grozd",
+          "misuse" : "*Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.\r\n\r\nNot to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.(en)",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording details about findings on physical examination of the subject of care.",
+          "keywords" : [ "examination", "physical", "exam", "findings", "clinical" ],
+          "use" : "Use to record details about findings on physical examination of the subject of care. This may include a narrative description of the findings, a framework in which to nest detailed CLUSTER examination archetypes, and a clinical interpretation of the findings.\r\n\r\nExamples of detailed CLUSTER examination archetypes include those that describe inspection, palpation, auscultation, percussion and movement of body systems or anatomical structures, such as CLUSTER.exam_pupils.\r\n\r\nNarrative descriptions of clinical findings from existing clinical systems may be captured using the 'Description' data element.\r\n\r\nClinicians may sometimes want to record a summative phrase such as 'chronic otitis media' as an Interpretation of the physical examination. In the context of the physical examination archetype this should only be understood as 'physical signs are consistent with chronic otitis media'. While the summative phrase may appear to represent a diagnosis, safe and consistent querying requires a diagnosis to be recorded using the EVALUATION.problem_diagnosis archetype, even if the phrases are identical.",
+          "misuse" : "Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.\r\n\r\nNot to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الموجودات التي تم العثور عليها عند الفحص البدني",
+          "keywords" : [ "الفحص", "البدني" ],
+          "use" : "تم تصميم النموذج ليحتوي على عناقيد مفصلة متعلقة بالفحص بما في ذلك الاكتشاف, الجس, التسمع و القرع بما في هذه العناقيد من تخصيصات.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "用于记录关于对于特定主体对象体格检查发现的详情。",
+          "keywords" : [ "临床", "体格检查", "检查", "发现", "所见", "查体" ],
+          "use" : "用于记录关于对于特定主体对象体格检查发现的详情。其中，可包括关于这些发现的叙述型描述、一种用于嵌套若干详细的群簇（CLUSTER）型原始型的框架以及关于这些发现的临床解释。\r\n\r\n关于群簇（CLUSTER）型检查原始型的例子包括那些用于详细描述望诊、触诊、听诊、叩诊以及身体系统运动或者解剖结构的原始型，如瞳孔检查原始型CLUSTER.exam_pupils。\r\n\r\n对于现有临床系统之中临床发现的叙述型描述，可以采用名为“Description”（描述）的数据元进行采集。\r\n\r\n临床医生有时可能希望采用“慢性中耳炎”之类的概括性短语来记录对于体格检查的解释。在当前体格检查原始型的语境下，仅仅应当将其理解为“体征与慢性中耳炎相符或者说相一致”。尽管这种概括性短语可能看似用来表示某种诊断，但就安全一致的查询来说，依然需要采用问题诊断原始型EVALUATION.problem_diagnosis来记录诊断，即使是二者所采用的短语完全相同。",
+          "misuse" : "并非旨在用于记录病史采集类观察项目——此时请采用具体的观察（OBSERVATION）型和群簇（CLUSTER）型原始型。例如，纪事原始型OBSERVATION.story和症状原始型CLUSTER.symptom。\r\n\r\n并非旨在用于记录单独的临床观察项目——此时请采用具体的观察（OBSERVATION）型原始型。例如，血压原始型OBSERVATION.blood_pressure、体重原始型OBSERVATION.body_weight，或者身高原始型OBSERVATION.height。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Este arquetipo será utilizado para registrar detalles sobre los hallazgos en el examen físico del paciente",
+          "keywords" : [ "examinación", "palpación", "auscultación", "percusión", "hallazgos clínicos", "examen físico" ],
+          "use" : "Este arquetipo será utilizado para registrar detalles sobre los hallazgos en el examen físico del paciente.\r\n\r\nPuede utilizarse junto a otros arquetipos para incluir detalles de los hallazgos clínicos, para describir examinación por inspección, palpación, auscultación, percusión y movimiento de los sistemas o estructuras anatómicas. Por ejemplo se podrá utilizar el arquetipo CLUSTER.exam_pupils.\r\n\r\nLa información registrada mediante este arquetipo debe estar relacionada con la examinación física y sus hallazgos. Algunas interpretaciones de los hallazgos pueden registrarse usando este arquetipo aunque parezcan diagnósticos, pero solo si están directamente relacionadas con el hallazgo. Para registrar un diagnóstico utilizar el arquetipo EVALUATION.problem_diagnosis, aunque el texto de la interpretación del hallazgo sea igual al diagnóstico.",
+          "misuse" : "No se debe utilizar para registrar información histórica del paciente, para eso utilizar el arquetipo OBSERVATION.story\r\n\r\nNo se debe utilizar para registrar observaciones independientes y signos, para eso utilizar arquetipos específicos como OBSERVATION.blood_pressure, OBSERVATION.body_weight, OBSERVATION.height, etc.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.exam.v1",
     "differential" : true,
@@ -15897,7 +16565,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "A4554C1F4C0F21A8B931BE1DD07708D1"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en fritekstbeskrivelse og klinisk tolkning av observerte funn ved fysisk undersøkelse av et organsystem eller anatomisk struktur.",
+          "keywords" : [ ],
+          "use" : "Brukes til å registrere en fritekstbeskrivelse og klinisk tolkning av observerte funn ved fysisk undersøkelse av et spesifisert organsystem eller anatomisk struktur. Denne arketypen består kun av kjerneelementene av mønsteret for undersøkelser, og kan utvides ved hjelp av andre CLUSTER-arketyper eller brukes som grunnlag for undersøkelsesarketyper for spesifikke kroppssystemer eller anatomiske strukturer. \r\n\r\nEksempler på detaljer som kan beskrives ved hjelp av dette CLUSTER er inspeksjon, palpasjon, auskultasjon, perkusjon og bevegelser i kroppssystemer eller anatomiske strukturer. Undersøkelsen kan støttes av enkle hjelpemidler som stetoskop, otoskop eller reflekshammer. Også funn ved mer avanserte undersøkelser kan registreres her, som ved endoskopi. I de tilfellene vil informasjon om hvilket hjelpemiddel eller utstyr brukt bli registrert i OBSERVATION.exam, elementet \"Detaljer om medisinsk utstyr\", i ACTION.procedure \"Prosedyredetaljer\" eller tilsvarende i egnet ENTRY- eller ACTION-arketype.\r\n\r\nArketypen er laget spesifikt for å brukes i \"Undersøkelsesdetaljer\"-SLOTet i arketypen OBSERVATION.exam, men kan også brukes innen andre ENTRY- og CLUSTER-arketyper der det er klinisk passende.\r\n\r\nDenne arketypen kan benyttes for alle typer undersøkelser, alt fra enkle undersøkelser som undersøkelse av et hudområde, inspeksjon av ører og til artroskopi av et kne.\r\n\r\nKan for eksempel nøstes i SLOTet \"Undersøkelsesdetaljer\" i arketypen OBSERVATION.exam (Norsk Funn ved fysisk undersøkelse) for å registrere ytterligere strukturerte funn ved fysiske undersøkelser.\r\n\r\nArketypen CLUSTER.exclusion_exam kan nøstes i SLOTet \"Undersøkelse ikke utført\" der en har behov for å registrere informasjon om at en undersøkelse ikke ble utført.\r\n\r\nBrukes for å videreføre fritekstbeskrivelser av kliniske funn fra tidligere systemer inn i et arketypeformat, ved å bruke elementet \"Klinisk beskrivelse\".",
+          "misuse" : "Skal ikke brukes til å ta opp frittstående klinisk observasjoner eller testresultater - bruk spesifikke OBSERVATION arketyper, for eksempel OBSERVATION.head_circumference eller OBSERVATION.glasgow_coma_scale.\r\n\r\nSkal ikke brukes til å ta opp anamnese - bruk da spesifikke OBSERVATION og CLUSTER arketyper. For eksempel OBSERVATION.story og CLUSTER.symptom_sign.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording a narrative description and clinical interpretation of the findings observed during the physical examination of a body system or anatomical structure.",
+          "keywords" : [ ],
+          "use" : "Use to record a narrative description and clinical interpretation of the findings observed during the physical examination of a body system or anatomical structure, identified as part of this archetype. This archetype consists only of the core examination pattern data elements, and can be expanded using other CLUSTER archetypes or used as the basis for examination archetypes for specific body parts.\r\n\r\nExamples of findings which can be recorded in this CLUSTER are inspection, palpation, auscultation, percussion and movements of body structures or anatomical structures. Also findings in more advanced examinations, such as endoscopy, can be recorded. In those cases, information on which device used can be recorded in the element 'Device details' in the OBSERVATION.exam, in the element 'Procedure detail' in the ACTION.procedure, or in an equivalent element in an appropriate ENTRY or ACTION archetype.\r\n\r\nThis archetype has been specifically designed to be used in the 'Examination detail' SLOT within the OBSERVATION.exam or ACTION.procedure archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nThis archetype could be used for all examinations, ranging from simple examinations such as examination of an area of the skin, inspection of the ears, through to arthroscopy of a knee.\r\n\r\nUse to provide a framework in which CLUSTER archetypes can be nested in the 'Examination findings' SLOT to record additional structured physical examination findings.\r\n\r\nThe CLUSTER.exclusion_exam archetype can be nested within the 'Examination not done' SLOT to optionally record explicit details about the examination not being performed.\r\n\r\nUse to incorporate the narrative descriptions of clinical findings within existing or legacy clinical systems into an archetyped format, using the 'Clinical Description' data element.",
+          "misuse" : "Not to be used to record stand-alone clinical measurements or test results - use specific OBSERVATION archetypes. For example OBSERVATION.head_circumference or OBSERVATION.glasgow_coma_scale.\r\n\r\nNot to be used for recording the clinical history - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom_sign.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.exam.v1",
     "differential" : true,
@@ -16105,7 +16805,132 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "42A758CADEF3767E390EB8187F98AFF5"
       },
-      "details" : { }
+      "details" : {
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para registrar una descripcion narrativa e interpretacion clinica de los hallazgos observados durante el examen fisico completo de una persona, y proveer un marco de referencia para anidar CLUSTER de arquetipos detallados, cada uno de los cuales posibilita registrar en detalle aspectos especificos del examen fisico",
+          "keywords" : [ "examen", "fisico", "examen", "hallazgos", "clinicos" ],
+          "use" : "Utilizar para registrar una descripcion narrativa de los hallazgos observados durante el examen fisico general de una persona.\r\n\r\nUtilizar para incorporar la descripcion narrativa de hallazgos clinicos dentro de sistemas clinicos actuales o legados a un formato de arquetipos, utilizando el elemento de data \"Descripcion Clinica\". \r\n\r\nUtilizar como un arquetipo contenedor - para proveer un arquetipo ENTRY consultable en el cual, puedan ser anidados arquetipos CLUSTER especificos de examenes, incluidos aquellos que detallan la inspeccion, palpacion, asucultacion, percusion y movimiento de los sistemas o estructuras anatomicas del cuerpo",
+          "misuse" : "No debe ser utilizado para registrar observaciones de la toma de historia -utilizar arquetipos especificos de OBSERVACION y CLUSTER. Por ejemplo OBSERVACION.historia y CLUSTER.sintoma.\r\n\r\nNo debe ser utilizado para registrar observaciones clinicas autonomas - utilizar arquetipos especificos OBSERVATION. Por ejemplo OBSERVATION.presion_arterial, OBSERVATION.peso_corporal, u OBSERVATION.altura. ",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registrering av funn ved fysisk undersøkelse av en helsetjenestemottaker.",
+          "keywords" : [ "klinisk undersøkelse", "fysisk undersøkelse", "undersøkelse", "funn", "klinisk", "legeundersøkelse", "observasjon", "kroppsundersøkelse" ],
+          "use" : "Benyttes ved registrering av detaljer om fysiske funn observert ved klinisk undersøkelse av et individ. Dette kan inkludere en tekstlig beskrivelse av funn og kliniske fortolkninger av funn. Tekstlige beskrivelser av kliniske funn innhentet fra eksisterende kliniske systemer kan fanges opp ved å benytte dataelementet \"Description\". \r\n\r\nArketypen kan også benyttes som et rammeverk for innsetting av detaljer ved hjelp av CLUSTER.exam-arketyper. Eksempler på detaljer som kan beskrives ved hjelp av innsatte CLUSTER-arketyper er inspeksjon, palpasjon, auskultasjon, perkusjon og bevegelser i kroppsystemer eller anatomiske strukturer (feks CLUSTER.exam_pupils).\r\n\r\nNoen ganger vil klinikere ønske å registrere et sammendrag, f.eks. \"kronisk otitis media\", som en fortolkning av funn ved klinisk undersøkelse. I denne konteksten - arketypen 'Funn ved klinisk undersøkelse' - bør dette forståes som 'funn forenlig med kronisk otitis media', og ikke en fastsatt diagnose. Skulle sammendraget synes å representere en diagnose, vil sikker og konsistent dataspørring kreve en diagnose som registreres i EVALUATION.problem_diagnosis-arketypen, selv om sammendraget/frasen og diagnosen er identiske.",
+          "misuse" : "Skal ikke anvendes for å registrere observasjoner gjort under anamneseopptak - bruk spesifikke OBSERVATION og CLUSTER-arketyper, for eksempel OBSERVATION.story eller CLUSTER.symptom.\r\n\r\nSkal ikke anvendes for å registrere frittstående observasjoner - bruk spesifikke OBSERVATION-arketyper, for eksempel OBSERVATION.body_weight eller OBSERVATION.height.\r\n\r\nSkal ikke anvendes til å registrere satte diagnoser, til dette brukes EVALUATION.problem_diagnosis.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registro de detalhes sobre os resultados no exame físico do sujeito do cuidado.",
+          "keywords" : [ "exame", "físico", "achados", "clínico" ],
+          "use" : "Use para registrar detalhes sobre achados no exame físico do sujeito do cuidado. Pode incluir uma descrição narrativa dos achados, uma estrutura em que aninhar detalhados arquétipos do exame do CLUSTER, e uma interpretação clínica dos achados.\r\n\r\nExemplos de arquétipos detalhados de exame CLUSTER incluem aqueles que descrevem inspeção, palpação, ausculta, percussão e movimento de sistemas corporais ou estruturas anatômicas, como CLUSTER.exam_pupils.\r\n\r\nAs descrições narrativas dos achados dos sistemas clínicos existentes podem ser capturadas utilizando o elemento de dados \"Descrição\".\r\n\r\nOs médicos às vezes podem querer gravar uma frase resumida, como \"otite média crônica\", como Interpretação do exame físico. No contexto do arquétipo do exame físico, isso só deve ser entendido como \"os sinais físicos são consistentes com a otite média crônica\". Embora a expressão resumida possa parecer representar um diagnóstico, a consulta segura e consistente requer que um diagnóstico seja registrado usando o arquétipo EVALUATION.problem_diagnosis, mesmo que as frases sejam idênticas.",
+          "misuse" : "Não deve ser utilizado para gravação de anamnese observações - usar arquétipos específicos OBSERVATION e CLUSTER. Por exemplo, OBSERVATION.story e CLUSTER .symptom.\r\n\r\nNão deve ser utilizado pra gravar observações clínicas isoladas - use arquétipos específicos OBSERVATION. Por exemplo: OBSERVATION.blood_pressure, OBSERVATION.body_weight, ou OBSERVATION.height.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za beleženje znakov izmerjenih v okviru fizikalnega pregleda",
+          "keywords" : [ "pregled", "fizikalni" ],
+          "use" : "\"Container\" za gnezdenje \"cluster\"-jev, ki podrobno opisujejo posamezne elemente fizikalnega pregleda vključujoč pregled, tipanje, avskultacijo (osluškovanje) in udarjanje (skupine vključno z njihovimi specializacijami).\r\n\r\ncluster - skupina, grozd",
+          "misuse" : "*Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.\r\n\r\nNot to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.(en)",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording details about findings on physical examination of the subject of care.",
+          "keywords" : [ "examination", "physical", "exam", "findings", "clinical" ],
+          "use" : "Use to record details about findings on physical examination of the subject of care. This may include a narrative description of the findings, a framework in which to nest detailed CLUSTER examination archetypes, and a clinical interpretation of the findings.\r\n\r\nExamples of detailed CLUSTER examination archetypes include those that describe inspection, palpation, auscultation, percussion and movement of body systems or anatomical structures, such as CLUSTER.exam_pupils.\r\n\r\nNarrative descriptions of clinical findings from existing clinical systems may be captured using the 'Description' data element.\r\n\r\nClinicians may sometimes want to record a summative phrase such as 'chronic otitis media' as an Interpretation of the physical examination. In the context of the physical examination archetype this should only be understood as 'physical signs are consistent with chronic otitis media'. While the summative phrase may appear to represent a diagnosis, safe and consistent querying requires a diagnosis to be recorded using the EVALUATION.problem_diagnosis archetype, even if the phrases are identical.",
+          "misuse" : "Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.\r\n\r\nNot to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الموجودات التي تم العثور عليها عند الفحص البدني",
+          "keywords" : [ "الفحص", "البدني" ],
+          "use" : "تم تصميم النموذج ليحتوي على عناقيد مفصلة متعلقة بالفحص بما في ذلك الاكتشاف, الجس, التسمع و القرع بما في هذه العناقيد من تخصيصات.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "用于记录关于对于特定主体对象体格检查发现的详情。",
+          "keywords" : [ "临床", "体格检查", "检查", "发现", "所见", "查体" ],
+          "use" : "用于记录关于对于特定主体对象体格检查发现的详情。其中，可包括关于这些发现的叙述型描述、一种用于嵌套若干详细的群簇（CLUSTER）型原始型的框架以及关于这些发现的临床解释。\r\n\r\n关于群簇（CLUSTER）型检查原始型的例子包括那些用于详细描述望诊、触诊、听诊、叩诊以及身体系统运动或者解剖结构的原始型，如瞳孔检查原始型CLUSTER.exam_pupils。\r\n\r\n对于现有临床系统之中临床发现的叙述型描述，可以采用名为“Description”（描述）的数据元进行采集。\r\n\r\n临床医生有时可能希望采用“慢性中耳炎”之类的概括性短语来记录对于体格检查的解释。在当前体格检查原始型的语境下，仅仅应当将其理解为“体征与慢性中耳炎相符或者说相一致”。尽管这种概括性短语可能看似用来表示某种诊断，但就安全一致的查询来说，依然需要采用问题诊断原始型EVALUATION.problem_diagnosis来记录诊断，即使是二者所采用的短语完全相同。",
+          "misuse" : "并非旨在用于记录病史采集类观察项目——此时请采用具体的观察（OBSERVATION）型和群簇（CLUSTER）型原始型。例如，纪事原始型OBSERVATION.story和症状原始型CLUSTER.symptom。\r\n\r\n并非旨在用于记录单独的临床观察项目——此时请采用具体的观察（OBSERVATION）型原始型。例如，血压原始型OBSERVATION.blood_pressure、体重原始型OBSERVATION.body_weight，或者身高原始型OBSERVATION.height。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Este arquetipo será utilizado para registrar detalles sobre los hallazgos en el examen físico del paciente",
+          "keywords" : [ "examinación", "palpación", "auscultación", "percusión", "hallazgos clínicos", "examen físico" ],
+          "use" : "Este arquetipo será utilizado para registrar detalles sobre los hallazgos en el examen físico del paciente.\r\n\r\nPuede utilizarse junto a otros arquetipos para incluir detalles de los hallazgos clínicos, para describir examinación por inspección, palpación, auscultación, percusión y movimiento de los sistemas o estructuras anatómicas. Por ejemplo se podrá utilizar el arquetipo CLUSTER.exam_pupils.\r\n\r\nLa información registrada mediante este arquetipo debe estar relacionada con la examinación física y sus hallazgos. Algunas interpretaciones de los hallazgos pueden registrarse usando este arquetipo aunque parezcan diagnósticos, pero solo si están directamente relacionadas con el hallazgo. Para registrar un diagnóstico utilizar el arquetipo EVALUATION.problem_diagnosis, aunque el texto de la interpretación del hallazgo sea igual al diagnóstico.",
+          "misuse" : "No se debe utilizar para registrar información histórica del paciente, para eso utilizar el arquetipo OBSERVATION.story\r\n\r\nNo se debe utilizar para registrar observaciones independientes y signos, para eso utilizar arquetipos específicos como OBSERVATION.blood_pressure, OBSERVATION.body_weight, OBSERVATION.height, etc.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.exam.v1",
     "differential" : true,
@@ -16422,7 +17247,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "A4554C1F4C0F21A8B931BE1DD07708D1"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en fritekstbeskrivelse og klinisk tolkning av observerte funn ved fysisk undersøkelse av et organsystem eller anatomisk struktur.",
+          "keywords" : [ ],
+          "use" : "Brukes til å registrere en fritekstbeskrivelse og klinisk tolkning av observerte funn ved fysisk undersøkelse av et spesifisert organsystem eller anatomisk struktur. Denne arketypen består kun av kjerneelementene av mønsteret for undersøkelser, og kan utvides ved hjelp av andre CLUSTER-arketyper eller brukes som grunnlag for undersøkelsesarketyper for spesifikke kroppssystemer eller anatomiske strukturer. \r\n\r\nEksempler på detaljer som kan beskrives ved hjelp av dette CLUSTER er inspeksjon, palpasjon, auskultasjon, perkusjon og bevegelser i kroppssystemer eller anatomiske strukturer. Undersøkelsen kan støttes av enkle hjelpemidler som stetoskop, otoskop eller reflekshammer. Også funn ved mer avanserte undersøkelser kan registreres her, som ved endoskopi. I de tilfellene vil informasjon om hvilket hjelpemiddel eller utstyr brukt bli registrert i OBSERVATION.exam, elementet \"Detaljer om medisinsk utstyr\", i ACTION.procedure \"Prosedyredetaljer\" eller tilsvarende i egnet ENTRY- eller ACTION-arketype.\r\n\r\nArketypen er laget spesifikt for å brukes i \"Undersøkelsesdetaljer\"-SLOTet i arketypen OBSERVATION.exam, men kan også brukes innen andre ENTRY- og CLUSTER-arketyper der det er klinisk passende.\r\n\r\nDenne arketypen kan benyttes for alle typer undersøkelser, alt fra enkle undersøkelser som undersøkelse av et hudområde, inspeksjon av ører og til artroskopi av et kne.\r\n\r\nKan for eksempel nøstes i SLOTet \"Undersøkelsesdetaljer\" i arketypen OBSERVATION.exam (Norsk Funn ved fysisk undersøkelse) for å registrere ytterligere strukturerte funn ved fysiske undersøkelser.\r\n\r\nArketypen CLUSTER.exclusion_exam kan nøstes i SLOTet \"Undersøkelse ikke utført\" der en har behov for å registrere informasjon om at en undersøkelse ikke ble utført.\r\n\r\nBrukes for å videreføre fritekstbeskrivelser av kliniske funn fra tidligere systemer inn i et arketypeformat, ved å bruke elementet \"Klinisk beskrivelse\".",
+          "misuse" : "Skal ikke brukes til å ta opp frittstående klinisk observasjoner eller testresultater - bruk spesifikke OBSERVATION arketyper, for eksempel OBSERVATION.head_circumference eller OBSERVATION.glasgow_coma_scale.\r\n\r\nSkal ikke brukes til å ta opp anamnese - bruk da spesifikke OBSERVATION og CLUSTER arketyper. For eksempel OBSERVATION.story og CLUSTER.symptom_sign.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording a narrative description and clinical interpretation of the findings observed during the physical examination of a body system or anatomical structure.",
+          "keywords" : [ ],
+          "use" : "Use to record a narrative description and clinical interpretation of the findings observed during the physical examination of a body system or anatomical structure, identified as part of this archetype. This archetype consists only of the core examination pattern data elements, and can be expanded using other CLUSTER archetypes or used as the basis for examination archetypes for specific body parts.\r\n\r\nExamples of findings which can be recorded in this CLUSTER are inspection, palpation, auscultation, percussion and movements of body structures or anatomical structures. Also findings in more advanced examinations, such as endoscopy, can be recorded. In those cases, information on which device used can be recorded in the element 'Device details' in the OBSERVATION.exam, in the element 'Procedure detail' in the ACTION.procedure, or in an equivalent element in an appropriate ENTRY or ACTION archetype.\r\n\r\nThis archetype has been specifically designed to be used in the 'Examination detail' SLOT within the OBSERVATION.exam or ACTION.procedure archetype, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.\r\n\r\nThis archetype could be used for all examinations, ranging from simple examinations such as examination of an area of the skin, inspection of the ears, through to arthroscopy of a knee.\r\n\r\nUse to provide a framework in which CLUSTER archetypes can be nested in the 'Examination findings' SLOT to record additional structured physical examination findings.\r\n\r\nThe CLUSTER.exclusion_exam archetype can be nested within the 'Examination not done' SLOT to optionally record explicit details about the examination not being performed.\r\n\r\nUse to incorporate the narrative descriptions of clinical findings within existing or legacy clinical systems into an archetyped format, using the 'Clinical Description' data element.",
+          "misuse" : "Not to be used to record stand-alone clinical measurements or test results - use specific OBSERVATION archetypes. For example OBSERVATION.head_circumference or OBSERVATION.glasgow_coma_scale.\r\n\r\nNot to be used for recording the clinical history - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom_sign.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.exam.v1",
     "differential" : true,
