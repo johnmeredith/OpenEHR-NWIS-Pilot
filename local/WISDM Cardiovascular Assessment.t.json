@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "188872cc8e27a30c620fbf6d855cb34a",
+      "MD5-CAM-1.0.1" : "4a8b9a41bdf19511e8a4d6ae3a608a79",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -15253,18 +15253,6 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "defaultValue" : {
-                "defining_code" : {
-                  "terminology_id" : {
-                    "value" : "SNOMED-CT",
-                    "@type" : "TERMINOLOGY_ID"
-                  },
-                  "code_string" : "301126002",
-                  "@type" : "CODE_PHRASE"
-                },
-                "value" : "Observation of heart sounds",
-                "@type" : "DV_CODED_TEXT"
-              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -15274,8 +15262,17 @@
                   "terminologyId" : {
                     "value" : "SNOMED-CT"
                   },
-                  "constraint" : [ "ac0.2" ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "123824001",
+                    "value" : "Heart sounds abnormal"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "301132007",
+                    "value" : "Heart sounds normal"
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -16535,8 +16532,13 @@
                   "terminologyId" : {
                     "value" : "SNOMED-CT"
                   },
-                  "constraint" : [ "ac0.2" ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "301131000",
+                    "value" : "Heart murmur absent"
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
