@@ -11,7 +11,7 @@
     },
     "otherContributors" : [ "Heather Wallace" ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "in_development"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "af1256009fbc84949bc0e4a0a2ea3bc4",
+      "MD5-CAM-1.0.1" : "69e3c5a543b4ab5c6748690df5e131de",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -94,8 +94,10 @@
           },
           "codeString" : "en"
         },
-        "purpose" : "To record a cardiovascular assessment and observations as part of diabetes management.",
-        "keywords" : [ "cardiology, cardiovascular, assessment, observation" ],
+        "purpose" : "To record a cardiovascular assessment and observations as part of diabetes management of a patient. Comprises part of the diabetes outpatient assessment.",
+        "keywords" : [ "diabetes, WISDM, NHS Wales, cardiology, cardiovascular, assessment, observation" ],
+        "use" : "To be used in a secondary care setting as part of the NHS Wales Diabetes Solution (WISDM). May be adapted for use in other clinical specialities.\n",
+        "misuse" : "",
         "copyright" : "Welsh Diabetes Solution for Diabetes Management (WISDM)",
         "originalResourceUri" : { },
         "otherDetails" : { }
@@ -284,7 +286,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "35f77377-7cdf-3e59-9831-b5cc4031df70",
+  "buildUid" : "d601e7c2-1f52-3fda-aa6d-28e8eacc92c7",
   "rmName" : "openehr",
   "rmRelease" : "1.0.3",
   "generated" : true,
