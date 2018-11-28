@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "2b9afb94217a6c30d37590be9cca6765",
+      "MD5-CAM-1.0.1" : "188872cc8e27a30c620fbf6d855cb34a",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -13977,16 +13977,40 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0006.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
+              "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "301137001",
+                    "value" : "Normal character apex beat"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "301136005",
+                    "value" : "Feeble apex beat"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "301135009",
+                    "value" : "Thrusting apex beat"
+                  } ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -14717,18 +14741,6 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "defaultValue" : {
-                "defining_code" : {
-                  "terminology_id" : {
-                    "value" : "SNOMED-CT",
-                    "@type" : "TERMINOLOGY_ID"
-                  },
-                  "code_string" : "271656000",
-                  "@type" : "CODE_PHRASE"
-                },
-                "value" : "Observation of cardiac thrill",
-                "@type" : "DV_CODED_TEXT"
-              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -14736,7 +14748,7 @@
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "terminologyId" : {
-                    "value" : "SNOMED-C"
+                    "value" : "SNOMED-CT"
                   },
                   "constraint" : [ "ac0.2" ],
                   "selectedTerminologies" : [ "SNOMED-CT" ]
