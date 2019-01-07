@@ -30,7 +30,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["references"] = <"Understanding your FibroScan® Results. (n.d.). Retrieved January 7, 2019, from https://www.mskcc.org/cancer-care/patient-education/understanding-your-fibroscan-results">
-		["MD5-CAM-1.0.1"] = <"63e641281481c651f8d9b251ec6ee556">
+		["MD5-CAM-1.0.1"] = <"fd987be783522f3934542e94e1abb6ff">
 		["build_uid"] = <"dc14c782-2050-31c3-af0d-72f3c681c939">
 	>
 
@@ -73,11 +73,12 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Fibroscan result">
-					description = <"*">
+					description = <"The basic Fibroscan measure of hepatic elasticity.">
 				>
 				["at0003"] = <
 					text = <"Fibroscan score">
-					description = <"*">
+					description = <"A score derived from the basic Fibroscan result.
+">
 				>
 				["at0005"] = <
 					text = <"Fibrosis score F0: No liver scarring">
