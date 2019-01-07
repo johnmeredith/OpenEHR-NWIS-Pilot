@@ -1,0 +1,43 @@
+archetype (adl_version=1.4; uid=35efee1d-70ac-4cb8-a1e9-8ccc6b6b8829)
+	openEHR-EHR-CLUSTER.hep_c_liver_biopsy_staging_nwis.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2019-01-07">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"0d9d7b29c7705d38a57ecdf3dcd11275">
+		["build_uid"] = <"eb90d82c-6ac2-35b7-acbd-d8fbb1dff637">
+	>
+
+definition
+	CLUSTER[at0000] matches {*}    -- Hepatitis C liver biopsy staging
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Hepatitis C liver biopsy staging">
+					description = <"hep_c_liver_biopsy_nwis">
+				>
+			>
+		>
+	>
