@@ -32,7 +32,7 @@ description
 		["references"] = <"Ishak K, et al. Histological grading and staging of chronic hepatitis. J Hepatol 1995;22:696-699.
 Knodell RG, et al. Formulation and application of a numerical scoring system for assessing histological activity in asymptomatic chronic active hepatitis. Hepatology 1981;1(5):431-5
 mHAI score, TPIS, Univ. Pittsburgh, Avaialble from: https://tpis.upmc.com/tpislibrary/schema/mHAI.html">
-		["MD5-CAM-1.0.1"] = <"b66962d86969be671a5b117562123b2e">
+		["MD5-CAM-1.0.1"] = <"5bd39d75b1bf568e06005e5e40dae1ad">
 		["build_uid"] = <"4749ecb1-fb47-3e8d-919f-1d71116b4b9e">
 	>
 
@@ -45,7 +45,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- ItemTree
 								items cardinality matches {0..*; unordered} matches {
-									CLUSTER[at0013] occurrences matches {0..1} matches {    -- Grading
+									CLUSTER[at0013] occurrences matches {0..1} matches {    -- Modified HAI Grading
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Piecemeal necrosis (A)
 												value matches {
@@ -56,9 +56,32 @@ definition
 													4|[local::at0019]
 												}
 											}
-											ELEMENT[at0020] occurrences matches {0..1} matches {    -- Confluent Necrosis (B)
+											ELEMENT[at0020] occurrences matches {0..1} matches {    -- Confluent necrosis (B)
 												value matches {
-													DV_ORDINAL matches {*}
+													0|[local::at0021],
+													1|[local::at0022],
+													2|[local::at0023],
+													3|[local::at0024],
+													4|[local::at0025],
+													5|[local::at0026]
+												}
+											}
+											ELEMENT[at0027] occurrences matches {0..1} matches {    -- Focal (spotty) Lytic Necrosis, Apoptosis, and Focal Inflammation (C)
+												value matches {
+													0|[local::at0028],
+													1|[local::at0029],
+													2|[local::at0030],
+													3|[local::at0031],
+													4|[local::at0032]
+												}
+											}
+											ELEMENT[at0033] occurrences matches {0..1} matches {    -- Portal Inflammation (D)
+												value matches {
+													0|[local::at0034],
+													1|[local::at0035],
+													2|[local::at0036],
+													3|[local::at0037],
+													4|[local::at0038]
 												}
 											}
 										}
@@ -77,12 +100,30 @@ definition
 								}
 							}
 						}
+						state matches {
+							ITEM_TREE[at0039] matches {    -- ItemTree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0040] occurrences matches {0..1} matches {    -- Confounding factors
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}
 		}
 		protocol matches {
-			ITEM_TREE[at0014] matches {*}    -- ItemTree
+			ITEM_TREE[at0014] matches {    -- ItemTree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0041] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
 		}
 	}
 
@@ -143,8 +184,8 @@ ontology
 					description = <"Periportal or Periseptal Interface Hepatitis (piecemeal necrosis) (A).">
 				>
 				["at0013"] = <
-					text = <"Grading">
-					description = <"*">
+					text = <"Modified HAI Grading">
+					description = <"Modified HAI Grading: Necroinflammatory Scores.">
 				>
 				["at0014"] = <
 					text = <"ItemTree">
@@ -171,8 +212,93 @@ ontology
 					text = <"Severe">
 				>
 				["at0020"] = <
-					text = <"Confluent Necrosis (B)">
+					text = <"Confluent necrosis (B)">
+					description = <"Confluent necrosis (B).">
+				>
+				["at0021"] = <
+					text = <"Absent">
 					description = <"*">
+				>
+				["at0022"] = <
+					text = <"Focal confluent necrosis">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"Zone 3 necrosis in some areas">
+					description = <"*">
+				>
+				["at0024"] = <
+					text = <"Zone 3 necrosis in most areas">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"Zone 3 necrosis + occasional portal-central (P-C) bridging">
+					description = <"*">
+				>
+				["at0026"] = <
+					text = <"Zone 3 necrosis + multiple P-C bridging">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"Focal (spotty) Lytic Necrosis, Apoptosis, and Focal Inflammation (C)">
+					description = <"Focal (spotty) Lytic Necrosis, Apoptosis, and Focal Inflammation (C).">
+				>
+				["at0028"] = <
+					text = <"Absent">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"One focus or less per 10x objective">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Two to four foci per 10x objective">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Five to ten foci per 10x objective">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"More than ten foci per 10x objective">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Portal Inflammation (D)">
+					description = <"Portal Inflammation (D).">
+				>
+				["at0034"] = <
+					text = <"None">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"Mild, some or all portal areas">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"Moderate, some or all portal areas">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"Moderate/marked, all portal areas">
+					description = <"*">
+				>
+				["at0038"] = <
+					text = <"Marked, all portal areas">
+					description = <"*">
+				>
+				["at0039"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0040"] = <
+					text = <"Confounding factors">
+					description = <"*">
+				>
+				["at0041"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents">
 				>
 			>
 		>
