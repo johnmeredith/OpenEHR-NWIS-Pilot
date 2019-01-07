@@ -15,6 +15,7 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			use = <"To record an assessment of liver fibrosis/cirrhosis in chronic active hepatitis according to the Ishak modified HAI ((Histologic Activity Index) score.">
 		>
 	>
 	other_details = <
@@ -23,6 +24,9 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
+		["references"] = <"Ishak K, et al. Histological grading and staging of chronic hepatitis. J Hepatol 1995;22:696-699.
+Knodell RG, et al. Formulation and application of a numerical scoring system for assessing histological activity in asymptomatic chronic active hepatitis. Hepatology 1981;1(5):431-5
+mHAI score, TPIS, Univ. Pittsburgh, Avaialble from: https://tpis.upmc.com/tpislibrary/schema/mHAI.html">
 		["MD5-CAM-1.0.1"] = <"bbf876bfd2c5dbbe623a791216e1899e">
 		["build_uid"] = <"4749ecb1-fb47-3e8d-919f-1d71116b4b9e">
 	>
