@@ -1,1 +1,2 @@
-# Mirro of Apperta UK Clinical Knowledge Mirror
+# Mirror of Apperta UK Clinical Knowledge 
+This CKM repository is used as part of the NHS Wales Informatics Service OpenEHR Pilot for the devleopment of archetypes and templates. 
