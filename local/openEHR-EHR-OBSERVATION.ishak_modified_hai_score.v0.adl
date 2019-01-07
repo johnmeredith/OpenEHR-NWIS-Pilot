@@ -10,12 +10,17 @@ language
 description
 	original_author = <
 		["date"] = <"2019-01-07">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Ltd. UK">
+		["email"] = <"ian@freshehr.com">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			use = <"To record an assessment of liver fibrosis/cirrhosis in chronic active hepatitis according to the Ishak modified HAI ((Histologic Activity Index) score.">
+			purpose = <"To record an assessment of liver fibrosis/cirrhosis in chronic active hepatitis according to the Ishak modified HAI ((Histologic Activity Index) score.">
+			keywords = <"liver, hepatitis, fibrosis, cirrhosis, chronic, biopsy", ...>
+			use = <"Use to record an assessment of liver fibrosis/cirrhosis in chronic active hepatitis according to the Ishak modified HAI ((Histologic Activity Index) score.">
 		>
 	>
 	other_details = <
@@ -27,7 +32,7 @@ description
 		["references"] = <"Ishak K, et al. Histological grading and staging of chronic hepatitis. J Hepatol 1995;22:696-699.
 Knodell RG, et al. Formulation and application of a numerical scoring system for assessing histological activity in asymptomatic chronic active hepatitis. Hepatology 1981;1(5):431-5
 mHAI score, TPIS, Univ. Pittsburgh, Avaialble from: https://tpis.upmc.com/tpislibrary/schema/mHAI.html">
-		["MD5-CAM-1.0.1"] = <"bbf876bfd2c5dbbe623a791216e1899e">
+		["MD5-CAM-1.0.1"] = <"b66962d86969be671a5b117562123b2e">
 		["build_uid"] = <"4749ecb1-fb47-3e8d-919f-1d71116b4b9e">
 	>
 
@@ -87,7 +92,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Ishak Modified HAI Score">
-					description = <"ishak_modified_hai_score">
+					description = <"An assessment of liver fibrosis/cirrhosis in chronic active hepatitis according to the Ishak modified HAI ((Histologic Activity Index) score.">
 				>
 				["at0001"] = <
 					text = <"History">
