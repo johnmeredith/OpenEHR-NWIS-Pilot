@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"676cee385541f158409777c7f82f4b13">
+		["MD5-CAM-1.0.1"] = <"196f161898612f787c88067d859e6813">
 		["build_uid"] = <"dc14c782-2050-31c3-af0d-72f3c681c939">
 	>
 
@@ -76,6 +76,10 @@ ontology
 					text = <"Fibrosis score F0: No liver scarring">
 					description = <"*">
 				>
+				["at0009"] = <
+					text = <"Fibrosis score F1: mild liver scarring">
+					description = <"*">
+				>
 				["at0006"] = <
 					text = <"Fibrosis score F2: Moderate liver scarring">
 					description = <"*">
@@ -86,10 +90,6 @@ ontology
 				>
 				["at0008"] = <
 					text = <"Fibrosis score F4: Advanced liver scarring (cirrhosis)">
-					description = <"*">
-				>
-				["at0009"] = <
-					text = <"Fibrosis score F1: mild liver scarring">
 					description = <"*">
 				>
 			>
