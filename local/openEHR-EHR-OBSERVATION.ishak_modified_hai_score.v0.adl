@@ -32,7 +32,7 @@ description
 		["references"] = <"Ishak K, et al. Histological grading and staging of chronic hepatitis. J Hepatol 1995;22:696-699.
 Knodell RG, et al. Formulation and application of a numerical scoring system for assessing histological activity in asymptomatic chronic active hepatitis. Hepatology 1981;1(5):431-5
 mHAI score, TPIS, Univ. Pittsburgh, Avaialble from: https://tpis.upmc.com/tpislibrary/schema/mHAI.html">
-		["MD5-CAM-1.0.1"] = <"d791208cba60f9c2830468c160363bd9">
+		["MD5-CAM-1.0.1"] = <"8ba906958d2485a240d780b9a4d2455a">
 		["build_uid"] = <"4749ecb1-fb47-3e8d-919f-1d71116b4b9e">
 	>
 
@@ -102,6 +102,11 @@ definition
 											4|[local::at0009],
 											5|[local::at0010],
 											6|[local::at0011]
+										}
+									}
+									ELEMENT[at0043] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
 										}
 									}
 								}
@@ -311,6 +316,11 @@ ontology
 					text = <"Modified HAI Score">
 					description = <"The total score of the individual HAI components A-D.">
 					comment = <"For example: 16.">
+				>
+				["at0043"] = <
+					text = <"Comment">
+					description = <"Other narrative comment related to the assessment.
+">
 				>
 			>
 		>
