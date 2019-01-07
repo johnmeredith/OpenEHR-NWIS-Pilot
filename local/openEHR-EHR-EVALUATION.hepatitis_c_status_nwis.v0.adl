@@ -1,0 +1,146 @@
+archetype (adl_version=1.4; uid=c8204159-701c-45fc-a2b6-ccb8b5dc0f5a)
+	openEHR-EHR-EVALUATION.hepatitis_c_status_nwis.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2019-01-07">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d5efb595e4ead2b514aa0a1f00dfb6f1">
+		["build_uid"] = <"b4754b1c-cd28-3f35-b4ce-552f4dd620b3">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Hepatitis C Status
+		data matches {
+			ITEM_TREE[at0002] matches {    -- ItemTree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Active status
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0004,    -- Active
+									at0005,    -- On Treatment
+									at0006,    -- Immediate Post-treatment Follow up
+									at0007,    -- Spontaneous Clearance
+									at0008]    -- SVR following treatment
+								}
+							}
+						}
+					}
+					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Treatment offered?
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Reason treatment not offered
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0011,    -- Further workup required
+									at0012,    -- Patient declined
+									at0013,    -- No suitable treatment
+									at0014,    -- No suitable treatment available on NHS
+									at0015]    -- Clinician feels patient not ready
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0001] matches {*}    -- ItemTree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Hepatitis C Status">
+					description = <"Hepatitis C status local to NWIS app.">
+				>
+				["at0001"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Active status">
+					description = <"The current active status of the condition.">
+				>
+				["at0004"] = <
+					text = <"Active">
+					description = <"Active">
+				>
+				["at0005"] = <
+					text = <"On Treatment">
+					description = <"On Treatment">
+				>
+				["at0006"] = <
+					text = <"Immediate Post-treatment Follow up">
+					description = <"Immediate Post-treatment Follow up (up to 12 weeks Post Follow-up)">
+				>
+				["at0007"] = <
+					text = <"Spontaneous Clearance">
+					description = <"Spontaneous Clearance">
+				>
+				["at0008"] = <
+					text = <"SVR following treatment">
+					description = <"SVR (Sustained virologic response) following treatment">
+				>
+				["at0009"] = <
+					text = <"Treatment offered?">
+					description = <"If active, was treatment offered?">
+				>
+				["at0010"] = <
+					text = <"Reason treatment not offered">
+					description = <"If treatment was not offered, why not?">
+				>
+				["at0011"] = <
+					text = <"Further workup required">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Patient declined">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"No suitable treatment">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"No suitable treatment available on NHS">
+					description = <"No suitable treatment available on NHS (cost).">
+				>
+				["at0015"] = <
+					text = <"Clinician feels patient not ready">
+					description = <"*">
+				>
+			>
+		>
+	>
