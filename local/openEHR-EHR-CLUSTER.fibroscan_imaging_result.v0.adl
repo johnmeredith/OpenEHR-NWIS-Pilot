@@ -10,11 +10,17 @@ language
 description
 	original_author = <
 		["date"] = <"2019-01-07">
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Ltd.">
+		["email"] = <"ian@freshehr.com">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"To record Fibroscan imaging result details.">
+			keywords = <"liver, fibrosis, cirrhosis, elasticity", ...>
+			use = <"Normally used within the Imaging details slot of an OBSERVATION.imaging_result archetype">
 		>
 	>
 	other_details = <
@@ -23,7 +29,8 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cb977525cd5ed2882fa985f8d5499d73">
+		["references"] = <"Understanding your FibroScan® Results. (n.d.). Retrieved January 7, 2019, from https://www.mskcc.org/cancer-care/patient-education/understanding-your-fibroscan-results">
+		["MD5-CAM-1.0.1"] = <"63e641281481c651f8d9b251ec6ee556">
 		["build_uid"] = <"dc14c782-2050-31c3-af0d-72f3c681c939">
 	>
 
@@ -47,10 +54,10 @@ definition
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Fibroscan score
 				value matches {
 					0|[local::at0005],
-					2|[local::at0006],
-					3|[local::at0007],
-					4|[local::at0008],
-					1|[local::at0009]
+					1|[local::at0006],
+					2|[local::at0007],
+					3|[local::at0008],
+					4|[local::at0009]
 				}
 			}
 		}
@@ -62,7 +69,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Fibroscan imaging result">
-					description = <"fibroscan_imaging_result">
+					description = <"Fibroscan imaging result details.">
 				>
 				["at0001"] = <
 					text = <"Fibroscan result">
