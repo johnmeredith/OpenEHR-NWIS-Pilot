@@ -32,7 +32,7 @@ description
 		["references"] = <"Ishak K, et al. Histological grading and staging of chronic hepatitis. J Hepatol 1995;22:696-699.
 Knodell RG, et al. Formulation and application of a numerical scoring system for assessing histological activity in asymptomatic chronic active hepatitis. Hepatology 1981;1(5):431-5
 mHAI score, TPIS, Univ. Pittsburgh, Avaialble from: https://tpis.upmc.com/tpislibrary/schema/mHAI.html">
-		["MD5-CAM-1.0.1"] = <"5bd39d75b1bf568e06005e5e40dae1ad">
+		["MD5-CAM-1.0.1"] = <"de552819a69bbf44416a2c9233709eb3">
 		["build_uid"] = <"4749ecb1-fb47-3e8d-919f-1d71116b4b9e">
 	>
 
@@ -45,7 +45,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- ItemTree
 								items cardinality matches {0..*; unordered} matches {
-									CLUSTER[at0013] occurrences matches {0..1} matches {    -- Modified HAI Grading
+									CLUSTER[at0013] occurrences matches {0..1} matches {    -- Modified HAI grading
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Piecemeal necrosis (A)
 												value matches {
@@ -95,6 +95,13 @@ definition
 											4|[local::at0009],
 											5|[local::at0010],
 											6|[local::at0011]
+										}
+									}
+									ELEMENT[at0042] occurrences matches {0..1} matches {    -- Modified HAI Score
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..18|}
+											}
 										}
 									}
 								}
@@ -149,7 +156,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Fibrosis staging">
-					description = <"*">
+					description = <"Fibrosis staging.">
 				>
 				["at0005"] = <
 					text = <"No fibrosis">
@@ -184,7 +191,7 @@ ontology
 					description = <"Periportal or Periseptal Interface Hepatitis (piecemeal necrosis) (A).">
 				>
 				["at0013"] = <
-					text = <"Modified HAI Grading">
+					text = <"Modified HAI grading">
 					description = <"Modified HAI Grading: Necroinflammatory Scores.">
 				>
 				["at0014"] = <
@@ -293,12 +300,17 @@ ontology
 				>
 				["at0040"] = <
 					text = <"Confounding factors">
-					description = <"*">
+					description = <"Record any issues or factors that may impact on the assessment and the score.">
 				>
 				["at0041"] = <
 					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents">
+				>
+				["at0042"] = <
+					text = <"Modified HAI Score">
+					description = <"The total score of the individual HAI components A-D.">
+					comment = <"For example: 16.">
 				>
 			>
 		>
