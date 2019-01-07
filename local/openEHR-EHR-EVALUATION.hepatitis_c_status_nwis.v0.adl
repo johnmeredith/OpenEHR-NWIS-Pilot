@@ -19,11 +19,11 @@ description
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3841894448bc4f84b7774f436354d7b0">
+		["custodian_organisation"] = <"Apperta Foundation">
+		["original_namespace"] = <"org.nwis">
+		["original_publisher"] = <"NWIS">
+		["custodian_namespace"] = <"org.uk.apperta">
+		["MD5-CAM-1.0.1"] = <"7d6910971cf2c396102d1e6bbb74a891">
 		["build_uid"] = <"b4754b1c-cd28-3f35-b4ce-552f4dd620b3">
 	>
 
@@ -75,7 +75,14 @@ definition
 			}
 		}
 		protocol matches {
-			ITEM_TREE[at0001] matches {*}    -- ItemTree
+			ITEM_TREE[at0001] matches {    -- ItemTree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0022] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
 		}
 	}
 
@@ -170,6 +177,11 @@ ontology
 				["at0021"] = <
 					text = <"Treatment deferred for other reason">
 					description = <"*">
+				>
+				["at0022"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local context or to align with other reference models/formalisms.">
+					comment = <"e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.">
 				>
 			>
 		>
