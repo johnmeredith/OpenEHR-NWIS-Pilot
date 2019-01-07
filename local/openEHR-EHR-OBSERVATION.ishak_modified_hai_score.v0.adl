@@ -32,7 +32,7 @@ description
 		["references"] = <"Ishak K, et al. Histological grading and staging of chronic hepatitis. J Hepatol 1995;22:696-699.
 Knodell RG, et al. Formulation and application of a numerical scoring system for assessing histological activity in asymptomatic chronic active hepatitis. Hepatology 1981;1(5):431-5
 mHAI score, TPIS, Univ. Pittsburgh, Avaialble from: https://tpis.upmc.com/tpislibrary/schema/mHAI.html">
-		["MD5-CAM-1.0.1"] = <"a71d92d0dc0e8d009df0ac490c56c79b">
+		["MD5-CAM-1.0.1"] = <"d791208cba60f9c2830468c160363bd9">
 		["build_uid"] = <"4749ecb1-fb47-3e8d-919f-1d71116b4b9e">
 	>
 
@@ -160,27 +160,27 @@ ontology
 				>
 				["at0005"] = <
 					text = <"No fibrosis">
-					description = <"0">
+					description = <"*">
 				>
 				["at0006"] = <
 					text = <"Fibrous expansion of some portal areas, with or without short fibrous septa">
-					description = <"1">
+					description = <"*">
 				>
 				["at0007"] = <
 					text = <"Fibrous expansion of most portal areas, with or without short fibrous septa">
-					description = <"2">
+					description = <"*">
 				>
 				["at0008"] = <
 					text = <"Fibrous expansion of most portal areas with occasional portal to portal (P-P) bridging">
-					description = <"3">
+					description = <"*">
 				>
 				["at0009"] = <
 					text = <"Fibrous expansion of portal areas with marked bridging [portal to portal (P-P) as well as portal to central (P-C)]">
-					description = <"4">
+					description = <"*">
 				>
 				["at0010"] = <
 					text = <"Marked bridging (P-P and/or P-C) with occasional nodules (incomplete cirrhosis)">
-					description = <"5">
+					description = <"*">
 				>
 				["at0011"] = <
 					text = <"Cirrhosis, probable or definite">
