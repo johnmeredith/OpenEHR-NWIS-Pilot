@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a0ff869091b6009df4774d38ce74bb4f">
+		["MD5-CAM-1.0.1"] = <"3841894448bc4f84b7774f436354d7b0">
 		["build_uid"] = <"b4754b1c-cd28-3f35-b4ce-552f4dd620b3">
 	>
 
@@ -51,7 +51,7 @@ definition
 							DV_BOOLEAN matches {*}
 						}
 					}
-					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Reason treatment not offered
+					ELEMENT[at0010] occurrences matches {0..*} matches {    -- Reason treatment not offered
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
