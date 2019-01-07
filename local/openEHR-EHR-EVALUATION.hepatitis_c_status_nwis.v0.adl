@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d5efb595e4ead2b514aa0a1f00dfb6f1">
+		["MD5-CAM-1.0.1"] = <"a0ff869091b6009df4774d38ce74bb4f">
 		["build_uid"] = <"b4754b1c-cd28-3f35-b4ce-552f4dd620b3">
 	>
 
@@ -59,8 +59,14 @@ definition
 									at0011,    -- Further workup required
 									at0012,    -- Patient declined
 									at0013,    -- No suitable treatment
-									at0014,    -- No suitable treatment available on NHS
-									at0015]    -- Clinician feels patient not ready
+									at0014,    -- No suitable treatment available on NHS (cost)
+									at0015,    -- Clinician feels patient not ready
+									at0016,    -- Concerns re compliance
+									at0017,    -- Concerns re reinfection
+									at0018,    -- Contraindication to treatment
+									at0019,    -- Treatment planned in next 3 months
+									at0020,    -- Treatment deemed unnecessary
+									at0021]    -- Treatment deferred for other reason
 								}
 							}
 						}
@@ -134,11 +140,35 @@ ontology
 					description = <"*">
 				>
 				["at0014"] = <
-					text = <"No suitable treatment available on NHS">
-					description = <"No suitable treatment available on NHS (cost).">
+					text = <"No suitable treatment available on NHS (cost)">
+					description = <"*">
 				>
 				["at0015"] = <
 					text = <"Clinician feels patient not ready">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Concerns re compliance">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"Concerns re reinfection">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"Contraindication to treatment">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"Treatment planned in next 3 months">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"Treatment deemed unnecessary">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"Treatment deferred for other reason">
 					description = <"*">
 				>
 			>
