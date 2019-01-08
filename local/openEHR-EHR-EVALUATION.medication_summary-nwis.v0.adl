@@ -70,7 +70,7 @@ Not to be used for documenting the administration or consumption of a medication
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"89950abed348a479eeb1466ad07a14e0">
+		["MD5-CAM-1.0.1"] = <"6883f195318e60f98737abd794c5f98f">
 		["build_uid"] = <"f22d262d-9e16-49a4-a64f-ed3844198edf">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -152,14 +152,7 @@ definition
 							}
 							ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Treatment outcome
 								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0.3,    -- SVR 24
-											at0.4,    -- SVR 12
-											at0.5]    -- Relapse independent of reason for stopping
-										}
-									}
+									DV_TEXT matches {*}
 								}
 							}
 						}
@@ -199,6 +192,18 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"Medication summary nwis">
+					description = <"Summary information about the administration or consumption history for a specified medication or class of medication over the individual's lifetime.">
+				>
+				["at0.2"] = <
+					text = <"Treatment outcome">
+					description = <"*">
+				>
+				["at0000"] = <
+					text = <"Medication summary">
+					description = <"Summary information about the administration or consumption history for a specified medication or class of medication over the individual's lifetime.">
+				>
 				["at0001"] = <
 					text = <"Tree">
 					description = <"@ internal @">
@@ -282,30 +287,22 @@ ontology
 					description = <"Specific name of medication.">
 					comment = <"Use to identify the specific medication used if a class is identified in 'Medication name'. Redundant if the name is identified using the 'Medication name' data element.">
 				>
-				["at0000.1"] = <
-					text = <"Medication summary nwis">
-					description = <"Summary information about the administration or consumption history for a specified medication or class of medication over the individual's lifetime.">
-				>
-				["at0.2"] = <
-					text = <"Treatment outcome">
-					description = <"*">
-				>
-				["at0.3"] = <
-					text = <"SVR 24">
-					description = <"*">
-				>
-				["at0.4"] = <
-					text = <"SVR 12">
-					description = <"*">
-				>
-				["at0.5"] = <
-					text = <"Relapse independent of reason for stopping">
-					description = <"*">
-				>
 			>
 		>
 		["nb"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"Legemiddelsammendrag">
+					description = <"Sammendrag om administrasjon eller forbruk av et spesifisert legemiddel eller legemiddelklasse over individets levetid.">
+				>
+				["at0.2"] = <
+					text = <"*DV_TEXT (en)">
+					description = <"*">
+				>
+				["at0000"] = <
+					text = <"Legemiddelsammendrag">
+					description = <"Sammendrag om administrasjon eller forbruk av et spesifisert legemiddel eller legemiddelklasse over individets levetid.">
+				>
 				["at0001"] = <
 					text = <"Tree">
 					description = <"@ internal @">
@@ -389,30 +386,22 @@ ontology
 					description = <"Detaljert navn på medikamentet">
 					comment = <"Brukt for å identifisere et spesifikt medikament som brukes, hvis en klasse medikamenter er identifisert i 'Medikament navn'">
 				>
+			>
+		>
+		["pt-br"] = <
+			items = <
 				["at0000.1"] = <
-					text = <"Legemiddelsammendrag">
-					description = <"Sammendrag om administrasjon eller forbruk av et spesifisert legemiddel eller legemiddelklasse over individets levetid.">
+					text = <"Sumário de medicamentos">
+					description = <"Informações sumarizadas sobre a administração ou histórico de consumo de um medicamento específico ou de uma classe de medicamento durante a vida do indivíduo.">
 				>
 				["at0.2"] = <
 					text = <"*DV_TEXT (en)">
 					description = <"*">
 				>
-				["at0.3"] = <
-					text = <"*SVR 24 (en)">
-					description = <"*">
+				["at0000"] = <
+					text = <"Sumário de medicamentos">
+					description = <"Informações sumarizadas sobre a administração ou histórico de consumo de um medicamento específico ou de uma classe de medicamento durante a vida do indivíduo.">
 				>
-				["at0.4"] = <
-					text = <"*SVR 12 (en)">
-					description = <"*">
-				>
-				["at0.5"] = <
-					text = <"*Relapse independent of reason for stopping (en)">
-					description = <"*">
-				>
-			>
-		>
-		["pt-br"] = <
-			items = <
 				["at0001"] = <
 					text = <"Tree">
 					description = <"@ internal @">
@@ -495,26 +484,6 @@ ontology
 					text = <"Nome específico">
 					description = <"Nome específico do medicamento.">
 					comment = <"Usado para identificar o medicamento específico utilizado caso a classe esteja identificada em \"Nome do medicamento\". Redundante se o nome é identificado usando o elemento de dado \"Nome do medicamento\".">
-				>
-				["at0000.1"] = <
-					text = <"Sumário de medicamentos">
-					description = <"Informações sumarizadas sobre a administração ou histórico de consumo de um medicamento específico ou de uma classe de medicamento durante a vida do indivíduo.">
-				>
-				["at0.2"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"*">
-				>
-				["at0.3"] = <
-					text = <"*SVR 24 (en)">
-					description = <"*">
-				>
-				["at0.4"] = <
-					text = <"*SVR 12 (en)">
-					description = <"*">
-				>
-				["at0.5"] = <
-					text = <"*Relapse independent of reason for stopping (en)">
-					description = <"*">
 				>
 			>
 		>
