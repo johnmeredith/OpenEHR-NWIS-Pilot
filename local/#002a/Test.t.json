@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "d6991b794b20ff987ac5f285ef296f2e",
+      "MD5-CAM-1.0.1" : "ba71554f73064a7537aaff790ec2362c",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -10172,6 +10172,10 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_TEXT",
                       "occurrences" : "1..1",
+                      "defaultValue" : {
+                        "value" : "Hepatitis C treatment",
+                        "@type" : "DV_TEXT"
+                      },
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
                     } ]
