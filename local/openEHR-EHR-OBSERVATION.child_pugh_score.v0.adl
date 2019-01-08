@@ -1,0 +1,67 @@
+archetype (adl_version=1.4; uid=3505d630-a408-476e-89f0-a4ac3150541d)
+	openEHR-EHR-OBSERVATION.child_pugh_score.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2019-01-08">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"c70858452080f0102a67a15b0891aade">
+		["build_uid"] = <"c102d34f-857f-3be2-a4dd-416113fe40b1">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Child_Pugh_Score
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] matches {    -- Any Event
+						data matches {
+							ITEM_TREE[at0003] matches {*}    -- ItemTree
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Child_Pugh_Score">
+					description = <"The Child-Pugh score comprises of five clinical  observations and is used to assess the prognosis of chronic liver disease and cirrhosis.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Any Event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+			>
+		>
+	>
