@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a0315349e7ab1ffd4f67497c3f289335",
+      "MD5-CAM-1.0.1" : "a3f7f812033c42bfd63e70cbaa94754f",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -11214,7 +11214,7 @@
               "rmTypeName" : "DV_TEXT",
               "occurrences" : "1..1",
               "defaultValue" : {
-                "value" : "HVC First genotype",
+                "value" : "HVC First type",
                 "@type" : "DV_TEXT"
               },
               "attributes" : [ ],
