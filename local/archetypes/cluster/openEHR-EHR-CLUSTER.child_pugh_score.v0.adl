@@ -15,6 +15,7 @@ description
 		["email"] = <"hildi@freshehr.com">
 	>
 	lifecycle_state = <"in_development">
+	other_contributors = <"John Meredith, NHS Wales Informatics Service, UK", ...>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -37,7 +38,7 @@ https://radiopaedia.org/articles/child-pugh-score cited 27-Sep-2017.">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"3ca4453ae4c29a289e76745f8010bf2c">
+		["MD5-CAM-1.0.1"] = <"395c57453445db39c242cc70e155e8aa">
 		["build_uid"] = <"92d2591a-7b14-4419-a2c1-81dd3a13add0">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -110,6 +111,7 @@ definition
 	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -233,6 +235,16 @@ ontology
 					text = <"Class C 10 to 15 points">
 					description = <"The Child-Pugh grade is Class C with a total score of 10 to 15 points.">
 				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0025"] = <[SNOMED-CT(1.36.4)::3191000175106]>
+				["at0027"] = <[SNOMED-CT(1.36.4)::710065009]>
+				["at0028"] = <[SNOMED-CT(1.36.4)::710066005]>
+				["at0029"] = <[SNOMED-CT(1.36.4)::710067001]>
 			>
 		>
 	>
