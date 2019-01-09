@@ -38,7 +38,7 @@ https://radiopaedia.org/articles/child-pugh-score cited 27-Sep-2017.">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"395c57453445db39c242cc70e155e8aa">
+		["MD5-CAM-1.0.1"] = <"9aa28ea1987656b40e59cf249db227b4">
 		["build_uid"] = <"92d2591a-7b14-4419-a2c1-81dd3a13add0">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -241,10 +241,10 @@ ontology
 	term_binding = <
 		["SNOMED-CT"] = <
 			items = <
-				["at0025"] = <[SNOMED-CT(1.36.4)::3191000175106]>
-				["at0027"] = <[SNOMED-CT(1.36.4)::710065009]>
-				["at0028"] = <[SNOMED-CT(1.36.4)::710066005]>
-				["at0029"] = <[SNOMED-CT(1.36.4)::710067001]>
+				["at0025"] = <[SNOMED-CT::3191000175106]>
+				["at0027"] = <[SNOMED-CT::710065009]>
+				["at0028"] = <[SNOMED-CT::710066005]>
+				["at0029"] = <[SNOMED-CT::710067001]>
 			>
 		>
 	>
