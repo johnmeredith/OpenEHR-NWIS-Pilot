@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ea45fe13a77ca33e2f58daa58c3046f9">
+		["MD5-CAM-1.0.1"] = <"2f851a03f783f1ecc01d78ca32400fd1">
 		["build_uid"] = <"c102d34f-857f-3be2-a4dd-416113fe40b1">
 	>
 
@@ -125,6 +125,7 @@ definition
 	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -276,6 +277,14 @@ ontology
 					text = <"Extension">
 					description = <"*">
 				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0028"] = <[SNOMED-CT::710066005]>
+				["at0027"] = <[SNOMED-CT::710065009]>
 			>
 		>
 	>
