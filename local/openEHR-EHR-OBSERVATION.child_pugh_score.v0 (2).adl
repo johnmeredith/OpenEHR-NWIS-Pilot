@@ -15,6 +15,10 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"For the capture and reporting of Child-Pugh score for liver disease management. 
+">
+			keywords = <"Child-Pugh, liver, cirrhosis, score", ...>
+			use = <"Use to record the details of the Child-Pugh score for liver disease.">
 		>
 	>
 	other_details = <
@@ -23,6 +27,9 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
+		["references"] = <"Source: Child CG, Turcotte JG. Surgery and portal hypertension. In: The liver and portal hypertension. Edited by CG Child. Philadelphia: Saunders 1964:50-64.
+
+https://radiopaedia.org/articles/child-pugh-score cited 27-Sep-2017.">
 		["MD5-CAM-1.0.1"] = <"0d86f631463fe3f7f3c4cba588e70151">
 		["build_uid"] = <"c102d34f-857f-3be2-a4dd-416113fe40b1">
 	>
