@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ace015e741990e47c970530dca1b465f">
+		["MD5-CAM-1.0.1"] = <"d4d1e8fe927938394dbf848498c55e64">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -103,19 +103,19 @@ ontology
 				>
 				["at0004"] = <
 					text = <"APRI Score">
-					description = <"*">
+					description = <"AST to Platelet Ratio Index Score">
 				>
 				["at0005"] = <
 					text = <"AST">
-					description = <"*">
+					description = <"Aspartate transaminase (AST)">
 				>
 				["at0006"] = <
 					text = <"AST Upper Limit">
-					description = <"*">
+					description = <"Aspartate transaminase (Upper Limit of Normal) (IU/L). Most experts recommend using 40 IU/L as the value for the AST upper limit of normal when calculating an APRI value.">
 				>
 				["at0007"] = <
 					text = <"Platelet Count">
-					description = <"*">
+					description = <"Platelet Count (109/L).">
 				>
 			>
 		>
