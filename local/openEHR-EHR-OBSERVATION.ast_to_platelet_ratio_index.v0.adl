@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"775103dc225f8ab7bae898757aeee022">
+		["MD5-CAM-1.0.1"] = <"cb3d7295e064257107119995c52cbf35">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -138,7 +138,7 @@ definition
 	}
 
 ontology
-	terminologies_available = <"SNOMED-CT", ...>
+	terminologies_available = <"SNOMED-CT","LOINC">
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -164,7 +164,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"APRI score">
-					description = <"AST to Platelet Ratio Index Score">
+					description = <"AST to platelet ratio index">
 				>
 				["at0005"] = <
 					text = <"AST">
@@ -214,6 +214,11 @@ ontology
 			items = <
 				["at0007"] = <[SNOMED-CT::365632008]>
 				["at0005"] = <[SNOMED-CT::373679006]>
+			>
+		>
+		["LOINC"] = <
+			items = <
+				["at0004"] = <[LOINC::86465-2]>
 			>
 		>
 	>
