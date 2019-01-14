@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2f851a03f783f1ecc01d78ca32400fd1">
+		["MD5-CAM-1.0.1"] = <"0d86f631463fe3f7f3c4cba588e70151">
 		["build_uid"] = <"c102d34f-857f-3be2-a4dd-416113fe40b1">
 	>
 
@@ -90,7 +90,7 @@ definition
 											DV_CODED_TEXT matches {
 												defining_code matches {
 													[local::
-													at0030,    -- Class A 5 to 6 points.
+													at0030,    -- Class A 5 to 6 points
 													at0031,    -- Class B 7 to 9 points
 													at0032]    -- Class C 10 to 15 points
 												}
@@ -250,7 +250,7 @@ ontology
 					description = <"Grading according to total score.">
 				>
 				["at0030"] = <
-					text = <"Class A 5 to 6 points.">
+					text = <"Class A 5 to 6 points">
 					description = <"The Child-Pugh grade is Class A with a total score of 5 to 6 points.">
 				>
 				["at0031"] = <
@@ -284,7 +284,9 @@ ontology
 		["SNOMED-CT"] = <
 			items = <
 				["at0028"] = <[SNOMED-CT::710066005]>
-				["at0027"] = <[SNOMED-CT::710065009]>
+				["at0030"] = <[SNOMED-CT::710065009]>
+				["at0031"] = <[SNOMED-CT::710066005]>
+				["at0032"] = <[SNOMED-CT::710067001]>
 			>
 		>
 	>
