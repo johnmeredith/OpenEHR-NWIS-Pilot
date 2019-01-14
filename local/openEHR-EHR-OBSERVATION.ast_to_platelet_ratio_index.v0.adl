@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c1294c4b58e9f4c1434f35216bdde87c">
+		["MD5-CAM-1.0.1"] = <"bf4aa08d3ffc3a745657a4cef58b10b0">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -59,7 +59,7 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0006] occurrences matches {0..1} matches {    -- AST Upper Limit
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- AST upper limit
 										value matches {
 											C_DV_QUANTITY <
 												
@@ -77,7 +77,7 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Platelet Count
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Platelet count
 										value matches {
 											C_DV_QUANTITY <
 												
@@ -89,7 +89,7 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- APRI Score
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- APRI score
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::380]>
@@ -103,6 +103,17 @@ definition
 										}
 									}
 									ELEMENT[at0013] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+						state matches {
+							ITEM_TREE[at0016] matches {    -- ItemTree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Confounding factors
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -148,7 +159,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"APRI Score">
+					text = <"APRI score">
 					description = <"AST to Platelet Ratio Index Score">
 				>
 				["at0005"] = <
@@ -156,11 +167,11 @@ ontology
 					description = <"Aspartate transaminase (AST)">
 				>
 				["at0006"] = <
-					text = <"AST Upper Limit">
+					text = <"AST upper limit">
 					description = <"Aspartate transaminase (Upper Limit of Normal) (IU/L). Most experts recommend using 40 IU/L as the value for the AST upper limit of normal when calculating an APRI value.">
 				>
 				["at0007"] = <
-					text = <"Platelet Count">
+					text = <"Platelet count">
 					description = <"Platelet Count (109/L).">
 				>
 				["at0008"] = <
@@ -173,6 +184,14 @@ ontology
 				>
 				["at0013"] = <
 					text = <"Comment">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0017"] = <
+					text = <"Confounding factors">
 					description = <"*">
 				>
 			>
