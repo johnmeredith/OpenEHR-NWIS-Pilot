@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d4d1e8fe927938394dbf848498c55e64">
+		["MD5-CAM-1.0.1"] = <"1b8c7c55c0ee49956065f7dd504a2e9a">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -56,19 +56,37 @@ definition
 									ELEMENT[at0005] occurrences matches {0..1} matches {    -- AST
 										value matches {
 											C_DV_QUANTITY <
-																							>
+												
+												list = <
+													["1"] = <
+														units = <"u/L">
+													>
+												>
+											>
 										}
 									}
 									ELEMENT[at0006] occurrences matches {0..1} matches {    -- AST Upper Limit
 										value matches {
 											C_DV_QUANTITY <
-																							>
+												
+												list = <
+													["1"] = <
+														units = <"u/L">
+													>
+												>
+											>
 										}
 									}
 									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Platelet Count
 										value matches {
 											C_DV_QUANTITY <
-																							>
+												
+												list = <
+													["1"] = <
+														units = <"10+9/L">
+													>
+												>
+											>
 										}
 									}
 								}
