@@ -10,8 +10,12 @@ language
 description
 	original_author = <
 		["date"] = <"2019-01-14">
+		["name"] = <"John Meredith">
+		["organisation"] = <"NHS Wales Informatics Service">
+		["email"] = <"john.meredith@wales.nhs.uk">
 	>
-	lifecycle_state = <"unmanaged">
+	lifecycle_state = <"in_development">
+	other_contributors = <"Robert Jones","Ian McNicoll">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -30,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6bd79f9bec4242ebf1746db731d9648a">
+		["MD5-CAM-1.0.1"] = <"ace015e741990e47c970530dca1b465f">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -41,7 +45,34 @@ definition
 				events cardinality matches {0..*; unordered} matches {
 					EVENT[at0002] matches {    -- Any Event
 						data matches {
-							ITEM_TREE[at0003] matches {*}    -- ItemTree
+							ITEM_TREE[at0003] matches {    -- ItemTree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- APRI Score
+										value matches {
+											C_DV_QUANTITY <
+																							>
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- AST
+										value matches {
+											C_DV_QUANTITY <
+																							>
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- AST Upper Limit
+										value matches {
+											C_DV_QUANTITY <
+																							>
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Platelet Count
+										value matches {
+											C_DV_QUANTITY <
+																							>
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -50,6 +81,7 @@ definition
 	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -69,6 +101,30 @@ ontology
 					text = <"ItemTree">
 					description = <"@ internal @">
 				>
+				["at0004"] = <
+					text = <"APRI Score">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"AST">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"AST Upper Limit">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Platelet Count">
+					description = <"*">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0007"] = <[SNOMED-CT::365632008]>
+				["at0005"] = <[SNOMED-CT::373679006]>
 			>
 		>
 	>
