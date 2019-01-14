@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "fdeb9dd656348fc574046dc3543d19cc",
+      "MD5-CAM-1.0.1" : "a89153e96cb62967e69dc35b8277bd7d",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -6281,6 +6281,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -6532,6 +6533,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_BOOLEAN",
                       "rmTypeName" : "BOOLEAN",
@@ -10163,6 +10165,15 @@
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-alcohol_consumption_summary-001.v0",
           "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.6",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-ast_to_platelet_ratio_index-001.v0",
+          "referenceType" : "archetypeOverlay"
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -10475,7 +10486,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "6883f195318e60f98737abd794c5f98f"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere et sammendrag om administrasjon eller forbruk av et spesifisert legemiddel eller legemiddelklasse over individets levetid.",
+          "keywords" : [ ],
+          "use" : "Brukes for å registrere et sammendrag om administrasjon eller forbruk av et spesifisert legemiddel eller legemiddelklasse over individets levetid.",
+          "misuse" : "Brukes ikke for å registrere en ordinering av et legemiddel som skal administreres eller forbrukes - bruk arketypen INSTRUCTION.medication_order (Legemiddelordinering) for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar informações sumarizadas sobre a administração ou histórico de consumo de um medicamento específico ou de uma classe de medicamento durante a vida do indivíduo.\r\n",
+          "keywords" : [ ],
+          "use" : "Usado para registrar informações sumarizadas sobre a administração ou histórico de consumo de um medicamento específico ou de uma classe de medicamento durante a vida do indivíduo.\r\n",
+          "misuse" : "Não deve ser usado para registrar uma solicitação de administração ou consumo de um medicamento - use INSTRUCTION.medication_order para este propósito.\r\n\r\nNão deve ser usado documentar a administração ou consumo de um medicamento - use ACTION.medication para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording summary information about the administration or consumption history for a specified medication or class of medication over the individual's lifetime.",
+          "keywords" : [ ],
+          "use" : "Use for recording summary information about the administration or consumption history for a specified medication or class of medication over the individual's lifetime.",
+          "misuse" : "Not to be used for recordning an order for a medication to be administered or consumed - use INSTRUCTION.medication_order for this purpose.\r\n\r\nNot to be used for documenting the administration or consumption of a medication - use ACTION.medication for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.medication_summary-nwis.v0",
     "differential" : true,
@@ -11055,7 +11113,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "1BB8DC23A187DFCB9D9639E283647B75"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere funn og tolkning av laboratorieanalyser utført på prøvemateriale fra et individ.",
+          "keywords" : [ "lab", "patologi", "biokjemi", "hematologi", "mikrobiologi", "immunologi", "laboratorie", "anatomisk", "kjemisk", "klinisk", "immunopatologi", "cytologi", "histopatologi", "prøve", "biopsi", "preparat", "rettsmedisinsk", "genetisk", "histologi", "kjemi", "farmakologi" ],
+          "use" : "Brukes for å registrere funn og tolkning av laboratorieanalyser utført på prøvemateriale fra et individ. Dette utføres typisk i et laboratorium, men kan også gjøres i andre miljøer, som for eksempel ved pasientnære analyser.\r\n\r\nDenne arketypen er laget for å være et rammeverk som vanligvis utvides med CLUSTER-arketyper for å muliggjøre hensiktsmessig registrering av forskjellige typer labsvar. Dette kan omfatte både analysepanel for biokjemi og hematologi, samt spesifikke mønstre for de unike behovene innen mikrobiologi og patologi.\r\n\r\nDersom de rekvirerte analysene eller undersøkelsene ikke vanligvis hører sammen i en gruppe eller et panel, vil hvert resultat normalt representeres ved en separat instans av denne arketypen.\r\n\r\nDenne arketypen støtter flere tilnærminger til å registrere informasjon om prøvematerialet, noe som reflekterer de store variasjonene innenfor dagens praksis. Laboratoriesvar-arketypen har i høy grad samsvar med HL7 FHIR-ressursen \"Diagnostic Report\".\r\n\r\nForventningen er en eller flere instanser av denne arketypen eller arketypefamilien vil sendes tilbake til en rekvirent som del av en svarrapport, f.eks. i COMPOSITION.report_result eller tilsvarende, og sammen med andre relevante ENTRY-arketyper.\r\n\r\nDer laboratoriet endrer analyser eller legger til analyser som oppfølging, kan disse håndteres etter veilledning fra HL7 FHIR (https://www.hl7.org/fhir/2015may/uslabreport-guide.html), eller etter lokale prosedyrer. For eksempel en av følgende:\r\n1. Registrer de endrede analysene/tilleggsanalysene innenfor samme instans av denne arketypen.\r\n2. Registrer de endrede analysene/tilleggsanalysene i en ny instans av denne arketypen, men referer til den opprinnelige rekvisisjonen ved hjelp av \"Rekvisisjonsdetaljer\".\r\n3. Registrer de endrede analysene/tilleggsanalysene i en ny instans av denne arketypen, men referer til en ny rekvisisjon i tillegg til den opprinnelige rekvisisjonen, ved hjelp av \"Rekvisisjonsdetaljer\".",
+          "misuse" : "Skal ikke brukes for å lagre en obduksjonsrapport, selv om prøver av noen prøvematerialer som blir tatt i en obduksjon kan bli representert i denne arketypen.\r\n\r\nDenne arketypen er passende for å representere generelle analyseresultat, men er ikke ment å dekke fullstendige oversiktsrapporter. For disse er det nødvendig å bruke spesialiserte arketyper i tillegg.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.\r\nو يمثل هذا النموذج كوالد (أب) للتخصيصات الأخرى لاختبارات معملية أكثر تحديدا مثل الميكروبيولوجيا و الهيستوباثولوجيا.",
+          "keywords" : [ "المعمل - المختبر", "الباثولوجيا - المرضية", "الكيمياء الحيوية", "الدمويات", "الميكروبيولوجيا", "المناعيات - علم المناعة" ],
+          "use" : "قد يستخدم لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.\r\n\r\nيتم بعد ذلك تقديم التقرير للطبيب السريري الذي قام بطلب الاختبار في سياق تقرير معملي متكامل.",
+          "misuse" : "قد تكون التخصيصات أكثر مناسبة للتقارير المركبة مثل حالات الميكروبيولوجيا أو الهيستوباثولوجيا.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the result, including findings and interpretation of a laboratory investigation performed on patient-related specimens.",
+          "keywords" : [ "lab", "pathology", "biochemistry", "haematology", "microbiology", "immunology", "laboratory", "anatomical", "chemical", "clinical", "immunopathology", "cytology", "histopathology", "test", "biopsy", "specimen", "forensic", "genetic", "laboratory medicine", "results", "analysis" ],
+          "use" : "Use for recording the result, including findings and interpretation, of a laboratory investigation performed on specimens collected from an individual. This is typically done in a laboratory but may be done in other environments such as at the point of care.\r\n\r\nThis archetype has been designed to be a framework that will usually be extended with CLUSTER archetypes to enable appropriate recording of specific laboratory test result patterns, including but not limited to: test panels for biochemistry and haematology plus specific patterns for the unique requirements for microbiology and histopathology.\r\n\r\nIf the ordered tests or investigations do not commonly belong together in a group or panel, each test result would normally be represented using separate instances of this archetype.\r\n\r\nThis archetype supports multiple approaches to recording of specimen, reflecting current practice which varies enormously. A Laboratory test result has a high degree of alignment to an HL7 FHIR Diagnostic Report resource.\r\n\r\nIt is anticipated that one or more instances of this archetype, or archetype family, will be sent back to a requesting clinician within a laboratory report document comprising COMPOSITION.report_result archetype, or similar, and other relevant ENTRY archetypes.\r\n\r\nWhere 'reflex tests'are performed by the laboratory, these may be handled as per US/FHIR guidance (see https://www.hl7.org/fhir/2015may/uslabreport-guide.html) or other local policy.\r\n\r\nFor example, one of the following ...\r\n\r\n1. Record the reflex test results additional 'Test findings' within the same 'openEHR-EHR-OBSERVATION.laboratory_test_result'\r\n\r\n2. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but refer to the original lab test request via 'Test request details'.\r\n\r\n3. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but reference a new lab test request as well as the original lab test request via 'Test request details'.",
+          "misuse" : "Not to be used to record an Autopsy report, although tests on some specimens that are taken at autopsy may be represented using this archetype.\r\n\r\nThis archetype is suitable for representation of general laboratory test results, but not intended to cover full synoptic reports. For these, additional specialising archetypes are required to represent the data.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "用于记录针对组织和体液等标本所进行的病理学实验室检验项目的发现/所见和解释。这通常是由实验室来完成，但也可能会是在其他环境下完成的，如床旁。",
+          "keywords" : [ "实验室", "医学实验室", "临床实验室", "中心实验室", "检验科", "化验室", "化验科", "病理学", "检验医学", "检验", "医学检验", "临床检验医学", "临床检验", "生物化学", "生化", "血液学", "微生物学", "免疫学", "解剖学", "化学", "临床", "免疫病理学", "细胞学", "组织病理学", "试验", "试验项目", "检验项目", "化验项目", "报告项目", "活组织检查", "活检", "标本", "样本", "样品", "试样", "法医学", "遗传学" ],
+          "use" : "用于记录任何病理学实验室检验结果，包括作为某个组合型操作项目或手术的组成部分而进行的针对某种标本的某一检验项目所获得的结果。\r\n\r\n可以采用模板或专用原始型来表达多种分析物的组套。\r\n\r\n对于那些需要额外报告内容的，诸如组织病理学或微生物学之类较为复杂的检验项目，则应当采用专用的原始型来表达。\r\n\r\n实验室检验报告与HL7 FHIR 诊断报告资源DiagnosticReport之间具有高度的一致性。\r\n\r\n在完整的基于组合式文档的报告的背景下，通常会作为一个构成要素，回报给申请医生。",
+          "misuse" : "并非旨在用于报告非病理学检验结果，如影像学诊断、心电图或呼吸功能试验。\r\n\r\n并非旨在用于表达完整的累积型报告。当前这一实验室检验结果原始型表达的仅仅是，累积型检验项目报告之中通常被视为纵列的结果集合之一。累积型报告是一种视图，是利用由多个观测指标OBSERVATION原始型所表示的结果构建而成。\r\n\r\n并非旨在用于记录活组织检查报告，尽管可以采用此原始型来表示，针对活组织检查时所采集标本进行的检验项目。\r\n\r\n此原始型适合于表达一般性的病理学检验结果，但并未打算涵盖完整的提要式报告。对于此类报告，则需要采用额外的特化性原始型来表达相应的数据。\r\n\r\n此原始型在设计上已经支持临床病理学，但可能并不适合于其他种类的病理学用途。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -11207,6 +11327,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -11476,6 +11597,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_BOOLEAN",
                       "rmTypeName" : "BOOLEAN",
@@ -11614,7 +11736,55 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "E62A7A610752BE3F09CEB48321E7567E"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere individuelle laboratorieanalyser som enkeltverdier, som regel innenfor klinisk biokjemi, hematologi eller immunologi.",
+          "keywords" : [ "laboratorie", "analytt", "analyse", "svar", "resultat" ],
+          "use" : "Brukes for å registrere individuelle laboratorieanalyser som enkeltverdier, som regel innenfor klinisk biokjemi, hematologi eller immunologi. Brukes normalt i arketypen OBSERVATION.laboratory_test. I noen tilfeller kan den brukes innenfor arketypen CLUSTER.laboratory_test_panel sammen med andre analyser som vanligvis rapporteres som del av et panel eller analysegruppe, men det kan også rapporteres flere analyser innenfor samme OBSERVATION.laboratory_test.\r\n\r\nNavnet på elementet Analyseresultat vil ordinært erstattes i en templat elller applikasjon med navnet på den spesifikke analysen. f.eks. \"Hemoglobin\", og ofte kodet med en terminologi som NLK, SNOMED CT eller LOINC.\r\n\r\nDenne arketypen kan brukes innenfor mer komplekse laboratorie/patologirapporter der kvantitative svar som for eksempel flowcytometri eller gentester rapporteres sammen med konvensjonelle makroskopiske og mikroskopiske undersøkelser.",
+          "misuse" : "Skal ikke brukes til å registrere detaljerte funn ved patologiundersøkelser, annet enn for tilleggsundersøkelser som flowcytometri eller gentester.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia.\r\n",
+          "keywords" : [ "laboratório", "patologia", "analito", "componente", "resultado" ],
+          "use" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia. Normalmente usados conjuntamente com o arquétipo parental OBSERVATION.laboratory_test_result e em algumas circunstâncias será carregado dentro de um arquétipo CLUSTER.laboratory_test_panel, junto com outros analitos que são normalmente testados e/ou reportados como parte de uma bateria, painel e perfil, embora não seja necessário e.e múltiplos analitos podem ser carregados diretamente dentro do OBSERVATION.laboratory_test.\r\n\r\nO atributo do nome do elemento \"Resultado do analito\" é normalmente substituído em uma especialização, template ou em tempo de execução para carregar o nome do analito específico, p.e., \"hemoglobina\", frequentemente codificado com uma terminologia de referência como LOINC, SNOMED CT ou NPU.\r\n\r\nEste arquétipo pode ser usado dentro do contexto de relatórios laboratoriais/de patologia mais complexos como em relatórios de histopatologia/anatomia onde resultados quantitativos como de estudos de citometria de fluxo e testes genéticos são frequentemente reportados junto com relatórios macroscópicos e microscópicos convencionais.",
+          "misuse" : "Não deve ser usado para gravar achados detalhados de anatomia patológica macroscópica/microscópica, exceto para testes adicionais de estudos de citometria de fluxo ou testes genéticos.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record individual, single value laboratory test analyte results, as are common to clinical pathology testing for example biochemistry, haematology and immunology.",
+          "keywords" : [ "laboratory", "pathology", "analyte", "constituent", "result" ],
+          "use" : "To record individual, single value laboratory test analyte results, as are common to clinical pathology testing, for example biochemistry, haematology and immunology. Normally used in conjunction with a parent OBSERVATION.laboratory_test_result archetype and in some circumstances will be carried within a CLUSTER.laboratory_test_panel archetype, along with other analytes which are normally tested and/or reported as part of a battery,panel or profile, though this is not necessary i.e multiple analytes may be carried directly within the OBERVATION.laboratory_test.\r\n\r\nThe 'Analyte name' element is normally replaced in a specialisation, template or at run-time to carry the name of the specific analyte e.g. 'Haemoglobin', often coded with a reference terminology such as LOINC, SNOMED CT or NPU.\r\n\r\nThis archetype may be used within the setting of more complex laboratory/pathology reporting such as Histopathlogy/ Anatomical synoptic reports where quantitative results such as cytometric flow studies or genetic testing are often reported alongside conventional macroscopic and microscopic reporting.",
+          "misuse" : "Should not be used to record detailed Anatomical pathology macroscopic/microscopic findings, other then for additional testing such as cytometric flow studies or genetic testing.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -11804,6 +11974,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -11954,7 +12125,55 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "E62A7A610752BE3F09CEB48321E7567E"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere individuelle laboratorieanalyser som enkeltverdier, som regel innenfor klinisk biokjemi, hematologi eller immunologi.",
+          "keywords" : [ "laboratorie", "analytt", "analyse", "svar", "resultat" ],
+          "use" : "Brukes for å registrere individuelle laboratorieanalyser som enkeltverdier, som regel innenfor klinisk biokjemi, hematologi eller immunologi. Brukes normalt i arketypen OBSERVATION.laboratory_test. I noen tilfeller kan den brukes innenfor arketypen CLUSTER.laboratory_test_panel sammen med andre analyser som vanligvis rapporteres som del av et panel eller analysegruppe, men det kan også rapporteres flere analyser innenfor samme OBSERVATION.laboratory_test.\r\n\r\nNavnet på elementet Analyseresultat vil ordinært erstattes i en templat elller applikasjon med navnet på den spesifikke analysen. f.eks. \"Hemoglobin\", og ofte kodet med en terminologi som NLK, SNOMED CT eller LOINC.\r\n\r\nDenne arketypen kan brukes innenfor mer komplekse laboratorie/patologirapporter der kvantitative svar som for eksempel flowcytometri eller gentester rapporteres sammen med konvensjonelle makroskopiske og mikroskopiske undersøkelser.",
+          "misuse" : "Skal ikke brukes til å registrere detaljerte funn ved patologiundersøkelser, annet enn for tilleggsundersøkelser som flowcytometri eller gentester.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia.\r\n",
+          "keywords" : [ "laboratório", "patologia", "analito", "componente", "resultado" ],
+          "use" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia. Normalmente usados conjuntamente com o arquétipo parental OBSERVATION.laboratory_test_result e em algumas circunstâncias será carregado dentro de um arquétipo CLUSTER.laboratory_test_panel, junto com outros analitos que são normalmente testados e/ou reportados como parte de uma bateria, painel e perfil, embora não seja necessário e.e múltiplos analitos podem ser carregados diretamente dentro do OBSERVATION.laboratory_test.\r\n\r\nO atributo do nome do elemento \"Resultado do analito\" é normalmente substituído em uma especialização, template ou em tempo de execução para carregar o nome do analito específico, p.e., \"hemoglobina\", frequentemente codificado com uma terminologia de referência como LOINC, SNOMED CT ou NPU.\r\n\r\nEste arquétipo pode ser usado dentro do contexto de relatórios laboratoriais/de patologia mais complexos como em relatórios de histopatologia/anatomia onde resultados quantitativos como de estudos de citometria de fluxo e testes genéticos são frequentemente reportados junto com relatórios macroscópicos e microscópicos convencionais.",
+          "misuse" : "Não deve ser usado para gravar achados detalhados de anatomia patológica macroscópica/microscópica, exceto para testes adicionais de estudos de citometria de fluxo ou testes genéticos.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record individual, single value laboratory test analyte results, as are common to clinical pathology testing for example biochemistry, haematology and immunology.",
+          "keywords" : [ "laboratory", "pathology", "analyte", "constituent", "result" ],
+          "use" : "To record individual, single value laboratory test analyte results, as are common to clinical pathology testing, for example biochemistry, haematology and immunology. Normally used in conjunction with a parent OBSERVATION.laboratory_test_result archetype and in some circumstances will be carried within a CLUSTER.laboratory_test_panel archetype, along with other analytes which are normally tested and/or reported as part of a battery,panel or profile, though this is not necessary i.e multiple analytes may be carried directly within the OBERVATION.laboratory_test.\r\n\r\nThe 'Analyte name' element is normally replaced in a specialisation, template or at run-time to carry the name of the specific analyte e.g. 'Haemoglobin', often coded with a reference terminology such as LOINC, SNOMED CT or NPU.\r\n\r\nThis archetype may be used within the setting of more complex laboratory/pathology reporting such as Histopathlogy/ Anatomical synoptic reports where quantitative results such as cytometric flow studies or genetic testing are often reported alongside conventional macroscopic and microscopic reporting.",
+          "misuse" : "Should not be used to record detailed Anatomical pathology macroscopic/microscopic findings, other then for additional testing such as cytometric flow studies or genetic testing.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -12144,6 +12363,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -12308,7 +12528,55 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "E62A7A610752BE3F09CEB48321E7567E"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere individuelle laboratorieanalyser som enkeltverdier, som regel innenfor klinisk biokjemi, hematologi eller immunologi.",
+          "keywords" : [ "laboratorie", "analytt", "analyse", "svar", "resultat" ],
+          "use" : "Brukes for å registrere individuelle laboratorieanalyser som enkeltverdier, som regel innenfor klinisk biokjemi, hematologi eller immunologi. Brukes normalt i arketypen OBSERVATION.laboratory_test. I noen tilfeller kan den brukes innenfor arketypen CLUSTER.laboratory_test_panel sammen med andre analyser som vanligvis rapporteres som del av et panel eller analysegruppe, men det kan også rapporteres flere analyser innenfor samme OBSERVATION.laboratory_test.\r\n\r\nNavnet på elementet Analyseresultat vil ordinært erstattes i en templat elller applikasjon med navnet på den spesifikke analysen. f.eks. \"Hemoglobin\", og ofte kodet med en terminologi som NLK, SNOMED CT eller LOINC.\r\n\r\nDenne arketypen kan brukes innenfor mer komplekse laboratorie/patologirapporter der kvantitative svar som for eksempel flowcytometri eller gentester rapporteres sammen med konvensjonelle makroskopiske og mikroskopiske undersøkelser.",
+          "misuse" : "Skal ikke brukes til å registrere detaljerte funn ved patologiundersøkelser, annet enn for tilleggsundersøkelser som flowcytometri eller gentester.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia.\r\n",
+          "keywords" : [ "laboratório", "patologia", "analito", "componente", "resultado" ],
+          "use" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia. Normalmente usados conjuntamente com o arquétipo parental OBSERVATION.laboratory_test_result e em algumas circunstâncias será carregado dentro de um arquétipo CLUSTER.laboratory_test_panel, junto com outros analitos que são normalmente testados e/ou reportados como parte de uma bateria, painel e perfil, embora não seja necessário e.e múltiplos analitos podem ser carregados diretamente dentro do OBSERVATION.laboratory_test.\r\n\r\nO atributo do nome do elemento \"Resultado do analito\" é normalmente substituído em uma especialização, template ou em tempo de execução para carregar o nome do analito específico, p.e., \"hemoglobina\", frequentemente codificado com uma terminologia de referência como LOINC, SNOMED CT ou NPU.\r\n\r\nEste arquétipo pode ser usado dentro do contexto de relatórios laboratoriais/de patologia mais complexos como em relatórios de histopatologia/anatomia onde resultados quantitativos como de estudos de citometria de fluxo e testes genéticos são frequentemente reportados junto com relatórios macroscópicos e microscópicos convencionais.",
+          "misuse" : "Não deve ser usado para gravar achados detalhados de anatomia patológica macroscópica/microscópica, exceto para testes adicionais de estudos de citometria de fluxo ou testes genéticos.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record individual, single value laboratory test analyte results, as are common to clinical pathology testing for example biochemistry, haematology and immunology.",
+          "keywords" : [ "laboratory", "pathology", "analyte", "constituent", "result" ],
+          "use" : "To record individual, single value laboratory test analyte results, as are common to clinical pathology testing, for example biochemistry, haematology and immunology. Normally used in conjunction with a parent OBSERVATION.laboratory_test_result archetype and in some circumstances will be carried within a CLUSTER.laboratory_test_panel archetype, along with other analytes which are normally tested and/or reported as part of a battery,panel or profile, though this is not necessary i.e multiple analytes may be carried directly within the OBERVATION.laboratory_test.\r\n\r\nThe 'Analyte name' element is normally replaced in a specialisation, template or at run-time to carry the name of the specific analyte e.g. 'Haemoglobin', often coded with a reference terminology such as LOINC, SNOMED CT or NPU.\r\n\r\nThis archetype may be used within the setting of more complex laboratory/pathology reporting such as Histopathlogy/ Anatomical synoptic reports where quantitative results such as cytometric flow studies or genetic testing are often reported alongside conventional macroscopic and microscopic reporting.",
+          "misuse" : "Should not be used to record detailed Anatomical pathology macroscopic/microscopic findings, other then for additional testing such as cytometric flow studies or genetic testing.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -12498,6 +12766,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -14147,7 +14416,55 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "E62A7A610752BE3F09CEB48321E7567E"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere individuelle laboratorieanalyser som enkeltverdier, som regel innenfor klinisk biokjemi, hematologi eller immunologi.",
+          "keywords" : [ "laboratorie", "analytt", "analyse", "svar", "resultat" ],
+          "use" : "Brukes for å registrere individuelle laboratorieanalyser som enkeltverdier, som regel innenfor klinisk biokjemi, hematologi eller immunologi. Brukes normalt i arketypen OBSERVATION.laboratory_test. I noen tilfeller kan den brukes innenfor arketypen CLUSTER.laboratory_test_panel sammen med andre analyser som vanligvis rapporteres som del av et panel eller analysegruppe, men det kan også rapporteres flere analyser innenfor samme OBSERVATION.laboratory_test.\r\n\r\nNavnet på elementet Analyseresultat vil ordinært erstattes i en templat elller applikasjon med navnet på den spesifikke analysen. f.eks. \"Hemoglobin\", og ofte kodet med en terminologi som NLK, SNOMED CT eller LOINC.\r\n\r\nDenne arketypen kan brukes innenfor mer komplekse laboratorie/patologirapporter der kvantitative svar som for eksempel flowcytometri eller gentester rapporteres sammen med konvensjonelle makroskopiske og mikroskopiske undersøkelser.",
+          "misuse" : "Skal ikke brukes til å registrere detaljerte funn ved patologiundersøkelser, annet enn for tilleggsundersøkelser som flowcytometri eller gentester.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia.\r\n",
+          "keywords" : [ "laboratório", "patologia", "analito", "componente", "resultado" ],
+          "use" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia. Normalmente usados conjuntamente com o arquétipo parental OBSERVATION.laboratory_test_result e em algumas circunstâncias será carregado dentro de um arquétipo CLUSTER.laboratory_test_panel, junto com outros analitos que são normalmente testados e/ou reportados como parte de uma bateria, painel e perfil, embora não seja necessário e.e múltiplos analitos podem ser carregados diretamente dentro do OBSERVATION.laboratory_test.\r\n\r\nO atributo do nome do elemento \"Resultado do analito\" é normalmente substituído em uma especialização, template ou em tempo de execução para carregar o nome do analito específico, p.e., \"hemoglobina\", frequentemente codificado com uma terminologia de referência como LOINC, SNOMED CT ou NPU.\r\n\r\nEste arquétipo pode ser usado dentro do contexto de relatórios laboratoriais/de patologia mais complexos como em relatórios de histopatologia/anatomia onde resultados quantitativos como de estudos de citometria de fluxo e testes genéticos são frequentemente reportados junto com relatórios macroscópicos e microscópicos convencionais.",
+          "misuse" : "Não deve ser usado para gravar achados detalhados de anatomia patológica macroscópica/microscópica, exceto para testes adicionais de estudos de citometria de fluxo ou testes genéticos.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record individual, single value laboratory test analyte results, as are common to clinical pathology testing for example biochemistry, haematology and immunology.",
+          "keywords" : [ "laboratory", "pathology", "analyte", "constituent", "result" ],
+          "use" : "To record individual, single value laboratory test analyte results, as are common to clinical pathology testing, for example biochemistry, haematology and immunology. Normally used in conjunction with a parent OBSERVATION.laboratory_test_result archetype and in some circumstances will be carried within a CLUSTER.laboratory_test_panel archetype, along with other analytes which are normally tested and/or reported as part of a battery,panel or profile, though this is not necessary i.e multiple analytes may be carried directly within the OBERVATION.laboratory_test.\r\n\r\nThe 'Analyte name' element is normally replaced in a specialisation, template or at run-time to carry the name of the specific analyte e.g. 'Haemoglobin', often coded with a reference terminology such as LOINC, SNOMED CT or NPU.\r\n\r\nThis archetype may be used within the setting of more complex laboratory/pathology reporting such as Histopathlogy/ Anatomical synoptic reports where quantitative results such as cytometric flow studies or genetic testing are often reported alongside conventional macroscopic and microscopic reporting.",
+          "misuse" : "Should not be used to record detailed Anatomical pathology macroscopic/microscopic findings, other then for additional testing such as cytometric flow studies or genetic testing.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -14264,6 +14581,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -14394,6 +14712,382 @@
       "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "9a719f6f-a0a3-4656-84b0-05d6726c5252",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "775103dc225f8ab7bae898757aeee022"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.ast_to_platelet_ratio_index.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-ast_to_platelet_ratio_index-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "0..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0005.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "units" : "u/L",
+                            "@type" : "DV_QUANTITY"
+                          },
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "u/L" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : false,
+                                  "upperIncluded" : false
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0006.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "units" : "u/L",
+                            "@type" : "DV_QUANTITY"
+                          },
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "u/L" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "assumedValue" : 40.0,
+                                "constraint" : [ {
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : false,
+                                  "upperIncluded" : false
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0007.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "units" : "10+9/L",
+                            "@type" : "DV_QUANTITY"
+                          },
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "10+9/L" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : false,
+                                  "upperIncluded" : false
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "units" : "1",
+                            "@type" : "DV_QUANTITY"
+                          },
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "380" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "1" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : false,
+                                  "upperIncluded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 3,
+                                  "upper" : 3,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0013.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0016",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "0..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0017.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0005.1" : "term:SNOMED-CT::373679006",
+          "at0007.1" : "term:SNOMED-CT::365632008"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "cdcff44f-6c5b-341e-a228-5715020de652",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
