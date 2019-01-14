@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"622359f095fad1c61c81e7e39bf95420">
+		["MD5-CAM-1.0.1"] = <"c1294c4b58e9f4c1434f35216bdde87c">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -47,12 +47,6 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- ItemTree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- APRI Score
-										value matches {
-											C_DV_QUANTITY <
-																							>
-										}
-									}
 									ELEMENT[at0005] occurrences matches {0..1} matches {    -- AST
 										value matches {
 											C_DV_QUANTITY <
@@ -95,9 +89,37 @@ definition
 											>
 										}
 									}
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- APRI Score
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::380]>
+												list = <
+													["1"] = <
+														units = <"1">
+														precision = <|3|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0008] matches {    -- ItemTree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0012] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -140,6 +162,18 @@ ontology
 				["at0007"] = <
 					text = <"Platelet Count">
 					description = <"Platelet Count (109/L).">
+				>
+				["at0008"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0012"] = <
+					text = <"Extension">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Comment">
+					description = <"*">
 				>
 			>
 		>
