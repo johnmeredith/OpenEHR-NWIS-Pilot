@@ -1,0 +1,76 @@
+archetype (adl_version=1.4; uid=692daf83-31b2-4adf-83da-45b960d599a3)
+	openEHR-EHR-OBSERVATION.ast_to_platelet_ratio_index.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2019-01-14">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			keywords = <"AST, APRI, Platelet, Ratio Index", ...>
+			use = <"In a meta-analysis of 40 studies, investigators concluded that an APRI score greater than 1.0 had a sensitivity of 76% and specificity of 72% for predicting cirrhosis. In addition, they concluded that APRI score greater than 0.7 had a sensitivity of 77% and specificity of 72% for predicting significant hepatic fibrosis.
+
+For detection of cirrhosis, using an APRI cutoff score of 2.0 was more specific (91%) but less sensitive (46%). The lower the APRI score (less than 0.5), the greater the negative predictive value (and ability to rule out cirrhosis) and the higher the value (greater than 1.5) the greater the positive predictive value (and ability to rule in cirrhosis); midrange values are less helpful. The APRI alone is likely not sufficiently sensitive to rule out significant disease. Some evidence suggests that the use of multiple indices in combination (such as APRI plus FibroTest) or an algorithmic approach may result in higher diagnostic accuracy than using APRI alone.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["references"] = <"Lin ZH, Xin YN, Dong QJ, et al. Performance of the aspartate aminotransferase-to-platelet ratio index for the staging of hepatitis C-related fibrosis: an updated meta-analysis. Hepatology. 2011;53:726-36.
+Chou R, Wasson N. Blood tests to diagnose fibrosis or cirrhosis in patients with chronic hepatitis C virus infection: a systematic review. Ann Intern Med. 2013;158:807-20.
+Evaluation and Staging of Liver Fibrosis
+https://www.hepatitisc.uw.edu/go/evaluation-staging-monitoring/evaluation-staging/core-concept/all
+https://www.hepatitisc.uw.edu/go/evaluation-staging-monitoring/evaluation-staging/calculating-apri">
+		["MD5-CAM-1.0.1"] = <"5f7e0b62d5b768a0e567efea8817245d">
+		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- AST_to_Platelet_Ratio_Index
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] matches {    -- Any Event
+						data matches {
+							ITEM_TREE[at0003] matches {*}    -- ItemTree
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"AST_to_Platelet_Ratio_Index">
+					description = <"AST to Platelet Ratio Index (APRI) ">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Any Event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+			>
+		>
+	>
