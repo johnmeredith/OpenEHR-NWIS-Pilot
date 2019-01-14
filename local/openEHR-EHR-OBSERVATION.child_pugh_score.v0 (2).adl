@@ -9,29 +9,31 @@ language
 
 description
 	original_author = <
-		["date"] = <"2019-01-14">
+		["date"] = <"2017-09-27">
+		["name"] = <"Hildegard McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 	>
-	lifecycle_state = <"unmanaged">
+	lifecycle_state = <"in_development">
+	other_contributors = <"John Meredith, NHS Wales Informatics Service", ...>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For the capture and reporting of Child-Pugh score for liver disease management. 
 ">
 			keywords = <"Child-Pugh, liver, cirrhosis, score", ...>
-			use = <"Use to record the details of the Child-Pugh score for liver disease.">
+			use = <"Higher Child-Pugh scores indicate worsening liver function, and give the medical and surgical teams an idea of \"liver comorbidity\" and \"liver reserve\". This can be useful when planning interventions on the liver since liver failure is the main cause of death after liver resection">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"openEHR Foundation">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
 		["references"] = <"Source: Child CG, Turcotte JG. Surgery and portal hypertension. In: The liver and portal hypertension. Edited by CG Child. Philadelphia: Saunders 1964:50-64.
-
 https://radiopaedia.org/articles/child-pugh-score cited 27-Sep-2017.">
-		["MD5-CAM-1.0.1"] = <"0d86f631463fe3f7f3c4cba588e70151">
-		["build_uid"] = <"c102d34f-857f-3be2-a4dd-416113fe40b1">
+		["build_uid"] = <"f8729ae1-fc60-44b0-8aed-bd77bf3d185c">
+		["MD5-CAM-1.0.1"] = <"4740735fc7c46824a100bb4077066203">
 	>
 
 definition
