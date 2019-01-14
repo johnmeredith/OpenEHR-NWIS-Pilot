@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fcae8a6760c51c9f6d12d72ae9c145f1">
+		["MD5-CAM-1.0.1"] = <"775103dc225f8ab7bae898757aeee022">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -142,6 +142,10 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
+				["1"] = <
+					text = <"APRI Score">
+					description = <"@ unit @">
+				>
 				["at0000"] = <
 					text = <"AST to Platelet Ratio Index (APRI)">
 					description = <"AST to Platelet Ratio Index (APRI) used as an indication for liver biopsy. ">
@@ -196,6 +200,10 @@ ontology
 				>
 				["u/L"] = <
 					text = <"AST Upper Limit">
+					description = <"@ unit @">
+				>
+				["10+9/L"] = <
+					text = <"Platelet Count">
 					description = <"@ unit @">
 				>
 			>
