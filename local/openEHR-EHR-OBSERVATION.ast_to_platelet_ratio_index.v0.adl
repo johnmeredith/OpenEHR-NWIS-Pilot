@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1b8c7c55c0ee49956065f7dd504a2e9a">
+		["MD5-CAM-1.0.1"] = <"622359f095fad1c61c81e7e39bf95420">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -73,6 +73,12 @@ definition
 													["1"] = <
 														units = <"u/L">
 													>
+												>
+
+												assumed_value = <
+													units = <"u/L">
+													magnitude = <40.0>
+													precision = <-1>
 												>
 											>
 										}
