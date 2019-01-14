@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bf4aa08d3ffc3a745657a4cef58b10b0">
+		["MD5-CAM-1.0.1"] = <"fcae8a6760c51c9f6d12d72ae9c145f1">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -193,6 +193,10 @@ ontology
 				["at0017"] = <
 					text = <"Confounding factors">
 					description = <"*">
+				>
+				["u/L"] = <
+					text = <"AST Upper Limit">
+					description = <"@ unit @">
 				>
 			>
 		>
