@@ -34,7 +34,7 @@ https://radiopaedia.org/articles/child-pugh-score cited 27-Sep-2017.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"0f715db9f1d99f259684d060eb2d4656">
+		["MD5-CAM-1.0.1"] = <"233ac645e596ffc3a7d50f12b118bf80">
 		["build_uid"] = <"f8729ae1-fc60-44b0-8aed-bd77bf3d185c">
 	>
 
@@ -278,7 +278,7 @@ ontology
 				>
 				["at0034"] = <
 					text = <"Confounding factors">
-					description = <"*">
+					description = <"Narrative description of any issues or factors that may impact on the calculation.">
 				>
 				["at0035"] = <
 					text = <"ItemTree">
