@@ -34,7 +34,7 @@ https://radiopaedia.org/articles/child-pugh-score cited 27-Sep-2017.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"233ac645e596ffc3a7d50f12b118bf80">
+		["MD5-CAM-1.0.1"] = <"43303cee301002f5aa9ec522e1e1acd9">
 		["build_uid"] = <"f8729ae1-fc60-44b0-8aed-bd77bf3d185c">
 	>
 
@@ -129,7 +129,10 @@ definition
 		protocol matches {
 			ITEM_TREE[at0035] matches {    -- ItemTree
 				items cardinality matches {0..*; unordered} matches {
-					CLUSTER[at0036] occurrences matches {0..1} matches {*}    -- Extension
+					allow_archetype CLUSTER[at0037] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 		}
@@ -284,7 +287,7 @@ ontology
 					text = <"ItemTree">
 					description = <"@ internal @">
 				>
-				["at0036"] = <
+				["at0037"] = <
 					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"Local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
