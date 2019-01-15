@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"dd7ff637f586a35c8779c4c60e1ac5b4">
+		["MD5-CAM-1.0.1"] = <"f9f73dd80ae87475e1dbd65da0ac6c90">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -188,7 +188,7 @@ ontology
 				>
 				["at0013"] = <
 					text = <"Comment">
-					description = <"*">
+					description = <"Additional narrative about the index calculation, not captured in other fields.">
 				>
 				["at0016"] = <
 					text = <"ItemTree">
