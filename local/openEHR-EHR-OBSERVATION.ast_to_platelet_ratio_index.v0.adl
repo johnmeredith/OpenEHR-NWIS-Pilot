@@ -35,7 +35,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fc5718c7daafc73f7bd9a218ec24f04e">
+		["MD5-CAM-1.0.1"] = <"a5767fe0b59642f0a6492db3e4a72efa">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -186,6 +186,7 @@ ontology
 				["at0012"] = <
 					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"Local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
 				["at0013"] = <
 					text = <"Comment">
