@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cb3d7295e064257107119995c52cbf35">
+		["MD5-CAM-1.0.1"] = <"dd7ff637f586a35c8779c4c60e1ac5b4">
 		["build_uid"] = <"cdcff44f-6c5b-341e-a228-5715020de652">
 	>
 
@@ -184,7 +184,7 @@ ontology
 				>
 				["at0012"] = <
 					text = <"Extension">
-					description = <"*">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 				>
 				["at0013"] = <
 					text = <"Comment">
@@ -196,7 +196,11 @@ ontology
 				>
 				["at0017"] = <
 					text = <"Confounding factors">
-					description = <"*">
+					description = <"Narrative description of any issues or factors that may impact on the calculation.">
+					comment = <"
+	
+
+">
 				>
 				["u/L"] = <
 					text = <"AST Upper Limit">
