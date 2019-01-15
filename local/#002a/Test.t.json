@@ -4,9 +4,10 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "date" : "2019-01-07"
+      "date" : "2019-01-07",
+      "name" : "Ian McNicoll"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "John Meredith, NHS Wales Informatics Service" ],
     "lifecycleState" : {
       "codeString" : "in_development"
     },
@@ -19,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "804940a033d30b5a5a46ac4177987c6e",
+      "MD5-CAM-1.0.1" : "fb49acb3e66ef5b5d5df31b54f0f3d2b",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -93,6 +94,7 @@
         },
         "purpose" : "To record Hepatitis C management assessment in an outpatient clinic.",
         "keywords" : [ "Hepatitis C, assessment, liver disease," ],
+        "copyright" : "Clinical Models UK",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
@@ -14733,7 +14735,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "cb3d7295e064257107119995c52cbf35"
+        "PARENT:MD5-CAM-1.0.1" : "a5767fe0b59642f0a6492db3e4a72efa"
       },
       "details" : {
         "en" : {
@@ -15440,9 +15442,25 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "caca6d488c95a7df085156e07e83c303"
+        "PARENT:MD5-CAM-1.0.1" : "68e3d4938b5c5651bfcfb478bb62a404"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For the capture and reporting of Child-Pugh score for liver disease management. \r\n",
+          "keywords" : [ "Child-Pugh, liver, cirrhosis, score, Hepatitis C," ],
+          "use" : "Higher Child-Pugh scores indicate worsening liver function, and give the medical and surgical teams an idea of \"liver comorbidity\" and \"liver reserve\". This can be useful when planning interventions on the liver since liver failure is the main cause of death after liver resection",
+          "copyright" : "© Clinical Models UK",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.child_pugh_score.v0",
     "differential" : true,
@@ -15511,43 +15529,6 @@
                   } ],
                   "attributeTuples" : [ ]
                 } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      }, {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "protocol",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0035",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0036",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "existence" : "1..1",
-                "cardinality" : {
-                  "@type" : "CARDINALITY",
-                  "interval" : "1..*",
-                  "ordered" : false,
-                  "unique" : false
-                },
-                "children" : [ ]
               } ],
               "attributeTuples" : [ ]
             } ]
