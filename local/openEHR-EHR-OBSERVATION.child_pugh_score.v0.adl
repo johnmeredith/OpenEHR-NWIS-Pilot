@@ -21,7 +21,7 @@ description
 			language = <[ISO_639-1::en]>
 			purpose = <"For the capture and reporting of Child-Pugh score for liver disease management. 
 ">
-			keywords = <"Child-Pugh, liver, cirrhosis, score", ...>
+			keywords = <"Child-Pugh, liver, cirrhosis, score, Hepatitis C,", ...>
 			copyright = <"© Clinical Models UK">
 			use = <"Higher Child-Pugh scores indicate worsening liver function, and give the medical and surgical teams an idea of \"liver comorbidity\" and \"liver reserve\". This can be useful when planning interventions on the liver since liver failure is the main cause of death after liver resection">
 		>
@@ -29,7 +29,7 @@ description
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"UK Clinical Models">
-		["references"] = <"Source: Child CG, Turcotte JG. Surgery and portal hypertension. In: The liver and portal hypertension. Edited by CG Child. Philadelphia: Saunders 1964:50-64.
+		["references"] = <"Child CG, Turcotte JG. Surgery and portal hypertension. In: The liver and portal hypertension. Edited by CG Child. Philadelphia: Saunders 1964:50-64.
 https://radiopaedia.org/articles/child-pugh-score cited 27-Sep-2017.">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
