@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="openEHR/v1/Template">
+    <id>f473e2ed-7f0a-41c9-9ef6-01632fe6c78b</id>
+    <name>NWIS Allergy Intolerance List.v0</name>
+    <description>
+        <other_contributors>
+            <item>John Meredith</item>
+            <item>Tony Shannon</item>
+            <item>Shane McKee</item>
+            <item>Ian McNicoll</item>
+            <item>Hildi McNicoll</item>
+            <item>Paul Miller</item>
+            <item>Susan Veitch</item>
+            <item>Mark Wardle</item>
+        </other_contributors>
+        <lifecycle_state>Initial</lifecycle_state>
+        <details>
+            <purpose>Updated Allergies list to use FHIR/openEHR allergies/adverse reaction risk models, aligned with AoMRC headings</purpose>
+            <use/>
+            <misuse/>
+        </details>
+        <other_details>
+            <item>
+                <key>MetaDataSet:Sample Set </key>
+                <value>Template metadata sample set </value>
+            </item>
+            <item>
+                <key>Acknowledgements</key>
+                <value/>
+            </item>
+            <item>
+                <key>Business Process Level</key>
+                <value/>
+            </item>
+            <item>
+                <key>Care setting</key>
+                <value/>
+            </item>
+            <item>
+                <key>Client group</key>
+                <value/>
+            </item>
+            <item>
+                <key>Clinical Record Element</key>
+                <value/>
+            </item>
+            <item>
+                <key>Copyright</key>
+                <value/>
+            </item>
+            <item>
+                <key>Issues</key>
+                <value/>
+            </item>
+            <item>
+                <key>Owner</key>
+                <value/>
+            </item>
+            <item>
+                <key>Sign off</key>
+                <value/>
+            </item>
+            <item>
+                <key>Speciality</key>
+                <value/>
+            </item>
+            <item>
+                <key>User roles</key>
+                <value/>
+            </item>
+            <item>
+                <key>MD5-CAM-1.0.1</key>
+                <value>2a2ee187e99d4096bd8b314e7be7470f</value>
+            </item>
+            <item>
+                <key>PARENT:MD5-CAM-1.0.1</key>
+                <value>2A1D6E9F20099A022F8E0473B6A3C598</value>
+            </item>
+        </other_details>
+    </description>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR,FHIR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0010]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR,DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0032]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0012]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/protocol[at0042]/items[at0047]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR, DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0028]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0018]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR,FHIR,DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0002]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR,FHIR,DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0101]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>DAM, openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0058]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0006]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0117]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>IMH</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/protocol[at0042]/items[at0099]/items[at0048]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0041]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0011]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR,DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0021]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0089]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0025]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0027]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR, FHIR, DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0029]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0106]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/protocol[at0042]/items[at0062]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR, FHIR, DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/protocol[at0042]/items[at0044]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/protocol[at0042]/items[at0099]/items[at0045]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0040]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0020]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR,DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0063]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <definition
+        archetype_id="openEHR-EHR-COMPOSITION.adverse_reaction_list.v1"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:COMPOSITION">
+        <Content
+            archetype_id="openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1"
+            path="/content" xsi:type="tem:SECTION">
+            <Item
+                archetype_id="openEHR-EHR-EVALUATION.adverse_reaction_risk.v1"
+                path="/items" xsi:type="tem:EVALUATION">
+                <Rule name="Causative agent" path="/data[at0001]/items[at0002]"/>
+                <Rule default="local::at0065::Confirmed" path="/data[at0001]/items[at0063]"/>
+                <Rule max="0" path="/data[at0001]/items[at0058]">
+                    <constraint xsi:type="tem:multipleConstraint">
+                        <includedTypes>Coded_text</includedTypes>
+                        <includedTypes>Text</includedTypes>
+                    </constraint>
+                </Rule>
+                <Rule max="0" path="/data[at0001]/items[at0009]/items[at0010]"/>
+                <Rule max="0" path="/data[at0001]/items[at0009]/items[at0021]">
+                    <constraint xsi:type="tem:textConstraint"/>
+                </Rule>
+                <Rule max="0" path="/data[at0001]/items[at0009]/items[at0028]"/>
+                <Rule name="Severity" path="/data[at0001]/items[at0009]/items[at0089]">
+                    <constraint xsi:type="tem:multipleConstraint">
+                        <includedTypes>Coded_text</includedTypes>
+                        <includedTypes>Text</includedTypes>
+                    </constraint>
+                </Rule>
+                <Rule max="0" path="/data[at0001]/items[at0009]/items[at0020]"/>
+                <Rule max="0" path="/data[at0001]/items[at0009]/items[at0025]"/>
+                <Rule max="0" path="/data[at0001]/items[at0009]/items[at0018]"/>
+                <Rule max="0" path="/data[at0001]/items[at0009]/items[at0040]"/>
+                <Rule name="Comment" path="/data[at0001]/items[at0009]/items[at0032]"/>
+                <Rule min="1" path="/protocol[at0042]/items[at0062]"/>
+                <Rule max="0" path="/protocol[at0042]/items[at0047]"/>
+                <Rule max="0" path="/protocol[at0042]/items[at0044]"/>
+                <Rule max="0" path="/protocol[at0042]/items[at0099]"/>
+            </Item>
+            <Item archetype_id="openEHR-EHR-SECTION.adhoc.v1"
+                concept_name="Ad hoc heading" name="Empty list info"
+                path="/items" xsi:type="tem:SECTION">
+                <Item
+                    archetype_id="openEHR-EHR-EVALUATION.exclusion_global.v1"
+                    path="/items" xsi:type="tem:EVALUATION">
+                    <Rule
+                        default="No known allergies or adverse reactions" path="/data[at0001]/items[at0002]">
+                        <nameConstraint>
+                            <excludedValues>local::at0003</excludedValues>
+                            <excludedValues>local::at0004</excludedValues>
+                            <excludedValues>local::at0005</excludedValues>
+                            <excludedValues>local::at0006</excludedValues>
+                        </nameConstraint>
+                    </Rule>
+                </Item>
+                <Item archetype_id="openEHR-EHR-EVALUATION.absence.v1"
+                    path="/items" xsi:type="tem:EVALUATION">
+                    <Rule
+                        default="No information for known allergies and adverse reactions" path="/data[at0001]/items[at0002]"/>
+                </Item>
+            </Item>
+        </Content>
+        <Context>
+            <Items archetype_id="openEHR-EHR-CLUSTER.xds_metadata.v0"
+                path="/context/other_context[at0001]/items[at0002]" xsi:type="tem:CLUSTER">
+                <Rule
+                    default="SNOMED-CT::163221000000102::Allergies and adverse reactions" path="/items[at0003]"/>
+                <Rule max="0" path="/items[at0004]"/>
+                <Rule max="0" path="/items[at0011]"/>
+                <Rule max="0" path="/items[at0010]"/>
+            </Items>
+        </Context>
+    </definition>
+    <integrity_checks
+        archetype_id="openEHR-EHR-COMPOSITION.adverse_reaction_list.v1"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
+        <digest id="MD5-CAM-1.0.1">2A1D6E9F20099A022F8E0473B6A3C598</digest>
+    </integrity_checks>
+    <integrity_checks archetype_id="openEHR-EHR-CLUSTER.xds_metadata.v0"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
+        <digest id="MD5-CAM-1.0.1">B2538EC96A6545E2E6F04CE532DA36E3</digest>
+    </integrity_checks>
+    <integrity_checks
+        archetype_id="openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
+        <digest id="MD5-CAM-1.0.1">0C14C375A26F565DDE90E338FBDFAE8C</digest>
+    </integrity_checks>
+    <integrity_checks
+        archetype_id="openEHR-EHR-EVALUATION.adverse_reaction_risk.v1"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
+        <digest id="MD5-CAM-1.0.1">879E7E42E431DB7AA87C85144FD6B657</digest>
+    </integrity_checks>
+    <integrity_checks archetype_id="openEHR-EHR-SECTION.adhoc.v1"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
+        <digest id="MD5-CAM-1.0.1">B10361594E32A1FB73B449259A593192</digest>
+    </integrity_checks>
+    <integrity_checks
+        archetype_id="openEHR-EHR-EVALUATION.exclusion_global.v1"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
+        <digest id="MD5-CAM-1.0.1">CBD3F597907DCC9BE51553069E405BB1</digest>
+    </integrity_checks>
+    <integrity_checks archetype_id="openEHR-EHR-EVALUATION.absence.v1"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
+        <digest id="MD5-CAM-1.0.1">C3FB0E9724C49FDF46E44AD9B8FB75B1</digest>
+    </integrity_checks>
+</template>
