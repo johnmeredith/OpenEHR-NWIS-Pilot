@@ -20,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "1ba6c0d02d3982ac3c5de655eb5532d8",
+      "MD5-CAM-1.0.1" : "60ee34a7f94f934e87e371c3fc7ee713",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -8721,7 +8721,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7d6910971cf2c396102d1e6bbb74a891"
+        "PARENT:MD5-CAM-1.0.1" : "6bd86f4da376ceac15a8617db3ee1c87"
       },
       "details" : {
         "en" : {
@@ -13044,7 +13044,70 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3FA9AA5B8C0A900243AF702FF80C4D4A"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en kontekstspesifikk eller tidsspesifikk kvalifikator for et problem eller en diagnose.",
+          "keywords" : [ "problem", "aktivt", "inaktivt", "status", "episode", "tilstand", "aktiv", "inaktiv", "remisjon", "kronisk", "akutt" ],
+          "use" : "Brukes for å registrere en kontekstspesifikk eller tidsspesifikk kvalifikator som gir ytterligere detaljer som er relevante på tidspunktet man registrerer et problem eller en diagnose. Kvalifikatoren er ikke nødvendigvis passende på et annet tidspunkt eller i en annen klinisk sammenheng.\r\n\r\nDenne arketypen skal brukes i SLOTet \"Status\" i arketypen EVALUATION.problem_diagnosis (Problem/diagnose). Intensjonen er at EVALUATION.problem_diagnosis-arketypen skal inneholde all informasjonen som gjelder i alle sammenhenger, i motsetning til denne arketypen som skal inneholde informasjonen som avhenger av brukssammenheng.\r\n\r\nVIKTIG INFORMASJON FOR IMPLEMENTERING:\r\n- Det er ikke meningen eller implisert at alle disse kvalifikatorene skal brukes i den samme sammenhengen eller det samme tidsperioden. I motsetning til den vanlige måten å lage arketyper på, er denne arketypen laget for å samle flere vanlige kvalifikatorer på ett sted for å forsøksvis oppnå et visst nivå av standardisering innenfor et ganske innfløkt område av klinisk praksis. Det erkjennes at dataelementene i denne arketypen omfatter mange forskjellige, og til dels også konkurrerende, konsepter. Dette ble gjort hovedsakelig for å unngå behov for å ha mange arketyper for kvalifikatorer, der hver av dem kun inneholder ett eller to dataelementer.\r\n- Noen av disse dataelementene er potensielt direkte motstridende dersom de brukes samtidig og i den samme sammenhengen. For eksempel gir det ikke mening å ha et \"inaktivt\" problem innenfor en \"pågående\" episode. Av den grunn bør disse kvalifikatorene brukes med stor omhu, siden de i praksis vil brukes for varierende formål, og interoperabilitet kan ikke garanteres med mindre det er definert klare retningslinjer for bruk innenfor de kliniske omstendighetene der \"Problem/diagnose\"- og \"Problem/diagnose-kvalifikatorer\"-arketypeparet brukes.\r\n\r\nFullstendig DRG-koding vil kreve DRG-relaterte dataelementer fra denne arketypen, i kombinasjon med elementer fra andre arketyper.",
+          "misuse" : "Brukes ikke for å representere differensialdiagnoser. Bruk arketypen EVALUATION.differential_diagnosis for dette formålet.\r\n\r\nBrukes ikke for å representere diagnostisk sikkerhet. Bruk elementet \"Diagnostisk sikkerhet\" i arketypen EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar um ou mais qualificadores de estado clínico, específicos do contexto ou do tempo, para um problema ou diagnóstico específico",
+          "keywords" : [ "problema", "ativo", "inativo", "estado", "episódio", "diagnóstico" ],
+          "use" : "Use para gravar um ou mais qualificadores relevantes que fornecem detalhes adicionais de contexto específico ou de tempo específico e que sejam relevantes no momento do registro de um problema ou diagnóstico, ou dentro do contexto clínico onde é registrado, mas que pode não ser apropriado em outro tempo ou em outro contexto clínico.\r\n\r\nEste arquétipo foi desenvolvido para ser incluído no slot do Estado no arquétipo EVALUATION.problem_diagnosis archetype.\r\n\r\nEstes qualificadores de estado devem ser usados com cuidado, pois eles são variáveis aplicados na prática e a interoperabilidade não pode ser assegurada, salvo se as diretrizes de uso forem claramente definidas dentro da comunidade clínica em que o par de arquétipos 'Problema / Diagnóstico\" e \"Estado do problema' podem ser compartilhados.\r\n\r\nA codificação DRG completa vai exigir os elementos de dados DRG deste arquétipo e o arquétipo CLUSTER.procedure_status equivalente, utilizado dentro do arquétipo ACTION.procedure, além de atributos sobre o paciente.\r\n\r\nO elemento de dados 'não especificado' foi adicionado para facilitar a adição de outros qualificadores que só podem ser usados localmente ou quando o caso de uso não foi claramente estabelecido no momento em que este arquétipo foi publicado. Como outros qualificadores são identificados, eles podem ser adicionados a este arquétipo como uma revisão retroativa.",
+          "misuse" : "Não deve ser usado para representar um diagnóstico diferencial - use o arquétipo EVALUATION.differential_diagnosis para esta finalidade.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a clinical context-specific or time-specific qualifier for a specified problem or diagnosis.",
+          "keywords" : [ "problem", "active", "inactive", "status", "episode", "diagnosis" ],
+          "use" : "Use to record a relevant context-specific or time-specific qualifier that provides additional detail which is relevant at the time of recording or within the clinical context where a problem or diagnosis is recorded. The qualifier may not be appropriate at another time or in another clinical context. \r\n\r\nThis archetype is designed to be included in Status SLOT in the EVALUATION.problem_diagnosis archetype. The intent is for the EVALUATION.problem_diagnosis archetype to hold all of the information that applies in all contexts, in contrast to this archetype describing only information that depends on the context of use.\r\n\r\nIMPORTANT NOTES FOR IMPLEMENTATION: \r\n- It is not intended or implied that any or all of these qualifiers should be used within the same context or period of time. In contrast to the usual design of archetypes, this archetype has been deliberately designed to collect a number of common qualifiers into one place in an effort to attempt some simple standardisation within a very messy area of clinical practice. It is acknowledged that the data elements contained in this archetype embrace many different, and sometimes even competing, concepts. This has been done mainly to prevent the need for multiple qualifier archetypes, each containing only one or two data elements. \r\n- Some of these data elements are potentially directly conflicting if used simultaneously within the same context, for example it would not make sense to have an 'inactive' problem together with an Episode that is 'ongoing'. As such, these status qualifiers should be used with extreme care as they are variably applied in practice and interoperability cannot be assured unless usage guidelines are clearly defined within the clinical community in which the 'Problem/Diagnosis' and 'Problem/Diagnosis qualifier' archetype pair may be shared. \r\n\r\nFull DRG coding will require the DRG-related data elements from this archetype in combination with data elements from other archetypes.",
+          "misuse" : "Not to be used to represent a differential diagnosis - use the archetype EVALUATION.differential_diagnosis for this purpose.\r\n\r\nNot to be used to represent diagnostic certainty - use the 'Diagnostic certainty' data element within the EVALUATION.problem_diagnosis archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za zapisovanje različnih statusov, ki se ponavadi uporablja za aplikacijskimi in kliničnimi sporočili, ki so odvisna od definirane vsebine\r\n\r\n",
+          "keywords" : [ "problem", "aktiven", "ni aktiven" ],
+          "use" : "Za dodeljevanje pravic EVALUATION.problem_diagnosis.v1 archetype, dodaja informacije za povezovanje. ",
+          "misuse" : "It should not be assumed that these qualifiers are safely interoperable unless further definition and alignment is agreed between all sharing parties. A problem which has been defined as 'Inactive' during a hospital admission cannot be assumed to be regarded as 'Inactive' in a primary care setting , where a much longer term perspective is being taken. Similarly terms such as Initial, Interim and Final, whilst helpful to the human observer are unlikely to be precisely enough defined to be safely computable e.g. for decision support. ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.problem_qualifier.v1",
     "differential" : true,
@@ -13697,7 +13760,70 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3FA9AA5B8C0A900243AF702FF80C4D4A"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en kontekstspesifikk eller tidsspesifikk kvalifikator for et problem eller en diagnose.",
+          "keywords" : [ "problem", "aktivt", "inaktivt", "status", "episode", "tilstand", "aktiv", "inaktiv", "remisjon", "kronisk", "akutt" ],
+          "use" : "Brukes for å registrere en kontekstspesifikk eller tidsspesifikk kvalifikator som gir ytterligere detaljer som er relevante på tidspunktet man registrerer et problem eller en diagnose. Kvalifikatoren er ikke nødvendigvis passende på et annet tidspunkt eller i en annen klinisk sammenheng.\r\n\r\nDenne arketypen skal brukes i SLOTet \"Status\" i arketypen EVALUATION.problem_diagnosis (Problem/diagnose). Intensjonen er at EVALUATION.problem_diagnosis-arketypen skal inneholde all informasjonen som gjelder i alle sammenhenger, i motsetning til denne arketypen som skal inneholde informasjonen som avhenger av brukssammenheng.\r\n\r\nVIKTIG INFORMASJON FOR IMPLEMENTERING:\r\n- Det er ikke meningen eller implisert at alle disse kvalifikatorene skal brukes i den samme sammenhengen eller det samme tidsperioden. I motsetning til den vanlige måten å lage arketyper på, er denne arketypen laget for å samle flere vanlige kvalifikatorer på ett sted for å forsøksvis oppnå et visst nivå av standardisering innenfor et ganske innfløkt område av klinisk praksis. Det erkjennes at dataelementene i denne arketypen omfatter mange forskjellige, og til dels også konkurrerende, konsepter. Dette ble gjort hovedsakelig for å unngå behov for å ha mange arketyper for kvalifikatorer, der hver av dem kun inneholder ett eller to dataelementer.\r\n- Noen av disse dataelementene er potensielt direkte motstridende dersom de brukes samtidig og i den samme sammenhengen. For eksempel gir det ikke mening å ha et \"inaktivt\" problem innenfor en \"pågående\" episode. Av den grunn bør disse kvalifikatorene brukes med stor omhu, siden de i praksis vil brukes for varierende formål, og interoperabilitet kan ikke garanteres med mindre det er definert klare retningslinjer for bruk innenfor de kliniske omstendighetene der \"Problem/diagnose\"- og \"Problem/diagnose-kvalifikatorer\"-arketypeparet brukes.\r\n\r\nFullstendig DRG-koding vil kreve DRG-relaterte dataelementer fra denne arketypen, i kombinasjon med elementer fra andre arketyper.",
+          "misuse" : "Brukes ikke for å representere differensialdiagnoser. Bruk arketypen EVALUATION.differential_diagnosis for dette formålet.\r\n\r\nBrukes ikke for å representere diagnostisk sikkerhet. Bruk elementet \"Diagnostisk sikkerhet\" i arketypen EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar um ou mais qualificadores de estado clínico, específicos do contexto ou do tempo, para um problema ou diagnóstico específico",
+          "keywords" : [ "problema", "ativo", "inativo", "estado", "episódio", "diagnóstico" ],
+          "use" : "Use para gravar um ou mais qualificadores relevantes que fornecem detalhes adicionais de contexto específico ou de tempo específico e que sejam relevantes no momento do registro de um problema ou diagnóstico, ou dentro do contexto clínico onde é registrado, mas que pode não ser apropriado em outro tempo ou em outro contexto clínico.\r\n\r\nEste arquétipo foi desenvolvido para ser incluído no slot do Estado no arquétipo EVALUATION.problem_diagnosis archetype.\r\n\r\nEstes qualificadores de estado devem ser usados com cuidado, pois eles são variáveis aplicados na prática e a interoperabilidade não pode ser assegurada, salvo se as diretrizes de uso forem claramente definidas dentro da comunidade clínica em que o par de arquétipos 'Problema / Diagnóstico\" e \"Estado do problema' podem ser compartilhados.\r\n\r\nA codificação DRG completa vai exigir os elementos de dados DRG deste arquétipo e o arquétipo CLUSTER.procedure_status equivalente, utilizado dentro do arquétipo ACTION.procedure, além de atributos sobre o paciente.\r\n\r\nO elemento de dados 'não especificado' foi adicionado para facilitar a adição de outros qualificadores que só podem ser usados localmente ou quando o caso de uso não foi claramente estabelecido no momento em que este arquétipo foi publicado. Como outros qualificadores são identificados, eles podem ser adicionados a este arquétipo como uma revisão retroativa.",
+          "misuse" : "Não deve ser usado para representar um diagnóstico diferencial - use o arquétipo EVALUATION.differential_diagnosis para esta finalidade.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a clinical context-specific or time-specific qualifier for a specified problem or diagnosis.",
+          "keywords" : [ "problem", "active", "inactive", "status", "episode", "diagnosis" ],
+          "use" : "Use to record a relevant context-specific or time-specific qualifier that provides additional detail which is relevant at the time of recording or within the clinical context where a problem or diagnosis is recorded. The qualifier may not be appropriate at another time or in another clinical context. \r\n\r\nThis archetype is designed to be included in Status SLOT in the EVALUATION.problem_diagnosis archetype. The intent is for the EVALUATION.problem_diagnosis archetype to hold all of the information that applies in all contexts, in contrast to this archetype describing only information that depends on the context of use.\r\n\r\nIMPORTANT NOTES FOR IMPLEMENTATION: \r\n- It is not intended or implied that any or all of these qualifiers should be used within the same context or period of time. In contrast to the usual design of archetypes, this archetype has been deliberately designed to collect a number of common qualifiers into one place in an effort to attempt some simple standardisation within a very messy area of clinical practice. It is acknowledged that the data elements contained in this archetype embrace many different, and sometimes even competing, concepts. This has been done mainly to prevent the need for multiple qualifier archetypes, each containing only one or two data elements. \r\n- Some of these data elements are potentially directly conflicting if used simultaneously within the same context, for example it would not make sense to have an 'inactive' problem together with an Episode that is 'ongoing'. As such, these status qualifiers should be used with extreme care as they are variably applied in practice and interoperability cannot be assured unless usage guidelines are clearly defined within the clinical community in which the 'Problem/Diagnosis' and 'Problem/Diagnosis qualifier' archetype pair may be shared. \r\n\r\nFull DRG coding will require the DRG-related data elements from this archetype in combination with data elements from other archetypes.",
+          "misuse" : "Not to be used to represent a differential diagnosis - use the archetype EVALUATION.differential_diagnosis for this purpose.\r\n\r\nNot to be used to represent diagnostic certainty - use the 'Diagnostic certainty' data element within the EVALUATION.problem_diagnosis archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za zapisovanje različnih statusov, ki se ponavadi uporablja za aplikacijskimi in kliničnimi sporočili, ki so odvisna od definirane vsebine\r\n\r\n",
+          "keywords" : [ "problem", "aktiven", "ni aktiven" ],
+          "use" : "Za dodeljevanje pravic EVALUATION.problem_diagnosis.v1 archetype, dodaja informacije za povezovanje. ",
+          "misuse" : "It should not be assumed that these qualifiers are safely interoperable unless further definition and alignment is agreed between all sharing parties. A problem which has been defined as 'Inactive' during a hospital admission cannot be assumed to be regarded as 'Inactive' in a primary care setting , where a much longer term perspective is being taken. Similarly terms such as Initial, Interim and Final, whilst helpful to the human observer are unlikely to be precisely enough defined to be safely computable e.g. for decision support. ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.problem_qualifier.v1",
     "differential" : true,
@@ -14383,7 +14509,70 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3FA9AA5B8C0A900243AF702FF80C4D4A"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en kontekstspesifikk eller tidsspesifikk kvalifikator for et problem eller en diagnose.",
+          "keywords" : [ "problem", "aktivt", "inaktivt", "status", "episode", "tilstand", "aktiv", "inaktiv", "remisjon", "kronisk", "akutt" ],
+          "use" : "Brukes for å registrere en kontekstspesifikk eller tidsspesifikk kvalifikator som gir ytterligere detaljer som er relevante på tidspunktet man registrerer et problem eller en diagnose. Kvalifikatoren er ikke nødvendigvis passende på et annet tidspunkt eller i en annen klinisk sammenheng.\r\n\r\nDenne arketypen skal brukes i SLOTet \"Status\" i arketypen EVALUATION.problem_diagnosis (Problem/diagnose). Intensjonen er at EVALUATION.problem_diagnosis-arketypen skal inneholde all informasjonen som gjelder i alle sammenhenger, i motsetning til denne arketypen som skal inneholde informasjonen som avhenger av brukssammenheng.\r\n\r\nVIKTIG INFORMASJON FOR IMPLEMENTERING:\r\n- Det er ikke meningen eller implisert at alle disse kvalifikatorene skal brukes i den samme sammenhengen eller det samme tidsperioden. I motsetning til den vanlige måten å lage arketyper på, er denne arketypen laget for å samle flere vanlige kvalifikatorer på ett sted for å forsøksvis oppnå et visst nivå av standardisering innenfor et ganske innfløkt område av klinisk praksis. Det erkjennes at dataelementene i denne arketypen omfatter mange forskjellige, og til dels også konkurrerende, konsepter. Dette ble gjort hovedsakelig for å unngå behov for å ha mange arketyper for kvalifikatorer, der hver av dem kun inneholder ett eller to dataelementer.\r\n- Noen av disse dataelementene er potensielt direkte motstridende dersom de brukes samtidig og i den samme sammenhengen. For eksempel gir det ikke mening å ha et \"inaktivt\" problem innenfor en \"pågående\" episode. Av den grunn bør disse kvalifikatorene brukes med stor omhu, siden de i praksis vil brukes for varierende formål, og interoperabilitet kan ikke garanteres med mindre det er definert klare retningslinjer for bruk innenfor de kliniske omstendighetene der \"Problem/diagnose\"- og \"Problem/diagnose-kvalifikatorer\"-arketypeparet brukes.\r\n\r\nFullstendig DRG-koding vil kreve DRG-relaterte dataelementer fra denne arketypen, i kombinasjon med elementer fra andre arketyper.",
+          "misuse" : "Brukes ikke for å representere differensialdiagnoser. Bruk arketypen EVALUATION.differential_diagnosis for dette formålet.\r\n\r\nBrukes ikke for å representere diagnostisk sikkerhet. Bruk elementet \"Diagnostisk sikkerhet\" i arketypen EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar um ou mais qualificadores de estado clínico, específicos do contexto ou do tempo, para um problema ou diagnóstico específico",
+          "keywords" : [ "problema", "ativo", "inativo", "estado", "episódio", "diagnóstico" ],
+          "use" : "Use para gravar um ou mais qualificadores relevantes que fornecem detalhes adicionais de contexto específico ou de tempo específico e que sejam relevantes no momento do registro de um problema ou diagnóstico, ou dentro do contexto clínico onde é registrado, mas que pode não ser apropriado em outro tempo ou em outro contexto clínico.\r\n\r\nEste arquétipo foi desenvolvido para ser incluído no slot do Estado no arquétipo EVALUATION.problem_diagnosis archetype.\r\n\r\nEstes qualificadores de estado devem ser usados com cuidado, pois eles são variáveis aplicados na prática e a interoperabilidade não pode ser assegurada, salvo se as diretrizes de uso forem claramente definidas dentro da comunidade clínica em que o par de arquétipos 'Problema / Diagnóstico\" e \"Estado do problema' podem ser compartilhados.\r\n\r\nA codificação DRG completa vai exigir os elementos de dados DRG deste arquétipo e o arquétipo CLUSTER.procedure_status equivalente, utilizado dentro do arquétipo ACTION.procedure, além de atributos sobre o paciente.\r\n\r\nO elemento de dados 'não especificado' foi adicionado para facilitar a adição de outros qualificadores que só podem ser usados localmente ou quando o caso de uso não foi claramente estabelecido no momento em que este arquétipo foi publicado. Como outros qualificadores são identificados, eles podem ser adicionados a este arquétipo como uma revisão retroativa.",
+          "misuse" : "Não deve ser usado para representar um diagnóstico diferencial - use o arquétipo EVALUATION.differential_diagnosis para esta finalidade.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a clinical context-specific or time-specific qualifier for a specified problem or diagnosis.",
+          "keywords" : [ "problem", "active", "inactive", "status", "episode", "diagnosis" ],
+          "use" : "Use to record a relevant context-specific or time-specific qualifier that provides additional detail which is relevant at the time of recording or within the clinical context where a problem or diagnosis is recorded. The qualifier may not be appropriate at another time or in another clinical context. \r\n\r\nThis archetype is designed to be included in Status SLOT in the EVALUATION.problem_diagnosis archetype. The intent is for the EVALUATION.problem_diagnosis archetype to hold all of the information that applies in all contexts, in contrast to this archetype describing only information that depends on the context of use.\r\n\r\nIMPORTANT NOTES FOR IMPLEMENTATION: \r\n- It is not intended or implied that any or all of these qualifiers should be used within the same context or period of time. In contrast to the usual design of archetypes, this archetype has been deliberately designed to collect a number of common qualifiers into one place in an effort to attempt some simple standardisation within a very messy area of clinical practice. It is acknowledged that the data elements contained in this archetype embrace many different, and sometimes even competing, concepts. This has been done mainly to prevent the need for multiple qualifier archetypes, each containing only one or two data elements. \r\n- Some of these data elements are potentially directly conflicting if used simultaneously within the same context, for example it would not make sense to have an 'inactive' problem together with an Episode that is 'ongoing'. As such, these status qualifiers should be used with extreme care as they are variably applied in practice and interoperability cannot be assured unless usage guidelines are clearly defined within the clinical community in which the 'Problem/Diagnosis' and 'Problem/Diagnosis qualifier' archetype pair may be shared. \r\n\r\nFull DRG coding will require the DRG-related data elements from this archetype in combination with data elements from other archetypes.",
+          "misuse" : "Not to be used to represent a differential diagnosis - use the archetype EVALUATION.differential_diagnosis for this purpose.\r\n\r\nNot to be used to represent diagnostic certainty - use the 'Diagnostic certainty' data element within the EVALUATION.problem_diagnosis archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za zapisovanje različnih statusov, ki se ponavadi uporablja za aplikacijskimi in kliničnimi sporočili, ki so odvisna od definirane vsebine\r\n\r\n",
+          "keywords" : [ "problem", "aktiven", "ni aktiven" ],
+          "use" : "Za dodeljevanje pravic EVALUATION.problem_diagnosis.v1 archetype, dodaja informacije za povezovanje. ",
+          "misuse" : "It should not be assumed that these qualifiers are safely interoperable unless further definition and alignment is agreed between all sharing parties. A problem which has been defined as 'Inactive' during a hospital admission cannot be assumed to be regarded as 'Inactive' in a primary care setting , where a much longer term perspective is being taken. Similarly terms such as Initial, Interim and Final, whilst helpful to the human observer are unlikely to be precisely enough defined to be safely computable e.g. for decision support. ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.problem_qualifier.v1",
     "differential" : true,
