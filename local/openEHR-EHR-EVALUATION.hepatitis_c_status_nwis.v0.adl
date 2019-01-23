@@ -10,6 +10,7 @@ language
 description
 	original_author = <
 		["date"] = <"2019-01-07">
+		["name"] = <"Ian McNicoll">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
