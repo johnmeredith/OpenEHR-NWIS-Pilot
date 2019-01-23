@@ -15,6 +15,7 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"To record Hepatitis C status local to NWIS app.">
 		>
 	>
 	other_details = <
@@ -23,7 +24,7 @@ description
 		["original_namespace"] = <"org.nwis">
 		["original_publisher"] = <"NWIS">
 		["custodian_namespace"] = <"org.uk.apperta">
-		["MD5-CAM-1.0.1"] = <"7d6910971cf2c396102d1e6bbb74a891">
+		["MD5-CAM-1.0.1"] = <"6bd86f4da376ceac15a8617db3ee1c87">
 		["build_uid"] = <"b4754b1c-cd28-3f35-b4ce-552f4dd620b3">
 	>
 
