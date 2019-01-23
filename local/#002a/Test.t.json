@@ -20,7 +20,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "60ee34a7f94f934e87e371c3fc7ee713",
+      "MD5-CAM-1.0.1" : "0a974294a4ddeb4a3a3489774807013b",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -280,7 +280,8 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
           "text" : "NWIS Hepatitis C Assessment",
-          "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
+          "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s).",
+          "comment" : "For use a NHS Wales Informatics Service national electonric form."
         }
       },
       "es-ar" : { },
