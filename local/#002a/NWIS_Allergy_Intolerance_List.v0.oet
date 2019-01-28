@@ -92,7 +92,7 @@
             </item>
             <item>
                 <key>MD5-CAM-1.0.1</key>
-                <value>b973145b80f7fe973f81a2b0e61502dd</value>
+                <value>15409d94c2422ca9119f41e11cb202e7</value>
             </item>
             <item>
                 <key>PARENT:MD5-CAM-1.0.1</key>
@@ -164,35 +164,11 @@
             </item>
         </items>
     </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0002]">
-        <items>
-            <item>
-                <key>source</key>
-                <value>openEHR,FHIR,DAM</value>
-            </item>
-        </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0101]">
-        <items>
-            <item>
-                <key>source</key>
-                <value>DAM, openEHR</value>
-            </item>
-        </items>
-    </annotations>
     <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0058]">
         <items>
             <item>
                 <key>source</key>
                 <value>FHIR, DAM</value>
-            </item>
-        </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0006]">
-        <items>
-            <item>
-                <key>source</key>
-                <value>openEHR</value>
             </item>
         </items>
     </annotations>
@@ -217,14 +193,6 @@
             <item>
                 <key>source</key>
                 <value>FHIR, openEHR</value>
-            </item>
-        </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0011]">
-        <items>
-            <item>
-                <key>source</key>
-                <value>FHIR, openEHR,DAM</value>
             </item>
         </items>
     </annotations>
@@ -364,14 +332,6 @@
             </item>
         </items>
     </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0002]">
-        <items>
-            <item>
-                <key>source</key>
-                <value>openEHR,FHIR,DAM</value>
-            </item>
-        </items>
-    </annotations>
     <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0058]">
         <items>
             <item>
@@ -460,6 +420,38 @@
             </item>
         </items>
     </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0002]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR,FHIR,DAM</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0101]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>DAM, openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0006]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0011]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR,DAM</value>
+            </item>
+        </items>
+    </annotations>
     <definition
         archetype_id="openEHR-EHR-COMPOSITION.adverse_reaction_list.v1"
         xmlns:tem="openEHR/v1/Template"
@@ -470,11 +462,16 @@
             <Item
                 archetype_id="openEHR-EHR-EVALUATION.adverse_reaction_risk.v1"
                 path="/items" xsi:type="tem:EVALUATION">
-                <Rule name="Causative agent" path="/data[at0001]/items[at0002]"/>
-                <Rule path="/data[at0001]/items[at0063]">
+                <Rule max="0" path="/data[at0001]/items[at0063]">
                     <constraint xsi:type="tem:multipleConstraint">
                         <includedTypes>Coded_text</includedTypes>
                         <includedTypes>Text</includedTypes>
+                    </constraint>
+                </Rule>
+                <Rule path="/data[at0001]/items[at0101]">
+                    <constraint xsi:type="tem:textConstraint">
+                        <excludedValues>local::at0102</excludedValues>
+                        <excludedValues>local::at0124</excludedValues>
                     </constraint>
                 </Rule>
                 <Rule max="0" path="/data[at0001]/items[at0058]">
@@ -483,12 +480,14 @@
                         <includedTypes>Text</includedTypes>
                     </constraint>
                 </Rule>
+                <Rule max="0" path="/data[at0001]/items[at0006]"/>
                 <Rule max="0" path="/data[at0001]/items[at0009]/items[at0010]"/>
                 <Rule max="0" path="/data[at0001]/items[at0009]/items[at0021]">
                     <constraint xsi:type="tem:textConstraint"/>
                 </Rule>
+                <Rule name="What are the symptoms or signs?" path="/data[at0001]/items[at0009]/items[at0011]"/>
                 <Rule max="0" path="/data[at0001]/items[at0009]/items[at0028]"/>
-                <Rule name="Severity" path="/data[at0001]/items[at0009]/items[at0089]">
+                <Rule max="0" name="Severity" path="/data[at0001]/items[at0009]/items[at0089]">
                     <constraint xsi:type="tem:multipleConstraint">
                         <includedTypes>Coded_text</includedTypes>
                         <includedTypes>Text</includedTypes>
