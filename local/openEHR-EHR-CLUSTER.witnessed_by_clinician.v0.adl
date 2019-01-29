@@ -15,6 +15,9 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"To confirm if an event was witnessed or observed by a clinical member of staff.">
+			use = <"To be used to record a positive statement that a clinical event was witnessed by a clinician.">
+			misuse = <"Not to be used to record details of the name or role of the person concerned. Use an appropriate name or practitioner archetype.">
 		>
 	>
 	other_details = <
@@ -23,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c5bd7f10aa38f1256e23ff3911d54e60">
+		["MD5-CAM-1.0.1"] = <"5256d87d1f61a39038f4f70eef1694b9">
 		["build_uid"] = <"0c00f73f-5cb0-35f0-815c-dee1ada3ac6c">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- witnessed_by_clinician
+	CLUSTER[at0000] matches {    -- Witnessed by Clinician
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Witnessed by clinician?
 				value matches {
@@ -43,7 +46,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"witnessed_by_clinician">
+					text = <"Witnessed by Clinician">
 					description = <"Cluster archetype to be used to confirm an event was witnessed by a clinical staff member. 
 
 For example, adverse reaction to exposure of a causative agent which was observed by a Nurse. ">
