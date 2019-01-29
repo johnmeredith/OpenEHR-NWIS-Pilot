@@ -92,7 +92,7 @@
             </item>
             <item>
                 <key>MD5-CAM-1.0.1</key>
-                <value>d2a0e3e567332a774775b9f878c2c2fd</value>
+                <value>95a20a489273d7714ea4bc3b8af0d5c1</value>
             </item>
             <item>
                 <key>PARENT:MD5-CAM-1.0.1</key>
@@ -121,6 +121,14 @@
             <item>
                 <key>source</key>
                 <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0012]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR</value>
             </item>
         </items>
     </annotations>
@@ -356,6 +364,14 @@
             </item>
         </items>
     </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0101]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>DAM, openEHR</value>
+            </item>
+        </items>
+    </annotations>
     <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0058]">
         <items>
             <item>
@@ -364,11 +380,27 @@
             </item>
         </items>
     </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0006]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
     <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/protocol[at0042]/items[at0099]/items[at0048]">
         <items>
             <item>
                 <key>source</key>
                 <value>openEHR</value>
+            </item>
+        </items>
+    </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0011]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR,DAM</value>
             </item>
         </items>
     </annotations>
@@ -444,30 +476,6 @@
             </item>
         </items>
     </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0101]">
-        <items>
-            <item>
-                <key>source</key>
-                <value>DAM, openEHR</value>
-            </item>
-        </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0006]">
-        <items>
-            <item>
-                <key>source</key>
-                <value>openEHR</value>
-            </item>
-        </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0011]">
-        <items>
-            <item>
-                <key>source</key>
-                <value>FHIR, openEHR,DAM</value>
-            </item>
-        </items>
-    </annotations>
     <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0012]">
         <items>
             <item>
@@ -528,8 +536,13 @@
                 <Rule max="0" path="/protocol[at0042]/items[at0044]"/>
                 <Rule max="0" path="/protocol[at0042]/items[at0099]"/>
                 <Items
-                    archetype_id="openEHR-EHR-CLUSTER.fhir_practitioner_role.v0"
-                    path="/data[at0001]/items[at0009]/items[at0116]" xsi:type="tem:CLUSTER"/>
+                    archetype_id="openEHR-EHR-CLUSTER.witnessed_by_clinician.v0"
+                    concept_name="witnessed_by_clinician"
+                    name="Witnessed by clinician"
+                    path="/data[at0001]/items[at0009]/items[at0116]" xsi:type="tem:CLUSTER">
+                    <Rule
+                        name="Was this reaction witnessed by a clinician?" path="/items[at0001]"/>
+                </Items>
                 <Items archetype_id="openEHR-EHR-CLUSTER.rank_order.v0"
                     path="/protocol[at0042]/items[at0128]" xsi:type="tem:CLUSTER">
                     <Rule path="/items[at0001]">
@@ -599,10 +612,10 @@
         <digest id="MD5-CAM-1.0.1">879E7E42E431DB7AA87C85144FD6B657</digest>
     </integrity_checks>
     <integrity_checks
-        archetype_id="openEHR-EHR-CLUSTER.fhir_practitioner_role.v0"
+        archetype_id="openEHR-EHR-CLUSTER.witnessed_by_clinician.v0"
         xmlns:tem="openEHR/v1/Template"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
-        <digest id="MD5-CAM-1.0.1">492931ce83bc683556c1cd7ed227e031</digest>
+        <digest id="MD5-CAM-1.0.1">c5bd7f10aa38f1256e23ff3911d54e60</digest>
     </integrity_checks>
     <integrity_checks archetype_id="openEHR-EHR-CLUSTER.rank_order.v0"
         xmlns:tem="openEHR/v1/Template"
