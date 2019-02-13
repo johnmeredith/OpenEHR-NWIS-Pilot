@@ -92,7 +92,7 @@
             </item>
             <item>
                 <key>MD5-CAM-1.0.1</key>
-                <value>95a20a489273d7714ea4bc3b8af0d5c1</value>
+                <value>bc11d85793ef5506fef6a3489999333f</value>
             </item>
             <item>
                 <key>PARENT:MD5-CAM-1.0.1</key>
@@ -340,6 +340,14 @@
             </item>
         </items>
     </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0012]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR</value>
+            </item>
+        </items>
+    </annotations>
     <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/protocol[at0042]/items[at0047]">
         <items>
             <item>
@@ -476,14 +484,6 @@
             </item>
         </items>
     </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0012]">
-        <items>
-            <item>
-                <key>source</key>
-                <value>FHIR, openEHR</value>
-            </item>
-        </items>
-    </annotations>
     <definition
         archetype_id="openEHR-EHR-COMPOSITION.adverse_reaction_list.v1"
         xmlns:tem="openEHR/v1/Template"
@@ -537,7 +537,7 @@
                 <Rule max="0" path="/protocol[at0042]/items[at0099]"/>
                 <Items
                     archetype_id="openEHR-EHR-CLUSTER.witnessed_by_clinician.v0"
-                    concept_name="witnessed_by_clinician"
+                    concept_name="Witnessed by Clinician"
                     name="Witnessed by clinician"
                     path="/data[at0001]/items[at0009]/items[at0116]" xsi:type="tem:CLUSTER">
                     <Rule
@@ -561,7 +561,7 @@
                     archetype_id="openEHR-EHR-EVALUATION.exclusion_global.v1"
                     path="/items" xsi:type="tem:EVALUATION">
                     <Rule
-                        default="No known allergies or adverse reactions" path="/data[at0001]/items[at0002]">
+                        default="Patient has no known adverse reactions" path="/data[at0001]/items[at0002]">
                         <nameConstraint>
                             <excludedValues>local::at0003</excludedValues>
                             <excludedValues>local::at0004</excludedValues>
@@ -572,9 +572,23 @@
                 </Item>
                 <Item archetype_id="openEHR-EHR-EVALUATION.absence.v1"
                     path="/items" xsi:type="tem:EVALUATION">
-                    <Rule
-                        default="No information for known allergies and adverse reactions" path="/data[at0001]/items[at0002]"/>
+                    <Rule default="Adverse reactions not recorded" path="/data[at0001]/items[at0002]"/>
                 </Item>
+            </Item>
+            <Item archetype_id="openEHR-EHR-ACTION.review.v1"
+                concept_name="Review" name="Adverse Reaction Check"
+                path="/items" xsi:type="tem:ACTION">
+                <Rule max="0" min="0" path="/ism_transition[at0003]"/>
+                <Rule max="0" min="0" path="/ism_transition[at0010]"/>
+                <Rule max="0" min="0" path="/ism_transition[at0012]"/>
+                <Rule max="0" min="0" path="/ism_transition[at0004]"/>
+                <Rule max="0" min="0" path="/ism_transition[at0019]"/>
+                <Rule max="0" min="0" path="/ism_transition[at0006]"/>
+                <Rule max="0" min="0" path="/ism_transition[at0011]"/>
+                <Rule max="0" min="0" path="/ism_transition[at0013]"/>
+                <Rule default="Adverse reaction list review" path="/description[at0001]/items[at0002]"/>
+                <Rule max="0" path="/description[at0001]/items[at0015]"/>
+                <Rule max="0" path="/description[at0001]/items[at0014]"/>
             </Item>
         </Content>
         <Context>
@@ -615,7 +629,7 @@
         archetype_id="openEHR-EHR-CLUSTER.witnessed_by_clinician.v0"
         xmlns:tem="openEHR/v1/Template"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
-        <digest id="MD5-CAM-1.0.1">c5bd7f10aa38f1256e23ff3911d54e60</digest>
+        <digest id="MD5-CAM-1.0.1">5256d87d1f61a39038f4f70eef1694b9</digest>
     </integrity_checks>
     <integrity_checks archetype_id="openEHR-EHR-CLUSTER.rank_order.v0"
         xmlns:tem="openEHR/v1/Template"
@@ -637,5 +651,10 @@
         xmlns:tem="openEHR/v1/Template"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
         <digest id="MD5-CAM-1.0.1">C3FB0E9724C49FDF46E44AD9B8FB75B1</digest>
+    </integrity_checks>
+    <integrity_checks archetype_id="openEHR-EHR-ACTION.review.v1"
+        xmlns:tem="openEHR/v1/Template"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
+        <digest id="MD5-CAM-1.0.1">D6E52ED907C796AABE429BFA416B894A</digest>
     </integrity_checks>
 </template>
