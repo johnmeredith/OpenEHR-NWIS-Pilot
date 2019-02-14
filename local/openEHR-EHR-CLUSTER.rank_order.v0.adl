@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=c6154145-84c2-4c1a-a70d-2283a548441c)
+archetype (adl_version=1.4; uid=2ebbb4de-d46b-495f-b34f-00431851c51a)
 	openEHR-EHR-CLUSTER.rank_order.v0
 
 concept
@@ -14,23 +14,25 @@ description
 		["organisation"] = <"NHS Wales Informatics Service">
 		["email"] = <"john.meredith@wales.nhs.uk">
 	>
-	lifecycle_state = <"unmanaged">
+	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To provide a means of ranking a list of items.">
 			keywords = <"rank, order, list", ...>
+			copyright = <"© Apperta Foundation">
 			misuse = <"Not to be used as a means to score clinical data.">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c658ac39e5b5a97a3cfbd30a06ddf807">
-		["build_uid"] = <"07f86b65-4aac-3ba1-9ed1-b5f9f269b2ec">
+		["custodian_organisation"] = <"Apperta UK">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"CCEED241B2E67F3BE09FFDE9B019F45E">
+		["build_uid"] = <"62b90fe4-6eca-4cc2-803f-c7a7cd58c149">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
