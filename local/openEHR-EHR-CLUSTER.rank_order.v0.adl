@@ -29,14 +29,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"063c25e32ea6b8eb9c461399a59cd236">
+		["MD5-CAM-1.0.1"] = <"c658ac39e5b5a97a3cfbd30a06ddf807">
 		["build_uid"] = <"07f86b65-4aac-3ba1-9ed1-b5f9f269b2ec">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Rank Order
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- rank
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Rank
 				value matches {
 					DV_COUNT matches {
 						magnitude matches {|>=1|}
@@ -55,7 +55,7 @@ ontology
 					description = <"Specify preferred rank or order of a list where 1 represents the highest item.">
 				>
 				["at0001"] = <
-					text = <"rank">
+					text = <"Rank">
 					description = <"Numeric value to represent the preference of order of a list.">
 				>
 			>
