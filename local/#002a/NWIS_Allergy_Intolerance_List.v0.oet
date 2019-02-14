@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template xmlns="openEHR/v1/Template">
     <id>f473e2ed-7f0a-41c9-9ef6-01632fe6c78b</id>
-    <name>NWIS_Adverse_Reaction_List.v0</name>
+    <name>NWIS Adverse Reaction List.v0</name>
     <description>
         <original_author>
             <item>
@@ -92,7 +92,7 @@
             </item>
             <item>
                 <key>MD5-CAM-1.0.1</key>
-                <value>cfc7df2f7c487a263ebd36b8d5bf4ab6</value>
+                <value>162c3d0fd0dca541e5bd313d597c27d0</value>
             </item>
             <item>
                 <key>PARENT:MD5-CAM-1.0.1</key>
