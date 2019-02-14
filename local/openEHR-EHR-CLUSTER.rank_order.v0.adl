@@ -10,6 +10,9 @@ language
 description
 	original_author = <
 		["date"] = <"2019-01-16">
+		["name"] = <"John Meredith">
+		["organisation"] = <"NHS Wales Informatics Service">
+		["email"] = <"john.meredith@wales.nhs.uk">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -26,7 +29,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f684b38123f5dbfe1e73ba18d9d42203">
+		["MD5-CAM-1.0.1"] = <"063c25e32ea6b8eb9c461399a59cd236">
 		["build_uid"] = <"07f86b65-4aac-3ba1-9ed1-b5f9f269b2ec">
 	>
 
@@ -49,11 +52,11 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Rank Order">
-					description = <"Specify preferred rank or order of a list where 1 represents the highest item. ">
+					description = <"Specify preferred rank or order of a list where 1 represents the highest item.">
 				>
 				["at0001"] = <
 					text = <"rank">
-					description = <"Numeric value to represent the preference of order of a list. ">
+					description = <"Numeric value to represent the preference of order of a list.">
 				>
 			>
 		>
