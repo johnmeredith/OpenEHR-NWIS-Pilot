@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=29a8d830-7d60-40ca-88de-3f79a33b7b82)
+archetype (adl_version=1.4; uid=4d078dd4-57d3-47fe-b4a1-14e349bfb6d2)
 	openEHR-EHR-CLUSTER.witnessed_by_clinician.v0
 
 concept
@@ -14,23 +14,25 @@ description
 		["organisation"] = <"NHS Wales Informatics Service">
 		["email"] = <"john.meredith@wales.nhs.uk">
 	>
-	lifecycle_state = <"unmanaged">
+	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To confirm if an event was witnessed or observed by a clinical member of staff.">
+			copyright = <"© Apperta Foundation">
 			use = <"To be used to record a positive statement that a clinical event was witnessed by a clinician.">
 			misuse = <"Not to be used to record details of the name or role of the person concerned. Use an appropriate name or practitioner archetype.">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4923a0e1a81a2a0795fb6345290e34e7">
-		["build_uid"] = <"0c00f73f-5cb0-35f0-815c-dee1ada3ac6c">
+		["custodian_organisation"] = <"Apperta UK">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"Apperta UK">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"434B8623D919B77A25FB5E178DA02FA8">
+		["build_uid"] = <"bd3f503e-5538-4eee-8771-d14e960a823b">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
