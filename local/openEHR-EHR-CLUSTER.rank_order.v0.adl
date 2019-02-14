@@ -15,6 +15,9 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"To provide a means of ranking a list of items.">
+			keywords = <"rank, order, list", ...>
+			misuse = <"Not to be used as a means to score clinical data.">
 		>
 	>
 	other_details = <
@@ -23,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1dfc81dd37bbf1f70473af5a28ce1429">
+		["MD5-CAM-1.0.1"] = <"f684b38123f5dbfe1e73ba18d9d42203">
 		["build_uid"] = <"07f86b65-4aac-3ba1-9ed1-b5f9f269b2ec">
 	>
 
