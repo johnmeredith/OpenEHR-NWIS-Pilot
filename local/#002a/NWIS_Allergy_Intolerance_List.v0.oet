@@ -92,7 +92,7 @@
             </item>
             <item>
                 <key>MD5-CAM-1.0.1</key>
-                <value>3219abcdda88022ba4923b133011c33b</value>
+                <value>9e10e41e5189873710ebf0140ea05965</value>
             </item>
             <item>
                 <key>PARENT:MD5-CAM-1.0.1</key>
@@ -486,7 +486,8 @@
     </annotations>
     <definition
         archetype_id="openEHR-EHR-COMPOSITION.adverse_reaction_list.v1"
-        xmlns:tem="openEHR/v1/Template"
+        concept_name="Adverse reaction list"
+        name="Adverse reactions list" xmlns:tem="openEHR/v1/Template"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:COMPOSITION">
         <Content
             archetype_id="openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1"
@@ -629,12 +630,12 @@
         archetype_id="openEHR-EHR-CLUSTER.witnessed_by_clinician.v0"
         xmlns:tem="openEHR/v1/Template"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
-        <digest id="MD5-CAM-1.0.1">5256d87d1f61a39038f4f70eef1694b9</digest>
+        <digest id="MD5-CAM-1.0.1">434B8623D919B77A25FB5E178DA02FA8</digest>
     </integrity_checks>
     <integrity_checks archetype_id="openEHR-EHR-CLUSTER.rank_order.v0"
         xmlns:tem="openEHR/v1/Template"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="tem:ArchetypeIntegrity">
-        <digest id="MD5-CAM-1.0.1">f684b38123f5dbfe1e73ba18d9d42203</digest>
+        <digest id="MD5-CAM-1.0.1">CCEED241B2E67F3BE09FFDE9B019F45E</digest>
     </integrity_checks>
     <integrity_checks archetype_id="openEHR-EHR-SECTION.adhoc.v1"
         xmlns:tem="openEHR/v1/Template"
