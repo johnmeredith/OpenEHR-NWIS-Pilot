@@ -92,7 +92,7 @@
             </item>
             <item>
                 <key>MD5-CAM-1.0.1</key>
-                <value>bc11d85793ef5506fef6a3489999333f</value>
+                <value>5ba2d34dc4df1f79163a5cf2356fcae7</value>
             </item>
             <item>
                 <key>PARENT:MD5-CAM-1.0.1</key>
@@ -576,8 +576,8 @@
                 </Item>
             </Item>
             <Item archetype_id="openEHR-EHR-ACTION.review.v1"
-                concept_name="Review" name="Adverse Reaction Check"
-                path="/items" xsi:type="tem:ACTION">
+                concept_name="Review"
+                name="Adverse Reaction List Review" path="/items" xsi:type="tem:ACTION">
                 <Rule max="0" min="0" path="/ism_transition[at0003]"/>
                 <Rule max="0" min="0" path="/ism_transition[at0010]"/>
                 <Rule max="0" min="0" path="/ism_transition[at0012]"/>
