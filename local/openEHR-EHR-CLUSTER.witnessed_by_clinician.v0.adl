@@ -29,7 +29,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5256d87d1f61a39038f4f70eef1694b9">
+		["MD5-CAM-1.0.1"] = <"4923a0e1a81a2a0795fb6345290e34e7">
 		["build_uid"] = <"0c00f73f-5cb0-35f0-815c-dee1ada3ac6c">
 	>
 
@@ -52,12 +52,12 @@ ontology
 					text = <"Witnessed by Clinician">
 					description = <"Cluster archetype to be used to confirm an event was witnessed by a clinical staff member. 
 
-For example, adverse reaction to exposure of a causative agent which was observed by a Nurse. ">
+For example, adverse reaction to exposure of a causative agent which was observed by a Nurse.">
 					comment = <"Used as part of NHS Wales Adverse Reaction record.">
 				>
 				["at0001"] = <
 					text = <"Witnessed by clinician?">
-					description = <"To confirm if an event was witnessed by a clinician. ">
+					description = <"To confirm if an event was witnessed by a clinician.">
 				>
 			>
 		>
