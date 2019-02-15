@@ -92,7 +92,7 @@
             </item>
             <item>
                 <key>MD5-CAM-1.0.1</key>
-                <value>3fba233511247c686c1471285b6b2a72</value>
+                <value>a489180f6b5fe898fcfb8fa4a7c4d721</value>
             </item>
             <item>
                 <key>PARENT:MD5-CAM-1.0.1</key>
@@ -507,7 +507,7 @@
                         <excludedValues>local::at0124</excludedValues>
                     </constraint>
                 </Rule>
-                <Rule max="0" path="/data[at0001]/items[at0058]">
+                <Rule path="/data[at0001]/items[at0058]">
                     <constraint xsi:type="tem:multipleConstraint">
                         <includedTypes>Coded_text</includedTypes>
                         <includedTypes>Text</includedTypes>
