@@ -92,7 +92,7 @@
             </item>
             <item>
                 <key>MD5-CAM-1.0.1</key>
-                <value>778fcbec1dececb49f1af6938def3efa</value>
+                <value>a73507c39ba6b7c09b5004f3f7470964</value>
             </item>
             <item>
                 <key>PARENT:MD5-CAM-1.0.1</key>
@@ -508,9 +508,11 @@
                     </constraint>
                 </Rule>
                 <Rule path="/data[at0001]/items[at0120]">
-                    <constraint xsi:type="tem:multipleConstraint">
-                        <includedTypes>Coded_text</includedTypes>
-                        <includedTypes>Text</includedTypes>
+                    <constraint xsi:type="tem:textConstraint">
+                        <includedValues>food</includedValues>
+                        <includedValues>medication</includedValues>
+                        <includedValues>environment</includedValues>
+                        <includedValues>biologic</includedValues>
                     </constraint>
                 </Rule>
                 <Rule path="/data[at0001]/items[at0058]">
