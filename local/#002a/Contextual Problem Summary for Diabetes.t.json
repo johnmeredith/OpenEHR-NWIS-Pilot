@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8a8acc49486f7c64a35c6bc12f43b21b",
+      "MD5-CAM-1.0.1" : "36291ef4cc3c3b38ecf409d19e2d6c2d",
       "PARENT:MD5-CAM-1.0.1" : "F47F1234A838F3ACAB5A16A57E1DF959"
     },
     "details" : {
@@ -618,7 +618,36 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "SNOMED-CT"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "46635009",
+                        "value" : "Diabetes mellitus type 1"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "44054006",
+                        "value" : "Diabetes mellitus type 2"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "8801005",
+                        "value" : "Secondary diabetes mellitus"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "714628002",
+                        "value" : "Prediabetes (finding)"
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
