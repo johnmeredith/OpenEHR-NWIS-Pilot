@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "95526286ea394ab5a2e1322984ee69c2",
+      "MD5-CAM-1.0.1" : "979a130aed2c5895108a89bd0ed0041e",
       "PARENT:MD5-CAM-1.0.1" : "F47F1234A838F3ACAB5A16A57E1DF959"
     },
     "details" : {
@@ -3015,7 +3015,7 @@
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
-            "text" : "Co-mobidity",
+            "text" : "Co-morbidity",
             "description" : "Identification of the problem or diagnosis, by name.",
             "comment" : "Coding of the name of the problem or diagnosis with a terminology is preferred, where possible."
           }
