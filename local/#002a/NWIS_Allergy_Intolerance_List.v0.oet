@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template xmlns="openEHR/v1/Template">
     <id>f473e2ed-7f0a-41c9-9ef6-01632fe6c78c</id>
-    <name>NWIS Adverse Reactions List.v0</name>
+    <name>NWIS Allergy Intolerance List.v0</name>
     <description>
         <original_author>
             <item>
@@ -92,7 +92,7 @@
             </item>
             <item>
                 <key>MD5-CAM-1.0.1</key>
-                <value>a73507c39ba6b7c09b5004f3f7470964</value>
+                <value>2f57b636922a4075552946f4466bbc5e</value>
             </item>
             <item>
                 <key>PARENT:MD5-CAM-1.0.1</key>
@@ -217,14 +217,6 @@
             <item>
                 <key>source</key>
                 <value>FHIR, openEHR</value>
-            </item>
-        </items>
-    </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0011]">
-        <items>
-            <item>
-                <key>source</key>
-                <value>FHIR, openEHR,DAM</value>
             </item>
         </items>
     </annotations>
@@ -404,14 +396,6 @@
             </item>
         </items>
     </annotations>
-    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0011]">
-        <items>
-            <item>
-                <key>source</key>
-                <value>FHIR, openEHR,DAM</value>
-            </item>
-        </items>
-    </annotations>
     <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0021]">
         <items>
             <item>
@@ -484,6 +468,14 @@
             </item>
         </items>
     </annotations>
+    <annotations path="[openEHR-EHR-COMPOSITION.adverse_reaction_list.v1]/content[openEHR-EHR-SECTION.allergies_adverse_reactions_rcp.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction_risk.v1]/data[at0001]/items[at0009]/items[at0011]">
+        <items>
+            <item>
+                <key>source</key>
+                <value>FHIR, openEHR,DAM</value>
+            </item>
+        </items>
+    </annotations>
     <definition
         archetype_id="openEHR-EHR-COMPOSITION.adverse_reaction_list.v1"
         concept_name="Adverse reaction list"
@@ -526,7 +518,6 @@
                 <Rule max="0" path="/data[at0001]/items[at0009]/items[at0021]">
                     <constraint xsi:type="tem:textConstraint"/>
                 </Rule>
-                <Rule name="What are the symptoms or signs?" path="/data[at0001]/items[at0009]/items[at0011]"/>
                 <Rule max="0" path="/data[at0001]/items[at0009]/items[at0012]"/>
                 <Rule max="0" path="/data[at0001]/items[at0009]/items[at0028]"/>
                 <Rule max="0" name="Severity" path="/data[at0001]/items[at0009]/items[at0089]">
