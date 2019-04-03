@@ -1,0 +1,71 @@
+archetype (adl_version=1.4; uid=03d19374-4ce4-41f7-acd0-e865a052b07f)
+	openEHR-EHR-OBSERVATION.crusade_bleeding_risk_score_.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2019-04-03">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"The CRUSADE bleeding score is used to quantify risk for in-hospital major bleeding across all postadmission treatments, which enhances baseline risk assessment for NSTEMI care.">
+			keywords = <"ACS, Acute coronary syndrome, Bleeding, CBRS, CRUSADE bleeding risk score, NSTEMI, Non-ST segment elevation myocardial infarction, PCI, percutaneous coronary intervention, prognosis, ST segment elevation myocardial infarction, STEMI, ischaemic heart disease, myocardial infarction, primary percutaneous coronary intervention, risk score", ...>
+			use = <"The CRUSADE bleeding score is a tool to help providers consider the baseline risk of bleeding for their patients. With this, selection of bleeding reduction strategies, and increased care in dosing of adjustable anticoagulants should be considered. Lower hematocrit and renal function are the most predictive items in the score.">
+			misuse = <"Risk of bleeding is strongly correlated with risk of mortality. It is not the case that those with highest bleeding risk are the same patients without a benefit from anticoagulants. Rather, the opposite is often the case. Higher bleeding risk, greater benefit to be gained from treatment. Key is in the awareness of that risk, and exercising care in dosing and treatment selection. ">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"a3b9e66b63233b013aa16d144b51c298">
+		["build_uid"] = <"41a8d6ba-2856-39e5-9a78-f590be6aac6c">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Crusade Bleeding Risk Score
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {*}    -- ItemTree
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Crusade Bleeding Risk Score">
+					description = <"Crusade Bleeding Risk Score is used to stratify risk for major bleeding in patients presenting with NSTEMI or STEMI prior to initiation of treatment.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+			>
+		>
+	>
