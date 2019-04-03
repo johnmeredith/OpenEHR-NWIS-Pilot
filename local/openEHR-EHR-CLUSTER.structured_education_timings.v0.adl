@@ -10,6 +10,9 @@ language
 description
 	original_author = <
 		["date"] = <"2019-02-26">
+		["name"] = <"John Meredith">
+		["organisation"] = <"NHS Wales Informatics Service">
+		["email"] = <"john.meredith@wales.nhs.uk">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
