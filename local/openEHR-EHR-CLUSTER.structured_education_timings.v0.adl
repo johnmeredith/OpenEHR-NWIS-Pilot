@@ -15,6 +15,8 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"Structured education timings are recorded as part of the diabetes management education summary where educational treatment given to the patient is attributed a specific status depending on when it was offered and if it is refreshed. ">
+			keywords = <"structured education", ...>
 		>
 	>
 	other_details = <
@@ -23,7 +25,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7681dcc9d508b7638a6e8191207eb7a9">
+		["MD5-CAM-1.0.1"] = <"16a0f50fe5721d0d1a301663f2711b1a">
 		["build_uid"] = <"1e2a187e-2638-3903-8389-38482d33026d">
 	>
 
