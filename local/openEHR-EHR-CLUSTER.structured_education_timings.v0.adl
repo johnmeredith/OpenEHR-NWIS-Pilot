@@ -28,12 +28,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"16a0f50fe5721d0d1a301663f2711b1a">
+		["MD5-CAM-1.0.1"] = <"dcb97da25705199a8bc3801b7c5e92f8">
 		["build_uid"] = <"1e2a187e-2638-3903-8389-38482d33026d">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Structured education timings
+	CLUSTER[at0000] matches {    -- Structured education timings (Initial)
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Date offered
 				value matches {
@@ -73,7 +73,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Structured education timings">
+					text = <"Structured education timings (Initial)">
 					description = <"Structured education timings for diabetes management education summary.">
 				>
 				["at0001"] = <
