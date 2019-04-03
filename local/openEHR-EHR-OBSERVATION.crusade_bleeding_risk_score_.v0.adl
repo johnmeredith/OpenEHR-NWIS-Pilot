@@ -10,6 +10,9 @@ language
 description
 	original_author = <
 		["date"] = <"2019-04-03">
+		["name"] = <"John Meredith">
+		["organisation"] = <"NHS Wales Informatics Service">
+		["email"] = <"john.meredith@wales.nhs.uk">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -27,7 +30,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a3b9e66b63233b013aa16d144b51c298">
+		["MD5-CAM-1.0.1"] = <"3dcddca9bd9c59b82d03295ec87de323">
 		["build_uid"] = <"41a8d6ba-2856-39e5-9a78-f590be6aac6c">
 	>
 
@@ -38,7 +41,29 @@ definition
 				events cardinality matches {0..*; unordered} matches {
 					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
 						data matches {
-							ITEM_TREE[at0003] matches {*}    -- ItemTree
+							ITEM_TREE[at0003] matches {    -- ItemTree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Baseline HCT / Hematocrit
+										value matches {
+											9|[local::at0005],
+											7|[local::at0006],
+											3|[local::at0007],
+											2|[local::at0008],
+											0|[local::at0009]
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Creatinine Clearance
+										value matches {
+											39|[local::at0011],
+											35|[local::at0012],
+											28|[local::at0013],
+											17|[local::at0014],
+											7|[local::at0015],
+											0|[local::at0016]
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -65,6 +90,58 @@ ontology
 				["at0003"] = <
 					text = <"ItemTree">
 					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Baseline HCT / Hematocrit">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"<31">
+					description = <"Hematocrit is less than 31%">
+				>
+				["at0006"] = <
+					text = <"31-33.9">
+					description = <"Hematocrit is between 31 and 33.9%">
+				>
+				["at0007"] = <
+					text = <"34-36.9">
+					description = <"Hematocrit is between 34 and 36.9%">
+				>
+				["at0008"] = <
+					text = <"37-39.9">
+					description = <"Hematocrit is between 37 and 39.9%">
+				>
+				["at0009"] = <
+					text = <">=40">
+					description = <"Hematocrit is greater than or equal to 40%">
+				>
+				["at0010"] = <
+					text = <"Creatinine Clearance">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"<=15">
+					description = <"Less than or equal to 15 mL/min">
+				>
+				["at0012"] = <
+					text = <">15-30">
+					description = <"Greater than 15 to 30 mL/min">
+				>
+				["at0013"] = <
+					text = <">30-60">
+					description = <"Greater than 30 to 60 mL/min">
+				>
+				["at0014"] = <
+					text = <">60-90">
+					description = <"Greater than 60 to 90 mL/min">
+				>
+				["at0015"] = <
+					text = <">90-120">
+					description = <"Greater than 90 to 120 mL/min">
+				>
+				["at0016"] = <
+					text = <">120">
+					description = <"Greater than 120 mL/min">
 				>
 			>
 		>
