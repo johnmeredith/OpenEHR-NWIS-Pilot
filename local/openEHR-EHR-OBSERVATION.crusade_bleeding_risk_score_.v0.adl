@@ -35,7 +35,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f9a5037be9d5fa07651ab4f72f0cbd26">
+		["MD5-CAM-1.0.1"] = <"fe04bc6e09e285a1ecb3ef16790c58f2">
 		["build_uid"] = <"41a8d6ba-2856-39e5-9a78-f590be6aac6c">
 	>
 
@@ -118,6 +118,9 @@ definition
 												value matches {
 													5|[local::at0056]
 												}
+												name matches {
+													DV_CODED_TEXT matches {*}
+												}
 											}
 											ELEMENT[at0057] occurrences matches {0..1} matches {    -- 121-180
 												value matches {
@@ -136,7 +139,7 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0064] occurrences matches {0..1} matches {    -- CRUSADE Risk  Score
+									ELEMENT[at0064] occurrences matches {0..1} matches {    -- CRUSADE Risk Score
 										value matches {
 											DV_COUNT matches {*}
 										}
@@ -409,7 +412,7 @@ ontology
 					comment = <"Relative % calculated by risk score quintiles">
 				>
 				["at0064"] = <
-					text = <"CRUSADE Risk  Score">
+					text = <"CRUSADE Risk Score">
 					description = <"The total summed score of all recorded individual risks">
 				>
 				["at0065"] = <
