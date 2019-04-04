@@ -30,7 +30,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3dcddca9bd9c59b82d03295ec87de323">
+		["MD5-CAM-1.0.1"] = <"ba59710b5471ce72c82e8fc13be1475d">
 		["build_uid"] = <"41a8d6ba-2856-39e5-9a78-f590be6aac6c">
 	>
 
@@ -60,6 +60,17 @@ definition
 											17|[local::at0014],
 											7|[local::at0015],
 											0|[local::at0016]
+										}
+									}
+									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Heart Rate
+										value matches {
+											0|[local::at0018],
+											1|[local::at0019],
+											3|[local::at0020],
+											6|[local::at0021],
+											8|[local::at0022],
+											10|[local::at0023],
+											11|[local::at0024]
 										}
 									}
 								}
@@ -117,7 +128,7 @@ ontology
 				>
 				["at0010"] = <
 					text = <"Creatinine Clearance">
-					description = <"*">
+					description = <"Creatinine Clearance according to the Cockcroft-Gault equation">
 				>
 				["at0011"] = <
 					text = <"<=15">
@@ -142,6 +153,38 @@ ontology
 				["at0016"] = <
 					text = <">120">
 					description = <"Greater than 120 mL/min">
+				>
+				["at0017"] = <
+					text = <"Heart Rate">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"<=70">
+					description = <"Less than or equal to 70 bpm">
+				>
+				["at0019"] = <
+					text = <"71-80">
+					description = <"Between 71 and 80 bpm">
+				>
+				["at0020"] = <
+					text = <"81-90">
+					description = <"Between 81 and 90 bpm">
+				>
+				["at0021"] = <
+					text = <"91-100">
+					description = <"Between 91 and 100 bpm">
+				>
+				["at0022"] = <
+					text = <"101-110">
+					description = <"Between 101 and 110 bpm">
+				>
+				["at0023"] = <
+					text = <"111-120">
+					description = <"Between 111 and 120 bpm">
+				>
+				["at0024"] = <
+					text = <">=121">
+					description = <"Greater than or equal to 121">
 				>
 			>
 		>
