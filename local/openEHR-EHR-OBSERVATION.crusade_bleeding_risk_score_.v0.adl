@@ -32,6 +32,11 @@ description
 		["custodian_namespace"] = <"org.openehr">
 		["MD5-CAM-1.0.1"] = <"c11632af4237f1f22a5e9a0061fa593a">
 		["build_uid"] = <"41a8d6ba-2856-39e5-9a78-f590be6aac6c">
+		["references"] = <"[1] X. Flores-Ríos et al., “Comparison of the performance of the CRUSADE, ACUITY-HORIZONS, and ACTION bleeding risk scores in STEMI undergoing primary PCI: insights from a cohort of 1391 patients,” Eur. Hear. J. Acute Cardiovasc. Care, vol. 2, no. 1, pp. 19–26, Mar. 2013.
+[2] A. Ariza-Solé et al., “CRUSADE bleeding risk score validation for ST-segment-elevation myocardial infarction undergoing primary percutaneous coronary intervention,” Thromb. Res., vol. 132, no. 6, pp. 652–658, Dec. 2013.
+[3] E. Abu-Assi et al., “Comparing the predictive validity of three contemporary bleeding risk scores in acute coronary syndrome,” Eur. Hear. J. Acute Cardiovasc. Care, vol. 1, no. 3, pp. 222–231, Sep. 2012.
+[4] E. Abu-Assi, J. M. Gracía-Acuña, I. Ferreira-González, C. Peña-Gil, P. Gayoso-Diz, and J. R. González-Juanatey, “Evaluating the Performance of the Can Rapid Risk Stratification of Unstable Angina Patients Suppress Adverse Outcomes With Early Implementation of the ACC/AHA Guidelines (CRUSADE) Bleeding Score in a Contemporary Spanish Cohort of Patients With Non–ST-Segment Elevation Acute Myocardial Infarction,” Circulation, vol. 121, no. 22, pp. 2419–2426, Jun. 2010.
+[5] S. Subherwal et al., “Baseline Risk of Major Bleeding in Non–ST-Segment–Elevation Myocardial Infarction,” Circulation, vol. 119, no. 14, pp. 1873–1882, Apr. 2009.">
 	>
 
 definition
