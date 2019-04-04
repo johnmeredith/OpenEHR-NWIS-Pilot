@@ -27,16 +27,16 @@ description
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c11632af4237f1f22a5e9a0061fa593a">
-		["build_uid"] = <"41a8d6ba-2856-39e5-9a78-f590be6aac6c">
 		["references"] = <"[1] X. Flores-Ríos et al., “Comparison of the performance of the CRUSADE, ACUITY-HORIZONS, and ACTION bleeding risk scores in STEMI undergoing primary PCI: insights from a cohort of 1391 patients,” Eur. Hear. J. Acute Cardiovasc. Care, vol. 2, no. 1, pp. 19–26, Mar. 2013.
 [2] A. Ariza-Solé et al., “CRUSADE bleeding risk score validation for ST-segment-elevation myocardial infarction undergoing primary percutaneous coronary intervention,” Thromb. Res., vol. 132, no. 6, pp. 652–658, Dec. 2013.
 [3] E. Abu-Assi et al., “Comparing the predictive validity of three contemporary bleeding risk scores in acute coronary syndrome,” Eur. Hear. J. Acute Cardiovasc. Care, vol. 1, no. 3, pp. 222–231, Sep. 2012.
 [4] E. Abu-Assi, J. M. Gracía-Acuña, I. Ferreira-González, C. Peña-Gil, P. Gayoso-Diz, and J. R. González-Juanatey, “Evaluating the Performance of the Can Rapid Risk Stratification of Unstable Angina Patients Suppress Adverse Outcomes With Early Implementation of the ACC/AHA Guidelines (CRUSADE) Bleeding Score in a Contemporary Spanish Cohort of Patients With Non–ST-Segment Elevation Acute Myocardial Infarction,” Circulation, vol. 121, no. 22, pp. 2419–2426, Jun. 2010.
 [5] S. Subherwal et al., “Baseline Risk of Major Bleeding in Non–ST-Segment–Elevation Myocardial Infarction,” Circulation, vol. 119, no. 14, pp. 1873–1882, Apr. 2009.">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"f9a5037be9d5fa07651ab4f72f0cbd26">
+		["build_uid"] = <"41a8d6ba-2856-39e5-9a78-f590be6aac6c">
 	>
 
 definition
@@ -102,16 +102,6 @@ definition
 											6|[local::at0036]
 										}
 									}
-									ELEMENT[at0037] occurrences matches {0..1} matches {    -- Systolic blood pressure
-										value matches {
-											10|[local::at0038],
-											8|[local::at0039],
-											5|[local::at0040],
-											1|[local::at0041],
-											3|[local::at0042],
-											666|[local::at0043]
-										}
-									}
 									CLUSTER[at0050] occurrences matches {0..1} matches {    -- Systolic blood pressure
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0051] occurrences matches {0..1} matches {    -- <=90
@@ -144,6 +134,20 @@ definition
 													5|[local::at0062]
 												}
 											}
+										}
+									}
+									ELEMENT[at0064] occurrences matches {0..1} matches {    -- CRUSADE Risk  Score
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0063] occurrences matches {0..1} matches {    -- CRUSADE Risk Grade
+										value matches {
+											1|[local::at0065],
+											21|[local::at0066],
+											31|[local::at0067],
+											41|[local::at0068],
+											51|[local::at0069]
 										}
 									}
 								}
@@ -330,34 +334,6 @@ ontology
 					text = <"Yes">
 					description = <"Patient has history of diabetes mellitus">
 				>
-				["at0037"] = <
-					text = <"Systolic blood pressure">
-					description = <"Score based on systolic blood pressure ranges measured in mm Hg.">
-				>
-				["at0038"] = <
-					text = <"<=90">
-					description = <"Less than or equal to 90 mm Hg">
-				>
-				["at0039"] = <
-					text = <"91-100">
-					description = <"Between 91 and 100 mm Hg">
-				>
-				["at0040"] = <
-					text = <"101-120">
-					description = <"Between 101 and 120 mm Hg">
-				>
-				["at0041"] = <
-					text = <"121-180">
-					description = <"Between 121 and 180 mm Hg">
-				>
-				["at0042"] = <
-					text = <"181-200">
-					description = <"Between 181 and 200 mm Hg">
-				>
-				["at0043"] = <
-					text = <">=201">
-					description = <"Greater than or equal to 201">
-				>
 				["at0044"] = <
 					text = <"ItemTree">
 					description = <"@ internal @">
@@ -426,6 +402,35 @@ ontology
 				["at0062"] = <
 					text = <">=201">
 					description = <"Greater than or equal to 201">
+				>
+				["at0063"] = <
+					text = <"CRUSADE Risk Grade">
+					description = <"Overall CRUSADE risk score.">
+					comment = <"Relative % calculated by risk score quintiles">
+				>
+				["at0064"] = <
+					text = <"CRUSADE Risk  Score">
+					description = <"The total summed score of all recorded individual risks">
+				>
+				["at0065"] = <
+					text = <"<=20">
+					description = <"Very low risk">
+				>
+				["at0066"] = <
+					text = <"21-30">
+					description = <"Low risk">
+				>
+				["at0067"] = <
+					text = <"31-40">
+					description = <"Moderate risk">
+				>
+				["at0068"] = <
+					text = <"41-50">
+					description = <"High risk">
+				>
+				["at0069"] = <
+					text = <">=51">
+					description = <"Very high risk">
 				>
 			>
 		>
