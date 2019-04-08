@@ -55,7 +55,7 @@
             </item>
             <item>
                 <key>MD5-CAM-1.0.1</key>
-                <value>b5351bbcd6fb83a61271c67eac3aa69b</value>
+                <value>71e57f628e6ebe2908d195a9a40ac9fd</value>
             </item>
             <item>
                 <key>PARENT:MD5-CAM-1.0.1</key>
@@ -96,7 +96,7 @@
                 archetype_id="openEHR-EHR-INSTRUCTION.health_education_request.v0"
                 path="/items" xsi:type="tem:INSTRUCTION">
                 <Rule
-                    default="SNOMED-CT::6143009::Diabetic education (procedure)"
+                    default="SNOMEDCT::6143009::Diabetic education (procedure)"
                     name="Referral for one-off education" path="/activities[at0001]/description[at0002]/items[at0003]"/>
                 <Rule max="0" path="/activities[at0001]/description[at0002]/items[at0005]">
                     <constraint xsi:type="tem:countConstraint">
