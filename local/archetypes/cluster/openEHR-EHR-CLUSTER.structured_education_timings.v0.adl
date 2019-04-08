@@ -1,36 +1,35 @@
-﻿archetype (adl_version=1.4; uid=e6accd67-1516-4f1e-a364-3838cc7a33bd)
+archetype (adl_version=1.4; uid=e6accd67-1516-4f1e-a364-3838cc7a33bd)
 	openEHR-EHR-CLUSTER.structured_education_timings.v0
 
 concept
-	[at0000]	-- Structured education timings
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
+
 description
 	original_author = <
+		["date"] = <"2019-02-26">
 		["name"] = <"John Meredith">
 		["organisation"] = <"NHS Wales Informatics Service">
 		["email"] = <"john.meredith@wales.nhs.uk">
-		["date"] = <"2019-02-26">
 	>
+	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"Structured education timings are recorded as part of the diabetes management education summary where educational treatment given to the patient is attributed a specific status depending on when it was offered and if it is refreshed. ">
-			use = <"">
 			keywords = <"structured education", ...>
-			misuse = <"">
 			copyright = <"© Apperta Foundation">
 		>
 	>
-	lifecycle_state = <"in_development">
-	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Apperta UK">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"Apperta UK">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"04C2F029FBAD2C370B4A92342989067F">
+		["MD5-CAM-1.0.1"] = <"d8b8a4ee3b5088937b3a22a21b1d747b">
 		["build_uid"] = <"d8f0c27e-3702-4118-8f40-2b7a7b3894e2">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -64,13 +63,9 @@ definition
 						}
 					}
 				}
-				name matches {
-					DV_CODED_TEXT matches {*}
-				}
 			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
