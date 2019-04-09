@@ -21,7 +21,7 @@ description
 			purpose = <"The CRUSADE bleeding score is used to quantify risk for in-hospital major bleeding across all postadmission treatments, which enhances baseline risk assessment for NSTEMI care.">
 			keywords = <"ACS, Acute coronary syndrome, Bleeding, CBRS, CRUSADE bleeding risk score, NSTEMI, Non-ST segment elevation myocardial infarction, PCI, percutaneous coronary intervention, prognosis, ST segment elevation myocardial infarction, STEMI, ischaemic heart disease, myocardial infarction, primary percutaneous coronary intervention, risk score", ...>
 			use = <"The CRUSADE bleeding score is a tool to help providers consider the baseline risk of bleeding for their patients. With this, selection of bleeding reduction strategies, and increased care in dosing of adjustable anticoagulants should be considered. Lower hematocrit and renal function are the most predictive items in the score.">
-			misuse = <"Risk of bleeding is strongly correlated with risk of mortality. It is not the case that those with highest bleeding risk are the same patients without a benefit from anticoagulants. Rather, the opposite is often the case. Higher bleeding risk, greater benefit to be gained from treatment. Key is in the awareness of that risk, and exercising care in dosing and treatment selection. ">
+			misuse = <"Risk of bleeding is strongly correlated with risk of mortality. It is not the case that those with highest bleeding risk are the same patients without a benefit from anticoagulants. Rather, the opposite is often the case. Higher bleeding risk, greater benefit to be gained from treatment. Key is in the awareness of that risk, and exercising care in dosing and treatment selection.">
 		>
 	>
 	other_details = <
