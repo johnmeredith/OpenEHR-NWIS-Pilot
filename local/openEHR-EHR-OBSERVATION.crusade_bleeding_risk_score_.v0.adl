@@ -35,7 +35,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1565973e3867241baf3bea93cb66c014">
+		["MD5-CAM-1.0.1"] = <"278cf30f4ecbe27cdf4f46f6810540a5">
 		["build_uid"] = <"41a8d6ba-2856-39e5-9a78-f590be6aac6c">
 	>
 
@@ -137,6 +137,11 @@ definition
 													5|[local::at0062]
 												}
 											}
+										}
+									}
+									ELEMENT[at0073] occurrences matches {0..1} matches {    -- Systolic blood pressure
+										value matches {
+											DV_ORDINAL matches {*}
 										}
 									}
 									ELEMENT[at0064] occurrences matches {0..1} matches {    -- CRUSADE Risk Score
@@ -442,6 +447,10 @@ ontology
 				["at0071"] = <
 					text = <"Extension">
 					description = <"*">
+				>
+				["at0073"] = <
+					text = <"Systolic blood pressure">
+					description = <"Score based on systolic blood pressure ranges measured in mm Hg.">
 				>
 			>
 		>
