@@ -35,7 +35,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3b90104c5884c4f16f17b28789fc4c12">
+		["MD5-CAM-1.0.1"] = <"122f90a08c90fe56c6853c6445f3d70c">
 		["build_uid"] = <"41a8d6ba-2856-39e5-9a78-f590be6aac6c">
 	>
 
@@ -455,6 +455,7 @@ ontology
 				["at0073"] = <
 					text = <"Systolic blood pressure">
 					description = <"Score based on systolic blood pressure ranges measured in mm Hg.">
+					comment = <"Systolic blood pressure ordinal scores are duplicated between 101 and 120 mm Hg or greater than or equal to 201.">
 				>
 				["at0074"] = <
 					text = <"<=90">
