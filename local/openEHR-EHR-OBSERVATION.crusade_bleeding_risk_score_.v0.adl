@@ -35,7 +35,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"278cf30f4ecbe27cdf4f46f6810540a5">
+		["MD5-CAM-1.0.1"] = <"3b90104c5884c4f16f17b28789fc4c12">
 		["build_uid"] = <"41a8d6ba-2856-39e5-9a78-f590be6aac6c">
 	>
 
@@ -141,7 +141,11 @@ definition
 									}
 									ELEMENT[at0073] occurrences matches {0..1} matches {    -- Systolic blood pressure
 										value matches {
-											DV_ORDINAL matches {*}
+											10|[local::at0074],
+											8|[local::at0075],
+											5|[local::at0076],
+											1|[local::at0077],
+											3|[local::at0078]
 										}
 									}
 									ELEMENT[at0064] occurrences matches {0..1} matches {    -- CRUSADE Risk Score
@@ -381,7 +385,7 @@ ontology
 				>
 				["at0054"] = <
 					text = <"91-100">
-					description = <"Between 91 and 100 mm Hg">
+					description = <"*">
 				>
 				["at0055"] = <
 					text = <"101-120">
@@ -451,6 +455,26 @@ ontology
 				["at0073"] = <
 					text = <"Systolic blood pressure">
 					description = <"Score based on systolic blood pressure ranges measured in mm Hg.">
+				>
+				["at0074"] = <
+					text = <"<=90">
+					description = <"Systolic blood pressure is less than or equal to 90 mm Hg">
+				>
+				["at0075"] = <
+					text = <"91-100">
+					description = <"Between 91 and 100 mm Hg">
+				>
+				["at0076"] = <
+					text = <"101-120 or >=201">
+					description = <"Between 101 and 120 mm Hg or greater than or equal to 201">
+				>
+				["at0077"] = <
+					text = <"121-180">
+					description = <"Between 121 and 180 mm Hg">
+				>
+				["at0078"] = <
+					text = <"181-200">
+					description = <"Between 181 and 200 mm Hg">
 				>
 			>
 		>
