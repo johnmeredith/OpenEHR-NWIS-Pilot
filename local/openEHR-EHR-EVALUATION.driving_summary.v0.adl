@@ -29,7 +29,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4a33a808c83b0e572e5222b7c954cb03">
+		["MD5-CAM-1.0.1"] = <"2e5812be5e3384c44ac89338537a86c6">
 		["build_uid"] = <"43486001-a8e9-3458-81fe-cfb4cc2f59f9">
 	>
 
@@ -119,7 +119,7 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Extension">
-					description = <"*">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 				>
 				["at0003"] = <
 					text = <"ItemTree">
@@ -143,7 +143,7 @@ ontology
 				>
 				["at0008"] = <
 					text = <"Vehicle category">
-					description = <"*">
+					description = <"Category of vehicle that the individual is licensed to drive. ">
 				>
 				["at0009"] = <
 					text = <"Car">
@@ -191,11 +191,11 @@ ontology
 				>
 				["at0020"] = <
 					text = <"Date license valid from">
-					description = <"*">
+					description = <"Date that the individual's driving license was granted.">
 				>
 				["at0021"] = <
 					text = <"Date license relinquished">
-					description = <"*">
+					description = <"Date that the individual's driving license was surrendered.">
 				>
 				["at0022"] = <
 					text = <"Licence surrender reason">
