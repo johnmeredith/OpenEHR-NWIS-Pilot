@@ -1,0 +1,212 @@
+archetype (adl_version=1.4; uid=2567fb2a-b861-4466-97b1-9fbc8f2133f1)
+	openEHR-EHR-EVALUATION.driving_summary.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2019-04-16">
+		["name"] = <"John Meredith">
+		["organisation"] = <"NHS Wales Informatics Service">
+		["email"] = <"john.meredith@wales.nhs.uk">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record summary information about the individual vehicle driving status.">
+			keywords = <"driving, vehicle, drive, license", ...>
+			use = <"Use to record summary information about the individual's driving status.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"4a33a808c83b0e572e5222b7c954cb03">
+		["build_uid"] = <"43486001-a8e9-3458-81fe-cfb4cc2f59f9">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Driving Summary
+		data matches {
+			ITEM_TREE[at0003] matches {    -- ItemTree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Overall status
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0005,    -- Current driver
+									at0006,    -- Former driver
+									at0007]    -- Never driven
+								}
+							}
+						}
+					}
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Vehicle category
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0009,    -- Car
+									at0010,    -- Motorbike
+									at0011,    -- Moped
+									at0012,    -- Medium-sized vehicles
+									at0013,    -- Large vehicles and lorries
+									at0014,    -- Minibus
+									at0015,    -- Bus
+									at0016,    -- Agricultural tractor
+									at0017,    -- Other specialist vehicles
+									at0018,    -- Quad bikes
+									at0019]    -- Motor tricycle
+								}
+							}
+						}
+					}
+					ELEMENT[at0020] occurrences matches {0..1} matches {    -- Date license valid from
+						value matches {
+							DV_DATE matches {*}
+						}
+					}
+					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Date license relinquished
+						value matches {
+							DV_DATE matches {*}
+						}
+					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Licence surrender reason
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0001] matches {    -- ItemTree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Driving Summary">
+					description = <"Summary or persistent information about the driving status of an individual.">
+				>
+				["at0001"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Extension">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"ItemTree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Overall status">
+					description = <"Statement about an individual's current driving status.">
+				>
+				["at0005"] = <
+					text = <"Current driver">
+					description = <"Individual is a current driver">
+				>
+				["at0006"] = <
+					text = <"Former driver">
+					description = <"Individual is a former driver">
+				>
+				["at0007"] = <
+					text = <"Never driven">
+					description = <"Individual has never driven">
+				>
+				["at0008"] = <
+					text = <"Vehicle category">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Car">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Motorbike">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Moped">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Medium-sized vehicles">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Large vehicles and lorries">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Minibus">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Bus">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Agricultural tractor">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"Other specialist vehicles">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"Quad bikes">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"Motor tricycle">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"Date license valid from">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"Date license relinquished">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"Licence surrender reason">
+					description = <"Narrative summary about why the individual's driving license was surrendered. Examples of which include the development of a ‘notifiable’ medical condition or disability, or the exacerbation of a known condition or disability since the  licence has been granted. ">
+					comment = <"Notifiable conditions may include diabetes or taking insulin, syncope (fainting), heart conditions (including atrial fibrillation and pacemakers), sleep apnoea, 
+epilepsy, strokes or glaucoma.">
+				>
+				["at0023"] = <
+					text = <"Comment">
+					description = <"Additional narrative about driving status not captured in other fields.">
+				>
+			>
+		>
+	>
