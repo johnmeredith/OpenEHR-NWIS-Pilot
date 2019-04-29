@@ -29,7 +29,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2e5812be5e3384c44ac89338537a86c6">
+		["MD5-CAM-1.0.1"] = <"aa39402bcbc58bf5c00a3d778818126f">
 		["build_uid"] = <"43486001-a8e9-3458-81fe-cfb4cc2f59f9">
 	>
 
@@ -46,6 +46,17 @@ definition
 									at0005,    -- Current driver
 									at0006,    -- Former driver
 									at0007]    -- Never driven
+								}
+							}
+						}
+					}
+					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Driving license status
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0028,    -- Has driving license
+									at0029]    -- Does not have driving license
 								}
 							}
 						}
@@ -70,9 +81,15 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0020] occurrences matches {0..1} matches {    -- Date license valid from
+					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Driving fitness status
 						value matches {
-							DV_DATE matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0025,    -- Fit to drive
+									at0026]    -- Unfit to drive
+								}
+							}
 						}
 					}
 					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Date license relinquished
@@ -106,6 +123,7 @@ definition
 	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -189,10 +207,6 @@ ontology
 					text = <"Motor tricycle">
 					description = <"*">
 				>
-				["at0020"] = <
-					text = <"Date license valid from">
-					description = <"Date that the individual's driving license was granted.">
-				>
 				["at0021"] = <
 					text = <"Date license relinquished">
 					description = <"Date that the individual's driving license was surrendered.">
@@ -207,6 +221,41 @@ epilepsy, strokes or glaucoma.">
 					text = <"Comment">
 					description = <"Additional narrative about driving status not captured in other fields.">
 				>
+				["at0024"] = <
+					text = <"Driving fitness status">
+					description = <"*">
+				>
+				["at0025"] = <
+					text = <"Fit to drive">
+					description = <"Patient is fit to drive a vehicle">
+				>
+				["at0026"] = <
+					text = <"Unfit to drive">
+					description = <"Patient is not fit to drive a vehicle">
+				>
+				["at0027"] = <
+					text = <"Driving license status">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"Has driving license">
+					description = <"Individual holds a driving license">
+				>
+				["at0029"] = <
+					text = <"Does not have driving license">
+					description = <"Individual does not hold a driving license">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0025"] = <[SNOMED-CT::171353001]>
+				["at0026"] = <[SNOMED-CT::268562005]>
+				["at0024"] = <[SNOMED-CT::243883003]>
+				["at0029"] = <[SNOMED-CT::700412002]>
+				["at0028"] = <[SNOMED-CT::446497005]>
 			>
 		>
 	>
