@@ -29,7 +29,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"aa39402bcbc58bf5c00a3d778818126f">
+		["MD5-CAM-1.0.1"] = <"003838a897f6de0aa1d8a9e46d69baa6">
 		["build_uid"] = <"43486001-a8e9-3458-81fe-cfb4cc2f59f9">
 	>
 
@@ -92,20 +92,15 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Date license relinquished
-						value matches {
-							DV_DATE matches {*}
-						}
-					}
-					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Licence surrender reason
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
+					CLUSTER[at0030] occurrences matches {0..1} matches {*}    -- CLUSTER
 					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Comment
 						value matches {
 							DV_TEXT matches {*}
 						}
+					}
+					allow_archetype CLUSTER[at0034] occurrences matches {0..*} matches {    -- Medical conditions that could affect driving
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.problem_qualifier\.v1/}
 					}
 				}
 			}
@@ -207,16 +202,6 @@ ontology
 					text = <"Motor tricycle">
 					description = <"*">
 				>
-				["at0021"] = <
-					text = <"Date license relinquished">
-					description = <"Date that the individual's driving license was surrendered.">
-				>
-				["at0022"] = <
-					text = <"Licence surrender reason">
-					description = <"Narrative summary about why the individual's driving license was surrendered. Examples of which include the development of a ‘notifiable’ medical condition or disability, or the exacerbation of a known condition or disability since the  licence has been granted. ">
-					comment = <"Notifiable conditions may include diabetes or taking insulin, syncope (fainting), heart conditions (including atrial fibrillation and pacemakers), sleep apnoea, 
-epilepsy, strokes or glaucoma.">
-				>
 				["at0023"] = <
 					text = <"Comment">
 					description = <"Additional narrative about driving status not captured in other fields.">
@@ -244,6 +229,14 @@ epilepsy, strokes or glaucoma.">
 				["at0029"] = <
 					text = <"Does not have driving license">
 					description = <"Individual does not hold a driving license">
+				>
+				["at0030"] = <
+					text = <"CLUSTER">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"Medical conditions that could affect driving">
+					description = <"*">
 				>
 			>
 		>
