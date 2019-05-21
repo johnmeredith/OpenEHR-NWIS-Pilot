@@ -73,13 +73,13 @@ Not to be used for documenting the administration or consumption of a medication
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"0fb6ef3d17af9a8c99107f79f0d4d462">
+		["MD5-CAM-1.0.1"] = <"e60cdc64e2ddd3662d4b4ef6676fcad7">
 		["build_uid"] = <"616dee75-2522-47a3-9bdd-6d91fa38c8ea">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	EVALUATION[at0000.1] matches {    -- Medication summary nwis
+	EVALUATION[at0000.1] matches {    -- Medication Summary (NWIS)
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Tree
 				items cardinality matches {0..*; unordered} matches {
@@ -200,7 +200,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000.1"] = <
-					text = <"Medication summary nwis">
+					text = <"Medication Summary (NWIS)">
 					description = <"Summary information about the administration or consumption history for a specified medication or class of medication over the individual's lifetime.">
 				>
 				["at0.2"] = <
