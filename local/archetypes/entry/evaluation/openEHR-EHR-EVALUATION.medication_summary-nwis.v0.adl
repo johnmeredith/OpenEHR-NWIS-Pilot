@@ -1,10 +1,11 @@
-﻿archetype (adl_version=1.4; uid=edb40b3f-1b2b-425a-8fbe-ab2732a2d188)
+archetype (adl_version=1.4; uid=edb40b3f-1b2b-425a-8fbe-ab2732a2d188)
 	openEHR-EHR-EVALUATION.medication_summary-nwis.v0
-specialise
+specialize
 	openEHR-EHR-EVALUATION.medication_summary.v0
 
 concept
-	[at0000.1]	-- Medication summary nwis
+	[at0000.1]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -25,45 +26,46 @@ language
 			accreditation = <"Hospital Alemão Oswaldo Cruz (HAOC)">
 		>
 	>
+
 description
 	original_author = <
+		["date"] = <"2015-12-08">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Ocean Informatics">
 		["email"] = <"heather.leslie@oceaninformatics.com">
-		["date"] = <"2015-12-08">
 	>
+	lifecycle_state = <"in_development">
+	other_contributors = <"Silje Ljosland Bakke, Nasjonal IKT HF, Norway","Ian McNicoll, FreshEHR Clinical Informatics, United Kingdom">
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere et sammendrag om administrasjon eller forbruk av et spesifisert legemiddel eller legemiddelklasse over individets levetid.">
+			copyright = <"© openEHR Foundation, Clinical Models UK">
 			use = <"Brukes for å registrere et sammendrag om administrasjon eller forbruk av et spesifisert legemiddel eller legemiddelklasse over individets levetid.">
 			misuse = <"Brukes ikke for å registrere en ordinering av et legemiddel som skal administreres eller forbrukes - bruk arketypen INSTRUCTION.medication_order (Legemiddelordinering) for dette formålet.">
-			copyright = <"© openEHR Foundation, Clinical Models UK">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			purpose = <"Para registrar informações sumarizadas sobre a administração ou histórico de consumo de um medicamento específico ou de uma classe de medicamento durante a vida do indivíduo.
 ">
+			copyright = <"© openEHR Foundation, Clinical Models UK">
 			use = <"Usado para registrar informações sumarizadas sobre a administração ou histórico de consumo de um medicamento específico ou de uma classe de medicamento durante a vida do indivíduo.
 ">
 			misuse = <"Não deve ser usado para registrar uma solicitação de administração ou consumo de um medicamento - use INSTRUCTION.medication_order para este propósito.
 
 Não deve ser usado documentar a administração ou consumo de um medicamento - use ACTION.medication para este propósito.
 ">
-			copyright = <"© openEHR Foundation, Clinical Models UK">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For recording summary information about the administration or consumption history for a specified medication or class of medication over the individual's lifetime.">
+			copyright = <"© openEHR Foundation, Clinical Models UK">
 			use = <"Use for recording summary information about the administration or consumption history for a specified medication or class of medication over the individual's lifetime.">
 			misuse = <"Not to be used for recordning an order for a medication to be administered or consumed - use INSTRUCTION.medication_order for this purpose.
 
 Not to be used for documenting the administration or consumption of a medication - use ACTION.medication for this purpose.">
-			copyright = <"© openEHR Foundation, Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"in_development">
-	other_contributors = <"Silje Ljosland Bakke, Nasjonal IKT HF, Norway", "Ian McNicoll, FreshEHR Clinical Informatics, United Kingdom">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"UK Clinical Models">
@@ -71,7 +73,7 @@ Not to be used for documenting the administration or consumption of a medication
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"98112983CB6C91D56511BBD2D937D6D7">
+		["MD5-CAM-1.0.1"] = <"0fb6ef3d17af9a8c99107f79f0d4d462">
 		["build_uid"] = <"616dee75-2522-47a3-9bdd-6d91fa38c8ea">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -146,6 +148,10 @@ definition
 																			>
 								}
 							}
+							allow_archetype CLUSTER[at0.3] occurrences matches {0..*} matches {    -- Dosage details
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.dosage\.v1/}
+							}
 							ELEMENT[at0013] occurrences matches {0..1} matches {    -- Reason for cessation
 								value matches {
 									DV_TEXT matches {*}
@@ -188,7 +194,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
@@ -289,6 +294,10 @@ ontology
 					description = <"Specific name of medication.">
 					comment = <"Use to identify the specific medication used if a class is identified in 'Medication name'. Redundant if the name is identified using the 'Medication name' data element.">
 				>
+				["at0.3"] = <
+					text = <"Dosage details">
+					description = <"*">
+				>
 			>
 		>
 		["nb"] = <
@@ -388,6 +397,10 @@ ontology
 					description = <"Detaljert navn på medikamentet">
 					comment = <"Brukt for å identifisere et spesifikt medikament som brukes, hvis en klasse medikamenter er identifisert i 'Medikament navn'">
 				>
+				["at0.3"] = <
+					text = <"*CLUSTER_SLOT (en)">
+					description = <"*">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -486,6 +499,10 @@ ontology
 					text = <"Nome específico">
 					description = <"Nome específico do medicamento.">
 					comment = <"Usado para identificar o medicamento específico utilizado caso a classe esteja identificada em \"Nome do medicamento\". Redundante se o nome é identificado usando o elemento de dado \"Nome do medicamento\".">
+				>
+				["at0.3"] = <
+					text = <"*CLUSTER_SLOT (en)">
+					description = <"*">
 				>
 			>
 		>
