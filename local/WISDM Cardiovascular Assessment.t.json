@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "228551240765f1f96861458c22aea2dc",
+      "MD5-CAM-1.0.1" : "40a5a3a0def64625a3dacf093e572612",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -13512,7 +13512,7 @@
                     "value" : "SNOMED-CT"
                   },
                   "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ]
+                  "selectedTerminologies" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -13581,11 +13581,7 @@
         "en" : { },
         "nb" : { }
       },
-      "termBindings" : {
-        "SNOMED-CT" : {
-          "ac0.1" : "https://termbrowser.nhs.uk/?perspective=full&conceptId1=69105007&edition=uk-edition&release=v20181001&server=https://termbrowser.dataproducts.nhs.uk/sct-browser-api/snomed&langRefset=999001261000000100,999000691000001104"
-        }
-      },
+      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
