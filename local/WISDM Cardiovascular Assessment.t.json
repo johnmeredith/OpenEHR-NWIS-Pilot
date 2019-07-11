@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "69c41299771dc5294f89d6840773f0c3",
+      "MD5-CAM-1.0.1" : "cc33711588ca4452d55d18255bcbc0b7",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -4295,7 +4295,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.8" ],
+                              "constraint" : [ "ac0.11" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -4306,13 +4306,13 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
                       "nodeId" : "at1052.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
                       "nodeId" : "at1043.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -4336,7 +4336,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.7" ],
+                              "constraint" : [ "ac0.10" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -4680,16 +4680,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -4724,16 +4724,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -4768,16 +4768,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -4812,16 +4812,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -4856,16 +4856,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -4900,16 +4900,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -4944,16 +4944,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -5001,16 +5001,16 @@
             "description" : "حجم الكُفَّة المستخدمة في قياس ضغط الدم",
             "comment" : "Perloff D, Grim C, Flack J, Frohlich ED, Hill M, McDonald M, Morgenstern BZ. Human blood pressure determination by sphygmomanometry. Circulation 1993;88;2460-2470. "
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -5045,16 +5045,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -5089,16 +5089,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -5133,16 +5133,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -5177,16 +5177,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -5221,16 +5221,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         },
@@ -5265,16 +5265,16 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "ac0.7" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
+            "code" : "ac0.10",
             "description" : "*"
           },
-          "ac0.8" : {
+          "ac0.11" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.11",
             "description" : "*"
           }
         }
@@ -5326,6 +5326,21 @@
         "ac0.8" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.8",
+          "members" : [ "at1000", "at1001", "at1002", "at1003", "at1014" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at1000", "at1001", "at1002", "at1003", "at1014" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at1044", "at1045" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
           "members" : [ "at1000", "at1001", "at1002", "at1003", "at1014" ]
         }
       }
@@ -6381,7 +6396,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at1038.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -7679,6 +7693,70 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "defaultValue" : {
+                            "units" : "mm[Hg]",
+                            "@type" : "DV_QUANTITY"
+                          },
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 1000.0,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at1006.1",
                       "attributes" : [ {
@@ -8175,7 +8253,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at1038.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
@@ -8866,7 +8943,8 @@
       "termBindings" : {
         "SNOMED-CT" : {
           "at0000.1" : "term:SNOMED-CT(2003)::163020007",
-          "at0013.1" : "term:SNOMED-CT(2003)::246153002"
+          "at0013.1" : "term:SNOMED-CT(2003)::246153002",
+          "at0004.1" : "term:SNOMED-CT(2003)::163030003"
         }
       },
       "terminologyExtracts" : { },
@@ -14856,11 +14934,7 @@
           }
         }
       },
-      "termBindings" : {
-        "SNOMED-CT" : {
-          "ac0.1" : "https://termbrowser.nhs.uk/?perspective=full&conceptId1=80891009&edition=uk-edition&release=v20181001&server=https://termbrowser.dataproducts.nhs.uk/sct-browser-api/snomed&langRefset=999001261000000100,999000691000001104"
-        }
-      },
+      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
@@ -16374,11 +16448,7 @@
           }
         }
       },
-      "termBindings" : {
-        "SNOMED-CT" : {
-          "ac0.1" : "https://termbrowser.nhs.uk/?perspective=full&conceptId1=80891009&edition=uk-edition&release=v20181001&server=https://termbrowser.dataproducts.nhs.uk/sct-browser-api/snomed&langRefset=999001261000000100,999000691000001104"
-        }
-      },
+      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
