@@ -67,7 +67,9 @@
           },
           "codeString" : "en"
         },
+        "purpose" : "A persistent and managed list of any combination of diagnoses or problems that may influence clinical decision-making and care provision within a defined clinical context.",
         "keywords" : [ "POMR, problem, list, summary, co-morbidity," ],
+        "use" : "Use to record a persistent and managed list of diagnoses identified, problems experienced by the subject or alternatively, positive statements about known exclusions or actual absence of any information about the the medical history. This template may be used within a specific clinical context such as diabetes management. \n\nThis list can also be utilised as a source of up-to-date medical history data for exchange or as the basis for decision support.\n",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
