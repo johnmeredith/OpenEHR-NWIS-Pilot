@@ -4,9 +4,12 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "date" : "2019-02-26"
+      "date" : "2019-02-26",
+      "name" : "John Meredith",
+      "organisation" : "NHS Wales Informatics Service",
+      "email" : "john.meredith@wales.nhs.uk"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "Dr Ian McNicoll" ],
     "lifecycleState" : {
       "codeString" : "release_candidate"
     },
