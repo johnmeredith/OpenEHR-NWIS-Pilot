@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "fadf4e9a56e0a0308192466ee10eb03a",
+      "MD5-CAM-1.0.1" : "49d2960bf54147898331bb7ef82d3faa",
       "PARENT:MD5-CAM-1.0.1" : "F47F1234A838F3ACAB5A16A57E1DF959",
       "build_uid" : "0c41be1a-25b4-44c9-b938-8310e58fbf6f"
     },
@@ -348,6 +348,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
             "text" : "Primary diagnosis",
+            "description" : "*"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Problems and Complications",
             "description" : "*"
           }
         }
