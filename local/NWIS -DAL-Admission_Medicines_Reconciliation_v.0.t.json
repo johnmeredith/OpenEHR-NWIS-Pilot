@@ -22,7 +22,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "67da31974c513dbc383f818b4af45d73",
+      "MD5-CAM-1.0.1" : "4e050d8629d72f8b47b0307d28a36dda",
       "PARENT:MD5-CAM-1.0.1" : "FC27CA9802E3608CB3E7FF598A6E6032"
     },
     "details" : {
@@ -152,7 +152,7 @@
       "children" : [ {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
-        "occurrences" : "0..*",
+        "occurrences" : "0..1",
         "nodeId" : "at0.2",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -170,7 +170,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
-        "occurrences" : "0..*",
+        "occurrences" : "0..1",
         "nodeId" : "at0.8",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -2741,6 +2741,13 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0091.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0092.1",
                   "attributes" : [ ],
@@ -2819,6 +2826,7 @@
                             "children" : [ {
                               "@type" : "C_BOOLEAN",
                               "rmTypeName" : "BOOLEAN",
+                              "occurrences" : "1..1",
                               "constraint" : [ ]
                             } ]
                           } ],
@@ -7594,6 +7602,13 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0091.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0092.1",
                   "attributes" : [ ],
@@ -7672,6 +7687,7 @@
                             "children" : [ {
                               "@type" : "C_BOOLEAN",
                               "rmTypeName" : "BOOLEAN",
+                              "occurrences" : "1..1",
                               "constraint" : [ ]
                             } ]
                           } ],
