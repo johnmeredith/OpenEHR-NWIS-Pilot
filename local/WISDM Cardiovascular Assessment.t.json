@@ -10542,43 +10542,8 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.59" ],
+                              "constraint" : [ "ac0.65" ],
                               "selectedTerminologies" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "occurrences" : "1..1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "TERMINOLOGY_CODE",
-                              "terminologyId" : {
-                                "value" : "SNOMED-CT"
-                              },
-                              "constraint" : [ ],
-                              "selectedTerminologies" : [ "SNOMED-CT" ],
-                              "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "SNOMED-CT",
-                                "code" : "271636001",
-                                "value" : "Pulse regular"
-                              }, {
-                                "terminologyId" : "SNOMED-CT",
-                                "code" : "271638000",
-                                "value" : "Pulse regularly irregular"
-                              }, {
-                                "terminologyId" : "SNOMED-CT",
-                                "code" : "271637005",
-                                "value" : "Pulse irregularly irregular"
-                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -10834,6 +10799,48 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.59",
             "description" : "*"
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023",
+            "text" : "*Rhythm(en)",
+            "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
+          },
+          "ac0.60" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.60",
+            "description" : "*"
+          },
+          "ac0.61" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.61",
+            "description" : "*"
+          },
+          "ac0.62" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.62",
+            "description" : "*"
+          },
+          "ac0.63" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.63",
+            "description" : "*"
+          },
+          "ac0.64" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.64",
+            "description" : "*"
+          },
+          "ac0.65" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.65",
+            "description" : "*"
           }
         },
         "es-co" : {
@@ -10877,6 +10884,48 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.59",
+            "description" : "*"
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023",
+            "text" : "*Rhythm(en)",
+            "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
+          },
+          "ac0.60" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.60",
+            "description" : "*"
+          },
+          "ac0.61" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.61",
+            "description" : "*"
+          },
+          "ac0.62" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.62",
+            "description" : "*"
+          },
+          "ac0.63" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.63",
+            "description" : "*"
+          },
+          "ac0.64" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.64",
+            "description" : "*"
+          },
+          "ac0.65" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.65",
             "description" : "*"
           }
         },
@@ -10928,6 +10977,48 @@
             "text" : "(Synthesized)",
             "code" : "ac0.59",
             "description" : "*"
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023",
+            "text" : "Rhythm",
+            "description" : "Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination."
+          },
+          "ac0.60" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.60",
+            "description" : "*"
+          },
+          "ac0.61" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.61",
+            "description" : "*"
+          },
+          "ac0.62" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.62",
+            "description" : "*"
+          },
+          "ac0.63" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.63",
+            "description" : "*"
+          },
+          "ac0.64" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.64",
+            "description" : "*"
+          },
+          "ac0.65" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.65",
+            "description" : "*"
           }
         },
         "de" : {
@@ -10971,6 +11062,48 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.59",
+            "description" : "*"
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023",
+            "text" : "*Rhythm(en)",
+            "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
+          },
+          "ac0.60" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.60",
+            "description" : "*"
+          },
+          "ac0.61" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.61",
+            "description" : "*"
+          },
+          "ac0.62" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.62",
+            "description" : "*"
+          },
+          "ac0.63" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.63",
+            "description" : "*"
+          },
+          "ac0.64" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.64",
+            "description" : "*"
+          },
+          "ac0.65" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.65",
             "description" : "*"
           }
         },
@@ -11016,6 +11149,48 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.59",
             "description" : "*"
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023",
+            "text" : "*Rhythm(en)",
+            "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
+          },
+          "ac0.60" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.60",
+            "description" : "*"
+          },
+          "ac0.61" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.61",
+            "description" : "*"
+          },
+          "ac0.62" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.62",
+            "description" : "*"
+          },
+          "ac0.63" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.63",
+            "description" : "*"
+          },
+          "ac0.64" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.64",
+            "description" : "*"
+          },
+          "ac0.65" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.65",
+            "description" : "*"
           }
         },
         "pt-br" : {
@@ -11059,6 +11234,48 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.59",
+            "description" : "*"
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023",
+            "text" : "Ritmo",
+            "description" : "Conclusão específica sobre o ritmo do pulso ou batimento cardíaco, extraído de uma combinação da freqüência cardíaca, padrão e outras características observadas no exame."
+          },
+          "ac0.60" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.60",
+            "description" : "*"
+          },
+          "ac0.61" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.61",
+            "description" : "*"
+          },
+          "ac0.62" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.62",
+            "description" : "*"
+          },
+          "ac0.63" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.63",
+            "description" : "*"
+          },
+          "ac0.64" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.64",
+            "description" : "*"
+          },
+          "ac0.65" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.65",
             "description" : "*"
           }
         },
@@ -11104,6 +11321,48 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.59",
             "description" : "*"
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023",
+            "text" : "Rytm",
+            "description" : "Specifik slutsats om pulsens eller hjärtslagens rytm, härledd från en kombination av hjärtfrekvens, mönster och andra egenskaper som observerats vid undersökningen."
+          },
+          "ac0.60" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.60",
+            "description" : "*"
+          },
+          "ac0.61" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.61",
+            "description" : "*"
+          },
+          "ac0.62" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.62",
+            "description" : "*"
+          },
+          "ac0.63" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.63",
+            "description" : "*"
+          },
+          "ac0.64" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.64",
+            "description" : "*"
+          },
+          "ac0.65" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.65",
+            "description" : "*"
           }
         },
         "es" : {
@@ -11147,6 +11406,48 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.59",
+            "description" : "*"
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023",
+            "text" : "Ritmo",
+            "description" : "Conclusión específica sobre el ritmo del pulso o latidos, derivado de la combinación de la frecuencia, el patrón, y otras características observadas durante la examinación."
+          },
+          "ac0.60" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.60",
+            "description" : "*"
+          },
+          "ac0.61" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.61",
+            "description" : "*"
+          },
+          "ac0.62" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.62",
+            "description" : "*"
+          },
+          "ac0.63" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.63",
+            "description" : "*"
+          },
+          "ac0.64" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.64",
+            "description" : "*"
+          },
+          "ac0.65" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.65",
             "description" : "*"
           }
         }
@@ -11442,6 +11743,36 @@
         "ac0.59" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.59",
+          "members" : [ "at1058" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at1058" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
+          "members" : [ "at1058" ]
+        },
+        "ac0.62" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.62",
+          "members" : [ "at1058" ]
+        },
+        "ac0.63" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.63",
+          "members" : [ "at1058" ]
+        },
+        "ac0.64" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.64",
+          "members" : [ "at1058" ]
+        },
+        "ac0.65" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.65",
           "members" : [ "at1058" ]
         }
       }
@@ -11971,39 +12302,8 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.48" ],
+                              "constraint" : [ "ac0.50" ],
                               "selectedTerminologies" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "occurrences" : "1..1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "TERMINOLOGY_CODE",
-                              "terminologyId" : {
-                                "value" : "SNOMED-CT"
-                              },
-                              "constraint" : [ ],
-                              "selectedTerminologies" : [ "SNOMED-CT" ],
-                              "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "SNOMED-CT",
-                                "code" : "301153003",
-                                "value" : "Carotid pulse present"
-                              }, {
-                                "terminologyId" : "SNOMED-CT",
-                                "code" : "301163006",
-                                "value" : "Carotid pulse absent"
-                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -12270,6 +12570,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.48",
             "description" : "*"
+          },
+          "ac0.49" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.49",
+            "description" : "*"
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.50",
+            "description" : "*"
           }
         },
         "es-co" : {
@@ -12325,6 +12637,18 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.48",
+            "description" : "*"
+          },
+          "ac0.49" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.49",
+            "description" : "*"
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.50",
             "description" : "*"
           }
         },
@@ -12388,6 +12712,18 @@
             "text" : "(Synthesized)",
             "code" : "ac0.48",
             "description" : "*"
+          },
+          "ac0.49" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.49",
+            "description" : "*"
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.50",
+            "description" : "*"
           }
         },
         "de" : {
@@ -12443,6 +12779,18 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.48",
+            "description" : "*"
+          },
+          "ac0.49" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.49",
+            "description" : "*"
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.50",
             "description" : "*"
           }
         },
@@ -12500,6 +12848,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.48",
             "description" : "*"
+          },
+          "ac0.49" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.49",
+            "description" : "*"
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.50",
+            "description" : "*"
           }
         },
         "pt-br" : {
@@ -12555,6 +12915,18 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.48",
+            "description" : "*"
+          },
+          "ac0.49" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.49",
+            "description" : "*"
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.50",
             "description" : "*"
           }
         },
@@ -12612,6 +12984,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.48",
             "description" : "*"
+          },
+          "ac0.49" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.49",
+            "description" : "*"
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.50",
+            "description" : "*"
           }
         },
         "es" : {
@@ -12667,6 +13051,18 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.48",
+            "description" : "*"
+          },
+          "ac0.49" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.49",
+            "description" : "*"
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.50",
             "description" : "*"
           }
         }
@@ -12907,6 +13303,16 @@
         "ac0.48" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.48",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
           "members" : [ "at1057", "at1058" ]
         }
       }
@@ -13959,42 +14365,7 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0006.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "terminologyId" : {
-                    "value" : "SNOMED-CT"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "301137001",
-                    "value" : "Normal character apex beat"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "301136005",
-                    "value" : "Feeble apex beat"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "301135009",
-                    "value" : "Thrusting apex beat"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -14754,8 +15125,7 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
+              "rmTypeName" : "DV_TEXT",
               "defaultValue" : {
                 "defining_code" : {
                   "terminology_id" : {
@@ -14768,19 +15138,7 @@
                 "value" : "Heart structure",
                 "@type" : "DV_CODED_TEXT"
               },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "terminologyId" : {
-                    "value" : "SNOMED-CT"
-                  },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -14796,29 +15154,7 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0006.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "terminologyId" : {
-                    "value" : "SNOMED-CT"
-                  },
-                  "constraint" : [ "ac0.2" ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -15355,8 +15691,7 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
+              "rmTypeName" : "DV_TEXT",
               "defaultValue" : {
                 "defining_code" : {
                   "terminology_id" : {
@@ -15369,19 +15704,7 @@
                 "value" : "Heart structure",
                 "@type" : "DV_CODED_TEXT"
               },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "terminologyId" : {
-                    "value" : "SNOMED-CT"
-                  },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -15397,38 +15720,7 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0006.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "terminologyId" : {
-                    "value" : "SNOMED-CT"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "123824001",
-                    "value" : "Heart sounds abnormal"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "301132007",
-                    "value" : "Heart sounds normal"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -15561,8 +15853,7 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
+              "rmTypeName" : "DV_TEXT",
               "defaultValue" : {
                 "defining_code" : {
                   "terminology_id" : {
@@ -15575,19 +15866,7 @@
                 "value" : "Region of foot",
                 "@type" : "DV_CODED_TEXT"
               },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "terminologyId" : {
-                    "value" : "SNOMED-CT"
-                  },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -15615,8 +15894,7 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
+              "rmTypeName" : "DV_TEXT",
               "defaultValue" : {
                 "defining_code" : {
                   "terminology_id" : {
@@ -16217,8 +16495,7 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
+              "rmTypeName" : "DV_TEXT",
               "defaultValue" : {
                 "defining_code" : {
                   "terminology_id" : {
@@ -16231,19 +16508,7 @@
                 "value" : "Sacral region",
                 "@type" : "DV_CODED_TEXT"
               },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "terminologyId" : {
-                    "value" : "SNOMED-CT"
-                  },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -16271,8 +16536,7 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
+              "rmTypeName" : "DV_TEXT",
               "defaultValue" : {
                 "defining_code" : {
                   "terminology_id" : {
@@ -16821,8 +17085,7 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
+              "rmTypeName" : "DV_TEXT",
               "defaultValue" : {
                 "defining_code" : {
                   "terminology_id" : {
@@ -16835,19 +17098,7 @@
                 "value" : "Heart structure",
                 "@type" : "DV_CODED_TEXT"
               },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "terminologyId" : {
-                    "value" : "SNOMED-CT"
-                  },
-                  "constraint" : [ "ac0.1" ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -16863,38 +17114,7 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0006.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "terminologyId" : {
-                    "value" : "SNOMED-CT"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "301131000",
-                    "value" : "Heart murmur absent"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "88610006",
-                    "value" : "Observation of heart murmur"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -17192,38 +17412,7 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at0028.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "occurrences" : "1..1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "TERMINOLOGY_CODE",
-                              "terminologyId" : {
-                                "value" : "SNOMED-CT"
-                              },
-                              "constraint" : [ ],
-                              "selectedTerminologies" : [ "SNOMED-CT" ],
-                              "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "SNOMED-CT",
-                                "code" : "22447003",
-                                "value" : "Raised jugular venous pressure"
-                              }, {
-                                "terminologyId" : "SNOMED-CT",
-                                "code" : "369001",
-                                "value" : "Normal jugular venous pressure"
-                              } ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
