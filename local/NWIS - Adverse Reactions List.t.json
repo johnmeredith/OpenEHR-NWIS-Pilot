@@ -829,7 +829,7 @@
                 }, {
                   "@type" : "C_ARCHETYPE_ROOT",
                   "rmTypeName" : "CLUSTER",
-                  "occurrences" : "0..*",
+                  "occurrences" : "0..1",
                   "nodeId" : "at0116.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ],
