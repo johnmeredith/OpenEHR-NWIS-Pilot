@@ -208,7 +208,117 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "4F5EA4B729BE5E129F87B46C2235C64C"
       },
-      "details" : { }
+      "details" : {
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "En generisk avsnittsrubrik som döps om i en template för att passa in i en specifik klinisk kontext.",
+          "keywords" : [ ],
+          "use" : "Används för att skapa en avsnittsrubrik i en template som sedan döps om för att passa in i den specifika kliniska kontexten. Till exempel: \"Rubrik\" döps om till \"Undersökningsfynd\".",
+          "misuse" : "Ska inte lämnas oförändrad i en template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsheading som kan gis nytt navn i en template for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsheading i en template, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Ad hoc heading\" endret til \"Funn ved undersøkelse\"",
+          "misuse" : "Skal ikke stå med uendret navn i en template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a generic section header which will be renamed in a template to suit a specific clinical context.",
+          "keywords" : [ ],
+          "use" : "Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".",
+          "misuse" : "Not to be left unchanged in a template.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
     "differential" : true,
@@ -346,7 +456,53 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "4B8888E87D20EF23BB9C7FBB2F06A1AA"
       },
-      "details" : { }
+      "details" : {
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Показать возможный дизайн представления списка побочных реакций ",
+          "keywords" : [ "список", "реакция", "побочная", "известная", "исключение", "осложнение", "неблагоприятная" ],
+          "use" : "Используется для поддержки представления записи утверждений об известных неблагоприятных реакциях, а также для записи утверждений об отсутствии неблагоприятных реакций - как общих, так и специфических (на конкретное вещество).\n\nНаличие известных неблагоприятных реакций может быть представлено в виде записей.\n\nУтверждения об отсутствии неблагоприятных реакций, как общих, так и специфических, могут указывать только на состояние объекта в тот момент, когда данная информация была записана - то есть, они основаны на событиях. Поэтому нецелесообразно записывать отсутствие неблагоприятной реакции как постоянный признак, так как появление реакции на любой препарат может перечеркнуть любые предшествующие утверждения об отсутствии осложнений. В клинической практике это ответ на вопрос, случались ли у пациента побочные реакции на любые медикаменты или субстанции ранее.\n\nВозможно указывать в шаблоне оба утверждения, как о наличии определенных неблагоприятных реакций, так и об отсутствии определенных проблем (например, пациент  имел неблагоприятную реакцию на тетрациклин, но никогда не имел реакции на пенициллин). Тем не менее, в большинстве случаев используются либо специфические утверждения о присутствии определенных неблагоприятных реакций (напр. пациент имел реакции на тетрациклин и лейкопластырь), либо общие утверждения о отсутствии известных проблем, (напр. известных неблагоприятных реакций не отмечалось), но не оба сразу. \n\nПоскольку в ограничения слота включены архетипы СУЖДЕНИЕ.побочная_реакция [ EVALUATION.adverse] и СУЖДЕНИЕ.отсутствие_побочных_реакций [EVALUATION.exclusion-adverse] со своими спецификациями, то другие архетипы явно не указываются. Это означает, что при необходимости сюда могут быть включены и другие архетипы, например, если вы хотите включить краткий обзор (эпикриз), то в слот можно вставить и использовать архетип СУЖДЕНИЕ.эпикриз [EVALUATION.clinical_synopsis]    ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para demonstrar um padrão de projeto para representação de uma lista de reação adversa.\n",
+          "keywords" : [ "adverso", "reação", "exclusão", "ausência", "conhecido", "lista" ],
+          "use" : "Use para apoiar a representação de declarações sobre reações adversas conhecidas que foram registradas e também para fazer declarações positivas sobre a ausência de reações adversas, declarações gerais de ausência ou declarações específicas de ausência de uma reação adversa a uma substância específica.\n\nA existência de reaçôes adversas conhecidas pode ser persistente nos registros.\n\nDeclarações sobre a ausência de reações adversas, gerais ou específicas, só podem indicar o estado do indivíduo no momento em que a informação foi de fato registrada - ou seja, são baseadas em eventos. Não é sensato persistir o registro de uma ausência positiva de uma reação adversa como uma reação adversa que ocorre na administração de qualquer substância, isso pode tornar obsoleta qualquer ou todas as declarações de ausência positivas anteriores. Na prática clínica, isso é sinônimo de perguntar aos pacientes se eles tem reação a qualquer medicamento ou substância anteriormente a administração de qualquer medicamento ou substância.\n\nÉ possível representar ambas declarações positivas sobre reações adversas identificadas juntamente com declarações específicas sobre ausência ou problemas/diagnósticos identificados em um template (por exemplo paciente teve uma reação adversa a tetraciclina mas nunca teve uma reação a penicilina). No entanto, na maioria dos casos de uso, tanto declarações específicas sobre a presença de reações adversas identificadas (exemplo paciente teve reação a tetraciclina e gesso) quanto declarações gerais sobre a ausência positiva de quaisquer problemas/diagnósticos conhecidos serão representados (por exemplo nenhuma reação adversa conhecida), mas não ambos.\n\nEnquanto arquétipos EVALUATION.adverse e EVALUATION.exclusion-adverse e suas especializações foram explicitamente incluídas nas restrições do slot, outros arquétipos não foram explicitamente excluídos. Isso significa que qualquer outro arquétipo, se necessário, pode ser incluído ali também – por exemplo, onde dados estruturados não estão disponíveis ou há necessidade de fornecer uma sinopse, o the EVALUATION.clinical_synopsis pode ser inserido e usado.\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To demonstrate a design pattern for representation of an Adverse Reaction List.",
+          "keywords" : [ "adverse", "reaction", "exclusion", "absence", "known", "list" ],
+          "use" : "Use to support the representation of statements about known adverse reactions that have been recorded PLUS to make positive statements about the absence of adverse reactions - either general statements of absence or specific statements of absence of an adverse reaction to a specific substance.\n\nThe existence of known adverse reactions can be persisted in records.\n\nStatements about the absence of adverse reactions, either general or specific, can only indicate the state of the subject at the time that the information was actually recorded - that is, they are event based. It is not sensible to persist the recording of a positive absence of an adverse reaction as an adverse reaction that occurs on administration of any substance may render any or all previous positive statements of absence obsolete. In clinical practice this is synonymous with asking a patient if they have a reaction to any medications or substances prior to any and every administration of a medication or substance.\n\nIt is possible to represent both positive statements about identified adverse reactions alongside specific positive statements about the absence of identified problems/diagnoses in a template (eg patient has had an adverse reaction to tetracycline but never had a reaction to penicillin. However in most use cases either specific statements about the presence of identified adverse reactions (eg patient has had reactions to tetracycline and sticking plaster) or general statements about the positive absence of any known problems/diagnoses will be represented (eg No known adverse reactions), but not both. \n\nWhile EVALUATION.adverse and EVALUATION.exclusion-adverse archetypes and their specialisations have been explicitly included in the slot constraints, other archetypes have not been explicitly excluded. This means that any other archetypes can also be included here, if needed - for example, where structured data is not available or there is a need to provide a synopis, the EVALUATION.clinical_synopsis can be inserted and used.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adverse_list.v0",
     "differential" : true,
@@ -460,7 +616,23 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "B2538EC96A6545E2E6F04CE532DA36E3"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record additional composition metadata aligned with IHE-XDS which is not already available from the Reference Model COMPOSITION class.",
+          "keywords" : [ "Document, metadata", "IHE", "XDS" ],
+          "use" : "Use to add IHE-XDS aligned metadata to a COMPOSITION.context, which along with existing COMPOSITION attributes, allows the composition to be registered in an IHE-XDS environment.",
+          "copyright" : "©Clinical Models UK",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.xds_metadata.v0",
     "differential" : true,
@@ -511,7 +683,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "879E7E42E431DB7AA87C85144FD6B657"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk vurdering av en tendens til overfølsomhetsreaksjoner ved fremtidig eksponering for den angitte substansen eller substansklassen.\n\nDer en tendens er identifisert brukes arketypen til å registrere informasjon eller evidens om en eller flere reaksjonshendelser. Reaksjonen kan være en hvilken som helst uønsket respons som er unik for det enkelte individ, og utløses ved eksponering for den identifiserte substansen eller substansklassen.",
+          "keywords" : [ "reaksjon", "allergi", "allergisk", "uønsket", "hendelse", "virkning", "effekt", "følsomhet", "intoleranse", "hypersensitivtet", "bivirkning", "toksisitet", "legemiddel", "mat", "medisinering", "medisin", "substans", "immun", "non-immun", "kjemisk", "anafylakse", "allergen", "naturmedisin", "immunologisk", "ikke-immunologisk", "non-immunologisk", "risk", "risiko", "supplement", "kosttilskudd", "tilskudd", "anafylaksi", "anafylaktisk", "naturmidler", "medikament", "ernæring", "stoff", "rusmiddel", "agens", "overfølsomhet", "atopi", "cave" ],
+          "use" : "Arketypen gir ett enkelt sted i pasientjournalen for å dokumentere en rekke kliniske utsagn om overfølsomhetsreaksjoner:\n- for å registrere en klinisk vurdering av den enkeltes risiko for en potensiell fremtidig reaksjon ved re-eksponering \n- for å registrere akkumulert informasjon om reaksjonen ved hver eksponering.\n\nBrukes til å registrere informasjon om at en risiko for en overfølsomhetsreaksjon er tilstede:\n - for å støtte direkte klinisk omsorg for et individ\n - som en del av en vedlikeholdt liste over overfølsomhetsreaksjoner\n - for å støtte utveksling av informasjon om tendenser og hendelser knyttet til overfølsomhetsreaksjoner\n - for å støtte rapportering av reaksjonshendelser \n - for å støtte kunnskapsbaserte aktiviteter som klinisk beslutningsstøtte og varsler\n\nBrukes til å registrere informasjon om risikoen for overfølsomhetsreaksjoner for et bredt spekter av substanser som omfatter biologiske produkter, hjelpestoffer og virkestoffer i medisinske preparater, metallsalter og organiske kjemiske forbindelser. \n\nOverfølsomhetsreaksjoner kan være:\n - En immunmediert reaksjon - Typene I-IV (allergiske reaksjoner og hypersensitivitet)\n - En ikke-immunmediert reaksjon - inkludert annen overfølsomhet, bivirkninger, intoleranse og legemiddeltoksisitet (f.eks til gentamicin). \n\nI klinisk praksis er det vanskelig å skille mellom immunmediert og ikke-immunmedierte reaksjoner. Identifisering av reaksjonstypen er ikke et substitutt for alvorlighetsgrad eller risiko for skade på pasienten, som i klinisk praksis kan uttrykkes bedre ved reaksjonsmanifestasjonen. \n\nRisikoen for en reaksjonshendelse eller reaksjonsmanifestasjon bør ikke registreres uten at en identifiserer en foreslått utløsende substans eller substansklasse. Hvis det er usikkerhet om hvilken spesifikke substans som er årsak til overfølsomhetsreaksjonen, kan denne usikkerheten spesifiseres ved hjelp dataelementet \"Status\". Dersom flere mulige substanser kan ha forårsaket en reaksjon/ reaksjonsmanifestasjon bør hver substans registreres for seg i denne arketypen med \"Status\" i utgangspunktet satt til \"Mistenkt\", slik at kontroll av overfølsomhetsreaksjoner kan aktiveres i kliniske systemer. Dersom en substans eller substansklasse senere viser seg å ikke være årsaken til reaksjonen, kan \"Status\" endres til \"Avkreftet\". \n\nDenne arketypen er designet for å tillate registrering av informasjon om en bestemt substans (f.eks. amoxycillin, østers, eller biegift) eller en substansklasse (f.eks. Penicilliner). Hvis en substansklasse registreres kan den spesifikke substansen registreres per eksponering. \n\nOmfanget av denne arketypen er bevisst fokusert på å definere et pragmatisk datasett som brukes i de fleste kliniske systemer, eller vil være egnet for de fleste vanlige kliniske situasjoner, men den tillater utvidelse av modellen når ekstra detaljer er nødvendig, for eksempel ved SLOTene \"Reaksjonsdetaljer\", \"Eksponeringsdetaljer\", og \"Rapporteringsdetaljer\". Eksempler på kliniske situasjoner der utvidelse kan være nødvendig omfatter: en detaljert allergologisk/immunologisk vurdering, for rapportering til tilsynsorganer eller bruk i en klinisk studie. \n\nRegistrering av enhver risiko for overfølsomhetsreaksjon i journalsystemet innebærer klinisk vurdering om at der er en potensiell fare for personen dersom de eksponeres for den samme substansen/substansklassen i fremtiden, altså medfører dette en relativ kontraindikasjon. Standardverdien for \"Alvorlighetsgrad\" bør derfor være \"Lav\". Dersom legen mener at det ikke er trygt for individet å bevisst bli re-eksponert for substansen igjen, for eksempel etter en livstruende anafylaksi, bør verdien for \"Alvorlighetsgrad\" endres til \"Høy\". \n\nEn formell rapport om overfølsomhetsreaksjoner til tilsynsorganer er et dokument som skal inneholde et bredt spekter av informasjon i tillegg til de spesifikke detaljene om overfølsomhetsreaksjonen. Rapporten kan utnytte deler av denne arketypen, samt inkludere tilleggsdata i henhold til lovmessige krav.\n\nEn liste over overfølsomhetsreaksjoner er en oversikt over alle identifiserte tendenser for en overfølsomhetsreaksjon hos individet ved fremtidig eksponering for substansen eller substansklassen, og gir potensielt tilgang til evidens fra beskrivelsene av hver reaksjonshendelse.\n\nVerdifull førstenivåinformasjon som kan legges fram for klinikeren for vurdering av risikoen for fremtidige reaksjoner omfatter:\n- Utsagn om tidligere kliniske reaksjonsmanifestasjoner etter eksponering\n- Informasjonskilden\n- Dataelementet \"Alvorlighetsgrad\"\n\nAndrenivåinformasjon kan hentes frem fra hver eksponeringshendelse og lenker til ytterligere detaljert informasjon som anamnese, undersøkelse og diagnoser lagret andre steder i pasientjournalen, hvis det er tilgjengelig. \n\nLenker til andre deler av pasientjournalen hvor ytterligere informasjon kan befinne seg, som for eksempel konsulasjonsnotater, tillates av openEHR-referansemodellen men er ikke modellert eksplisitt i denne arketypen.\n\nInnholdet i denne arketypen er resultatet av et samarbeid mellom openEHR- og HL7 FHIR-samfunnene. FHIR-spesifikt innhold som var inkludert som en del av høringsprosessen har blitt fjernet fra denne openEHR-arketypen.",
+          "misuse" : "Brukes ikke til registrering av fysiologiske reaksjoner på fysiske fenomener, som for eksempel varme, kulde, sollys, vibrasjon, treningsaktivitet, smittestoffer eller forurensninger i mat. Til dette brukes en spesifikk arketype som EVALUATION.problem_diagnosis eller CLUSTER.symptom_sign.\n\nBrukes ikke til å registrere avvik, inkludert svikt i kliniske prosesser, intervensjoner eller produkter. For eksempel: Feil bruk eller feil gjort ved feilaktig administrering av en substans, feil dosering, feilmerking, skade forårsaket av en intervensjon eller prosedyre, overdose/forgiftning etc. Bruk en spesifikk arketype for dette formålet.\n\nBrukes ikke til å registerere en uønsket reaksjon hvor substansen er ukjent. Bruk arketypen EVALUATION.problem_diagnosis eller CLUSTER.symptom_sign for å registrere disse inntil substansen blir identifisert.\n\nBrukes ikke til å registrere reaksjoner på transfusjoner av blodkomponenter. Bruk en spesifikk arketype for dette formålet.\n\nBrukes ikke som et substitutt for en rapport over uønskede reaksjoner. Se feltet \"Bruk\" for hvordan arketypen kan brukes som en komponent i en slik rapport.\n\n*Not to be used for recording 'alerts'. Use EVALUATION.precaution, EVALUATION.contraindication or related archetypes for this purpose.(en)\n\nBrukes ikke til å registrere mislykket behandling.\n\nSkal ikke brukes for eksplisitt registrering av et fravær (eller negativ tilstedeværelse) av en reaksjon på en hvilken som helst substans eller til spesifikke substanser, for eksempel \"Ingen kjente allergier eller uønskede reaksjoner\" eller \"Ingen kjent allergi mot penicillin\". Bruk arketypen EVALUATION.exclusion-adverse_reaction til å uttrykke en eksplisitt uttalelse om fravær av uønskede reaksjoner.\n\nSkal ikke brukes for eksplisitt registrering av at ingen informasjon er tilgjengelig om et individs status med tanke på uønskede reaksjoner. Bruk arketypen EVALUATION.absence til å registrere at informasjon ikke er tilgjengelig, for eksempel dersom en ikke-samarbeidsvillig pasient nekter å svare på spørsmål.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "\nPara gravar uma avaliação clínica de uma propensão para uma reação adversa após a exposição futura à substância especificada, ou classe de substância .\n\nCaso seja identificada um propensão , deve-se gravar informações ou provas sobre um ou mais eventos de reação que se caracterizam por qualquer resposta fisiológica prejudicial ou indesejável que é exclusivo para o indivíduo , e provocados pela exposição deste à substância ou substância\\classe identificada.",
+          "keywords" : [ "reação", "alergia", "alérgico", "adversa", "evento", "efeito", "sensibilidade", "intolerância", "hipersensibilidade", "efeito colateral", "toxicidade", "droga", "alimento", "agente", "substância", "imune", "não imune", "químico", "anafilaxia", "alérgeno", "medicação", "suplemento", "medicamento", "remédio natural", "imunológico", "não imunológico", "risco" ],
+          "use" : "Use para fornecer um lugar único dentro do registro de saúde para documentar uma gama de demonstrações clínicas sobre reações adversas, incluindo:\n- gravar uma avaliação clínica da propensão do indivíduo para uma reação potencial futura após a re-exposição; e\n- registrar informações cumulativas sobre a reação de cada exposição.\n\nUse para registrar informações sobre a presença positiva do risco de reação adversa:\n- para suporte direto do atendimento clínico de um indivíduo;\n- como parte de uma reação adversa gerenciada ou lista de alergia/intolerância;\n- apoiar o intercâmbio de informações sobre a propensão e eventos relacionados a reações adversas;\n- informar o relato de reação adversa; e\n- para apoiar as atividades informatizadas baseadas no conhecimento como apoio à decisão clínica e alertas.\n\nUso para registrar informações sobre o risco de reações adversas a uma ampla gama de substâncias, incluindo: incipientes e excipientes em preparações medicinais; produtos biológicos; sais metálicos; e compostos químicos orgânicos.\n\nEfeito adverso pode ser:\n- uma reação imune-mediada - tipos I a IV (incluindo hipersensibilidade e reações alérgicas); ou\n- uma reação não imune-mediada por reação - incluindo pseudo reações alérgicas, intolerâncias, efeitos colaterais, toxicidade de drogas (por exemplo, a gentamicina).\nNa prática clínica, a distinção entre imune-mediada e não imune-mediada por reações é difícil e muitas vezes não é prático. A identificação do tipo de reação não é um indicador de gravidade ou risco de dano ao paciente, que é melhor expresso pela manifestação na prática clínica.\n\nO risco de um evento adverso ou manifestação não deve ser registrado sem identificar uma substância causal proposta ou classe de substância. Se houver incerteza que uma substância específica é a causa, esta incerteza pode ser gravada usando o elemento de dados de 'Status'. Se houver vários possíveis substâncias que podem ter causado um reação/manifestação, cada substância deve ser registrada utilizando-se uma instância separada do arquétipo desta reação adversa com o 'Status', definido como um estado inicial de 'Suspeita' para que a verificação de reação adversa possa ser ativado em sistemas clínicos. Uma vez que a substância, agente ou classe mais tarde não foi confirmada como a causa para uma determinada reação, então o 'Status' pode ser modificado para 'Refutada'.\n\nEste arquétipo foi projetado para permitir a gravação de informações sobre uma substância específica (veneno de abelha (picada), ostras ou amoxacilina) ou, alternativamente, uma classe de substâncias (por exemplo, penicilinas). Se uma classe de substância é gravada então, a identificação da substância exata pode ser gravada em uma base por exposição.\n\nO escopo deste arquétipo centrou-se deliberadamente na identificação de um conjunto de dados pragmáticos que são usados em sistemas mais clínicos ou será adequado para cenários clínicos mais comuns, no entanto, ele permite que a extensão do modelo quando adicionado detalhe é necessário, por exemplo detalhes de reação, detalhes de exposição e detalhes de relatórios. Exemplos de situações clínicas em que a extensão pode ser necessária: uma avaliação detalhada do alergista/imunologista, para emissão de relatórios para órgãos reguladores ou usar em um ensaio clínico.\n\nO ato de registrar qualquer risco de reação adversa em um registro de saúde envolve a avaliação clínica que um perigo potencial existe para que um indivíduo se eles são expostos para a mesma substância/agente/classe no futuro – ou seja, uma contra-indicação relativa - e o padrão 'Criticidade' valor deve ser definido como 'Baixo risco'. Se um médico considera que não é seguro para o indivíduo deliberadamente ser re-expostos para o substância/agente novamente, por exemplo, após uma manifestação de uma anafilaxia fatal e, a criticidade, deve ter seu status alterado para 'Alta'.\n\nUm relatório formal de evento adverso para órgãos reguladores é um documento que irá conter uma ampla gama de informações, além de detalhes específicos sobre o efeito adverso. O relatório pode utilizar partes deste risco do arquétipo de reação adversa, além disso, incluir dados adicionais conforme necessário por jurisdição.\n\nUma lista de reação ou alergia/intolerância adversa é um registro de todas as propensões identificadas para uma reação adversa para o indivíduo após a futura exposição à substância ou à classe, além de fornecer acesso potencial para as provas fornecidas por detalhes sobre cada evento de reação, tais como a manifestação.\n\nInformações valiosas de primeiro nível que poderiam ser apresentadas ao médico quando eles precisam avaliar a propensão para futuras reações são:\n\n- instruções sobre manifestações clínicas anteriores após a exposição;\n- fonte da informação/relatório; e\n- a bandeira da 'Importância'.\n\nO nível de informação pode ser estabelecido de cada evento de exposição e links para obter informações detalhadas adicionais tais como história, exame e diagnósticos armazenados em outro lugar no registro, se estiver disponível.\n\nLinks para outras partes do registro de saúde onde mais detalhes podem ser localizados, tais como notas de consulta, é permitido pelo modelo de referência de openEHR, mas não modelados",
+          "misuse" : "Não deve ser usado para gravar as reações fisiológicas a agentes físicos, tais como calor, frio, luz solar, vibração, exercer a atividade, por agentes infecciosos ou contaminantes de alimentos. Use um arquétipo específico para EVALUATION.problem diagnosis ou CLUSTER.symptom sign para essa finalidade.\n\nNão deve ser usado para gravar eventos adversos, incluindo falhas de processo clínico, intervenções ou produtos. Por exemplo: uso anormal ou erros ocorridas pela má administração de um agente ou substância; dosagem incorreta; colheita; dano ou prejuízo causado por uma intervenção ou procedimento; envenenamento, etc. Use um arquétipo específico para o efeito.\n\nNão deve ser usado para gravar a reação adversa, onde a substância é desconhecida. Use EVALUATION.problem diagnosis ou CLUSTER.symptoms para gravar como parte do registro de saúde até que uma possível substância seja identificada.\n\nNão deve ser usado para registro de reações à transfusão de hemoderivados. Use um arquétipo específico para o efeito.\n\nNão deve ser usado como um proxy para um relatório de eventos adversos. Veja acima como ele pode ser usado como um componente de um relatório de eventos adversos.\n\n*Not to be used for recording 'alerts'. Use EVALUATION.precaution, EVALUATION.contraindication or related archetypes for this purpose.(en)\n\nPara não ser usado para gravação falha terapêutica.\n\nNão deve ser utilizado para a gravação explícita de uma ausência (ou presença negativa) de uma reação a qualquer substância ou a identificação de substâncias, por exemplo 'sem alergias conhecidas ou reações adversas ' ou 'Não conhecidas alergias à penicilina'. Use o arquétipo de EVALUATION.exclusionadversas para expressar uma declaração de exclusão de reação positiva.\n\nNão deve ser utilizado para a gravação explícita que nenhuma informação foi capaz de ser obtidos sobre o status de reação adversa de um paciente. Use o arquétipo de EVALUATION.absence que gravar uma declaração positiva que informação não pôde ser obtido, por exemplo, se um paciente não-cooperativo se recusa a responder perguntas.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a clinical assessment of a propensity for an adverse reaction upon future exposure to the specified substance, or class of substance. \n\nWhere a propensity is identified, to record information or evidence about one or more reaction events that are characterised by any harmful or undesirable physiological response that is unique to the individual, and triggered by exposure of an individual to the identified substance or substance class.",
+          "keywords" : [ "reaction", "allergy", "allergic", "adverse", "event", "effect", "sensitivity", "intolerance", "hypersensitivity", "side effect", "toxicity", "drug", "food", "agent", "substance", "immune", "non-immune", "chemical", "anaphylaxis", "allergen", "medication", "supplement", "medicine", "natural remedies", "immunological", "non-immunological", "risk" ],
+          "use" : "Use to provide a single place within the health record to document a range of clinical statements about adverse reactions, including:\n- record a clinical assessment of the individual’s propensity for a potential future reaction upon re-exposure; and\n- record cumulative information about the reaction to each exposure.\n\nUse to record information about the positive presence of the risk of an adverse reaction:\n- to support direct clinical care of an individual; \n- as part of a managed adverse reaction or allergy/intolerance list; \n- to support exchange of information about the propensity and events related to adverse reactions; \n- to inform adverse reaction reporting; and \n- to assist computerised knowledge-based activities such as clinical decision support and alerts.\n\nUse to record information about the risk of adverse reactions to a broad range of substances, including: incipients and excipients in medicinal preparations; biological products; metal salts; and organic chemical compounds.  \n\nAdverse reaction may be:\n- an immune mediated reaction - Types I-IV (including allergic reactions and hypersensitivities); or \n- a non-immune mediated reaction - including pseudo-allergic reactions, side effects, intolerances, drug toxicities (eg to Gentamicin).\nIn clinical practice distinguishing between immune-mediated and non-immune mediated reactions is difficult and often not practical. Identification of the type of reaction is not a proxy for seriousness or risk of harm to the patient, which is better expressed by the manifestation in clinical practice.\n\nThe risk of an adverse reaction event or manifestation should not be recorded without identifying a proposed causative substance or class of substance. If there is uncertainty that a specific substance is the cause, this uncertainty can be recorded using the ‘Status’ data element. If there are multiple possible substances that may have caused a reaction/manifestation, each substance should be recorded using a separate instance of this adverse reaction archetype with the ‘Status’ set to an initial state of ‘Suspected’ so that adverse reaction checking can be activated in clinical systems. Once the substance, agent or class is later proven not to be the cause for a given reaction then the ‘Status’ can be modified to ‘Refuted’.\n\nThis archetype has been designed to allow recording of information about a specific substance (amoxycillin, oysters, or bee sting venom) or, alternatively, a class of substance (eg Penicillins). If a class of substance is recorded then identification of the exact substance can be recorded on a per exposure basis.\n\nThe scope of this archetype has deliberately focused on identifying a pragmatic data set that are used in most clinical systems or will be suitable for most common clinical scenarios, however it permits extension of the model when additional detail is required, for example 'Reaction details', 'Exposure details', and 'Reporting details' slots. Examples of clinical situations where the extension may be required include: a detailed allergist/immunologist assessment, for reporting to regulatory bodies or use in a clinical trial.\n\nThe act of recording any adverse reaction risk in a health record involves the clinical assessment that a potential hazard exists for an individual if they are exposed to the same substance/agent/class in the future – that is, a relative contraindication - and the default ‘Criticality’ value should be set to ‘Low risk’. If a clinician considers that it is not safe for the individual to be deliberately re-exposed to the substance/agent again, for example, following a manifestation of a life-threatening anaphylaxis, then the 'Criticality' data element should be amended to ‘High’. \n\nA formal Adverse Event Report to regulatory bodies is a document that will contain a broad range of information in addition to the specific details about the adverse reaction. The report could utilise parts of this Risk of adverse reaction archetype plus include additional data as required per jurisdiction.\n\nAn adverse reaction or allergy/intolerance list is a record of all identified propensities for an adverse reaction for the individual upon future exposure to the substance or class, plus provides potential access to the evidence provided by details about each reaction event, such as manifestation.\n\nValuable first-level information that could be presented to the clinician when they need to assess propensity for future reactions are:\n- statements about previous clinical manifestations following exposure;\n- source of the information/reporter; and\n- the ‘Criticality’ flag.\nSecond-level information can be drawn from each exposure event and links to additional detailed information such as history, examination and diagnoses stored elsewhere in the record, if it is available.\n\nThis archetype is designed as one component of the therapeutic precautions family of archetypes that need to be considered when a clinician is about to commence a new treatment, test or procedure for an individual.\n\nLinks to other parts of the health record where further details may be located, such as consultation notes, is allowed by the openEHR reference model, but not modelled explicitly in this archetype.\n\nThe content of this archetype is a result of a collaboration between the openEHR and HL7 FHIR communities. FHIR specific content that was included as part of the peer review process has been removed from this openEHR archetype.",
+          "misuse" : "Not to be used for recording physiological reactions to physical agents, such as heat, cold, sunlight, vibration, exercise activity, by infectious agents or food contaminants. Use a specific archetype for EVALUATION.problem/diagnosis or CLUSTER.symptom/sign for this purpose.\n\nNot to be used to record adverse events, including failures of clinical process, interventions or products. For example: abnormal use or mistakes/errors made in maladministration of an agent or substance; incorrect dosage; mislabelling; harm or injury caused by an intervention or procedure; overdose/poisoning etc. Use a specific archetype for the purpose. \n\nNot to be used to record an adverse reaction where the substance is unknown. Use EVALUATION.problem_diagnosis or CLUSTER.symptoms to record as part of the health record until a possible substance is identified.\n\nNot to be used to record reactions to transfusions of blood products. Use a specific archetype for the purpose. \n\nNot to be used as a proxy for an Adverse Event Report. See above for how it may be used as one component of an Adverse Event Report.\n\nNot to be used for recording 'alerts'. Use EVALUATION.precaution, EVALUATION.contraindication or related archetypes for this purpose.\n\nNot to be used for recording failed therapy.\n\nNot to be used for the explicit recording of an absence (or negative presence) of a reaction to 'any substances' or to identified substances, for example ‘No known allergies or adverse reactions’ or ‘No known allergies to Penicillin’. Use the EVALUATION.exclusion-adverse_reaction archetype to express a positive statement of adverse reaction exclusion.\n\nNot to be used for the explicit recording that no information was able to be obtained about the adverse reaction status of a patient. Use the EVALUATION.absence archetype to record that a positive statement that information was not able to be obtained, for example, if a non-cooperative patient refuses to answer questions.",
+          "copyright" : "© Australian Digital Health Agency, openEHR Foundation, HL7 International, Nasjonal IKT",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -580,9 +799,6 @@
           "/protocol[at0042]/items[at0062]" : {
             "source" : "openEHR, FHIR, DAM"
           },
-          "/data[at0001]/items[at0009]/items[at0040]" : {
-            "source" : "openEHR"
-          },
           "/data[at0001]/items[at0009]/items[at0020]" : {
             "source" : "FHIR, openEHR,DAM"
           },
@@ -599,6 +815,9 @@
             "source" : "openEHR"
           },
           "/protocol[at0042]/items[at0099.1]/items[at0045]" : {
+            "source" : "openEHR"
+          },
+          "/data[at0001]/items[at0009]/items[at0040.1]" : {
             "source" : "openEHR"
           }
         },
@@ -624,6 +843,46 @@
       "rmTypeName" : "EVALUATION",
       "nodeId" : "at0000.1",
       "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0009",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0040.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_ARCHETYPE_ROOT",
+                  "rmTypeName" : "CLUSTER",
+                  "occurrences" : "0..*",
+                  "nodeId" : "at0116.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ],
+                  "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-witnessed_by_clinician-001.v0",
+                  "referenceType" : "archetypeOverlay"
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "protocol",
         "children" : [ {
@@ -763,7 +1022,55 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "CBD3F597907DCC9BE51553069E405BB1"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere et overordnet eksklusjonsutsagn om alle problemer/diagnoser, familiære sykdommer, legemidler, prosedyrer, overfølsomheter eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid.",
+          "keywords" : [ "eksklusjon, negasjon, utelukkelse, fravær" ],
+          "use" : "Brukes til å registrere et overordnet eksklusjonsutsagn om alle problemer/diagnoser, familiære sykdommer, legemidler, prosedyrer, overfølsomheter eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid.\n\nArketypen er laget spesifikt for å kunne uttrykke klart og tydelig en overordnet utelukkelse av en type klinisk konsept fra journalen. Denne tilnærmingen er valgt i stedet for å basere seg på flagg eller terminologi for å uttrykke negasjon.\n\nHver globale eksklusjon registreres i en egen instans av arketypen, for eksempel en egen instans for utelukkelse av legemidler og en annen for overfølsomhetsreaksjoner.\n\nElementet \"Overordnet utsagn\" brukes til å registrere et enkelt globalt eksklusjonsutsagn. De forskjellige typene utsagn som er listet opp i elementets runtime name constraint navngir de forskjellige globale eksklusjonene. En runtime name constraint kan brukes enten under templatmodellering eller i en applikasjon.\n\nMerk at eksklusjonsutsagn kun kan regnes som aktuelle og pålitelige på det tidspunktet de registreres. Et journalnotat kan gjerne uttrykke at et individ har ingen problemer eller diagnoser i sin historikk (ved hjelp av et eksklusjonsutsagn) i den samme konsultasjonen der det for første gang registreres et problem eller en diagnose (ved hjelp av arketypen EVALUATION.problem_diagnosis). I senere journalnotater kan individet ha det aktuelle problemet eller diagnosen som del av sin kjente historikk.",
+          "misuse" : "Brukes ikke for å registrere eksklusjon av et spesifikt problem eller diagnose, legemiddel, prosedyre, familiær sykdom, overfølsomhet eller annet klinisk konsept - bruk arketypen EVALUATION.exclusion_specific for dette formålet.\n\nBrukes ikke for å registrere eksklusjon av noen komponent av en fysisk undersøkelse - bruk arketypen CLUSTER.exclusion_exam i en passende OBSERVATION- eller CLUSTER-arketype.\n\nBrukes ikke for å registrere eksklusjon av symptomer - bruk arketypen CLUSTER.exclusion_symptom i en passende OBSERVATION- eller CLUSTER-arketype.\n\nBrukes ikke for å registrere fravær av informasjon - bruk arketypen EVALUATION.absence for dette formålet.",
+          "copyright" : "© Nasjonal IKT HF, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar uma declaração global de exclusão sobre todos Problema / diagnóstico, História familiar, Medicamentos, Procedimentos, Reações adversas ou outro item clínico que não estão presentes atualmente ou não estiveram presentes no passado.",
+          "keywords" : [ "exclusão, negação, excluir, ausência" ],
+          "use" : "Use para registrar uma declaração geral de exclusão sobre todos os Problema / diagnóstico, História familiar, Medicamentos, Procedimentos, Reações adversas ou outro item clínico que não estão presentes ou não estiveram presentes no passado.\n\nEste arquétipo foi especificamente concebido para fazer uma declaração clara e inequívoca de uma exclusão global de um tipo de item clínico do registro de saúde. Esta abordagem é usada preferencialmente, em vez de se basear em sinalizadores ou terminologia para expressar negação.\n\nCada declaração global deve ser registrada em uma instância separada - por exemplo, uma instância separada para uma declaração sobre medicamentos e outra para reações adversas.\n\nO elemento de dados \"Declaração Global\" permite a gravação de uma única declaração Global. As diferentes declarações globais listadas na restrição de nome de tempo de execução \"declaração global\" identificam as diferentes exclusões globais. Esta restrição de nome pode ser aplicada durante a construção do modelo ou em tempo de execução dentro de um aplicativo de software.\n\nPor favor observe que as declarações de exclusão só podem ser consideradas atuais e precisas no momento da gravação. É possível que um registro seja capaz de afirmar que um indivíduo tenha nenhum histórico conhecido de quaisquer problemas ou diagnósticos (utilizando uma instrução de exclusão) e na mesma consulta seja gravada a evidência de sua primeira experiência de um problema ou diagnóstico (usando o arquétipo EVALUATION.problem_diagnosis). Em declarações de registro futuras, o indivíduo pode ter um histórico CONHECIDO do problema ou diagnóstico registrado em sua lista de problemas.",
+          "misuse" : "Não deve ser utilizado para registar a exclusão de um problema específico / diagnóstico, medicação, procedimento, história familiar, reação adversa ou outro item clínico - use o arquétipo EVALUATION.exclusion_specific para este fim.\n\nNão deve ser usado para registrar a exclusão de qualquer componente de um exame físico, use o arquétipo CLUSTER.exclusion_exam dentro de um arquétipo apropriado do tipo OBSERVATION ou CLUSTER.\n\nNão deve ser usado para registrar a exclusão de sintomas, use o arquétipo CLUSTER.exclusion_symptom dentro de um arquétipo apropriado do tipo OBSERVATION ou CLUSTER.\n\nNão deve ser usado para registrar a ausência de informações - use o arquétipo EVALUATION.absense para este fim.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record an overall statement of exclusion about all Problem/diagnosis, Family history, Medications, Procedures, Adverse reactions or other clinical item that are either not currently present, or have not been present in the past.",
+          "keywords" : [ "exclusion, negation, rule out, rule-out, r/o, absence" ],
+          "use" : "Use to record an overall statement of exclusion about all Problem/diagnosis, Family history, Medications, Procedures, Adverse reactions or other clinical item that are either not currently present, or have not been present in the past.\n\nThis archetype has been specifically designed to make a clear and unambiguous statement of an overall exclusion of a type of clinical item from the health record. This approach is used in preference to relying on flags or terminology to express negation.\n\nEach global statement should be recorded in a separate instance - for example a separate instance for a statement about medications and another for adverse reactions.\n\nThe 'Global statement' data element allows for recording of a single Global statement. The different Global statements listed in the \"Global statement' run-time name constraint identifies the the different global exclusions. This name constraint can be applied during template modelling or at run-time within a software application.\n\nPlease note that exclusion statements can only be considered to be current and accurate at the point-in-time of recording. It is possible for a record to be able to state that an individual has NO KNOWN history of any problems or diagnoses (using an exclusion statement) at the same consultation as recording the evidence of their first experience of a problem or diagnosis (using the EVALUATION.problem_diagnosis archetype). In future record statements, the individual may have a KNOWN history of the problem or diagnosis recorded in their problem list.",
+          "misuse" : "Not to be used to record the exclusion of a specific problem/diagnosis, medication, procedure, family history, adverse reaction or other clinical item - use the EVALUATION.exclusion_specific archetype for this purpose.\n\nNot to be used to record the exclusion of any component of a physical examination - use the CLUSTER.exclusion_exam archetype within an appropriate OBSERVATION or CLUSTER archetype.\n\nNot to be used to record the exclusion of symptoms use the CLUSTER.exclusion_symptom archetype within an appropriate OBSERVATION or CLUSTER archetype.\n\nNot to be used to record the absence of information - use the EVALUATION.absense archetype for this purpose.",
+          "copyright" : "© Nasjonal IKT HF, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.exclusion_global.v1",
     "differential" : true,
@@ -791,19 +1098,6 @@
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "defaultValue" : {
-                    "value" : "Patient has no known adverse reactions",
-                    "@type" : "DV_TEXT"
-                  },
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "name",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -822,6 +1116,19 @@
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Patient has no known adverse reactions",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -1002,7 +1309,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "C3FB0E9724C49FDF46E44AD9B8FB75B1"
       },
-      "details" : { }
+      "details" : {
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para permitir o registro ou mudança de uma declaração explícita por um clínico que especificou que informações de saúde não estão disponíveis para inclusão no registro de saúde ou para registrar sua extração no momento do registro.",
+          "keywords" : [ "ausência", "informação", "adversa", "reação", "problema", "diagnóstico", "medicação", "procedimento", "vacinação", "reação adversa" ],
+          "use" : "Utilizar para permitir o registro ou mudança de uma declaração explícita de um sistema de informação especificado que não está disponível para inclusão no prontuário médico ou fragmento no momento do registro.\n\nEsta declaração é o terceiro componente de uma família de declarações - declarações de presença positiva, declarações de exclusão positiva e declarações de ausência:\n- Declarações de presença positiva indicam que há uma informação de saúde relevante no relato ou fragmento - por exemplo, EVALUATION.adverse_reaction afirmando que o paciente tem alergia a penicilina ou EVALUATION.problem_diagnosis afirmando que o paciente tem diabetes. \n- Declarações equivalentes sobre exclusão são usadas para indicar que é conhecido que não há informação de saúde relevante no relato de saúde ou extrato deste - por exemplo, EVALUATION.exclusion_adverse afirmando que o paciente nao tem alergia conhecida a penicilina ou EVALUATION.exclusion_problem_diagnosis afirmando que o paciente não é diabético; e;\n- Neste contexto, o EVALUATION.absence pode ser utilizado para registrar que não há informação de saúde disponível sobre alergia a penicilina ou diagnóstico de diabetes - não se sabe se é presente ou excluído, mas não há informação a ser disponibilizada. \n\nEste arquétipo foi desenvolvido especificamete para o caso de uso em que o clínico está preparando uma parte de um relatório de saúde, então o receptor tem uma compreensão explícita e não ambígua da informação disponível - que se está presente, excluida ou não disponível. É intenção primária que seja utilizado com SLOTS em COMPOSITIONS persistentes como 'Precauções terapêuticas', 'Lista de medicações', 'Lista de problemas' ou 'Lista de reações adversas'. É também pretendido deliberadamente que seja declaração feita por clínico da mesma maneira que ele registra qualquer alergia ou diagnóstico, e é pretendido que seja bem diferente do uso técnico de dados com valores nulos.\n\nDeclarações de ausência somente podem ser consideradas correntes a acuradas no momento do registro.\n\nEste arquétipo foi projetado especificamente para evitar a necessidade de usar flags para expressar negação em qualquer entrada no relato de saúde.",
+          "misuse" : "Não deve ser utilizado para registrar a presença ou ausência de reações adversas, uso de medicações, procedimentos, problemas ou diagnósticos - usar arquétipos específicos para estas finalidades.\n\nNão dever ser utilizado para registrar a exclusão de reações adversas, uso de medicações, procedimentos, problemas ou diagnósticos - utilizar especializações específicas do arquétipo EVALUATION.exclusion para esta finalidade.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To enable recording or exchange of an explicit statement by a clinician that specified health information is not available for inclusion in the health record or record extract at the time of recording.",
+          "keywords" : [ "absence", "information", "adverse", "reaction", "problem", "diagnosis", "medication", "procedure", "vaccination", "adverse reaction" ],
+          "use" : "Use to enable recording or exchange of an explicit statement that specified health information is not available for inclusion in the health record or record extract at the time of recording. \n\nThis statement is the third component of a family of statements - statements of positive presence, statements of positive exclusion and statements of absence:\n- Statements of positive presence indicate that there is relevant health information in the record or extract - for example, EVALUATION.adverse_reaction stating that the patient has an allergy to penicillin or EVALUATION.problem_diagnosis stating that the patient has diabetes. \n- Equivalent statements about exclusion are used to indicate that it is known that there is no relevant health information in the health record or extract - for example, EVALUATION.exclusion_adverse  stating that the patient does not have a known allergy to penicillin or EVALUATION.exclusion_problem_diagnosis stating that the patient is not diabetic; and;\n- In this context, the EVALUATION.absence could be used to record that there is no health information available about penicillin allergy or the diagnosis of diabetes - it is not known if it is present or excluded, but there is no information that can be provided. \n\nThis archetype has been developed specifically for the use case where a clinician is preparing an extract from a health record, so that the receiver has explicit and unambiguous understanding of the information available - that which is present, excluded or just not available. It is primarily intended to be used within SLOTS in persistent COMPOSITIONS such as 'Therapeutic precautions', 'Medication list', 'Problem list', or 'Adverse reaction list'. It is also deliberately intended to be statement made by a clinician in the same way that they would record any allergies or diagnoses, and is intended to be quite different to technical use of null flavours in data.\n\nAbsence statements can only be considered to be current and accurate at the time of recording.\n\nThis archetype has been designed specifically to avoid the need to use of flags to express negation about any entry within the health record.",
+          "misuse" : "Not to be used to record the presence of adverse reactions, medication use, procedures, problems or diagnoses - use specific archetypes for this purpose.\n\nNot to be used to record the exclusion of adverse reactions, medication use, procedures, problems or diagnoses - use specific specialisations of the EVALUATION.exclusion archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.absence.v1",
     "differential" : true,
@@ -1095,6 +1434,57 @@
       },
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "03b24b99-9ee3-4572-9c84-1b28b1aa4fea",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "434B8623D919B77A25FB5E178DA02FA8"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.witnessed_by_clinician.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-witnessed_by_clinician-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "bd3f503e-5538-4eee-8771-d14e960a823b",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
