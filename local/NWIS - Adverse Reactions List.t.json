@@ -4,11 +4,14 @@
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
-      "date" : "2019-12-06"
+      "date" : "2019-01-28",
+      "name" : "John Meredith",
+      "organisation" : "NHS Wales Informatics Service",
+      "email" : "john.meredith@wales.nhs.uk"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "Tony Shannon; Shane McKee; Ian McNicoll; Hildi McNicoll; Paul Miller; Susan Veitch; Mark Wardle" ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "release_candidate"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -54,7 +57,9 @@
           },
           "codeString" : "en"
         },
-        "keywords" : [ ],
+        "purpose" : "Updated Adverse Reactions list to use FHIR/openEHR allergies/adverse reaction risk models, aligned with AoMRC headings for use with NHS Wales national e-forms library.",
+        "keywords" : [ "NWIS, NHS Wales Informatics Service, NHS, adverse, reaction, allergy, intolerance, sensititivity, anaphylaxis, list" ],
+        "use" : "To present a list of allergies and intolerance to clinical users with the capability to perform checks that the list has been reviewed in a clinical setting (e.g. upon admission or hospital or for pre-operative assessment).",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
@@ -193,7 +198,7 @@
   "rmName" : "openehr",
   "rmRelease" : "1.0.3",
   "generated" : true,
-  "templateId" : "NWIS - Adverse Reactions List",
+  "templateId" : "NWIS Adverse Reactions List.v0",
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
@@ -1567,7 +1572,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "434B8623D919B77A25FB5E178DA02FA8"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To confirm if an event was witnessed or observed by a clinical member of staff.",
+          "keywords" : [ ],
+          "use" : "To be used to record a positive statement that a clinical event was witnessed by a clinician.",
+          "misuse" : "Not to be used to record details of the name or role of the person concerned. Use an appropriate name or practitioner archetype.",
+          "copyright" : "© Apperta Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.witnessed_by_clinician.v0",
     "differential" : true,
@@ -1618,7 +1640,23 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "D6E52ED907C796AABE429BFA416B894A"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details of clinical activity regarding the performance of a formal clinical review of a subject's clinical situation, a specific aspect of their clinical care or a specified part of the health record.",
+          "keywords" : [ "record", "review", "medication", "vaccination", "adverse reaction", "allergy", "medicine" ],
+          "use" : "Use to record details of clinical activity regarding the performance of a formal clinical review of a subject's clinical situation, a specific aspect of their clinical care or a specified part of the health record. For example: recording activity around the performance of a formal Medicines Review; or a care coordinator reviewing progress of Care Plans; or a file review by a case worker.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.review.v1",
     "differential" : true,
