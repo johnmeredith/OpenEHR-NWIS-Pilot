@@ -23,7 +23,7 @@
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
       "PARENT:MD5-CAM-1.0.1" : "2A1D6E9F20099A022F8E0473B6A3C598",
-      "MD5-CAM-1.0.1" : "63811174543819d902f0949805c06cbe"
+      "MD5-CAM-1.0.1" : "c4b2990cf0f612996170d789905921bc"
     },
     "details" : {
       "es-ar" : {
@@ -1239,6 +1239,19 @@
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Patient has no known adverse reactions",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "name",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -1253,23 +1266,10 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.16" ],
+                      "constraint" : [ "ac0.18" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "defaultValue" : {
-                    "value" : "Patient has no known adverse reactions",
-                    "@type" : "DV_TEXT"
-                  },
-                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -1317,12 +1317,6 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Global exclusion of adverse reactions",
-            "description" : "Overall statement of exclusion about all adverse reactions at the time of recording."
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -1393,6 +1387,24 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.16",
+            "description" : "*"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Exclusion of adverse reaction records",
+            "description" : "An overall statement of exclusion about all Problems/diagnoses, Family history, Medications, Procedures, Adverse reactions or other clinical items that are either not currently present, or have not been present in the past."
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.17",
+            "description" : "*"
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.18",
             "description" : "*"
           }
         },
@@ -1421,12 +1433,6 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Overordnet eksklusjon av overfølsomhetsreaksjoner",
-            "description" : "Overordnet eksklusjonsutsagn om alle overfølsomhetsreaksjoner ved registreringstidspunktet."
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1497,6 +1503,18 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.16",
+            "description" : "*"
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
+            "description" : "*"
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.18",
             "description" : "*"
           }
         },
@@ -1525,12 +1543,6 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Exclusão global de reações adversas",
-            "description" : "Declaração geral de exclusão sobre todas as reações adversas no momento do registro."
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1601,6 +1613,18 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.16",
+            "description" : "*"
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
+            "description" : "*"
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.18",
             "description" : "*"
           }
         },
@@ -1629,12 +1653,6 @@
             "code" : "ac0.4",
             "description" : "*"
           },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Allgemeiner Ausschluss von unerwünschten Nebenwirkungen",
-            "description" : "Zur Dokumentation einer Gesamterklärung zum Ausschluss aller unerwünschten Nebenwirkungen zum Zeitpunkt der Aufzeichnung."
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -1705,6 +1723,18 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.16",
+            "description" : "*"
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
+            "description" : "*"
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.18",
             "description" : "*"
           }
         }
@@ -1791,6 +1821,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.16",
           "members" : [ "at0007" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0003", "at0004", "at0005", "at0006", "at0007" ]
         }
       }
     },
