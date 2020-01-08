@@ -23,7 +23,7 @@
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
       "PARENT:MD5-CAM-1.0.1" : "2A1D6E9F20099A022F8E0473B6A3C598",
-      "MD5-CAM-1.0.1" : "c4b2990cf0f612996170d789905921bc"
+      "MD5-CAM-1.0.1" : "52cd8040550697870e8551e7beb7dedb"
     },
     "details" : {
       "es-ar" : {
@@ -1392,7 +1392,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Exclusion of adverse reaction records",
+            "text" : "Exclusion of adverse reactions",
             "description" : "An overall statement of exclusion about all Problems/diagnoses, Family history, Medications, Procedures, Adverse reactions or other clinical items that are either not currently present, or have not been present in the past."
           },
           "ac0.17" : {
