@@ -23,7 +23,7 @@
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
       "PARENT:MD5-CAM-1.0.1" : "2A1D6E9F20099A022F8E0473B6A3C598",
-      "MD5-CAM-1.0.1" : "8218e06d92883dcfb7ce05e889309a46"
+      "MD5-CAM-1.0.1" : "826255e13352ab0e8a569fb446adadfc"
     },
     "details" : {
       "es-ar" : {
@@ -711,8 +711,17 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "constraint" : [ "ac0.5" ],
+                      "selectedTerminologies" : [ "local_terms" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -1028,6 +1037,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.4",
             "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.5",
+            "description" : "*"
           }
         },
         "pt-br" : {
@@ -1053,6 +1068,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
             "description" : "*"
           }
         },
@@ -1080,10 +1101,21 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
             "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
           }
         }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "local_terms" : { },
+        "valueset-allergy-intolerance-category" : {
+          "ac0.5" : "valueset-allergy-intolerance-category"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
@@ -1105,6 +1137,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
           "members" : [ "at0093", "at0092", "at0090" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ ]
         }
       }
     },
