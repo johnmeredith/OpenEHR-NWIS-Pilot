@@ -23,7 +23,7 @@
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
       "PARENT:MD5-CAM-1.0.1" : "2A1D6E9F20099A022F8E0473B6A3C598",
-      "MD5-CAM-1.0.1" : "1514718320465e55133204adc82c948b"
+      "MD5-CAM-1.0.1" : "ce5418c46075a26574fa597489f736c9"
     },
     "details" : {
       "es-ar" : {
@@ -696,6 +696,50 @@
                       },
                       "constraint" : [ "ac0.2" ],
                       "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0120.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "valueset-allergy-intolerance-category"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "valueset-allergy-intolerance-category" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "valueset-allergy-intolerance-category",
+                        "code" : "food",
+                        "value" : "Food"
+                      }, {
+                        "terminologyId" : "valueset-allergy-intolerance-category",
+                        "code" : "medication",
+                        "value" : "Medication"
+                      }, {
+                        "terminologyId" : "valueset-allergy-intolerance-category",
+                        "code" : "environment",
+                        "value" : "Environment"
+                      }, {
+                        "terminologyId" : "valueset-allergy-intolerance-category",
+                        "code" : "biologic",
+                        "value" : "Biologic"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
