@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "43e6c820feae1c6f8923675418e6fe69",
+      "MD5-CAM-1.0.1" : "783e0dd107a0337cfd8cc23b9a1c8e43",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -4777,9 +4777,39 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
                       "nodeId" : "at0098.1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "SNOMED-CT"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "SNOMED-CT" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "285141008",
+                                "value" : "Workplace"
+                              }, {
+                                "terminologyId" : "SNOMED-CT",
+                                "code" : "264362003",
+                                "value" : "Home"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -5189,7 +5219,24 @@
           }
         }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "local_terms" : { },
+        "s" : { },
+        "sn" : { },
+        "sno" : { },
+        "snom" : { },
+        "snome" : { },
+        "snomed" : { },
+        "S" : { },
+        "SN" : { },
+        "SNO" : { },
+        "SNOM" : { },
+        "SNOME" : { },
+        "SNOMED" : { },
+        "SNOMED-" : { },
+        "SNOMED-C" : { },
+        "SNOMED-CT" : { }
+      },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
