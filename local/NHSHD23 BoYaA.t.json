@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "801d30094a3eb627e20867cf9f241487",
+      "MD5-CAM-1.0.1" : "f819b4b78e12fea7f479cdcc190baa42",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -5405,26 +5405,26 @@
       "@type" : "RESOURCE_ANNOTATIONS",
       "documentation" : {
         "ar-sy" : {
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0118]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0118]" : {
             "fhir_mapping" : "*DiagnosticReport.presentedForm(en)"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0100.1]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0100.1]" : {
             "fhir_mapping" : "*DiagnosticReport.requestDetail.clinicalNotes(en)"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0057.1]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0057.1]" : {
             "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
           }
         },
         "en" : { },
         "nb" : { },
         "zh-cn" : {
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0118]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0118]" : {
             "fhir_mapping" : "*DiagnosticReport.presentedForm(en)"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0100.1]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0100.1]" : {
             "fhir_mapping" : "*DiagnosticReport.requestDetail.clinicalNotes(en)"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0057.1]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0057.1]" : {
             "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
           }
         }
@@ -5453,7 +5453,8 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "occurrences" : "0..1",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
