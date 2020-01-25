@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4eb2334f61878bf1a6a418c3d014a9f8",
+      "MD5-CAM-1.0.1" : "337f2849b5885e9894834a3976f9e4b5",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -4354,6 +4354,140 @@
                                 "children" : [ {
                                   "@type" : "C_COMPLEX_OBJECT",
                                   "rmTypeName" : "DV_QUANTITY",
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "property",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "1..1",
+                                      "terminologyId" : {
+                                        "value" : "openehr"
+                                      },
+                                      "constraint" : [ "126" ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ {
+                                    "@type" : "C_ATTRIBUTE_TUPLE",
+                                    "members" : [ {
+                                      "@type" : "C_ATTRIBUTE",
+                                      "rmAttributeName" : "units",
+                                      "children" : [ ]
+                                    }, {
+                                      "@type" : "C_ATTRIBUTE",
+                                      "rmAttributeName" : "magnitude",
+                                      "children" : [ ]
+                                    }, {
+                                      "@type" : "C_ATTRIBUTE",
+                                      "rmAttributeName" : "precision",
+                                      "children" : [ ]
+                                    } ],
+                                    "tuples" : [ {
+                                      "@type" : "C_PRIMITIVE_TUPLE",
+                                      "members" : [ {
+                                        "@type" : "C_STRING",
+                                        "rmTypeName" : "STRING",
+                                        "constraint" : [ "l/s" ]
+                                      }, {
+                                        "@type" : "C_REAL",
+                                        "rmTypeName" : "REAL",
+                                        "constraint" : [ {
+                                          "lower" : 0.0,
+                                          "upper" : 60000.0,
+                                          "lowerIncluded" : true,
+                                          "upperIncluded" : true,
+                                          "lowerUnbounded" : false,
+                                          "upperUnbounded" : false
+                                        } ]
+                                      }, {
+                                        "@type" : "C_INTEGER",
+                                        "rmTypeName" : "INTEGER",
+                                        "constraint" : [ {
+                                          "lower" : 0,
+                                          "upper" : 0,
+                                          "lowerIncluded" : true,
+                                          "upperIncluded" : true,
+                                          "lowerUnbounded" : false,
+                                          "upperUnbounded" : false
+                                        } ]
+                                      } ]
+                                    }, {
+                                      "@type" : "C_PRIMITIVE_TUPLE",
+                                      "members" : [ {
+                                        "@type" : "C_STRING",
+                                        "rmTypeName" : "STRING",
+                                        "constraint" : [ "ml/s" ]
+                                      }, {
+                                        "@type" : "C_REAL",
+                                        "rmTypeName" : "REAL",
+                                        "constraint" : [ {
+                                          "lower" : 0.0,
+                                          "upper" : 200000.0,
+                                          "lowerIncluded" : true,
+                                          "upperIncluded" : true,
+                                          "lowerUnbounded" : false,
+                                          "upperUnbounded" : false
+                                        } ]
+                                      }, {
+                                        "@type" : "C_INTEGER",
+                                        "rmTypeName" : "INTEGER",
+                                        "constraint" : [ {
+                                          "lower" : 0,
+                                          "upper" : 0,
+                                          "lowerIncluded" : true,
+                                          "upperIncluded" : true,
+                                          "lowerUnbounded" : false,
+                                          "upperUnbounded" : false
+                                        } ]
+                                      } ]
+                                    }, {
+                                      "@type" : "C_PRIMITIVE_TUPLE",
+                                      "members" : [ {
+                                        "@type" : "C_STRING",
+                                        "rmTypeName" : "STRING",
+                                        "constraint" : [ "l/min" ]
+                                      }, {
+                                        "@type" : "C_REAL",
+                                        "rmTypeName" : "REAL",
+                                        "constraint" : [ {
+                                          "lower" : 0.0,
+                                          "upper" : 1000.0,
+                                          "lowerIncluded" : true,
+                                          "upperIncluded" : true,
+                                          "lowerUnbounded" : false,
+                                          "upperUnbounded" : false
+                                        } ]
+                                      }, {
+                                        "@type" : "C_INTEGER",
+                                        "rmTypeName" : "INTEGER",
+                                        "constraint" : [ {
+                                          "lower" : 0,
+                                          "upper" : 0,
+                                          "lowerIncluded" : true,
+                                          "upperIncluded" : true,
+                                          "lowerUnbounded" : false,
+                                          "upperUnbounded" : false
+                                        } ]
+                                      } ]
+                                    } ]
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0058.1",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_QUANTITY",
+                                  "defaultValue" : {
+                                    "units" : "l/min",
+                                    "@type" : "DV_QUANTITY"
+                                  },
                                   "attributes" : [ {
                                     "@type" : "C_ATTRIBUTE",
                                     "rmAttributeName" : "property",
