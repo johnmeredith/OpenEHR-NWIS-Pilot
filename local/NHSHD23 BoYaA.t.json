@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "ce0a4b76f1afe36a969d3af1593cd3c0",
+      "MD5-CAM-1.0.1" : "c6ee1dc77bc88cdc6605e713e828d53a",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -4501,10 +4501,19 @@
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
                           "defaultValue" : {
-                            "value" : "302789003 | Capillary blood glucose measurement (procedure)",
-                            "@type" : "DV_TEXT"
+                            "defining_code" : {
+                              "terminology_id" : {
+                                "value" : "SNOMED-CT",
+                                "@type" : "TERMINOLOGY_ID"
+                              },
+                              "code_string" : "302789003",
+                              "@type" : "CODE_PHRASE"
+                            },
+                            "value" : "Capillary blood glucose measurement (procedure)",
+                            "@type" : "DV_CODED_TEXT"
                           },
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
