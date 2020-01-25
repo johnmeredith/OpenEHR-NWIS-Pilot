@@ -1,0 +1,2579 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "1b07d2b7-6209-46df-a6c7-f6f147f822af",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2020-01-25"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "b3f0cf7c01ba2d1bb1504bde2266bfd8",
+      "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.health_summary.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.health_summary.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "0..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.4",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-blood_pressure-001.v2",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "NHSHD23 BoYaA",
+          "description" : "Generic document containing a summary of health information about an individual."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "NHSHD23 BoYaA",
+          "description" : "Generisk dokument som inneholder sammendrag av helseinformasjon om et individ."
+        }
+      },
+      "es" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "NHSHD23 BoYaA",
+          "description" : "Documento genérico que contiene un resumen de la información de salud sobre un individuo."
+        }
+      },
+      "pt-br" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "NHSHD23 BoYaA",
+          "description" : "Documento genérico contendo um sumário das informações de saúde sobre um indivíduo."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "d62dca65-177e-46cc-b2e9-1ce996b49645",
+  "rmName" : "openehr",
+  "rmRelease" : "1.0.3",
+  "generated" : true,
+  "templateId" : "NHSHD23 BoYaA",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "005d63fc-58ad-442c-a888-c728af3ebec5",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "84728375D8C1B0CA308B65CCB8315E01"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.blood_pressure.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-blood_pressure-001.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0006",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "defaultValue" : {
+                            "units" : "mm[Hg]",
+                            "@type" : "DV_QUANTITY"
+                          },
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 1000.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0005.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "defaultValue" : {
+                            "units" : "mm[Hg]",
+                            "@type" : "DV_QUANTITY"
+                          },
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 1000.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1007.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 1000.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1059.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0007.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0008.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.8" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1052.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1043.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.9" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1005.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "deg" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : -90.0,
+                                  "upper" : 90.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "INTERVAL_EVENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at1042.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003.2",
+                  "targetPath" : "/data[at0001]/events[at0006]/data[at0003.1]",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0007.2",
+                  "targetPath" : "/data[at0001]/events[at0006]/state[at0007.1]",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "math_function",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "146" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "width",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : "PT24H",
+                        "upper" : "PT24H",
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0011",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0013.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.7" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0014.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.6" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at1035.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "defaultValue" : {
+                    "defining_code" : {
+                      "code_string" : "at1039",
+                      "@type" : "CODE_PHRASE"
+                    },
+                    "@type" : "DV_CODED_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.5" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at1038.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at1054.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at1055.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at1010.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.1" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "Standing",
+            "description" : "Standing at the time of blood pressure measurement."
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "Sitting",
+            "description" : "Sitting (for example on bed or chair) at the time of blood pressure measurement."
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "Reclining",
+            "description" : "Reclining at the time of blood pressure measurement."
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "Lying",
+            "description" : "Lying flat at the time of blood pressure measurement."
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "Lying with tilt to left",
+            "description" : "Lying flat with some lateral tilt, usually angled towards the left side.   Commonly required in the last trimester of pregnancy to relieve aortocaval compression."
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "Awake",
+            "description" : "The individual is fully conscious."
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "Sleeping",
+            "description" : "The individual is in the natural state of bodily rest."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "ja" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "立位",
+            "description" : "血圧測定時に立位"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "座位",
+            "description" : "血圧測定時に（たとえば、ベッドやいすの上で）坐位"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "斜位",
+            "description" : "血圧測定時に斜位"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "臥位",
+            "description" : "血圧測定時に臥位"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "左側臥位",
+            "description" : "通常は頭から足までを水平にしてから左側に傾けられた状態。一般的には妊娠の第3トリメスターで大動脈・静脈を圧排から解放するために求められる体位である。"
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "覚醒",
+            "description" : "対象は完全に意識がある。"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "睡眠中",
+            "description" : "対象は自然な休眠状態にある"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "de" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "Stehend",
+            "description" : "Stehend zum Zeitpunkt der Blutdruckmessung."
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "Sitzend",
+            "description" : "Sitzend zum Zeitpunkt der Blutdruckmessung (z.B. auf einem Bett oder Stuhl)."
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "Zurückgelehnt",
+            "description" : "Patient zurückgelehnt zum Zeitpunkt der Blutdruckmessung."
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "Liegend",
+            "description" : "Flach liegend zum Zeitpunkt der Blutdruckmessung."
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "Nach links geneigt liegend",
+            "description" : "Flach liegend mit seitlicher Neigung, normalerweise zur linken Seite. Häufig verwendet im letzten Drittel eine Schwangerschaft, um aorto-cavale Kompression zu vermeiden."
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "Aufmerksam und wach",
+            "description" : "Die untersuchte Person ist bei vollem Bewusstsein."
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "Schlafend",
+            "description" : "Die untersuchte Person schläft."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "zh-cn" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "立位",
+            "description" : "测量血压时身体处于站立体位"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "坐位",
+            "description" : "测量血压时身体处于坐位，又称为“坐姿”。"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "侧卧位",
+            "description" : "测量血压时身体处于45度角侧卧位或者说采取的是斜靠的姿势。"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "平卧位",
+            "description" : "测量血压时受检者采取的是平躺或者说平卧的姿势，又称为“仰卧位”。"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "左斜卧位",
+            "description" : "测量血压时受检者采取的是平躺或者说平卧姿势，且有向侧位一定程度的倾斜，通常是斜向左侧。在妊娠晚期，为了缓解主腔静脉压迫（aortocaval compression），常常需要采取这种体位。"
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "警觉且清醒",
+            "description" : "受检对象意识完全清楚。"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "睡眠状态",
+            "description" : "受检对象处在全身休息的自然状态下。"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "nl" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "Staand",
+            "description" : "Bloeddrukmeting bij staand individu"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "Zittend",
+            "description" : "Bloeddrukmeting bij zittend (b.v. op bed of in stoel) individu"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "Halfzittend",
+            "description" : "Halfzittend op het moment van de bloeddrukmeting"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "Liggend",
+            "description" : "Platliggend op het moment van de bloeddrukmeting"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "Liggend met kanteling naar linkerzijde",
+            "description" : "Platliggend met enige laterale kanteling, meestal gekanteld naar de linkerzijde. Gebruikelijk benodigd in het laatste trimester van de zwangerschap om aortacavale compressie te verlichten."
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "Alert en wakker",
+            "description" : "Individu is volledig bij bewustzijn"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "Slapend",
+            "description" : "Individu is in de natuurlijke slaap."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "ru" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "Стоя",
+            "description" : "Пациент стоит во время измерения АД."
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "Сидя",
+            "description" : "Пациент сидит во время измерения АД (на стуле, кровати или кресле)."
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "Реклинация",
+            "description" : "Пациент лежит в вынужденной неизменной позе (на реклинации)во время измерения АД."
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "Лёжа",
+            "description" : "Пациент лежит во время измерения АД."
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "Лёжа с наклоном влево",
+            "description" : "Лёжа на плоской поверхности с боковым наклоном, как правило, под углом по направлению с левой стороны. Обычно требуется в последнем триместре беременности, чтобы облегчить сдавление нижней полой вены."
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "Пробуждение и подъём",
+            "description" : "Пациент полностью в сознании."
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "Сон",
+            "description" : "Пациент находится в состоянии естественного покоя, тело расслаблено."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "fa" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "ایستاده",
+            "description" : "ایستاده در زمان اندازه گیری فشار خون"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "نشسته",
+            "description" : "نشسته ( به عنوان مثال روی تخت یا صندلی) در زمان اندازه گیری فشار خون"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "خمیده",
+            "description" : "خمیده در زمان اندازه گیری فشار خون"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "خوابیده",
+            "description" : "خوابیده در زمان اندازه گیری فشار خون"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "خوابیده  به چپ",
+            "description" : "خوابیدن صاف با کمی تمایل به یک سمت، معمولا به جهت چپ میل کرده و عموما در سه ماهه آخر حاملگی برای تسکین فشار آئورت نیاز به آن است"
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "هشیار و بیدار",
+            "description" : "فرد کاملا به هوش است "
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "خوابیده",
+            "description" : "فرد در حالت طبیعی استراحت بدنی است"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "ar-sy" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "واقف",
+            "description" : "الشخص واقف عند القيام بقياس ضغط الدم"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "جالس",
+            "description" : "الشخص جالس (مثلا على سرير أو كرسي) عند القيام بقياس ضغط الدم"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "مضطجع",
+            "description" : "الشخص مضطجع عند القيام بقياس ضغط الدم"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "مستلقٍ",
+            "description" : "الشخص مستلقٍ بشكل مستوٍ عند القيام بقياس ضغط الدم"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "مستلق و مائل لجانبه الأيسر",
+            "description" : "الشخص مستلق بشكل مستو مع ميل جانبي بزاوية تجاه جانبه الأيسر. عادة ما يُحتاج إلى هذا الوضع في الأثلوث الأخير من الحمل لتخفيف الانضغاط الأبهري الجوفي"
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "متنبه و يقظ",
+            "description" : "الشخص واعٍ بشكل كامل"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "نائم",
+            "description" : "الشخص في الحالة الطبيعية الخاصة بالراحة الجسدية"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "es-ar" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "De pie",
+            "description" : "De pie al momento de la medición de la tensión arterial."
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "Sentado",
+            "description" : "Sentado (en la cama o en una silla) durante el registro de la presión arterial "
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "Reclinado",
+            "description" : "Reclinado (semisentado) durante el registro de la presión arterial"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "Acostado",
+            "description" : "Acostado horizontal durante la medición de la presión arterial"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "Acostado e inclinado levemente sobre su costado izquierdo",
+            "description" : "Acostado horizontal e inclinado levemente sobre su costado izquierdo. Comúnmente se requiere durante el último trimestre del embarazo para aliviar la compresión aortocava."
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "Alerta y despierto",
+            "description" : "El sujeto esta plenamente consciente"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "Dormido",
+            "description" : "El sujeto esta en un estado natural de sueño corporal"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "pt-br" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "Em pé",
+            "description" : "Em pé na hora da medida da pressão arterial."
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "Sentado",
+            "description" : "Sentado (por exemplo na cama ou em uma cadeira) na hora da medida da pressão arterial."
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "Reclinado",
+            "description" : "Reclinado na hora da medida da pressão arterial."
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "Deitado",
+            "description" : "Deitado sem reclinação hora da medida da pressão arterial."
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "Deitado com inclinação para esquerda",
+            "description" : "Deitado sem reclinação com alguma inclinação lateral, usualmente com angulação para o lado esquerdo. Comumente requerido no último trimestre da gravidez para aliviar a compressão aortocaval."
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "Alerta e acordado",
+            "description" : "Sujeito está totalmente consciente."
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "Dormindo",
+            "description" : "Sujeito está no estado natural de descanso corporal."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "ko" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "선 자세",
+            "description" : "혈압측정 시에 서있는 자세."
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "앉은 자세",
+            "description" : "혈압 측정시에 앉은 자세(침대 또는 의자)."
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "비스듬한 자세",
+            "description" : "혈압 측정시에 비스듬한 자세(reclining)."
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "누운 자세",
+            "description" : "혈압 측정시에 바로 누운 자세."
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "왼쪽으로 누운 자세",
+            "description" : "보통 왼쪽으로 기울린, 옆쪽으로 기울여 누운 자세. 보통 임신 3기에 동정맥압력을 완화하기위해 필요함."
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "각성과 기상 상태",
+            "description" : "대상은 완전한 의식이 있다."
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "수면 상태",
+            "description" : "대상은 신체적으로 자연적인 휴식 상태에 있다."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "es" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "Parado",
+            "description" : "El paciente está parado en el momento de la medida"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "Sentado",
+            "description" : "El paciente está sentado en el momento de la medida"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "Reclinado",
+            "description" : "El paciente está reclinado en el momento de la medida"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "Acostado",
+            "description" : "El paciente está acostado en el momento de la meidda"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "Acostado inclinado hacia la izquierda",
+            "description" : "Acostado con inclinación lateral hacia la izquierda"
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "alerta y despierto",
+            "description" : "El paciente está totalmente conciente"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "Durmiendo",
+            "description" : "El paciente está durmiendo"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "Stående",
+            "description" : "Stående ved tidspunktet for målingen."
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "Sittende",
+            "description" : "Sittende (for eksempel på en stol eller på en seng med føttene på gulvet) på tidspunkt for blodtrykksmålingen."
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "Tilbakelent",
+            "description" : "Sittende tilbakelent ca 45º og med beina hevet til samme høyde som hoften på tidspunkt for blodtrykksmålingen."
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "Liggende",
+            "description" : "Liggende flatt på tidspunkt for blodtrykksmålingen."
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "Liggende lent mot venstre",
+            "description" : "Liggende flatt med noe lateral tilt, vanligvis vinklet mot venstre side. Vanligvis nødvendig i siste trimester av svangerskapet for å avlaste aortocaval komprimering."
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "Våken",
+            "description" : "Individet er ved full bevissthet."
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "Sovende",
+            "description" : "Individet er i den naturlige tilstand av kroppslig hvile."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "sv" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "Stående",
+            "description" : "Stående ställning under blodtrycksmätningen"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "Sittande",
+            "description" : "Sittande ställning under blodtrycksmätningen, exempelvis på en säng eller stol."
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "Halvliggande",
+            "description" : "Halvliggande ställning under blodtrycksmätningen."
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "Liggande",
+            "description" : "Liggande ställning under blodtrycksmätningen."
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "Liggande med lutning till vänster",
+            "description" : "Liggande platt ställning med viss lateral lutning, vanligtvis mot vänster sida. Den krävs vanligtvis i graviditetens sista trimester för att lindra aortokaval kompression."
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "Alert och vaken",
+            "description" : "Patienten är vid fullt medvetande."
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "Sover",
+            "description" : "Patienten är i det naturliga tillståndet av kroppslig vila."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        },
+        "fi" : {
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1000",
+            "text" : "Seisten",
+            "description" : "Verenpaine mitataan henkilön seistessä."
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1001",
+            "text" : "Istuen",
+            "description" : "Verenpaine mitataan henkilön istuessa (esimerkiksi vuoteella tai tuolissa)."
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1002",
+            "text" : "Taaksepäin nojaten",
+            "description" : "Verenpaine mitataan henkilön nojatessa taaksepäin."
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1003",
+            "text" : "Makuulla",
+            "description" : "Verenpaine mitataan henkilön maatessa."
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1014",
+            "text" : "Makuulla vasemmalle kallellaan",
+            "description" : "Makuulla, hiukan kallellaan kyljen suunnassa, yleensä vasemmalle.   Tarvitaan yleensä viimeisellä raskauskolmanneksella supiinioireyhtymän helpottamiseksi."
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1044",
+            "text" : "Valpas ja hereillä",
+            "description" : "Tutkittava on täysin tajuissaan."
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1045",
+            "text" : "Nukkuu",
+            "description" : "Tutkittavan keho on luonnollisessa lepotilassa."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "ac0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.4",
+            "description" : "*"
+          },
+          "ac0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.5",
+            "description" : "*"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : "*"
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : "*"
+          },
+          "ac0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.8",
+            "description" : "*"
+          },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0000.1" : "term:SNOMED-CT(2003)::364090009",
+          "at0013.1" : "term:SNOMED-CT(2003)::246153002",
+          "at0005.1" : "term:SNOMED-CT(2003)::271650006",
+          "at0004.1" : "term:SNOMED-CT(2003)::271649006"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at1011", "at1012" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at1036", "at1039", "at1040" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at1039", "at1040" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at1039" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at1039" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0025", "at0026", "at0027", "at0028", "at1020", "at1021", "at1026", "at1031", "at1032", "at1051", "at1056", "at1053" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0015", "at0016", "at0017", "at1008", "at1009", "at1018", "at1019" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at1000", "at1001", "at1002", "at1003", "at1014" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at1044", "at1045" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "c82f79b5-d7eb-478e-8ef7-370dbef9c357",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sebastian Garde, Jasmin Buck",
+        "organisation" : "Ocean Informatics, University of Heidelberg"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Igor Lizunov",
+        "email" : "i.lizunov@infinnity.ru"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Kirsi Poikela",
+        "organisation" : "Tieto Sweden AB",
+        "email" : "ext.kirsi.poikela@tieto.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fi"
+      },
+      "author" : {
+        "name" : "Vesa Peltola",
+        "organisation" : "Tieto Finland",
+        "email" : "vesa.peltola@tieto.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ko"
+      },
+      "author" : {
+        "name" : "Seung-Jong Yu",
+        "organisation" : "NOUSCO Co.,Ltd.",
+        "email" : "seungjong.yu@gmail.com"
+      },
+      "accreditation" : "Certified Board of Family Medicine in South Korea",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Jussara Rözsch",
+        "organisation" : "OpenEHR  Foundation",
+        "email" : "jussara.macedo@gmail.com"
+      },
+      "accreditation" : "Medical Doctor, Psychiarist, Clinical Modeller, openEHR Diretor, ehealth infostructuture WG ccoordinator- brazilian  ehealth program",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Chunlan Ma; Lin Zhang",
+        "organisation" : "Ocean Informatics; Taikang Insurance Group",
+        "email" : "chunlan.ma@oceaninformatics.com; linforest@163.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Pablo Pazos",
+        "organisation" : "CaboLabs"
+      },
+      "accreditation" : "Computer Engineer",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Domingo Liotta",
+        "organisation" : "Universidad de Morón",
+        "email" : "domingo_liotta@hotmail.com"
+      },
+      "accreditation" : "Universidad de Morón",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland Uinversity Hospital, Bergen, Norway",
+        "email" : "lbla@helse-bergen.no"
+      },
+      "accreditation" : "MD, DEAA. specialist in anaesthesia and tropical medicine.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ja"
+      },
+      "author" : {
+        "name" : "Shinji Kobayashi",
+        "organisation" : "Kyoto University",
+        "email" : "skoba@moss.gr.jp"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fa"
+      },
+      "author" : {
+        "name" : "Shahla Foozonkhah",
+        "organisation" : "Ocean Informatics",
+        "email" : "shahla.foozonkhah@oceaninformatics.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Marja Buur",
+        "organisation" : "M.C.A.",
+        "email" : "m.buur-krom@mca.nl"
+      },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
