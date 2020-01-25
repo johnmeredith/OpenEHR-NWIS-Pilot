@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9aecbab6582fa004e87ccb41f430d242",
+      "MD5-CAM-1.0.1" : "4eb2334f61878bf1a6a418c3d014a9f8",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -203,7 +203,245 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "84728375D8C1B0CA308B65CCB8315E01"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Dient der Dokumentation des systemischen arteriellen Blutdrucks einer Person.",
+          "keywords" : [ "Beobachtungen", "Messungen", "Vitalparameter", "Mittlerer arterieller Druck", "Pulsdruck", "systolisch", "diastolisch", "RR", "Riva-Rocci", "NIBP" ],
+          "use" : "Alle Blutdruckmessungen werden unter Zuhilfenahme dieses Archetypen dokumentiert, unabhängig davon, welche Methode oder Körperstelle zur Messung benutzt wurden. Der Archetyp dient der Dokumentation des Blutdrucks in alle klinischen Szenarien - z.B. durch eine Blutdruckmaschine zuhause; eine Notfallmessung durch Palpation und ein Sphygmomanometer; Messungen beim Hausarzt oder im Rahmen von Belastungstests; sowie einer Serie von Messungen durch eine Maschine auf der Intensivstation.\nDer Archetyp beinhaltet ein umfassendes Status-Modell, das die Interpretation der Messung unterstützt, indem Position, Anstrengung, Einflussfaktoren, Neigungswinkel angegeben werden können.\nBenannte Ereignisse wurden auf den 24-stündigen Durchschnitt beschränkt, jedoch können Templates jederzeit das standardmäßig vorhandene Ereignis ('any event') weiter einschränken, um spezifischen Anforderungen gerecht zu werden, wie z.B. der Messung zu bestimmten Zeitpunkten, oder über eine Anzahl von Intervallen (+/- mathematische Funktionen).",
+          "misuse" : "Nicht benutzen zur Dokumentation des intravenösen Drucks.\nNicht benutzen zur Dokumentation des arteriellen Blutdrucks, welcher KEIN Surrogat für den arteriellen Druck in der systemischen Zirkluation ist, z.B. die spezifische Messung des rechten pulmonaren Arteriendrucks.\nIn diesem Fall sollte der OBSERVATION.intravascular_pressure Archetyp bzw. dessen Spezialisierungen verwendet werden.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "*To record the systemic arterial blood pressure of an individual.(en)",
+          "keywords" : [ "*observations(en)", "*measurement(en)", "*bp(en)", "*vital signs(en)", "*mean arterial pressure(en)", "*pulse pressure(en)", "*systolic(en)", "*diastolic(en)", "*RR(en)", "*NIBP(en)" ],
+          "use" : "*Use to record all representations of systemic arterial blood pressure measurement, no matter which method or body location is used to record it. \n\nThe archetype is intended to capture blood pressure measurements in all clinical scenarios - for example:\n- self-measurement with a home blood pressure machine; \n- an emergency assessment of systolic using palpation and a sphygmomanometer; \n- measurements taken in clinical consultations or during exercise stress testing; and \n- a series of measurements made by a machine in Intensive Care.   \n\nThere is a rich state model that supports interpretation of measurements through identifying patient position, exercise, confounding factors and angle of a tilt table in research. \n\nNamed events have been limited to average over a 24 hour period, however templates can further constrain the default 'any event' to cater for specific requirements for blood pressure measurements such as recording Blood Pressure against specific points in time, or over a range of intervals (+/- mathematical functions).(en)",
+          "misuse" : "*Not to be used to record the measurement of arterial blood pressure which is NOT a surrogate for arterial pressure in the systemic circulation eg specific measurement of right pulmonary artery pressure. Use OBSERVATION.intravascular_pressure in this situation.  \n\nNot to be used to record measurements of intravenous pressure. Use the appropriate specialisations of OBSERVATION.intravascular_pressure in this situation.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att mäta en individs systemiska arteriella blodtryck.",
+          "keywords" : [ "observationer", "mätning", "blodtryck", "vitaltecken", "medelartärtryck", "pulstryck", "systoliskt", "diastoliskt", "RR", "NIBP" ],
+          "use" : "Används för att mäta alla systemiskt arteriella blodtryck, oavsett vilka metoder som använts och var på kroppen mätningen gjordes. Arketypen är avsedd för blodtrycksmätningar i alla vårdscenarion exemelvis för egna mätningar i hemmet med blodtrycksmätare, för akutbedömningar av det systoliska blodtrycket med hjälp av palpation och en blodtrycksmätare, för mätningar gjorda vid vårdkonsultationer eller stresstest, för seriemätningar med blodtrycksmaskiner på Intensivvårdsavdelningar.\nDet finns en omfattande tillståndsmodell som stödjer tolkningen av mätningar genom identifiering av patientens ställning, ansträngning, påverkande faktorer och vinkel på tippbräda vid undersökning. Namngivna händelser har begränsats till ett genomsnitt under en 24-timmarsperiod, men mallar kan ytterligare avgränsa standardinställningen i \"Ospecificerad händelse\" för att möta specifika krav på blodtrycksmätningar, exempelvis mätningar av blodtryck vid specifika tidpunkter eller i ett tidsintervall med matematiska funktioner.\n",
+          "misuse" : "Ska inte användas för intravenöst tryck.\n\nSka inte användas för mätning av arteriellt blodtryck som INTE är ett surrogat för artärtryck i systemcirkulationen eller för specifika mätningar som exempelvis höger lungartärtryck.\n\nAnvänd i dessa fall istället OBSERVATION.intravascular_pressure och relaterade specialiseringsarketyper.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Для записи системного артериального давления крови человека.",
+          "keywords" : [ "обследование", "измерение", "артериальное давление", "диастолическое", "систолическое" ],
+          "use" : "Используется для записи всех представлений измерения системного артериального  кровяного давления, независимо от используемого метода или расположения тела пациента. Архетип предназначен для записи измерений давления во всех клинических сценариях - например, самостоятельное измерение давления крови домашним автоматическим манометром, в чрезвычайной  ситуации использование  пальпации пульсовой волны и сфигмоманометр; измерений в ходе клинических консультаций или в ходе осуществления стресс-тестирования, а также серии измерений, выполненных аппаратом в реанимации.\nПоддерживает интерпретацию измерений путем определения позиции пациента, физические упражнения, осложняющих факторов и угла наклона стола в научных исследованиях.\nПредполаагется интервал между измерениями 24 часа, однако может быть дополнено событиями (по умолчанию \"любое событие\") для удовлетворения специфических требований для измерения кровяного давления, такие как записи в отношении кровяного давления конкретные моменты времени, или в диапазоне интервалов.",
+          "misuse" : "Не следует использовать для внутривенного давления.\nНе следует использовать для измерения артериального давления, которое не является суррогатом артериального давления в системном кровотоке, например, конкретные измерения давления в легочной артерии.\nИспользовать OBSERVATION.intravascular_pressure и смежных специальностей в обоих этих ситуациях.\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ko" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ko"
+          },
+          "purpose" : "개인의 체동맥혈압 기록",
+          "keywords" : [ "*관찰(ko)", "*측정(ko)", "*혈압(ko)", "*생체징후(ko)", "*평균 동맥 혈압(ko)", "*맥압(ko)", "*수축기의(ko)", "*이완기의(ko)", "*호흡수(ko)", "*비침습적 혈압(ko)" ],
+          "use" : "전신 동맥혈압측정의 모든 표현들을 저장하는데 사용, 어떤 방법 또는 신체부위와 관계없이 기록하는데 사용된다. 이 archetype은 모든 임상 시나리오에서 동맥혈압을 획득하기 위한 것이다 - 예를 들어, 가정 혈압기기를 이용한 자가 측정; 타진과 혈압계를 이용한 수축기의 응급평가; 임상 의뢰 또는 운동부하검사에서의 측정; 그리고 중환자실에서 기계에 의한 일련의 측정.\n\n여기에는 환자 자세, 운동, 혼란 변수 그리고 연구에서 틸트테이블의 각도를 통한 측정의 해석을 지원하는 풍부한 상태 모델(state model)이 있음.\n\n명명된 events는 24시간 동안의 평균에 제한되어 있지만 templates는 특정 시각 또는 기간(+/- 수학 함수)에 대한 혈압의 기록과 같은 혈압 측정을 위한 특정한 요구사항을 제공하기 위해서 default 'any event'에 추가적인 constrain을 할 수 있음.",
+          "misuse" : "정맥혈압 측정을 위해서 사용되지 않음.\n\n예를 들어 우폐동맥압과 같은 특별한 측정과 같이 체순환에서의 동맥압을 대신하지 않는 동맥혈압의 측정을 위해 사용되지 않음.\n\n위의 2가지 상황에서는 OBSERVATION.intravascular_pressure와 관련된 specialisations를 사용해야 함.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar a pressão arterial sistêmica de um indivíduo.",
+          "keywords" : [ "observações", "medidas", "PA", "pressão sanguínea", "sinais vitais", "Pressão arterial média", "Pressão de Pulso", "sistólica", "diástólica" ],
+          "use" : "Usado para registrar todas as representações da medida da  pressão areterial sistêmica, não importando qual método ou localização corporal usada para registrá-la. O objetivo do arquétipo é capturar a pressão sanguínea em todos os cenários clínicos - por exemplo, auto-medida com um aparelho de pressão caseiro; um avaliação de emergência da pressão sistólica usando palpação e esfigmomanômetro; medidas realizadas em consultas clínicas ou durante testes de esforço; e uma série de medidas feitas por uma máquina em uma Unidade de Terapia Intensiva.\nExiste um modelo rico que apoia a interpretação de medidas através da identificação da posição do paciente, nível exercício, gatores confundidores e ângulo de uma mesa de inclinação em uma pesquisa.\nEventos nomeados têm sido limitados em médica a um período de 24 horas, entretanto templates podem, posteriormente, restringir o padrão predeterminado 'qualquer evento'  para atender a requisitos específicos registro de medida de pressão sanguínea em pontos no tempo específicos, ou em faixas de intervalos (+/-funções matemáticas).",
+          "misuse" : "Não deve ser usada para registrar pressão intravenosa.\nNão deve ser usada para medida da pressão arterial que NÃO é um substituto da pressão arterial na circulação sistêmica, por exemplo, medida específica da pressão da artéria Pulmonar direita.\nEm ambas situações use OBSERVATION.intravascular_pressure e especializações relacionadas.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the systemic arterial blood pressure of an individual.",
+          "keywords" : [ "observations", "measurement", "bp", "vital signs", "mean arterial pressure", "pulse pressure", "systolic", "diastolic", "RR", "NIBP" ],
+          "use" : "Use to record all representations of systemic arterial blood pressure measurement, no matter which method or body location is used to record it. \n\nThe archetype is intended to capture blood pressure measurements in all clinical scenarios - for example:\n- self-measurement with a home blood pressure machine; \n- an emergency assessment of systolic using palpation and a sphygmomanometer; \n- measurements taken in clinical consultations or during exercise stress testing; and \n- a series of measurements made by a machine in Intensive Care.   \n\nThere is a rich state model that supports interpretation of measurements through identifying patient position, exercise, confounding factors and angle of a tilt table in research. \n\nNamed events have been limited to average over a 24 hour period, however templates can further constrain the default 'any event' to cater for specific requirements for blood pressure measurements such as recording Blood Pressure against specific points in time, or over a range of intervals (+/- mathematical functions).",
+          "misuse" : "Not to be used to record the measurement of arterial blood pressure which is NOT a surrogate for arterial pressure in the systemic circulation eg specific measurement of right pulmonary artery pressure. Use OBSERVATION.intravascular_pressure in this situation.  \n\nNot to be used to record measurements of intravenous pressure. Use the appropriate specialisations of OBSERVATION.intravascular_pressure in this situation.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل ضغط الدم الشرياني النظامي للشخص",
+          "keywords" : [ "الملاحظات", "القياس", "ضغط الدم", "العلامات الحياتية", "متوسط الضغط الشرياني", "الضغط عند النبض", "الانقباضي", "الانبساطي", "معدل التنفس", "قياس ضغط الدم غير الباضع" ],
+          "use" : "يستخدم لتسجيل جميع طرق عرض ضغط الدم الشرايني النظامي, بغض النظر عن الطريقة أو الموضع من الجسم المستخدم في التسجيل.\n\nيستخدم هذا النموذج لالتقاط قياسات ضغط الدم في جميع السيناريوهات السريرية - مثلا, قياس ضغط الدم بواسطة الشخص لنفسه باستخدام آلة القياس المنزلية, تقييم الضغط الانقباضي في حالة الطوارئ باستخدام المجس و مقياس الضغط الزئبقي, القياسات التي تم أخذها في الاستشارات السريرية أو في أثناء اختبار الضغط البدني, و سلسلة من القياسات التي تتم باستخدام آلات العناية المركزة.\n\nيستخدم هذا النموذج الغني في تسجيل حالات القياس من خلال تفسيره في ضوء وضع المريض عند القياس, المجهود البدني, العوامل المربكة, و زاوية انحناء الطاولة المستخدمة عند القياس.\n\nتم تحديد بعض الوقائع إلى المتوسط خلال 24 ساعة, إلا أن القوالب تستطيع تقييد الاختيار التلقائي (إحدى الوقائع) لمتطلبات معينة حول قياسات ضغط الدم مثل تسجيل ضغط الدم في نقاط زمنية معينة أو خلال مدى من الفواصل الزمنية - زائد أو ناقص دوال حسابية",
+          "misuse" : "لا يستخدم لتسجيل الضغط داخل الوريد.\nلا يستخدم لقياس ضغط الدم الشرياني الذي لا يحل بديلا عن ضغط الدم الشرياني في الدورة الجهازية مثل قياسات معينة لضغط الشريان الرئوي الأيمن.\nاستخدم نموذج ملاحظة. الضغط داخل الأوعية الدموية , و التخصيصات المتعلقة في كل من هذين الموقفين.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在记录一个人的体循环血压（systemic blood pressure，全身血压，系统血压）。此测量结果原始型记录的是收缩压和舒张压，所采取的记录方式适合于视为代表全身体循环血压的结果。",
+          "keywords" : [ "观察", "观测", "观察指标", "观测指标", "观察结果", "观测结果", "观察项目", "观测项目", "检测", "测量", "测定", "检测指标", "测量指标", "测定指标", "检测结果", "测量结果", "测定结果", "检测项目", "测量项目", "测定项目", "血压", "blood pressure", "bp", "生命体征", "体征", "平均动脉压", "脉压", "脉搏压", "收缩压", "舒张压", "收缩期", "舒张期", "RR", "无创性测压法", "non-invasive blood pressure", "NIBP" ],
+          "use" : "用于记录体循环血压测量结果的所有表达形式，无论其用于记录结果的究竟是什么方法或身体位置。本原始型旨在采集所有临床场景下的血压测量结果；例如，采用家用血压测量仪进行的自助检测、采用触诊方法和血压计进行的收缩压紧急评估、临床会诊或运动负荷试验过程中进行的测量以及重症监护过程中利用仪器所完成的一系列测量。\n这是一个丰富的状态模型，支持通过确定患者体位、运动情况、干扰因素以及研究工作所采用的倾斜工作台的角度，来解释测量结果。\n具名事件（named events）仅限于24小时期间的均值；不过，可以利用模板来进一步约束默认的“any event”（任何事件），以满足关于血压测量的具体需要，诸如按具体的时间点（时刻）来记录血压，或者是记录为变化范围（+/-数学函数）。",
+          "misuse" : "并不用于静脉内血压。\n并不用于并非代表体循环动脉压的动脉血压的测量，如右肺动脉压的专用测量指标。\n在上述这两种情况下，请采用血管内压力观察指标原始型（OBSERVATION.intravascular_pressure）及相关的特化形式。",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registro de la presión arterial de un paciente.",
+          "keywords" : [ "observaciones", "medidas", "pa", "pas", "pad", "signos vitales", "presión arterial", "presión del pulso", "sistólica", "diastólica" ],
+          "use" : "Registro de la presión arterial independientemente del método y localización de la zona de la medida, para cualquier escenario clínico.",
+          "misuse" : "No se debe usar para presión intravenosa.\n\nNo se debe usar para presión arterial que no sea sistémica, por ejemplo presión de la arteria pulmonar derecha.\n\nEn estos casos utilizar el arquetipo OBSERVATION.intravascular_pressure.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registrering av et individs systemiske arterielle blodtrykk.",
+          "keywords" : [ "BT", "NIBP", "pulstrykk", "pulsamplitude", "MAP", "IBP", "IBPM", "ABP", "ambulatorisk", "24t", "BP", "ikke-invasivt", "invasivt", "NIBPS", "NIBPD", "NIBPM", "middelarterietrykk", "SAP", "DAP", "PP", "systolisk", "diastolisk", "blodtrykk" ],
+          "use" : "Brukes til å registrere alle typer av systemisk arteriell blodtrykksmåling, uansett hvilken metode eller kroppsplassering som anvendes. Arketypen er ment for registrering av blodtrykksmåling i alle kliniske scenarier - for eksempel selvmåling med blodtrykksapparat hjemme, akutt måling av det systoliske blodtrykket ved radialispalpasjon og et sfygmomanometer, målinger tatt i kliniske konsultasjoner eller under trening/stresstesting, eller en serie med invasive eller noninvasive målinger i en intensivavdeling.\n\nArketypen understøtter registrering av målinger tatt under de fleste forhold med hensyn til individets stilling (liggende/sittende/stående osv.), under trening inklusiv kompliserende faktorer som for eksempel vinkelen på leiet i forbindelse med forskning.\n\nSpesifiserte hendelser er begrenset til gjennomsnittstrykket gjennom en periode på 24 timer, men i templates kan man ved hjelp av \"uspesifisert hendelse\" oppfylle spesifikke krav til blodtrykksmåling, som registrering av blodtrykk på bestemte tidspunkter, serier av målinger, eller over en periode (med eller uten matematiske funksjoner som minimum eller maksimum).",
+          "misuse" : "Anvendes ikke til sentralvenøst trykk. \n\nAnvendes ikke til måling av arterielle blodtrykk som ikke representerer et systemisk arterielt trykk f.eks spesifikk måling av pulmonalt arterietrykk.\n\nBruk OBSERVATION.intravascular_pressure og relaterte spesialiseringer i disse situasjonene.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Registrar la presión arterial sistémica de un individuo",
+          "keywords" : [ "observaciones(sp)", "mediciones(sp)", "presión arterial(sp)", "signos vitales(sp)", "presión arterial media(sp)", "presión pulso(sp)", "sistólica(sp)", "diastólica(sp)", "RR(en)", "Presión Arterial No Invasiva(sp)", "PANI(sp)" ],
+          "use" : "Usar para registrar todas las representaciones de la presión arterial sistémica, sin importar que método o localización del cuerpo se use para el registro. El arquetipo se usa para capturar la medida de la presión arterial en todos los escenarios clínicos - por ejemplo: automedición con un tensiómetro de uso domiciliario; la evaluación en situación de emergencia, de la sistólica usando palpación y un esfingomanómetro; medidas tomadas durante la consulta clínica o durante la prueba de esfuerzo (ergometría); y la serie de medidas automáticas hechas en la Unidad de Cuidados Intensivos.\nExiste un variado modelo de situaciones que soporta la interpretación de mediciones a través de la interpretación de la posición del paciente, ejercicio, factores confluentes y el ángulo de inclinación de la camilla en situaciones de investigación.\nLos eventos se han limitado a promediarse sobre un intervalo de 24 horas, sin embargo plantillas pueden acotar la medida por defecto 'cualquier evento' para ajustarse a requerimientos específicos de medida de la presión arterial como el Registro de la Tensión Arterial durante momentos específicos de tiempo, o sobre un rango de intervalos (+/- funciones matemáticas)\n\n ",
+          "misuse" : "No debe usarse para la presión intravenosa\nNo debe usarse para la medida de la presión arterial que NO deriva de la presión arterial de la circulación sistémica ej: la medida específica de la presión de la arteria Pulmonar (presión capilar)\nUsen Observación.presión_intravascular y especializaciones relacionadas para estas dos situaciones en particular.\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ja" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ja"
+          },
+          "purpose" : "個人の全身における動脈血圧を記録するためのもの。",
+          "keywords" : [ "観察", "測定", "血圧", "バイタルサイン", "平均動脈圧", "脈圧", "収縮期", "拡張期", "RR間隔", "非観血血圧" ],
+          "use" : "測定方法や身体部位を問わず、すべての血圧についての表現を記録するために使用される。このアーキタイプはすべての臨床シナリオを網羅することを目指している。たとえば、家庭用の血圧計で自己測定した血圧や、集中治療において機械的に計測された一連の血圧などである。\n患者の体位や運動負荷、交絡因子やティルト台の角度など識別することにより、研究にて計測状態の解釈を手助けする豊富なステートモデルもある。\n24時間平均血圧だけが特定のイベントとして名前がつけられているが、テンプレートではデフォルトの「任意のイベント」にさらなる制約を加えることで、特定の時間や間隔を指定したり（数学的機能を追加したり、削除して）、血圧を記録するように、血圧測定に対する特定の要求を行ったイベントを指定することができる。",
+          "misuse" : "静脈内圧の測定には使用されない\nたとえば、右肺動脈の計測といった特定の動脈圧の計測を全身を循環している動脈圧の代用として用いるようなことはしてはいけない。\nこのような場合には、関連した特殊化であるOBSERVATION.intravascular_pressureを利用すること。",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fa" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fa"
+          },
+          "purpose" : "ثبت نمودن فشار خون وریدی کل یک فرد",
+          "keywords" : [ "مشاهدات", "اندازه گیری", "فشار خون", "علایم حیاتی", "میانگین فشار وریدی", "فشار نبض", "سیستولیک", "دیاستولیک", "تنفسهای سریع", "فشار خون غیر تهاجمی" ],
+          "use" : "برای ثبت هر چیز نشاندهنده اندازه گیری فشاره خون وریدی کل، جدا از ابنکه برای ثبت آن از چه شیوه ای یا کدام بخش از بدن استفاده شده باشد، بکار می رود. این الگوساز برای گردآوری اندازه گیری فشار خون در همه سناریوهای بالینی طراحی شده است، مانند اندازه گیری توسط خود فرد بوسیله دستگاه فشار خون خانگی، ارزیابی اورژانسی سیستولیک با لمس نبض و یک \"فشارسنج خون\"، اندازه گیریهای انجام گرفته در مشاوره بالینی یا حین تست ورزشی، و یا یک رشته از اندازه گیریهای دستگاه مراقبت های ویژه.\nمدل حالت توانمندی وجود دارد که تفسیر اندازه گیری ها را از طریق شناسایی موقعیت بیمار، ورزش، فاکتورهای مبهم و تست تخت شیبدار، پشتیبانی می کند.\nرویدادهای نام گذاری شده بگونه ای محدود شده اند که روی یک دوره 24 ساعته میانگین گیری کنند هر چند که الگو ها می توانند پیش فرض -هر گونه  رویداد- را برای فراهم کردن خواسته های خاص از اندازه گیری فشار خون، با محدودیتهایی نظیر ثبت فشار خون سر وقت یا روی رنجی از فاصله های زمانی (با عمل جمع یا منها)، بیشتر محدود کنند \n",
+          "misuse" : "برای فشار داخل وریدی استفاده نشود.\nبرای اندازه گیری فشار خون وریدی نباید استفاده شود که جایگزینی برای فشار وریدی در گردش خون کلی نیست، بعنوان مثال اندازه گیری خاص فشار وریدی ریه راست.\n\n و تخصص های مربوطه برای موارد بالا بکار رود\"OBSERVATION.intravascular_pressure\"\n \n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Het registreren van de systemische arteriele bloeddruk van een individu.",
+          "keywords" : [ "observaties", "meting", "blddr", "vitale functies", "gemiddelde arteriele druk", "polsdruk", "systolisch", "diastolisch", "RR", "NIBP", "tensie" ],
+          "use" : "Wordt gebruikt om alle weergaven van de systemische bloeddruk te registreren, ongeacht welke methode of welke lichaamslocatie is gebruikt om de meting te doen. Het archetype is bedoeld om bloeddruk metingen in alle klinische scenario's vast te leggen - bijvoorbeeld, zelf-meting met een thuis bloeddrukmeter; een nood beoordeling van de systolische bloeddruk met behulp van palpatie en een drukmanchet; metingen tijdens consulten, overleg of tijdens inspannings stress testen, en een reeks van metingen die door een apparaat zijn gedaan in de intensieve zorg.\nEr is een uitgebreid status model dat interpretatie van metingen ondersteunt, door patiënt positie, inspanning, beïnvloedende factoren en de hoek/het aantal graden waarin de onderzoekstafel staat, te specificeren.\nGenoemde gebeurtenissen zijn gelimiteerd tot een gemiddelde over een periode van 24 uur, maar templates kunnen de standaard 'iedere gebeurtenis' verder vernauwen om specifieke eisen voor de bloeddrukmeting, zoals registreren van de bloeddruk op een specifiek tijdsmoment, of over een reeks van intervallen (+/- statistisch gebruik) te faciliteren.\n",
+          "misuse" : "Niet te gebruiken voor intraveneuze druk.\nNiet te gebruiken voor de meting van de arteriele bloeddruk welke geen surrogaat is voor de arteriele druk in de systemische circulatie, bv de specifieke meting van de rechter arterie pulmonalis druk.\nGebruik OBSERVATION.intravascular_pressure en gerelateerde specialisaties in beide situaties.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.blood_pressure.v2",
     "differential" : true,
@@ -254,7 +492,17 @@
                             "units" : "mm[Hg]",
                             "@type" : "DV_QUANTITY"
                           },
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -318,7 +566,17 @@
                             "units" : "mm[Hg]",
                             "@type" : "DV_QUANTITY"
                           },
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -379,7 +637,17 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -440,7 +708,17 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -594,7 +872,17 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "497" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -657,28 +945,6 @@
               "nodeId" : "at1042.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "data",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ITEM_TREE",
-                  "nodeId" : "at0003.2",
-                  "targetPath" : "/data[at0001]/events[at0006]/data[at0003.1]",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "state",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ITEM_TREE",
-                  "nodeId" : "at0007.2",
-                  "targetPath" : "/data[at0001]/events[at0006]/state[at0007.1]",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "math_function",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -689,6 +955,7 @@
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
                       "terminologyId" : {
                         "value" : "openehr"
                       },
@@ -720,6 +987,28 @@
                       } ]
                     } ]
                   } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003.2",
+                  "targetPath" : "/data[at0001]/events[at0006]/data[at0003.1]",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0007.2",
+                  "targetPath" : "/data[at0001]/events[at0006]/state[at0007.1]",
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -2743,7 +3032,97 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "CF9ADF5EF4D2BC6F8C0BF8FFED32E2A4"
       },
-      "details" : { }
+      "details" : {
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "*To record a narrative description of the clinical history, as told to a clinician or recorded directly by an individual/patient, and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will describe the various aspects of the clinical history in further detail.(en)",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ko" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ko"
+          },
+          "purpose" : "개인/환자가 의사에게 이야기하거나 직접 기록한 임상 병력에 대한 서술을 기록하기 위한 것과 상세한 CLUSTER archetypes를 포함할 수 있는 프레임워크를 제공하는 것으로 각각에 임상 병력의 다양한 측면들을 상세하게 기술될 것이다.",
+          "keywords" : [ "*병력(ko)", "*현재(ko)", "*호소(ko)", "*이야기(ko)" ],
+          "use" : "환자가 의사에게 이야기한 공식적인 '현재 호소하는 병력(History of Presenting Complaint)'을 기록하기 위해서 사용함; 또는 (예를 들어 개인건강기록에 있는) 개인 자신의 증상들의 '이야기(story)를 설명한 것을 기록하기 위해 사용함.\n\n기존 또는 이전의 임상 시스템 내의 임상 병력의 서술을 'Story' data element을 사용하여 archetyped format으로 통합하기위해 사용함.\n\n단순한 서술을 기록하기 위해 사용함 그리고/또는 container archetype으로써 - 추가적이고 특정한 그리고 상세한 CLUSTER archetypes에 의해 확장될 수 있는 공통의 쿼리가능한 ENTRY archetype framework를 제공함. 각각에 임상병력의 다양한 측면을 기술될 것임. 병력과 관련된 CLUSTER archetypes의 예는 CLUSTER.symptom 또는 CLUSTER.health_event를 포함한다.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en fritekstbeskrivelse av individets sykehistorie/anamnese og som et rammeverk for å nøste detaljerte CLUSTER-arketyper som hver for seg kan detaljere ulike aspekter av sykehistorien, som symptomer, helserelaterte hendelser, og andre tilgrensende emner.\n\nBrukes for å registrere detaljer om sykehistorien slik den blir fortalt av et individ, pårørende, eller en annen part. Det kan registreres av en kliniker som del av opptak av sykehistorie, eller selvregistreres som del av et spørreskjema eller personlig helsearkiv.",
+          "keywords" : [ "anamnese", "sykehistorie", "problem", "helseplage", "bekymring" ],
+          "use" : "Brukes for å registrere en beskrivelse av subjektive helserelaterte observasjoner eller inntrykk fra individets synsvinkel.\n\nNår anamnesen registreres av en kliniker i en konsultasjon kan arketypen brukes for å registrere den kliniske historikken til individet, rapportert av individet selv, en forelder, pårørende eller en annen involvert part. Dersom den registreres av individet selv, kan den brukes som en oversikt over symptom- og helseerfaringer, som kan deles med helsepersonell eller som dokumentasjon i deres eget helsearkiv.\n\nBrukes:\n- for å registrere en enkelt fritekst\n- som et rammeverk for å registrere en detaljert strukturert historikk ved å inkludere relevante CLUSTER-arketyper i SLOTet \"Strukturerte detaljer\". Eksempler kan være CLUSTER.symptom_sign eller CLUSTER.health_event.\n\nBrukes for å kunne gjenbruke anamnese i eksisterende systemer inn i et arketypeformat ved hjelp av 'Anamnese'-dataelementet.",
+          "misuse" : "Skal ikke brukes for å registrere formelle vurderinger av klinikere. Disse registreres ved hjelp av forskjellige arketyper av klassen EVALUATION.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar uma descrição narrativa da história clínica do sujeito do cuidado e para fornecer um quadro no qual se aninha arquétipos CLUSTER detalhados, cada um dos quais irão apoiar a narrativa com detalhes estruturados adicionais para sintomas, eventos de saúde e tópicos relacionados.\n\nUse para registrar detalhes sobre a história clínica relatada por um indivíduo, pais, cuidador ou outra pessoa. Pode ser registrado pelo médico como parte de um registro de história clínica relatado, ou auto-registrado como parte de um questionário clínico ou registro de saúde pessoal.",
+          "keywords" : [ "história", "queixa", "sintoma", "saúde", "gravar", "apresentando queixa", "anamnese", "presente" ],
+          "use" : "Use para registrar uma descrição sobre observações ou impressões subjetivas relacionadas à saúde do ponto de vista do sujeito do cuidado.\n\nQuando registrado por um médico dentro do contexto de provisão de cuidados de saúde, a história pode ser utilizada para capturar a história clínica, como relatado pelo próprio sujeito, pais, cuidador ou outra parte relacionada. Se gravado pelo próprio sujeito, pode ser usado como um relato de sua \"história\" de sintomas e experiências de saúde, que pode ser usado para compartilhar com os prestadores de cuidados de saúde ou para documentar dentro do seu próprio registro de saúde pessoal.\n\nUsar:\n- para gravar uma narrativa simples; e/ou\n- como um arquétipo contêiner para permitir o registro de um histórico detalhado por inclusão de arquétipos CLUSTER relevantes dentro do SLOT Detalhes. Por exemplo: arquétipos CLUSTER.symptom, CLUSTER.issue ou CLUSTER.health_event podem ser adequadamente utilizados neste SLOT.\n\nUse para incorporar as descrições narrativas da história clínica capturadas de sistemas clínicos existentes ou herdados em um formato arquetipado, usando o elemento de dados de texto \"História\".",
+          "misuse" : "Não deve ser usado para gravar avaliações formais por médicos que normalmente seriam gravadas usando a classe de arquétipos EVALUATION.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "*To record a narrative description of the clinical history, as told to a clinician or recorded directly by an individual/patient, and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will describe the various aspects of the clinical history in further detail.(en)",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a narrative description of the clinical history of the subject of care and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will support the narrative with additional structured detail for symptoms, health events and related topics.\n\nUse to record detail about the clinical history as reported by an individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, or self-recorded as part of a clinical questionnaire or personal health record.",
+          "keywords" : [ "history", "presenting", "complaint", "story", "symptom", "health", "record", "presenting complaint", "anamnesis" ],
+          "use" : "Use to record a description about subjective health-related observations or impressions from the point of view of the subject of care. \n\nWhen recorded by a clinician within the context of healthcare provision the story can be used for capturing the clinical history, as reported by the subject themselves, a parent, care-giver or other related party. If recorded by the subject, it can be used as an account of their 'story' of symptoms and health experiences, which might be used to share with healthcare providers or to document within their own personal health record.\n\nUse:\n- to record a simple narrative; and/or \n- as a container archetype to enable recording of a detailed structured history by inclusion of relevant CLUSTER archetypes within the 'Detail' SLOT. For example: CLUSTER.symptom, CLUSTER.issue or CLUSTER.health_event archetypes can be appropriately used in this SLOT.\n\nUse to incorporate the narrative descriptions of clinical history captured from existing or legacy clinical systems into an archetyped format, using the 'Story' text data element.",
+          "misuse" : "Not to be used to record formal assessments by clinicians which would usually be recorded using the EVALUATION class of archetypes.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.story.v1",
     "differential" : true,
@@ -2922,7 +3301,117 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "722FB3886409D9A08A7FD119D76254B0"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "*To record detail about a symptom - either self-recorded by an individual or recorded on the behalf of a patient by a clinician. A complete patient history may include varying level of details about a variety of symptoms.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record detailed information about a symptom as told to a clinician by a patient or self-recorded by the individual/patient.\n\nThis archetype allows a 'nil significant' statement to be explicitly recorded.(en)",
+          "misuse" : "*Sollte nur für Symptome benutzt werden. (en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "*To record details about a single episode of a reported symptom or sign including context, but not details, of previous episodes if appropriate.(en)",
+          "keywords" : [ "*complaint(en)", "*symptom(en)", "*disturbance(en)", "*problem(en)", "*discomfort(en)", "*presenting complaint(en)", "*presenting symptom(en)", "*sign(en)" ],
+          "use" : "*Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party.  It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\n\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to proved a single information model that allows for recording of the entire continuum between clearly identifable symptoms and reported signs when recording a clinical history.\n\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \n\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype.\n\nClinicians frequently record the phrase 'nil significant' against specific symptoms or reported signs as an efficient method to indicate that they asked the individual and it was not reported as causing any discomfort or disturbance - effectively used more like a 'normal statement' rather than an explicit exclusion. The 'Nil significant' data element has been deliberately included in this archetype to allow clinicians to record this same information in a simple and effective way in a clinical system. It can be used to drive a user interface, for example if 'Nil significant' is recorded as true then the remaining data elements can be hidden on a data entry screen. This pragmatic approach supports the majority of simple clinical recording requirements around reported symptoms and signs. \n\nHowever if there is a clinical imperative to explicitly record that a Symptom or Sign was reported as not present, for example if it will be used to drive clinical decision support, then it would be preferable to use the CLUSTER.exclusion_symptom_sign archetype. The use of CLUSTER.exclusion_symptom_sign will increase the complexity of template modelling, implementation and querying. It is recommended that the CLUSTER.exclusion_symptom_sign archetype only be considered for use if clear benefit can be identified in specific situations, but should not be used for routine symptom/sign recording.(en)",
+          "misuse" : "*Not to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity, and only if the 'Nil significant' in this archetype is not specific enough for recording purposes.\n\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\n\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera ett uppvisat symtom eller tecken ifrån en enskild episod, inklusive kontext, men inte detaljer om tidigare episoder, om det är tillämpligt.",
+          "keywords" : [ "besvär", "symtom", "störning", "problem", "obehag", "uppvisar besvär", "uppvisar symtom", "tecken" ],
+          "use" : "Används för att beskriva detaljer för en individs rapporterade symtom eller tecken ifrån en enskild episod, som rapporterats av personen, föräldern, hälso- o sjukvårdspersonal eller annan part. Det kan registreras av hälso- o sjukvårdspersonal som en del av en anamnes som rapporterats till hälso- o sjukvårdspersonalen, observerad av eller registrerats själv av personen som en del av ett kliniskt frågeformulär eller personligt hälsodokument. En komplett anamnes eller patientjournal kan innehålla varierande detaljnivå från flera episoder av ett identifierat symtom eller rapporterade tecken, såväl som multipla symtom och tecken. \n\nSymtom är subjektiva observationer från en fysisk eller psykisk störning och tecken är objektiva observationer av densamma, upplevda av en individ och rapporteras till journalföraren av samma individ eller annan part. \nUr denna logik följer att vi behöver två arketyper för att registrera klinisk anamnes , en för rapporterade symtom och en annan för rapporterade tecken. I verkligheten är detta opraktiskt eftersom det kommer att kräva tillgång till kliniska data i någon av dessa mallar, vilket innebär signifikant merarbete för mallarna och dem som matar in data. Dessutom finns det ofta överlappningar i kliniska koncept, exempevisl är tidigare kräkningar eller blödningar att kategoriserade som ett symtom eller rapporterat tecken? \nSom svar har denna arketyp utformats specifikt för att möjliggöra registrering av en sammanhängande enhet mellan tydligt identifierbara symtom och rapporterade tecken vid registrering av en klinisk anamnes.\n\nAnvänds som en allmän mall för alla symtom och rapporterade tecken. Fältet \"Specifika detaljer\" kan användas för att utöka arketypen för att inkludera ytterligare, specifika datakomponenter för mer komplexa symtom eller tecken. \n\nArketypen är speciellt utformad för att användas i fältet \"Detaljstruktur\" i OBSERVATION.story-arketypen, men kan även användas inom andra OBSERVATION- eller CLUSTER-arketyper och i \"Associerade symtom och tecken\" eller i fältet \"Tidigare episod\" inom andra exempel av denna CLUSTER.symptom_sign arketypen. Hälso- o sjukvårdspersonal registrerar ofta uttrycket \"Används inte för att dokumentera ett symtom eller tecken\" som uttryckligen rapporteras som inte förekommande. \n\nAnvänd CLUSTER.exclusion_symptom_sign med försiktighet för specifika ändamål där merarbetet för registreringarna på detta sätt motiverar extra komplexitet och endast om \"Noll signifikanta\" fältet i denna arketyp inte är tillräckligt specifik för syftet för registreringen. Används inte för att dokumentera ett symtom eller tecken som uttryckligen rapporteras som inte förekommande – använd CLUSTER.exclusion_symptom_sign med försiktighet för specifika ändamål där merarbetet för registreringarna på detta sätt motiverar extra komplexitet och endast om \"Noll signifikanta\" fältet i denna arketyp inte är tillräckligt specifik för syftet för registreringen. För specifika symtom eller rapporterade tecken som en effektiv metod för att indikera att individen tillfrågats och det inte rapporterades som obehag eller störning - används mer effektivt som ett \"normalt utlåtande\" snarare än en uttrycklig uteslutning. Det \"Noll signifikanta\" fältet har medvetet inkluderats i denna arketyp för att kliniker kan registrera samma information på ett enkelt och effektivt sätt i ett kliniskt system. Det kan användas för att driva ett användargränssnitt, exempelvis om \"Noll signifikant\" är registrerad som sann kan de återstående fälten döljas på en dataskärm. Denna pragmatiska metod stöder majoriteten av enkla kliniska registreringskrav kring rapporterade symtom och tecken.\n\nDäremot om det finns en klinisk nödvändighet att uttryckligen registrera att ett symtom eller tecken rapporterades som inte förekommande, exempelvis om det kommer att användas som ett kliniskt beslutsstöd, föredras CLUSTER.exclusion_symptom_sign arketypen. Användningen av CLUSTER.exclusion_symptom_sign ökar komplexiteten i mallutformningen, implementeringen och utfrågningen. Det rekommenderas att CLUSTER.exclusion_symptom_sign arketypen endast beaktas för användning om tydlig fördel kan identifieras i specifika situationer, men ska inte användas för rutinmässigt symtom och tecken registrering.\n\n\n",
+          "misuse" : "Ska inte användas för att dokumentera ett symtom eller tecken som uttryckligen rapporteras som inte förekommande. Använd CLUSTER.exclusion_symptom_sign med försiktighet för specifika ändamål där merarbetet för registreringarna på detta sätt motiverar extra komplexitet och endast om \"Noll significant\" fältet i denna arketyp inte är tillräckligt specifik för registreringens syfte.\n\nSka inte användas för att registrera objektiva fynd som en del av en fysisk undersökning . Använd OBSERVATION.exam och relaterad undersökning CLUSTER-arketyper för detta ändamål.\n\nSka inte användas för diagnoser och problem som ingår i en kvarstående problemlista. Använd då istället EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om en enkeltepisode av et rapportert symptom eller sykdomstegn. Dette kan omfatte kontekst, men ikke detaljer, om tidligere episoder av symptomet/sykdomstegnet.",
+          "keywords" : [ "lidelse", "plage", "problem", "ubehag", "symptom", "sykdomstegn", "lyte", "skavank" ],
+          "use" : "For å registrere detaljer om en enkeltepisode av et rapportert symptom eller sykdomstegn hos et individ, som redegjort av personen selv, foreldre, omsorgsperson eller andre parter. Registrering kan skje i forbindelse med opptak av anamnese, eller som en selvregistrering som en del av et klinisk spørreskjema eller personlig journal. \nEn fullstendig klinisk anamnese eller pasientanamnese kan inneholde beskrivelser med ulikt detaljnivå om flere episoder knyttet til samme symptom eller sykdomstegn, og vil også kunne inneholde flere ulike symptomer eller sykdomstegn.\n\nI egentlig forstand er symptomer subjektive opplevelser av en fysisk eller mental forstyrrelse mens sykdomstegn er objektive observasjoner av det samme, som er erfart av et individ og rapportert til en kliniker av individet eller av andre. Fra denne logikken følger at det burde være to arketyper til å registrere klinisk anamnese; en for rapporterte symptomer og en for rapporterte sykdomstegn. I virkeligheten er dette upraktisk og vil kreve registrering av kliniske data i enten den ene eller den andre av disse modellene. I praksis vil dette øke kompleksitet og tidsbruk knyttet til modellering og registrering av data. I tillegg overlapper ofte de kliniske konseptene, for eksempel: Vil tidligere oppkast eller blødning kategoriseres som et symptom eller som et rapportert sykdomstegn?\nSom svar på dette er arketypen laget for å tillate registrering av hele kontinuumet mellom tydelig definerte symptomer og rapporterte sykdomstegn når en registrerer en klinisk anamnese.\n\nArketypen er designet for å gi et generisk rammeverk for alle symptomer og rapporterte sykdomstegn. SLOTet \"Spesifikke detaljer\" kan brukes for å utvide arketypen med ytterligere spesifikke dataelementer for komplekse symptomer eller sykdomstegn.\n\nArketypen skal settes inn i \"Detaljer\"-SLOTet i OBSERVATION.story-arketypen men kan også brukes i en hvilken som helst OBSERVATION eller CLUSTER-arketype. Arketypen kan også gjenbrukes i andre instanser av CLUSTER.symptom_sign-arketypen i SLOTene \"Assosierte symptomer\" eller \"Tidligere detaljer\".\n\nKlinikere registrerer ofte frasen \"Ikke av betydning\" i forbindelse med spesifikke symptomer eller rapporterte tegn for å indikere at det er eksplisitt spurt om det spesifikke symptomet, og at det ble svart at symptomet ikke er tilstede i en slik grad at det påfører pasienten ubehag eller uro. Frasen brukes mer som en normalbeskrivelse enn en eksplisitt eksklusjon. Dataelementet \"Ikke av betydning\" er med hensikt lagt til for å tillate at klinikere enkelt og effektivt kan registrere denne informasjonen i det kliniske systemet. Eksempelvis kan \"Ikke av betydning\" brukes i brukergrensesnittet, er dette registrert som \"Sann\" kan de resterende dataelementene skjules i brukergrensesnittet. Denne pragmatiske tilnærmingen støtter hoveddelen av enkel klinisk journalføring av symptomer og sykdomstegn. \n\nImidlertid kan det være fordelaktig å bruke arketypen CLUSTER.exclusion_symptom_sign dersom det er klinisk behov for å eksplisitt registrere at et symptom eller sykdomstegn ikke er tilstede, for eksempel dersom dette skal brukes til klinisk beslutningsstøtte. Bruk av CLUSTER.exclusion_symptom_sign vil øke kompleksiteten i templatmodellering, implementasjon og spørring. Det anbefales at CLUSTER.exclusion_symptom_sign kun vurderes brukt dersom man kan identifisere en klar gevinst, men bør ikke brukes for rutineregistreringer av symptomer eller sykdomstegn.",
+          "misuse" : "Brukes ikke til eksplisitt registrering av at et symptom eller sykdomstegn ikke er tilstede. Bruk CLUSTER.exclusion_symptom_sign varsomt da det øker tidsbruk ved registrering og tilfører økt kompleksitet, og bare når dataelementet \"Ikke av betydning\" i denne arketypen ikke er eksplisitt nok for registreringen.\n\nBrukes ikke til registrering av objektive funn som en del av en fysisk undersøkelse. Bruk OBSERVATION.exam og relaterte CLUSTER.exam-arketyper for dette formålet. \n\nBrukes ikke til registrering av problemer og diagnoser som en del av en persistent problemliste, til dette brukes EVALUATION.problem_diagnosis.\n\nBrukes ikke til å dokumentere tiltak og resultat i løpet av hele perioden individet er under behandling, da arketypen er beregnet til å dokumentere symptomer og sykdomstegn som et øyeblikksbilde.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Registrar detalhes sobre um episódio único de um sinal ou sintoma relatado incluindo contexto, mas não detalhes, de episódios prévios se apropriado.",
+          "keywords" : [ "queixa", "sintoma", "distúrbio", "problema", "desconforto", "queixa atual", "sintoma atual", "sinal" ],
+          "use" : "Usar para relatar detalhes sobre um episódio único de um sintoma ou sinal reportado em um indivíduo, como reportado pelo indivíduo, parente, cuidador ou outra arte. Deve ser registrado por um clínico como parte de um relato de história clínica como reportado por eles, observado pelo clínico ou registrado pelo próprio como parte de um questionário ou relato pessoal de saúde. Uma história clínica completa ou história pessoal deve conter - com variáveis níves de detalhes - múltiplos episódios de um sinal ou sintoma identificado ou reportado assim como múltiplos sinais/sintomas. \n\nNo sentido mais puro, sintomas são observações subjetivas de um distúrbio físico ou mental e sinais são observações objetivas dos mesmos, como experimentado por um indivíduo e reportado para o tomador da história pelo mesmo indivíduo ou outra parte. Por esta lógica segue que serão necessários dois arquétipos para registrar a história clínica - um para sintomas e outro para sinais relatados. Na realidade isto é pouco prático pois vai requerer entrada de dados clínicos em cada um destes modelos o que acrescenta problemas significantes aos modeladores e aqueles que coletam o dado. Em adição, frequentemente há uma interposição entre os conceitos clínicos - por exemplo: vômitos ou sangramentos prévios devem ser considerados sintomas ou sinais reportados? Em resposta, este arquétipo foi especificamente desenhado para prover um modelo de informação único que permita o registro de todo o continuum entre sintomas claramente identificáveis e sinais reportados quando do reistro de uma história clínica. \n\nEste arquétipo pretende ser utilizado como um padrão genérico para todos os sintomas e sinais reportados. O SLOT 'Detalhes específicos' pode ser utilizado para estender o arquétipo e incluir elementos de dados específicos ou adicionais para sinais e sintomas mais complexos. \n\nEste arquétipo foi desenhado especificamennte para ser utilizado no SLOT 'Detalhe estruturado' com o arquétipo OBSERVATION.story, mas pode também ser utilizado com outros arquétipos OBSERVATION ou CLUSTER e nos SLOTS 'Sinal/sintoma associado' ou 'Episódio prévio' em outras instâncias deste arquétipo CLUSTER.symptom_sign.\n\nClínicos frequentemente registram a frase 'não significante' em sintomas específicos ou sinais relatados como um método eficiente de indicar que eles perguntaram ao indivíduo e foi relatado como não causador de desconforto ou distúrbio - efetivamente é utilizado mais como 'referido como normal' do que uma exclusão explícita. O elemento de dado 'não significante' tem sido incluído deliberadamente neste arquétipo para permitir aos clínicos registrarem esta mesma informação de uma maneira simples e efetiva num sistema clínico. Pode ser utilizado para dirigir uma interface de usuário, por exemplo se 'não significante' é registrado como verdadeiro então os demais elementos de dados podem ser ocultos na tela de entrada de dados. Esta abordagem pragmática dá suporte à maioria dos requerimentos de registros clínicos com relação a sinais e sintomas relatados. \n\nEntretanto se houver um imperativo clínico para explicitar o registro de que um Sintoma ou Sinal foi reportado como ausente, por exemplo se for utilizado para orientar suporte à decisão clínica, então pode ser preferível usar o arquétipo CLUSTER.exclusion_symptom_sign. O uso de CLUSTER.exclusion_symptom_sign vai aumentar a complexidade da modelagem de template, implementação e pesquisa. É recomendado que o arquétipo CLUSTER.exclusion_symptom_sign apenas seja considerado se um benefício claro for identificado em situações específicas e não deve ser utilizado rotineiramente para o registro de sinais/sintomas.",
+          "misuse" : "Não deve ser utilizado para registrar que um sintoma ou sinal foi explicitamente relatado como ausente - utilizar CLUSTER.exclusion_symptom_sign cuidadosamente para fins específicos em que os problemas de registro garantam complexidade adicional e apenas se o 'não significante' neste arquétipo não for específico suficiente para fins de registro.\n\nNão deve ser utilizado para registrar achados objetivos como parte de um exame físico - utilizar OBSERVATION.exam e arquétipos do tipo CLUSTER relacionados a exame para esta finalidade.\n\nNão dever ser utilizado para diagnósticos e problemas que fazem parte de uma lista de problemas - utilizar EVALUATION.problem_diagnosis.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "*To record detail about a symptom - either self-recorded by an individual or recorded on the behalf of a patient by a clinician. A complete patient history may include varying level of details about a variety of symptoms.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to record detailed information about a symptom as told to a clinician by a patient or self-recorded by the individual/patient.\n\nThis archetype allows a 'nil significant' statement to be explicitly recorded.(en)",
+          "misuse" : "*Not to be used to record details about pain. Use the specialisation of this archetype - the CLUSTER.symptom-pain instead.\n\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about a single episode of a reported symptom or sign including context, but not details, of previous episodes if appropriate.",
+          "keywords" : [ "complaint", "symptom", "disturbance", "problem", "discomfort", "presenting complaint", "presenting symptom", "sign" ],
+          "use" : "Use to record details about a single episode of a symptom or reported sign in an individual, as reported by the individual, parent, care-giver or other party.  It may be recorded by a clinician as part of a clinical history record as reported to them, observed by the clinician or self-recorded as part of a clinical questionnaire or personal health record. A complete clinical history or patient story may include varying level of details about multiple episodes of an identified symptom or reported sign, as well as multiple symptoms/signs.\n\nIn the purest sense, symptoms are subjective observations of a physical or mental disturbance and signs are objective observations of the same, as experienced by an individual and reported to the history taker by the same individual or another party. From this logic it follows that we will need two archetypes to record clinical history - one for reported symptoms and another for reported signs. In reality this is impractical as it will require clinical data entry into either one of these models which adds signficant overheads to modellers and those entering data. In addition, there is often overlap in clinical concepts - for example, is previous vomiting or bleeding to be categorised as a symptom or reported sign? In response, this archetype has been specifically designed to proved a single information model that allows for recording of the entire continuum between clearly identifable symptoms and reported signs when recording a clinical history.\n\nThis archetype has been intended to be used as a generic pattern for all symptoms and reported signs. The 'Specific details' SLOT can be used to extend the archetype to include additional, specific data elements for more complex symptoms or signs. \n\nThis archetype has been specifically designed to be used in the 'Structured detail' SLOT within the OBSERVATION.story archetype, but can also be used within other OBSERVATION or CLUSTER archetypes and in the 'Associated symptom/sign' or 'Previous episode' SLOT within other instances of this CLUSTER.symptom_sign archetype.\n\nClinicians frequently record the phrase 'nil significant' against specific symptoms or reported signs as an efficient method to indicate that they asked the individual and it was not reported as causing any discomfort or disturbance - effectively used more like a 'normal statement' rather than an explicit exclusion. The 'Nil significant' data element has been deliberately included in this archetype to allow clinicians to record this same information in a simple and effective way in a clinical system. It can be used to drive a user interface, for example if 'Nil significant' is recorded as true then the remaining data elements can be hidden on a data entry screen. This pragmatic approach supports the majority of simple clinical recording requirements around reported symptoms and signs. \n\nHowever if there is a clinical imperative to explicitly record that a Symptom or Sign was reported as not present, for example if it will be used to drive clinical decision support, then it would be preferable to use the CLUSTER.exclusion_symptom_sign archetype. The use of CLUSTER.exclusion_symptom_sign will increase the complexity of template modelling, implementation and querying. It is recommended that the CLUSTER.exclusion_symptom_sign archetype only be considered for use if clear benefit can be identified in specific situations, but should not be used for routine symptom/sign recording.",
+          "misuse" : "Not to be used to record that a symptom or sign was explicitly reported as not present - use CLUSTER.exclusion_symptom_sign carefully for specific purposes where the overheads of recording in this way warrant the additional complexity, and only if the 'Nil significant' in this archetype is not specific enough for recording purposes.\n\nNot to be used for recording objective findings as part of a physical examination - use OBSERVATION.exam and related examination CLUSTER archetypes for this purpose.\n\nNot to be used for diagnoses and problems that form part of a persisting Problem List - use EVALUATION.problem_diagnosis.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.symptom_sign.v1",
     "differential" : true,
@@ -2946,7 +3435,8 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
               "defaultValue" : {
                 "defining_code" : {
                   "terminology_id" : {
@@ -3119,6 +3609,78 @@
               "rmTypeName" : "DV_TEXT",
               "attributes" : [ ],
               "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0026.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "380" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "precision",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "1" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "upper" : 10.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_INTEGER",
+                    "rmTypeName" : "INTEGER",
+                    "constraint" : [ {
+                      "lower" : 0,
+                      "upper" : 0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
+                    } ]
+                  } ]
+                } ]
+              } ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -3656,7 +4218,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "D3E5FE4C2A00A45DAB94B1D3CA6251C6"
       },
-      "details" : { }
+      "details" : {
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To record results of pulmonary function tests, including spirometry and lung volume testing. (en)",
+          "keywords" : [ "*respiratory(en)", "*pulmonary(en)", "*spirometry(en)", "*peak flow(en)", "*PFT(en)", "*lung(en)", "*bronchial(en)" ],
+          "use" : "*Used to record all representations of pulmonary function testing, including spirometry. Multiple events and state information may be used to capture pre and post bronchial challenge or bronchodilation results. \n(en)",
+          "misuse" : "*Supporting subject information, often required  to interpret the tests, such as smoking status or oxygenation, should be captured in separate, specific archetypes.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record results of pulmonary function tests, including spirometry and lung volume testing.",
+          "keywords" : [ "respiratory", "pulmonary", "spirometry", "peak flow", "PFT", "lung", "bronchial" ],
+          "use" : "Used to record all representations of pulmonary function testing, including spirometry. Multiple events and state information may be used to capture pre and post bronchial challenge or bronchodilation results.",
+          "misuse" : "Supporting subject information, often required  to interpret the tests, such as smoking status or oxygenation, should be captured in separate, specific archetypes.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.pulmonary_function.v0",
     "differential" : true,
@@ -3704,17 +4299,7 @@
                           "rmTypeName" : "CLUSTER",
                           "occurrences" : "0..0",
                           "nodeId" : "at0052.1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "items",
-                            "cardinality" : {
-                              "@type" : "CARDINALITY",
-                              "interval" : "1..*",
-                              "ordered" : false,
-                              "unique" : false
-                            },
-                            "children" : [ ]
-                          } ],
+                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
@@ -3897,17 +4482,7 @@
                           "rmTypeName" : "CLUSTER",
                           "occurrences" : "0..0",
                           "nodeId" : "at0055.1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "items",
-                            "cardinality" : {
-                              "@type" : "CARDINALITY",
-                              "interval" : "1..*",
-                              "ordered" : false,
-                              "unique" : false
-                            },
-                            "children" : [ ]
-                          } ],
+                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
@@ -4036,12 +4611,6 @@
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "items",
-                        "cardinality" : {
-                          "@type" : "CARDINALITY",
-                          "interval" : "1..*",
-                          "ordered" : false,
-                          "unique" : false
-                        },
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
@@ -4117,12 +4686,6 @@
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "items",
-                        "cardinality" : {
-                          "@type" : "CARDINALITY",
-                          "interval" : "1..*",
-                          "ordered" : false,
-                          "unique" : false
-                        },
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
@@ -4435,7 +4998,70 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "896592A7B965B7E11477601557326843"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere resultat, funn og laboratoriets tolkning, av en laboratorieundersøkelse utført på prøvemateriale fra et individ eller relatert til individet.",
+          "keywords" : [ "medisinsk biokjemi", "medisinsk mikrobiologi", "medisinsk genetikk", "klinisk farmakologi", "patologi", "immunologi og transfusjonsmedisin", "laboratorie", "lab", "anatomisk", "prøve", "rettsmedisinsk", "laboratoriemedisin", "generell kjemi", "materiale", "prøvemateriale", "lokalisasjon", "undersøkelse", "analyse", "metode (analysemetode)", "laboratoriespesialitet", "blodprøve", "serum", "plasma", "fullblod", "analytt", "kapillærprøver", "venøse prøver", "arterielle prøver", "prøvetaking", "immunopatologi", "cytologi", "histopatologi", "biopsi", "preparat", "immunhistokjemi", "immuncytokjemi", "molekylærgenetiske analyser", "histologi", "cytologi", "cervixcytologi", "obduksjon", "flowcytometri", "molekylær patologi", "elektronmikroskopi", "neuropatologi", "frysesnitt", "punksjonscytologi", "makrobeskjæring", "makroskopisk undersøkelse", "mikrobiologi", "bakteriologi", "virologi", "serologi", "molekylærdiagnostikk", "parasittologi", "mykologi", "protozologi", "immunologi", "medisinsk immunologi", "transfusjonsmedisin", "immunhematologi", "transplantasjonsimmunologi", "cellulær immunologi", "ex vivo cellelaboratorium", "hormonanalyser", "endokrinologi", "blodbank", "blodkomponenter", "hematologi", "kjemisk", "klinisk", "kjemi", "klinisk kjemi", "klinisk biokjemi", "metabolsk molekylærbiologi", "homeostase og trombose", "koagulasjon", "klinisk farmakologi", "farmakologi", "doping analyser", "klinisk fysiologi", "toksikologi", "rusmiddelanalyse", "misbruksdiagnostikk", "genetisk", "genetikk", "HTS-diagnostikk", "genpaneler", "farmakogenetikk", "cancer cytogenetikk", "preparat", "rettsmedisinsk" ],
+          "use" : "Brukes for å registrere resultat, funn og laboratoriets tolkning, av en laboratorieundersøkelse utført på prøvemateriale fra et individ eller relatert til individet. Dette utføres typisk i et laboratorium, men kan også gjøres i andre miljøer, som for eksempel ved pasientnær analysering.\n\nDenne arketypen er ment å dekke resultatet av én rekvirert undersøkelse der prøvene er tatt i én prosedyre, og som kan ha flere analyseresultater eller andre komponenter. Eksempler på dette kan være \"Differensialtelling av leukocytter\", som gir et separat resultat for antallet av hver type hvite blodceller, eller \"Nyrebiopsi ikke-neoplastisk\", som gir resultater fra mikroskopi, immunohistokjemi og elektronmikroskopi.\n\nDenne arketypen er laget for å være et rammeverk som vanligvis vil utvides med CLUSTER-arketyper for å få en hensiktsmessig registrering og rapportering av spesifikke mønstre for laboratorieresultater. Dette kan omfatte analyser og undersøkelser innen kjemi (medisinsk biokjemi, hematologi, immunologi og transfusjonsmedisin, med mer), samt spesifikke mønstre for de unike behovene innenfor mikrobiologi og patologi. Hvis de rekvirerte analysene eller undersøkelsene ikke tilhører en navngitt gruppe, vil hvert resultat normalt representeres ved en separat instans av denne arketypen. Imidlertid er det stor variasjon på hvordan svarrapportering/meldingsformidling skjer, og denne arketypen er designet for å ivareta disse variasjonene.\n\nDenne arketypen støtter flere tilnærminger til å registrere informasjon om prøvematerialet, noe som reflekterer de store variasjonene innenfor dagens praksis. Laboratoriesvar-arketypen har høy grad av samsvar med HL7 FHIR-ressursen \"Diagnostic Report\".\n\nDet forventes at en eller flere instanser av denne arketypen, eller arketypefamilen vil bli sendt tilbake til rekvirenten i en laboratoriesvarrapport, for eksempel i arketypen COMPOSITION.report_result eller tilsvarende, og sammen med relevante ENTRY-arketyper.\n\nRegistrering av konfunderende faktorer gjøres i praksis ikke på en konsistent måte, og avhenger av avsenderlaboratoriet og av den kliniske informasjonen som ble sendt med fra rekvirenten. I \"State\"-delen av arketypen er det et valgfritt og repeterbart element for \"Konfunderende faktorer\" som kan brukes til å registrere enkle faktorer, som fordi de kan påvirke tolkningen av resultatet må registreres eksplisitt. Dersom de konfunderende faktorene er mer komplekse kan det være hensiktsmessig å lage en CLUSTER-arketype som kan brukes i SLOTet \"Strukturerte konfunderende faktorer\".\nNB 1: Kjente eller nødvendige forutsetninger, som for eksempel \"fastende\" eller \"dag 1 av menstruasjonssyklusen\" bør registreres i elementet \"Prøvetakingsforhold\" i arketypen CLUSTER.specimen, og nøstes inn i denne OBSERVATION-arketypen.\nNB 2: Kjente problemer med prøvetaking eller prøvehåndtering, som for eksempel \"hemolyse\" eller \"forlenget stase\" bør registreres i elementet \"Prøvekvalitet\" i arketypen CLUSTER.specimen, og nøstes inn i denne OBSERVATION-arketypen.\n\nDer laboratoriet endrer analyser eller legger til analyser som oppfølging, kan disse håndteres etter veilledning fra HL7 FHIR (https://www.hl7.org/fhir/2015may/uslabreport-guide.html), eller etter lokale prosedyrer. For eksempel en av følgende:\n1. Registrer de endrede analysene/tilleggsanalysene innenfor samme instans av denne arketypen.\n2. Registrer de endrede analysene/tilleggsanalysene i en ny instans av denne arketypen, men referer til den opprinnelige rekvisisjonen ved hjelp av \"Rekvisisjonsdetaljer\".\n3. Registrer de endrede analysene/tilleggsanalysene i en ny instans av denne arketypen, men referer til en ny rekvisisjon i tillegg til den opprinnelige rekvisisjonen, ved hjelp av \"Rekvisisjonsdetaljer\".",
+          "misuse" : "Skal ikke brukes for å lagre en sammenstilling etter obduksjon eller rettsmedisinsk undersøkelse, selv om prøver av noen prøvematerialer som blir tatt i en obduksjon kan bli representert i denne arketypen. For å lage selve obduksjons- eller den rettsmedisinske rapporten må man bruke spesialiserte arketyper.\n\nDenne arketypen er passende for å representere generelle laboratoriesvar, men er ikke ment å dekke komplette sammendragsrapporter (\"synoptic reports\") innenfor patologi. For disse trengs det i tillegg spesialiserte arketyper.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.\nو يمثل هذا النموذج كوالد (أب) للتخصيصات الأخرى لاختبارات معملية أكثر تحديدا مثل الميكروبيولوجيا و الهيستوباثولوجيا.",
+          "keywords" : [ "المعمل - المختبر", "الباثولوجيا - المرضية", "الكيمياء الحيوية", "الدمويات", "الميكروبيولوجيا", "المناعيات - علم المناعة" ],
+          "use" : "قد يستخدم لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.\n\nيتم بعد ذلك تقديم التقرير للطبيب السريري الذي قام بطلب الاختبار في سياق تقرير معملي متكامل.",
+          "misuse" : "قد تكون التخصيصات أكثر مناسبة للتقارير المركبة مثل حالات الميكروبيولوجيا أو الهيستوباثولوجيا.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual.",
+          "keywords" : [ "lab", "pathology", "biochemistry", "haematology", "microbiology", "immunology", "laboratory", "anatomical", "chemical", "clinical", "immunopathology", "cytology", "histopathology", "test", "biopsy", "specimen", "forensic", "genetic", "laboratory medicine", "results", "analysis" ],
+          "use" : "Use to record the result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual. This is typically done in a laboratory, but may be done in other environments such as at the point of care.\n\nThis archetype is intended to cover the result of a single ordered investigation where the specimen(s) are collected as a single procedure, and may include multiple analyte results or other components. Examples of this could include 'Full blood count', which would yield a separate analyte result for the count of each type of blood cell, or 'kidney biopsy non-neoplastic', which would yield findings from microscopy, immunohistochemistry and electron microscopy.\n\nThis archetype has been designed to be a framework that will usually be extended with CLUSTER archetypes to enable appropriate recording of specific laboratory test result patterns. This includes, but is not limited to, tests for biochemistry, haematology, immunology and transfusion services etc and specific patterns for the unique requirements for microbiology and anatomical pathology. If the ordered tests or investigations do not commonly belong together in a named group or panel, each test result would normally be represented using separate instances of this archetype. There is, however, considerable variation in actual reporting/messaging practice and this archetype/related archetypes are designed to handle such variation.\n\nThis archetype supports multiple approaches to recording of specimen, reflecting current practice which varies enormously. A Laboratory test result has a high degree of alignment to an HL7 FHIR Diagnostic Report resource.\n\nIt is anticipated that one or more instances of this archetype, or archetype family, will be sent back to a requesting clinician within a laboratory report document comprising COMPOSITION.report_result archetype, or similar, and other relevant ENTRY archetypes.\n\nThe recording of confounding factors may be inconsistent, often depending on the analysing laboratory and on clinical information sent by the requester. In the State section of the archetype there is a simple 'Confounding factors' data element that is optional and can be repeated as one way to record a variety of simple factors that need to be made explicit as they may influence interpretation of the results. If the confounding factors are more complex, it may be appropriate to create a local/shared CLUSTER archetype that can be nested in the 'Confounding factors details' SLOT. \nNote 1: Known or required pre-conditions, such as 'fasting' or 'Day 1 of menstrual cycle', should be reported in the 'Sampling conditions' data element in the CLUSTER.specimen archetype, nested within this OBSERVATION archetype.\nNote 2: Known issues with specimen collection or handling, such as 'sample haemolysed' or 'prolonged use of tourniquet' should be reported within 'Specimen quality' in the CLUSTER.specimen archetype, nested within this OBSERVATION archetype.\n\nWhere 'reflex tests' are performed by the laboratory, these may be handled as per US/FHIR guidance (see https://www.hl7.org/fhir/2015may/uslabreport-guide.html) or other local policy. For example, one of the following ...\n1. Record the reflex test results additional 'Test findings' within the same 'openEHR-EHR-OBSERVATION.laboratory_test_result'\n2. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but refer to the original lab test request via 'Test request details'.\n3. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but reference a new lab test request as well as the original lab test request via 'Test request details'.",
+          "misuse" : "Not to be used to record an Autopsy or a Forensic report, although tests on some specimens that are taken in such situations may be represented using this archetype. For these, additional or specialised archetypes will be required to represent the data.\n\nThis archetype is suitable for representation of general laboratory test results, but not intended to cover full synoptic reports. For these, additional specialising archetypes are required to represent the data.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "用于记录针对组织和体液等标本所进行的病理学实验室检验项目的发现/所见和解释。这通常是由实验室来完成，但也可能会是在其他环境下完成的，如床旁。",
+          "keywords" : [ "实验室", "医学实验室", "临床实验室", "中心实验室", "检验科", "化验室", "化验科", "病理学", "检验医学", "检验", "医学检验", "临床检验医学", "临床检验", "生物化学", "生化", "血液学", "微生物学", "免疫学", "解剖学", "化学", "临床", "免疫病理学", "细胞学", "组织病理学", "试验", "试验项目", "检验项目", "化验项目", "报告项目", "活组织检查", "活检", "标本", "样本", "样品", "试样", "法医学", "遗传学" ],
+          "use" : "用于记录任何病理学实验室检验结果，包括作为某个组合型操作项目或手术的组成部分而进行的针对某种标本的某一检验项目所获得的结果。\n\n可以采用模板或专用原始型来表达多种分析物的组套。\n\n对于那些需要额外报告内容的，诸如组织病理学或微生物学之类较为复杂的检验项目，则应当采用专用的原始型来表达。\n\n实验室检验报告与HL7 FHIR 诊断报告资源DiagnosticReport之间具有高度的一致性。\n\n在完整的基于组合式文档的报告的背景下，通常会作为一个构成要素，回报给申请医生。",
+          "misuse" : "并非旨在用于报告非病理学检验结果，如影像学诊断、心电图或呼吸功能试验。\n\n并非旨在用于表达完整的累积型报告。当前这一实验室检验结果原始型表达的仅仅是，累积型检验项目报告之中通常被视为纵列的结果集合之一。累积型报告是一种视图，是利用由多个观测指标OBSERVATION原始型所表示的结果构建而成。\n\n并非旨在用于记录活组织检查报告，尽管可以采用此原始型来表示，针对活组织检查时所采集标本进行的检验项目。\n\n此原始型适合于表达一般性的病理学检验结果，但并未打算涵盖完整的提要式报告。对于此类报告，则需要采用额外的特化性原始型来表达相应的数据。\n\n此原始型在设计上已经支持临床病理学，但可能并不适合于其他种类的病理学用途。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -5117,7 +5743,55 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2C0F5CDC6CEC602EF4BD6BE4590DBA02"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere individuelle laboratorieresultater som enkeltverdier, som regel innenfor klinisk biokjemi, hematologi eller immunologi.",
+          "keywords" : [ "laboratorie", "analytt", "analyse", "svar", "resultat" ],
+          "use" : "Brukes for å registrere individuelle laboratorieresultater som enkeltverdier, som regel innenfor klinisk biokjemi, hematologi eller immunologi. Brukes normalt i arketypen OBSERVATION.laboratory_test. I noen tilfeller kan den brukes innenfor arketypen CLUSTER.laboratory_test_panel sammen med andre analyser som vanligvis rapporteres som del av et panel eller analysegruppe, men det kan også rapporteres flere analyser innenfor samme OBSERVATION.laboratory_test.\n\nElementet Analyseresultat vil ordinært erstattes i en templat elller applikasjon med navnet på den spesifikke analysen. f.eks. \"Hemoglobin\", og ofte kodet med en terminologi som NLK, SNOMED CT eller LOINC.\n\nDenne arketypen kan brukes innenfor mer komplekse laboratorie/patologirapporter der kvantitative svar som for eksempel flowcytometri eller gentester rapporteres sammen med konvensjonelle makroskopiske og mikroskopiske undersøkelser.",
+          "misuse" : "Skal ikke brukes til å registrere detaljerte funn ved patologiundersøkelser, annet enn for tilleggsundersøkelser som flowcytometri eller gentester.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia.\n",
+          "keywords" : [ "laboratório", "patologia", "analito", "componente", "resultado" ],
+          "use" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia. Normalmente usados conjuntamente com o arquétipo parental OBSERVATION.laboratory_test_result e em algumas circunstâncias será carregado dentro de um arquétipo CLUSTER.laboratory_test_panel, junto com outros analitos que são normalmente testados e/ou reportados como parte de uma bateria, painel e perfil, embora não seja necessário e.e múltiplos analitos podem ser carregados diretamente dentro do OBSERVATION.laboratory_test.\n\nO atributo do nome do elemento \"Resultado do analito\" é normalmente substituído em uma especialização, template ou em tempo de execução para carregar o nome do analito específico, p.e., \"hemoglobina\", frequentemente codificado com uma terminologia de referência como LOINC, SNOMED CT ou NPU.\n\nEste arquétipo pode ser usado dentro do contexto de relatórios laboratoriais/de patologia mais complexos como em relatórios de histopatologia/anatomia onde resultados quantitativos como de estudos de citometria de fluxo e testes genéticos são frequentemente reportados junto com relatórios macroscópicos e microscópicos convencionais.",
+          "misuse" : "Não deve ser usado para gravar achados detalhados de anatomia patológica macroscópica/microscópica, exceto para testes adicionais de estudos de citometria de fluxo ou testes genéticos.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record individual, single value laboratory test analyte results, as are common to clinical pathology testing for example biochemistry, haematology and immunology.",
+          "keywords" : [ "laboratory", "pathology", "analyte", "constituent", "result" ],
+          "use" : "To record individual, single value laboratory test analyte results, as are common to clinical pathology testing, for example biochemistry, haematology and immunology. Normally used in conjunction with a parent OBSERVATION.laboratory_test_result archetype and in some circumstances will be carried within a CLUSTER.laboratory_test_panel archetype, along with other analytes which are normally tested and/or reported as part of a battery,panel or profile, though this is not necessary i.e multiple analytes may be carried directly within the OBERVATION.laboratory_test.\n\nThe 'Analyte name' element is normally replaced in a specialisation, template or at run-time to carry the name of the specific analyte e.g. 'Haemoglobin', often coded with a reference terminology such as LOINC, SNOMED CT or NPU.\n\nThis archetype may be used within the setting of more complex laboratory/pathology reporting such as Histopathlogy/ Anatomical synoptic reports where quantitative results such as cytometric flow studies or genetic testing are often reported alongside conventional macroscopic and microscopic reporting.",
+          "misuse" : "Should not be used to record detailed Anatomical pathology macroscopic/microscopic findings, other then for additional testing such as cytometric flow studies or genetic testing.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
