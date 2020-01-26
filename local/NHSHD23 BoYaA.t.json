@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "788f29f60d8099e322248430ac6dfdcd",
+      "MD5-CAM-1.0.1" : "caf97312438051c22ad0a9b639809f04",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -4672,10 +4672,27 @@
                                     } ]
                                   }, {
                                     "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "denominator",
+                                    "children" : [ {
+                                      "@type" : "C_REAL",
+                                      "rmTypeName" : "Real",
+                                      "occurrences" : "1..1",
+                                      "constraint" : [ {
+                                        "lower" : 0.0,
+                                        "upper" : 100.0,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  }, {
+                                    "@type" : "C_ATTRIBUTE",
                                     "rmAttributeName" : "type",
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -4852,6 +4869,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0046.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -4865,14 +4883,14 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
                           "nodeId" : "at0047.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "value",
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "occurrences" : "1..1",
+                              "rmTypeName" : "DV_TEXT",
                               "defaultValue" : {
                                 "defining_code" : {
                                   "terminology_id" : {
@@ -4900,6 +4918,7 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
                           "nodeId" : "at0091.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -4917,7 +4936,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.11" ],
+                                  "constraint" : [ "ac0.12" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -4963,14 +4982,48 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
                       "nodeId" : "at0049.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "items",
+                        "cardinality" : {
+                          "@type" : "CARDINALITY",
+                          "interval" : "1..*",
+                          "ordered" : false,
+                          "unique" : false
+                        },
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0051.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "SNOMED-CT",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "91143003",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Product containing salbutamol",
+                                "@type" : "DV_CODED_TEXT"
+                              },
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
                           "nodeId" : "at0048.2",
                           "targetPath" : "/data[at0001]/events[at0002]/state[at0031]/items[at0046]/items[at0048.1]",
                           "attributes" : [ ],
@@ -5006,6 +5059,7 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
                           "nodeId" : "at0097.2",
                           "targetPath" : "/data[at0001]/events[at0002]/state[at0031]/items[at0046]/items[at0097.1]",
                           "attributes" : [ {
@@ -5139,6 +5193,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.11",
             "description" : "*"
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.12",
+            "description" : "*"
           }
         },
         "sl" : {
@@ -5219,6 +5279,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.11",
             "description" : "*"
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
+            "description" : "*"
           }
         }
       },
@@ -5295,6 +5361,11 @@
         "ac0.11" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.11",
+          "members" : [ "at0094", "at0095" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
           "members" : [ "at0094", "at0095" ]
         }
       }
