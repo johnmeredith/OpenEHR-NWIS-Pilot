@@ -1,30 +1,31 @@
-﻿archetype (adl_version=1.4; uid=a270eef9-284c-4c47-a6ce-f92350a037df)
+archetype (adl_version=1.4; uid=a270eef9-284c-4c47-a6ce-f92350a037df)
 	openEHR-EHR-OBSERVATION.child_pugh_score.v0
 
 concept
-	[at0000]	-- Child-Pugh Score
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
+
 description
 	original_author = <
+		["date"] = <"2017-09-27">
 		["name"] = <"Hildegard McNicoll">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"hildi@freshehr.com">
-		["date"] = <"2017-09-27">
 	>
+	lifecycle_state = <"release_candidate">
+	other_contributors = <"John Meredith, NHS Wales Informatics Service", ...>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For the capture and reporting of Child-Pugh score for liver disease management. 
 ">
-			use = <"Higher Child-Pugh scores indicate worsening liver function, and give the medical and surgical teams an idea of \"liver comorbidity\" and \"liver reserve\". This can be useful when planning interventions on the liver since liver failure is the main cause of death after liver resection">
 			keywords = <"Child-Pugh, liver, cirrhosis, score, Hepatitis C,", ...>
-			misuse = <"">
 			copyright = <"© Clinical Models UK">
+			use = <"Higher Child-Pugh scores indicate worsening liver function, and give the medical and surgical teams an idea of \"liver comorbidity\" and \"liver reserve\". This can be useful when planning interventions on the liver since liver failure is the main cause of death after liver resection">
 		>
 	>
-	lifecycle_state = <"in_development">
-	other_contributors = <"John Meredith, NHS Wales Informatics Service", ...>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"UK Clinical Models">
@@ -34,9 +35,10 @@ https://radiopaedia.org/articles/child-pugh-score cited 27-Sep-2017.">
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"64870AE17F4867BDC560992AB50C23AC">
+		["MD5-CAM-1.0.1"] = <"16c92b122c96ef9826c0746a22008a7a">
 		["build_uid"] = <"8796474d-aa62-4e76-9c9e-4c00fbb75e63">
 		["revision"] = <"0.0.1-alpha">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
 
 definition
@@ -138,7 +140,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	terminologies_available = <"SNOMED-CT", ...>
@@ -297,7 +298,7 @@ ontology
 			>
 		>
 	>
-	term_bindings = <
+	term_binding = <
 		["SNOMED-CT"] = <
 			items = <
 				["at0028"] = <[SNOMED-CT::710066005]>
